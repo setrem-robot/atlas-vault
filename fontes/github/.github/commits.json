@@ -1,0 +1,32 @@
+[
+  {
+    "sha": "22f5957d33304a9d99fc8296251f2f2fe437a81b",
+    "data": "2026-08-27T22:44:29Z",
+    "mensagem": "docs: o perfil passa a contar o que existe, e o que ainda não (#1)\n\nO texto anterior descrevia a intenção do projeto — \"andar e conversar\npelo campus\" — sem dizer nada do que já funciona. Quem chegava não tinha\ncomo saber por onde começar, nem que existem três repositórios.\n\nAgora o perfil abre com os três, aponta o orquestrador como porta de\nentrada (é dele o README que sobe tudo em quinze minutos sem robô), e\ntraz duas listas do mesmo tamanho: o que roda e foi verificado, e o que\nainda falta. A segunda inclui o conflito dos dois brokers e o GPS que\nainda não está montado — coisas que alguém descobriria sozinho, do jeito\nmais caro.\n\n\nClaude-Session: https://claude.ai/code/session_014Po4axa3FbVf1nrDDmes8q\n\nCo-authored-by: Kerlon Ribeiro <bifrost1227@gmail.com>\nCo-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+  },
+  {
+    "sha": "359c0c5458541674b0555e7f26d97a3cadebb71c",
+    "data": "2026-08-15T16:54:33Z",
+    "mensagem": "Add additional image to README for SETREM Robot"
+  },
+  {
+    "sha": "cde5e2a21fe314a408d97c94706857be4fbf9864",
+    "data": "2026-08-15T16:51:54Z",
+    "mensagem": "Add image and description to README\n\nUpdated README.md to include an image and description."
+  },
+  {
+    "sha": "f3985039144853274ce1e3682e9f0ba3e94840d6",
+    "data": "2026-08-15T16:50:01Z",
+    "mensagem": "Delete README.md"
+  },
+  {
+    "sha": "8cb24aa537b19a07a171190925a782a8a7374695",
+    "data": "2026-08-15T16:49:43Z",
+    "mensagem": "Create README.md"
+  },
+  {
+    "sha": "ecc9b280f578b6aedadec1001f92a282a6fe7c2e",
+    "data": "2026-08-15T16:39:33Z",
+    "mensagem": "Initial commit"
+  }
+]

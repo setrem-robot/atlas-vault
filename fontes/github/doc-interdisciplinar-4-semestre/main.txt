@@ -1,0 +1,868 @@
+## Página 1
+
+ENZO ALLEBRAND, FERNANDO BASTIAN, KERLON RIBEIRO E VICTOR GENZ
+ROBÔ ATLAS: PLATAFORMA ROBÓTICA ORIENTADA A OBJETOS PARA
+COLETA E ANÁLISE DE DADOS DE TELEMETRIA
+Três de Maio
+2026
+
+
+## Página 2
+
+ENZO ALLEBRAND, FERNANDO BASTIAN, KERLON RIBEIRO E VICTOR GENZ
+ROBÔ ATLAS: PLATAFORMA ROBÓTICA ORIENTADA A OBJETOS PARA
+COLETA E ANÁLISE DE DADOS DE TELEMETRIA
+Relatório do Projeto Interdisciplinar de Ex-
+tensão IV apresentado ao Curso de Bacha-
+relado em Engenharia de Computação da
+Faculdade Três de Maio (SETREM), como
+requisito de avaliação dos componentes
+curriculares de Estatística, Programação
+Orientada a Objetos, Banco de Dados e
+Gerenciamento de Projetos.
+Professores: Rodrigo Danielowski, Tiago Luis Cesa Seibel, Jonas Pacheco e
+Eduardo Mildner
+Três de Maio
+2026
+
+
+## Página 3
+
+RESUMO
+O robô Atlas é uma plataforma robótica móvel desenvolvida no curso de Engenharia
+de Computação da SETREM, operada remotamente e capaz de registrar dados de
+telemetria durante seu funcionamento. Este trabalho apresenta a consolidação dessa
+plataforma como uma solução computacional orientada a objetos que integra um apli-
+cativo móvel, desenvolvido em Flutter; comunicação sem ﬁo de curto alcance por Blu-
+etooth Low Energy; serviços embarcados em um Raspberry Pi, coordenados por troca
+de mensagens sobre o protocolo MQTT; e um serviço de telemetria em nuvem, hospe-
+dado na infraestrutura do LARCC, no qual os dados de posição, estado dos motores,
+nível de bateria e conectividade são persistidos em um banco de dados relacional
+de séries temporais (PostgreSQL com a extensão TimescaleDB) e disponibilizados
+por uma interface de programação de aplicações de leitura. Metodologicamente, a
+pesquisa classiﬁca-se como aplicada, de natureza exploratória e experimental, com
+abordagem mista, aplicando de forma integrada os fundamentos de Programação Ori-
+entada a Objetos, Banco de Dados, Estatística e Gerenciamento de Projetos. Até a
+presente etapa, encontram-se implementados o aplicativo, os serviços embarcados e
+o armazenamento e a leitura da telemetria, com a veriﬁcação de corretude apoiada em
+testes automatizados executáveis sem o robô físico. A análise estatística dos dados
+coletados, voltada à caracterização do desempenho operacional do robô, encontra-se
+em desenvolvimento e constitui a etapa central do Capítulo de resultados.
+Palavras-chave: Robótica móvel. Programação orientada a objetos. Telemetria. Banco
+de dados de séries temporais. Análise de dados.
+
+
+## Página 4
+
+LISTA DE ILUSTRAÇÕES
+Figura 1 – Diagrama de blocos da arquitetura do robô Atlas. . . . . . . . . . . .
+20
+
+
+## Página 5
+
+LISTA DE TABELAS
+Tabela 1 – Cronograma de Atividades do Projeto de Extensão . . . . . . . . . .
+14
+Tabela 2 – Orçamento Previsto para o Desenvolvimento do Projeto . . . . . . .
+15
+
+
+## Página 6
+
+LISTA DE ABREVIATURAS E SIGLAS
+API
+Application Programming Interface (Interface de Programação de
+Aplicações)
+BLE
+Bluetooth Low Energy (Bluetooth de Baixa Energia)
+GPIO
+General Purpose Input/Output (Entrada/Saída de Propósito Geral)
+GPS
+Global Positioning System (Sistema de Posicionamento Global)
+HTTP
+Hypertext Transfer Protocol (Protocolo de Transferência de Hiper-
+texto)
+IC
+Integração Contínua
+IoT
+Internet of Things (Internet das Coisas)
+JSON
+JavaScript Object Notation (Notação de Objetos JavaScript)
+LARCC
+Laboratory of Advanced Research on Cloud Computing
+MQTT
+Message Queuing Telemetry Transport (protocolo de mensagens no
+modelo publicação/assinatura)
+NUS
+Nordic UART Service (perﬁl de serviço BLE para comunicação se-
+rial)
+POO
+Programação Orientada a Objetos
+PWM
+Pulse Width Modulation (Modulação por Largura de Pulso)
+SGBD
+Sistema Gerenciador de Banco de Dados
+SQL
+Structured Query Language (Linguagem de Consulta Estruturada)
+
+
+## Página 7
+
+SUMÁRIO
+INTRODUÇÃO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+1
+PROJETO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.1
+TEMA
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.1.1
+Delimitação do Tema . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.2
+OBJETIVOS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+1.2.1
+Objetivo Geral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+1.2.2
+Objetivos Especíﬁcos . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+1.3
+PROBLEMA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+1.4
+JUSTIFICATIVA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+1.5
+METODOLOGIA
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+1.5.1
+Procedimentos Metodológicos
+. . . . . . . . . . . . . . . . . . . .
+13
+1.5.2
+Coleta e Análise de Dados . . . . . . . . . . . . . . . . . . . . . . .
+13
+1.6
+CRONOGRAMA DE ATIVIDADES . . . . . . . . . . . . . . . . . . . .
+14
+1.7
+ORÇAMENTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2
+FUNDAMENTAÇÃO TEÓRICA . . . . . . . . . . . . . . . . . . . . .
+16
+2.1
+REVISÃO DA LITERATURA . . . . . . . . . . . . . . . . . . . . . . .
+16
+2.2
+PROGRAMAÇÃO ORIENTADA A OBJETOS . . . . . . . . . . . . . .
+17
+2.3
+MODELAGEM DE BANCO DE DADOS . . . . . . . . . . . . . . . . .
+18
+2.4
+ESTATÍSTICA APLICADA À ANÁLISE DE DADOS
+. . . . . . . . . .
+19
+2.5
+ARQUITETURA DA SOLUÇÃO . . . . . . . . . . . . . . . . . . . . .
+19
+2.6
+GERENCIAMENTO DE PROJETOS
+. . . . . . . . . . . . . . . . . .
+20
+3
+RESULTADOS
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3.1
+DESENVOLVIMENTO DO HARDWARE / PROTÓTIPO . . . . . . . .
+22
+3.2
+DESENVOLVIMENTO DA SOLUÇÃO ORIENTADA A OBJETOS
+. .
+22
+3.2.1
+Modelagem de Classes . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3.3
+BANCO DE DADOS
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.4
+COLETA DE DADOS . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.5
+ANÁLISE ESTATÍSTICA DOS DADOS . . . . . . . . . . . . . . . . .
+23
+3.6
+INTEGRAÇÃO ENTRE HARDWARE E SOFTWARE
+. . . . . . . . .
+23
+
+
+## Página 8
+
+3.7
+CONEXÃO COM A COMUNIDADE . . . . . . . . . . . . . . . . . . .
+24
+4
+CONSIDERAÇÕES FINAIS . . . . . . . . . . . . . . . . . . . . . . .
+25
+REFERÊNCIAS
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+
+
+## Página 9
+
+INTRODUÇÃO
+A robótica móvel consolidou-se como um campo de convergência entre compu-
+tação, eletrônica e controle, no qual sistemas físicos passaram a depender de cama-
+das de software cada vez mais elaboradas para percepção, decisão e comunicação.
+Em plataformas de pequeno porte, é comum que o robô não opere de forma totalmente
+autônoma, mas sim por teleoperação, com um operador humano enviando comandos
+de movimento à distância enquanto o sistema registra continuamente informações so-
+bre o próprio estado – posição, deslocamento, consumo de energia e conectividade.
+Esse registro contínuo, conhecido como telemetria, transforma o robô também em
+uma fonte de dados reais, que, uma vez armazenados e analisados, permitem com-
+preender e validar o comportamento da solução construída.
+O tratamento adequado desses dados, porém, não é imediato. À medida que
+um protótipo evolui de peças isoladas para uma plataforma integrada, cresce a comple-
+xidade do software que a sustenta, e com ela a necessidade de organizá-lo segundo
+princípios que favoreçam a modularidade, a reutilização e a testabilidade – preocu-
+pações centrais da Programação Orientada a Objetos e da Engenharia de Software
+(SOMMERVILLE, 2018). Do mesmo modo, dados de telemetria só se tornam infor-
+mação útil quando persistidos em uma estrutura de armazenamento coerente com
+sua natureza temporal e submetidos a técnicas estatísticas que revelem padrões de
+comportamento. Esses três aspectos – estruturação orientada a objetos, armazena-
+mento de dados e análise estatística – articulam-se sob práticas de gerenciamento de
+projetos que ordenam o desenvolvimento ao longo do tempo.
+É nesse cenário que se insere o robô Atlas, uma plataforma robótica móvel
+desenvolvida no curso de Engenharia de Computação da SETREM. O robô já opera
+como um sistema completo, controlado por um aplicativo móvel e capaz de publicar
+sua telemetria em um serviço de nuvem que a persiste em banco de dados; entre-
+tanto, os dados coletados ainda não eram submetidos a nenhuma etapa de análise
+estatística. Este trabalho parte desse sistema em funcionamento para consolidá-lo
+como uma solução computacional orientada a objetos e, sobre a base de dados já em
+operação, estruturar a coleta, o armazenamento e a análise da telemetria, aplicando
+
+
+## Página 10
+
+9
+de forma integrada os quatro componentes curriculares do Projeto Interdisciplinar de
+Extensão IV.
+O presente documento está organizado em três capítulos. O primeiro apresenta
+a contextualização do estudo, incluindo tema, objetivos, problema, justiﬁcativa, meto-
+dologia, cronograma e orçamento, sob a orientação da disciplina de Gerenciamento
+de Projetos. O segundo aborda a fundamentação teórica que sustenta as escolhas
+de projeto orientado a objetos, de modelagem de banco de dados e de análise esta-
+tística, encerrando com a descrição da arquitetura da solução. O terceiro detalha os
+resultados obtidos até a presente etapa, contemplando o desenvolvimento da solução
+computacional, a coleta e o armazenamento dos dados e as análises realizadas.
+
+
+## Página 11
+
+1 PROJETO
+1.1
+Tema
+O projeto consiste na consolidação de uma plataforma robótica de controle re-
+moto – o robô Atlas, desenvolvido no curso de Engenharia de Computação da SE-
+TREM – como uma solução computacional integrada, unindo aplicativo móvel, orques-
+tração embarcada e um serviço de telemetria em nuvem, sob a aplicação conjunta
+dos fundamentos de Estatística, Programação Orientada a Objetos, Banco de Dados
+e Gerenciamento de Projetos.
+1.1.1
+Delimitação do Tema
+O desenvolvimento e os testes concentram-se no ambiente do curso de Enge-
+nharia de Computação da SETREM, em Três de Maio/RS, utilizando a infraestrutura
+de nuvem do LARCC (Laboratory of Advanced Research on Cloud Computing) para
+a hospedagem do serviço de telemetria. O escopo abrange os três repositórios que
+compõem o sistema: app (aplicativo Flutter que controla o robô e exibe seu histórico
+de telemetria), orquestrador (ﬁrmware do ESP32, serviços do Raspberry Pi e inges-
+tão/leitura de dados na nuvem) e atlas_ai_v2 (assistente de voz e rosto animado da
+plataforma). Este último, embora seja um subsistema majoritariamente independente,
+integra-se aos demais por meio de uma ponte Bluetooth que pode substituir o ESP32
+na recepção dos comandos do aplicativo, e é considerado parte do escopo entregue –
+sobretudo como conjunto de exemplos de Programação Orientada a Objetos. A coleta
+e a análise estatística de dados, contudo, restringem-se à telemetria de operação do
+robô (posição, motores, bateria e conectividade), não abrangendo o comportamento
+interno do assistente de voz.
+
+
+## Página 12
+
+11
+1.2
+Objetivos
+1.2.1
+Objetivo Geral
+Desenvolver, de forma integrada e orientada por boas práticas de gerencia-
+mento de projetos, uma solução computacional orientada a objetos para o robô Atlas,
+contemplando a coleta de dados reais de telemetria (posição, estado dos motores,
+bateria e conectividade), seu armazenamento em banco de dados relacional de sé-
+ries temporais e a aplicação de técnicas estatísticas sobre esses dados para apoiar a
+validação da solução desenvolvida.
+1.2.2
+Objetivos Especíﬁcos
+Para alcançar o objetivo geral proposto, estabelecem-se os seguintes passos:
+• Planejar o projeto computacional utilizando fundamentos da disciplina de Geren-
+ciamento de Projetos, deﬁnindo escopo, cronograma, responsabilidades e entre-
+gas;
+• Aplicar os princípios da Programação Orientada a Objetos na estruturação do
+software, promovendo modularidade, reutilização de código e organização lógica
+da solução;
+• Realizar a modelagem, criação e manipulação de banco de dados relacionais
+para o armazenamento dos dados coletados no projeto;
+• Projetar e implementar mecanismos eﬁcientes de coleta de dados reais, garan-
+tindo sua integridade e relevância para posterior análise;
+• Analisar os dados coletados com base nos fundamentos da Estatística, extraindo
+informações úteis para a tomada de decisão ou validação da solução desenvol-
+vida;
+• Construir um protótipo para testes, unindo componentes de automação, controle
+e software;
+• Utilizar a infraestrutura do LARCC para o envio, manipulação e visualização de
+dados;
+• Divulgar, ao longo do semestre, as atividades desenvolvidas nas redes sociais
+institucionais, conforme exigência do roteiro (stories ou publicação no LinkedIn).
+
+
+## Página 13
+
+12
+1.3
+Problema
+O robô Atlas opera hoje majoritariamente por teleoperação: o usuário comanda
+o movimento pelo aplicativo e a telemetria (posição por GPS, estado dos motores,
+nível de bateria e estado do Wi-Fi) é publicada via MQTT, replicada para a nuvem e
+persistida em um banco de dados TimescaleDB. Uma API de leitura publicada recen-
+temente disponibiliza esses dados para visualização no aplicativo – mapa do trajeto,
+painel de estado, histórico de eventos – mas, até o momento, nenhum dos repositó-
+rios do projeto implementa qualquer etapa de tratamento estatístico sobre os dados
+coletados.
+Diante disso, o problema de pesquisa deﬁne-se como: de que forma os dados
+reais de telemetria coletados pelo robô Atlas podem ser tratados estatisticamente para
+caracterizar o desempenho operacional do robô – em particular, o consumo de bateria,
+a utilização dos motores e o deslocamento ao longo do tempo?
+1.4
+Justiﬁcativa
+Do ponto de vista técnico, a justiﬁcativa apoia-se no estado atual do sistema: o
+robô Atlas já opera como uma plataforma completa, integrando aplicativo móvel (Flut-
+ter, comunicação Bluetooth Low Energy no padrão Nordic UART Service), ﬁrmware
+embarcado (ESP32) e serviços orquestrados em um Raspberry Pi que se comunicam
+via protocolo MQTT, com telemetria persistida em nuvem por um banco de dados rela-
+cional de séries temporais (TimescaleDB) e disponibilizada por uma API de leitura pu-
+blicada por meio de túnel Cloudﬂare. Essa infraestrutura de coleta e armazenamento
+de dados, já em operação, constitui a base sobre a qual a etapa de análise estatística
+– ainda não implementada – pode ser construída, sem exigir instrumentação adicional
+do robô.
+Do ponto de vista acadêmico, o trabalho possui relevância ao aplicar, de forma
+interdisciplinar, os quatro componentes curriculares do Projeto Interdisciplinar de Ex-
+tensão IV. A Programação Orientada a Objetos é exercitada na estruturação dos servi-
+ços do robô, com destaque para o roteador de comandos (orquestrador/roteador.py),
+implementado com o padrão de projeto Command (GAMMA et al., 2000) sobre uma
+classe abstrata, e para a camada de acionamento dos motores (motores/acionamento.py),
+que abstrai o hardware por meio de outra classe abstrata com implementações con-
+creta (motores de passo reais) e simulada. O Banco de Dados é representado pela
+modelagem da tabela de telemetria em TimescaleDB e pela camada de consultas
+parametrizadas da API de leitura. A Estatística, embora ainda pendente de implemen-
+tação, dispõe de uma base de dados real e crescente para sustentar a análise.
+
+
+## Página 14
+
+13
+Do ponto de vista social, o projeto mantém sua natureza de extensão, com di-
+vulgação periódica das atividades desenvolvidas nas redes sociais institucionais, con-
+forme exigido pelo roteiro do componente curricular.
+1.5
+Metodologia
+A pesquisa classiﬁca-se como aplicada, de natureza exploratória e experimen-
+tal, uma vez que parte de um sistema já em funcionamento – o robô Atlas – para
+investigar, por meio de testes e da coleta de dados reais, o comportamento e o de-
+sempenho da solução desenvolvida. A abordagem é mista: qualitativa na descrição
+da arquitetura, das decisões de projeto orientado a objetos e da integração entre os
+subsistemas; e quantitativa na análise dos dados numéricos de telemetria (posição,
+velocidade, nível de bateria, estado de conectividade) armazenados no banco de da-
+dos.
+1.5.1
+Procedimentos Metodológicos
+O desenvolvimento é conduzido de forma incremental e iterativa (PRIKLAD-
+NICKI et al., 2014) em três repositórios versionados independentemente (app, orquestrador
+e atlas_ai_v2), com controle de versão via Git e revisão automatizada de dependên-
+cias (Dependabot). A veriﬁcação de corretude apoia-se em testes automatizados, prá-
+tica central da garantia de qualidade de software (SOMMERVILLE, 2018): o roteador
+de comandos e a camada de acionamento dos motores do orquestrador somam de-
+zenas de testes unitários executáveis sem hardware físico – sem broker MQTT, sem
+Raspberry Pi e sem motores conectados –, a API de leitura da telemetria possui su-
+íte própria de testes cobrindo cabeçalhos de segurança e consultas, e o subsistema
+atlas_ai_v2 mantém integração contínua via GitHub Actions, executando sua suíte
+de testes em múltiplas versões do Python e sistemas operacionais a cada alteração.
+O aplicativo móvel utiliza entrega contínua (Shorebird), permitindo atualizações incre-
+mentais sem reinstalação. Essas práticas sustentam a rastreabilidade entre implemen-
+tação e relatório exigida pelas diretrizes deste trabalho.
+1.5.2
+Coleta e Análise de Dados
+A coleta de dados ocorre continuamente durante a operação do robô: os servi-
+ços do Raspberry Pi publicam, via protocolo MQTT, o estado dos motores, a posição
+obtida por GPS, o nível de bateria e o estado da conexão Wi-Fi; esses tópicos são
+espelhados para um broker remoto e persistidos por um serviço de ingestão em uma
+tabela única do TimescaleDB, particionada por tempo (hypertable), com o payload de
+cada tipo de telemetria armazenado em formato JSONB. O uso de uma tabela gené-
+
+
+## Página 15
+
+14
+rica, em vez de uma tabela por tipo de dado, evita migração de esquema a cada nova
+categoria de telemetria introduzida.
+Até o momento, esses dados são consumidos apenas para ﬁns operacionais –
+visualização do trajeto e do estado do robô no aplicativo, por meio da API de leitura
+– sem qualquer etapa de análise estatística. Esta é a principal lacuna identiﬁcada no
+sistema atual e o ponto de partida para o Capítulo 3 deste relatório. Para caracterizar
+o desempenho operacional do robô, prevê-se a aplicação de medidas de tendência
+central e de dispersão (média, mediana e desvio padrão) sobre variáveis como o nível
+de bateria e a velocidade dos motores, e de técnicas de análise de séries temporais
+para descrever a evolução dessas variáveis e do deslocamento ao longo do tempo. Em
+coerência com a diretriz de rastreabilidade adotada neste trabalho, nenhum resultado
+de análise será descrito antes de sua execução efetiva sobre os dados reais coletados.
+1.6
+Cronograma de Atividades
+O desenvolvimento da pesquisa respeitará as datas avaliativas estipuladas para
+a disciplina, conforme a Tabela 1.
+Tabela 1 – Cronograma de Atividades do Projeto de Extensão
+Atividade
+Set.
+Out.
+Nov.
+Dez.
+Deﬁnição de tema, escopo e levanta-
+mento de requisitos
+X
+Modelagem do banco de dados e plane-
+jamento do projeto
+X
+Desenvolvimento da solução orientada a
+objetos
+X
+Implementação da coleta de dados e in-
+tegração
+X
+X
+Análise estatística dos dados coletados
+X
+Escrita do relatório ﬁnal e ajustes docu-
+mentais
+X
+X
+Apresentação ﬁnal do projeto (bancas)
+X
+Fonte: Elaborado pelos autores (2026).
+1.7
+Orçamento
+A Tabela 2 relaciona os principais itens de hardware que compõem o protótipo
+do robô Atlas, base física sobre a qual o software e a coleta de dados são desenvol-
+vidos. A infraestrutura de nuvem utilizada para a telemetria é fornecida pelo LARCC,
+sem custo direto para o grupo, assim como as ferramentas de software empregadas,
+
+
+## Página 16
+
+15
+todas de código aberto ou gratuitas para uso acadêmico. Os valores unitários e to-
+tais serão conﬁrmados pelo grupo a partir das notas ﬁscais e cotações efetivas dos
+componentes já adquiridos.
+Tabela 2 – Orçamento Previsto para o Desenvolvimento do Projeto
+Item
+Quantidade
+Valor Total Estimado (R$)
+Raspberry
+Pi
+(computador
+embar-
+cado)
+1
+a conﬁrmar
+Microcontrolador ESP32 (ponte BLE)
+1
+a conﬁrmar
+Motores de passo
+2
+a conﬁrmar
+Drivers de motor de passo TMC2209
+2
+a conﬁrmar
+Módulo receptor GPS
+1
+a conﬁrmar
+Bateria e sistema de alimentação
+1
+a conﬁrmar
+Estrutura/chassi e componentes mecâ-
+nicos
+1
+a conﬁrmar
+Infraestrutura de nuvem (LARCC)
+1
+sem custo
+Total
+–
+a conﬁrmar
+Fonte: Elaborado pelos autores (2026).
+
+
+## Página 17
+
+2 FUNDAMENTAÇÃO TEÓRICA
+Este capítulo apresenta os fundamentos teóricos que sustentam as decisões
+de projeto adotadas no desenvolvimento do robô Atlas, organizados segundo os qua-
+tro componentes curriculares do Projeto Interdisciplinar de Extensão IV: Programação
+Orientada a Objetos, Modelagem de Banco de Dados, Estatística Aplicada à Análise
+de Dados e Gerenciamento de Projetos, encerrando com a descrição da arquitetura
+da solução que integra esses fundamentos na prática.
+2.1
+Revisão da Literatura
+A fundamentação deste trabalho apoia-se em obras consolidadas de cada um
+dos campos que o projeto integra. No campo do software, a Programação Orientada
+a Objetos e os padrões de projeto que dela derivam são tratados a partir de referên-
+cias clássicas da área (DEITEL; DEITEL, 2016; GAMMA et al., 2000), enquanto as
+práticas de engenharia e de qualidade de software que orientam o desenvolvimento
+remetem à literatura de Engenharia de Software (SOMMERVILLE, 2018). No campo
+do armazenamento, a modelagem relacional e os sistemas gerenciadores de banco
+de dados são fundamentados em literatura consagrada da área (ELMASRI; NAVATHE,
+2011). No campo da análise, os fundamentos de Estatística descritiva e de análise de
+séries temporais provêm de referências amplamente adotadas no ensino de engenha-
+ria (BUSSAB; MORETTIN, 2017; MORETTIN; TOLOI, 2018). Por ﬁm, as práticas de
+condução do projeto ao longo do semestre baseiam-se na literatura de métodos ágeis
+de desenvolvimento de software (PRIKLADNICKI et al., 2014).
+Além dessas bases teóricas, o projeto situa-se no encontro de três eixos tec-
+nológicos, decorrentes diretamente das soluções já empregadas: a robótica móvel
+teleoperada e os protocolos de comunicação de curto alcance para controle remoto,
+representados pelo uso de Bluetooth Low Energy no padrão Nordic UART Service;
+as arquiteturas orientadas a mensagens, aplicadas na comunicação entre os serviços
+embarcados por meio do protocolo MQTT; e os bancos de dados de séries temporais
+aplicados à telemetria de sistemas embarcados, materializados na escolha do Times-
+
+
+## Página 18
+
+17
+caleDB. As seções seguintes desenvolvem cada um desses fundamentos e encerram
+com a descrição da arquitetura que os integra.
+2.2
+Programação Orientada a Objetos
+A Programação Orientada a Objetos organiza um sistema em classes, que en-
+capsulam estado (atributos) e comportamento (métodos) atrás de uma interface pú-
+blica (DEITEL; DEITEL, 2016). Quatro princípios sustentam o paradigma: encapsu-
+lamento, que oculta os detalhes internos de uma classe e restringe o acesso direto
+ao seu estado; abstração, que deﬁne o que uma classe faz – por meio de classes
+ou interfaces abstratas – sem especiﬁcar como; herança, que permite que uma sub-
+classe reutilize e especialize o comportamento de uma superclasse; e polimorﬁsmo,
+que permite que um mesmo ponto de chamada produza comportamentos distintos
+conforme a subclasse concreta envolvida, resolvida em tempo de execução.
+No repositório orquestrador, esses princípios aparecem de forma concreta em
+dois pontos. O roteamento de comandos (pi/services/orquestrador/.../roteador.py)
+segue o padrão de projeto Command (GAMMA et al., 2000): a classe abstrata ComandoRoteavel
+declara o método abstrato rotear(), implementado por cinco subclasses concretas –
+para comandos de motor, de voz, de parada de emergência, de provisionamento de
+Wi-Fi e de validação de rota segura –, cada uma responsável por um tipo de comando
+recebido do aplicativo. A função pública de despacho não conhece a subclasse con-
+creta do outro lado: ela invoca rotear() polimorﬁcamente, e o comportamento correto
+é resolvido conforme o tipo do comando recebido. Esse desenho torna a adição de um
+novo tipo de comando uma questão de criar uma subclasse nova, sem alterar a lógica
+de despacho existente.
+O segundo ponto é a camada de acionamento dos motores (motores/acionamento.py),
+em que a classe abstrata Acionamento isola o serviço de motores do hardware con-
+creto: a subclasse AcionamentoStepper traduz comandos de velocidade em sinais
+PWM para os drivers dos motores de passo reais, enquanto a subclasse AcionamentoSimulado
+apenas registra o que teria sido executado, permitindo desenvolver e testar o serviço
+sem o robô ﬁsicamente montado. O serviço depende apenas da interface abstrata,
+nunca de uma implementação concreta especíﬁca – uma aplicação do princípio de
+inversão de dependência.
+O subsistema atlas_ai_v2 (assistente de voz e rosto animado da Atlas) con-
+centra os exemplos mais completos de POO do projeto: uma hierarquia de herança e
+polimorﬁsmo clássicos, em que uma classe base imutável de evento (core/events.py::Event)
+é especializada em oito subclasses de evento (mensagem do usuário, início e ﬁm de
+fala, ocorrência de erro, entre outras), despachadas por veriﬁcação de tipo em tempo
+
+
+## Página 19
+
+18
+de execução; o padrão de projeto Factory Method (GAMMA et al., 2000), na escolha
+do cliente de modelo de linguagem e do motor de síntese de voz a instanciar conforme
+a conﬁguração; o padrão Decorator (GAMMA et al., 2000), em que uma classe envolve
+um motor de voz primário e um de reserva atrás da mesma interface, promovendo tole-
+rância a falhas; e abstração por tipagem estrutural (duck typing), via typing.Protocol,
+para as interfaces de cliente de linguagem e de motor de voz – uma forma de abstra-
+ção distinta da herança nominal clássica (class X(Base)), útil para diferenciar os dois
+casos quando a disciplina exigir.
+2.3
+Modelagem de Banco de Dados
+O modelo relacional organiza os dados em relações (tabelas) compostas por
+atributos, sobre as quais operam uma linguagem de consulta declarativa (SQL) e
+mecanismos de indexação que sustentam o desempenho das consultas (ELMASRI;
+NAVATHE, 2011). O modelo de dados adotado para a telemetria do robô Atlas é rela-
+cional, sobre o sistema gerenciador PostgreSQL, com a extensão TimescaleDB para
+lidar eﬁcientemente com séries temporais. Em vez de normalizar os dados em uma
+tabela por tipo de telemetria, o sistema persiste todos os tipos – posição por GPS,
+estado dos motores, nível de bateria, estado do Wi-Fi – em uma única tabela gené-
+rica (telemetria), com colunas de carimbo de tempo (ts), tipo (tipo), tópico de ori-
+gem (topico) e o restante do dado em uma coluna semiestruturada (payload, do tipo
+JSONB). Essa tabela é transformada em uma hypertable pelo TimescaleDB, que a par-
+ticiona automaticamente por tempo, e um índice composto em (tipo, ts decrescente)
+sustenta as duas consultas mais frequentes: a última leitura de cada tipo e a evolução
+de um tipo ao longo do tempo.
+Essa escolha de modelagem prioriza a ﬂexibilidade sobre a normalização es-
+trita: adicionar um novo tipo de dado – por exemplo, um novo sensor – não exige
+migração de esquema, apenas um novo valor para a coluna tipo e a estrutura livre do
+respectivo payload.
+Sobre esse armazenamento, uma API de leitura (orquestrador/cloud/api, cons-
+truída com o framework FastAPI) expõe a telemetria por HTTP, autenticada por token,
+com um usuário de banco de dados restrito apenas à operação SELECT – separando o
+caminho de escrita, exclusivo do serviço de ingestão, do caminho de leitura, exposto
+à internet por um túnel Cloudﬂare. As consultas dessa API ilustram técnicas de mode-
+lagem e otimização relevantes: o operador DISTINCT ON do PostgreSQL, para obter o
+último valor de cada tipo em uma única consulta; a função time_bucket() do Timesca-
+leDB, para agregação temporal que aproveita a própria partição da hypertable em vez
+de uma leitura linha a linha; paginação por cursor de tempo, em vez de deslocamento
+
+
+## Página 20
+
+19
+(OFFSET), para evitar que registros novos desloquem páginas já lidas; e validação es-
+trita dos parâmetros que precisam ser interpolados diretamente no texto da consulta
+(o nome do campo agregado e o intervalo de agregação, que a sintaxe do SQL não
+aceita como parâmetro), como salvaguarda contra injeção de SQL.
+2.4
+Estatística Aplicada à Análise de Dados
+Não foi identiﬁcado, até o momento, nenhum código de análise estatística em
+execução sobre os dados de telemetria do robô: não há uso de bibliotecas como
+pandas, numpy ou statistics para esse ﬁm em nenhum dos três repositórios do pro-
+jeto – o uso de numpy encontrado em atlas_ai_v2 está restrito ao processamento de
+áudio e à renderização gráﬁca do rosto animado, sem relação com os dados de te-
+lemetria. Esta é a lacuna mais relevante identiﬁcada no levantamento do projeto, e a
+que responde mais diretamente ao problema de pesquisa formulado no Capítulo 1.
+A tabela telemetria do TimescaleDB, descrita na Seção 2.3, é a fonte de dados
+real sobre a qual essa análise será construída, em resposta ao problema de pesquisa
+formulado no Capítulo 1: caracterizar o desempenho operacional do robô. A funda-
+mentação teórica desta análise sustenta-se em dois conjuntos de técnicas. O primeiro
+é a Estatística descritiva, que resume um conjunto de dados por medidas de tendência
+central – como a média e a mediana – e por medidas de dispersão – como o desvio pa-
+drão –, e que comunica sua distribuição por meio de representações gráﬁcas, como o
+histograma (BUSSAB; MORETTIN, 2017); essas medidas serão aplicadas a variáveis
+como o nível de bateria e a velocidade dos motores. O segundo é a análise de séries
+temporais, adequada a dados indexados no tempo, como os coletados continuamente
+pela telemetria do robô, e voltada a descrever tendências e variações de uma variá-
+vel ao longo do tempo (MORETTIN; TOLOI, 2018); será empregada para caracterizar
+a evolução do consumo de energia e do deslocamento durante a operação. Em coe-
+rência com a diretriz de rastreabilidade adotada neste trabalho, nenhum resultado de
+análise estatística será descrito antes de sua execução efetiva sobre os dados reais
+coletados.
+2.5
+Arquitetura da Solução
+A arquitetura do robô Atlas divide-se em três frentes ﬁsicamente distintas – um
+aplicativo móvel, um conjunto de serviços embarcados e um back-end em nuvem –
+, que se comunicam por protocolos diferentes conforme a distância física entre as
+partes e a conﬁabilidade exigida em cada trecho, como ilustra a Figura 1.
+
+
+## Página 21
+
+20
+O aplicativo (Flutter, Android e iOS) envia comandos de movimento e de planeja-
+mento de rota ao robô por Bluetooth Low Energy, no padrão Nordic UART Service. Um
+ﬁrmware embarcado no ESP32 recebe esses comandos pela característica BLE, va-
+lida sua estrutura como JSON e os repassa por uma conexão serial (115200 bauds) ao
+Raspberry Pi, sem interpretar seu conteúdo. No Raspberry Pi, um barramento MQTT
+local (broker Mosquitto) desacopla cinco serviços Python independentes: o serviço
+que ingere a linha serial publica o comando cru; o serviço orquestrador o interpreta,
+por meio do roteador de comandos descrito na seção 2.2, e o redistribui para os ser-
+viços responsáveis por motores, Wi-Fi e GPS. Cada um desses serviços publica de
+volta seu próprio estado, que o orquestrador espelha sob um conjunto de tópicos de
+telemetria.
+Esses tópicos de telemetria são replicados, por uma ponte do Mosquitto, para
+um broker remoto hospedado em uma máquina virtual na infraestrutura do LARCC,
+onde um serviço de ingestão os persiste no banco de dados TimescaleDB descrito
+na seção 2.3. Uma API de leitura, publicada por um túnel Cloudﬂare, permite que o
+aplicativo – de qualquer lugar, com o robô ligado ou desligado – consulte esse histórico,
+fechando o ciclo entre a operação do robô e sua visualização.
+Figura 1 – Diagrama de blocos da arquitetura do robô Atlas.
+App
+(Flutter, BLE)
+ESP32
+(ponte
+BLE/Serial)
+Raspberry Pi
+(MQTT +
+roteador)
+Motores
+GPS
+Wi-Fi
+BLE (NUS)
+Serial 115200
+Broker
+remoto
+(LARCC)
+TimescaleDB
+API de leitura
+telemetria (MQTT)
+HTTP (token)
+Fonte: Elaborado pelos autores (2026), a partir do código dos repositórios app e orquestrador.
+2.6
+Gerenciamento de Projetos
+O Gerenciamento de Projetos fornece as práticas que estruturam a condução
+do trabalho ao longo do semestre – deﬁnição de escopo, cronograma, papéis e en-
+tregas –, complementando os demais componentes curriculares, que tratam do que é
+construído. O grupo adota um referencial ágil, apoiado no método Kanban, cuja ênfase
+está na visualização do ﬂuxo de trabalho por meio de um quadro de tarefas, na limita-
+
+
+## Página 22
+
+21
+ção do trabalho em andamento e na entrega contínua de incrementos (PRIKLADNICKI
+et al., 2014). Essa escolha é coerente com a natureza incremental do desenvolvimento
+e com o tamanho reduzido da equipe: em vez de ciclos fechados com papéis rígidos, o
+Kanban organiza um ﬂuxo contínuo de pequenas tarefas – alinhado ao versionamento
+por repositórios já em uso –, cujas entregas se conectam aos marcos avaliativos apre-
+sentados na Tabela 1 (seção 1.6, Capítulo 1). A adoção crescente de métodos ágeis é
+reconhecida também na literatura de Engenharia de Software (SOMMERVILLE, 2018).
+Do ponto de vista técnico, o próprio desenvolvimento do sistema já incorpora
+práticas de gerenciamento reconhecidas: os três repositórios são versionados de forma
+independente, com controle de dependências automatizado (Dependabot), e o reposi-
+tório atlas_ai_v2 mantém integração contínua (GitHub Actions) executando sua suíte
+de testes a cada alteração. Essas práticas relacionam-se a conceitos consolidados
+de gestão de conﬁguração e de garantia de qualidade em projetos de software (SOM-
+MERVILLE, 2018).
+
+
+## Página 23
+
+3 RESULTADOS
+Este capítulo apresenta os resultados obtidos até a presente etapa do desen-
+volvimento do projeto, organizados do protótipo físico à análise dos dados coletados:
+o hardware do robô, a solução computacional orientada a objetos, o banco de dados
+de telemetria, a coleta e a análise estatística dos dados, a integração entre as partes
+e as evidências de extensão exigidas pelo componente curricular.
+3.1
+Desenvolvimento do Hardware / Protótipo
+Esta seção descreve o protótipo físico do robô Atlas – estrutura mecânica, com-
+putador embarcado (Raspberry Pi), microcontrolador ESP32, motores de passo com
+seus respectivos drivers, módulo GPS e sistema de alimentação – e o esquema de
+ligação entre esses componentes. (Seção em desenvolvimento: incluir fotograﬁas e o
+diagrama de ligações do protótipo montado.)
+3.2
+Desenvolvimento da Solução Orientada a Objetos
+Esta seção detalha a implementação da solução computacional, retomando na
+prática os conceitos apresentados na seção 2.2: as principais classes e módulos dos
+repositórios orquestrador e atlas_ai_v2, os padrões de projeto aplicados e a orga-
+nização em camadas que separa a lógica pura do acesso a hardware, permitindo a
+veriﬁcação por testes automatizados. (Seção em desenvolvimento.)
+3.2.1
+Modelagem de Classes
+Apresenta-se aqui o diagrama das classes centrais da solução – a hierarquia do
+roteador de comandos, a camada de acionamento dos motores e a hierarquia de even-
+tos do assistente –, evidenciando as relações de herança e a resolução polimórﬁca
+descritas na fundamentação teórica. (Seção em desenvolvimento: inserir o diagrama
+de classes.)
+
+
+## Página 24
+
+23
+3.3
+Banco de Dados
+Esta seção apresenta o modelo de dados efetivamente implementado – a ta-
+bela de telemetria em PostgreSQL/TimescaleDB descrita na seção 2.3 –, o script de
+criação, a transformação em hypertable e os índices que sustentam as consultas mais
+frequentes. (Seção em desenvolvimento: incluir o script de criação e exemplos de con-
+sulta.)
+3.4
+Coleta de Dados
+Esta seção descreve o mecanismo de coleta de dados reais em operação: a
+publicação da telemetria pelos serviços do Raspberry Pi, seu espelhamento para o
+broker remoto hospedado no LARCC e sua persistência no banco de dados. Serão re-
+latados o período de coleta e o volume de registros efetivamente obtidos até a análise.
+(Seção em desenvolvimento: informar o volume de dados coletados.)
+3.5
+Análise Estatística dos Dados
+Esta seção apresenta a análise estatística dos dados coletados, voltada à ca-
+racterização do desempenho operacional do robô. Serão aplicadas as técnicas fun-
+damentadas na seção 2.4 – medidas de tendência central e de dispersão (BUSSAB;
+MORETTIN, 2017) sobre variáveis como o nível de bateria e a velocidade dos moto-
+res, e análise de séries temporais (MORETTIN; TOLOI, 2018) sobre a evolução do
+consumo de energia e do deslocamento –, acompanhadas das tabelas, dos gráﬁcos
+e da interpretação correspondente. (Seção em desenvolvimento: os resultados serão
+inseridos após a execução da análise sobre os dados reais.)
+3.6
+Integração entre Hardware e Software
+Esta seção descreve o funcionamento integrado da solução, do comando envi-
+ado pelo aplicativo até a visualização e a análise dos dados na nuvem, percorrendo o
+caminho detalhado na seção 2.5 e evidenciando como as partes desenvolvidas sepa-
+radamente operam em conjunto. (Seção em desenvolvimento.)
+
+
+## Página 25
+
+24
+3.7
+Conexão com a Comunidade
+Esta seção reúne as evidências de extensão do projeto, conforme exigido pelo
+componente curricular: registros de campo, eventual coleta de feedback de represen-
+tantes da instituição parceira e o comprovante das publicações realizadas nas redes
+sociais institucionais (stories no Instagram, marcando o perﬁl @comp.setrem, ou publi-
+cação no LinkedIn). (Seção em desenvolvimento: anexar os comprovantes das publi-
+cações e demais evidências.)
+
+
+## Página 26
+
+4 CONSIDERAÇÕES FINAIS
+Este trabalho teve como objetivo consolidar o robô Atlas como uma solução
+computacional orientada a objetos voltada à coleta, ao armazenamento e à análise de
+dados reais de telemetria, aplicando de forma integrada os fundamentos de Programa-
+ção Orientada a Objetos, Banco de Dados, Estatística e Gerenciamento de Projetos.
+Até a presente etapa, encontram-se implementados o aplicativo de controle,
+os serviços embarcados de orquestração, o armazenamento da telemetria em banco
+de dados de séries temporais e a interface de leitura desses dados, com a corretude
+apoiada em testes automatizados executáveis sem o robô físico. (A completar: retomar
+os principais resultados do Capítulo 3.)
+Quanto aos objetivos especíﬁcos, (a completar: indicar quais foram plenamente
+atendidos e quais permanecem em andamento – em especial a etapa de análise es-
+tatística).
+Reconhecem-se, ainda, as limitações já apontadas no Capítulo 3, com desta-
+que para a análise estatística dos dados coletados, principal lacuna identiﬁcada e foco
+da etapa ﬁnal do projeto.
+Como trabalhos futuros, indicam-se a continuidade da coleta e da análise de
+dados, o reﬁnamento das técnicas estatísticas aplicadas, a evolução da solução de
+software e a maior integração entre o assistente de voz (atlas_ai_v2) e o restante da
+plataforma, além dos demais itens identiﬁcados ao longo do desenvolvimento.
+
+
+## Página 27
+
+REFERÊNCIAS
+BUSSAB, W. d. O.; MORETTIN, P. A. Estatística básica. 9. ed. São Paulo: Saraiva,
+2017.
+DEITEL, P.; DEITEL, H. Java: como programar. 10. ed. São Paulo: Pearson
+Education do Brasil, 2016.
+ELMASRI, R.; NAVATHE, S. B. Sistemas de banco de dados. 6. ed. São Paulo:
+Pearson Addison Wesley, 2011.
+GAMMA, E. et al. Padrões de projeto: soluções reutilizáveis de software
+orientado a objetos. Porto Alegre: Bookman, 2000.
+MORETTIN, P. A.; TOLOI, C. M. d. C. Análise de séries temporais: modelos
+lineares univariados. 3. ed. São Paulo: Blucher, 2018.
+PRIKLADNICKI, R. et al. Métodos ágeis para desenvolvimento de software. Porto
+Alegre: Bookman, 2014.
+SOMMERVILLE, I. Engenharia de software. 10. ed. São Paulo: Pearson Education
+do Brasil, 2018.

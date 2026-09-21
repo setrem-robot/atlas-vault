@@ -1,0 +1,185 @@
+{
+  "sha": "710546172a38294bc8c1ef4fda42855bec78c034",
+  "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/710546172a38294bc8c1ef4fda42855bec78c034",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "106040f5f2ecd872af9f92a8b6cd5cc5f5717468",
+      "size": 97,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/106040f5f2ecd872af9f92a8b6cd5cc5f5717468"
+    },
+    {
+      "path": "agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28980186238264196345bcc8e89cab9eca87934b",
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/28980186238264196345bcc8e89cab9eca87934b"
+    },
+    {
+      "path": "agents/CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8b22c98ee4e60a209e9b75b0a46dcf32a2fb9c9",
+      "size": 5418,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/b8b22c98ee4e60a209e9b75b0a46dcf32a2fb9c9"
+    },
+    {
+      "path": "agents/mapa_repositorio.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "174311ded27fd1255174d7566a0e0c507a908dab",
+      "size": 17029,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/174311ded27fd1255174d7566a0e0c507a908dab"
+    },
+    {
+      "path": "bib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c72768ba3ddf025a70727884334d96ae502aa66",
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/7c72768ba3ddf025a70727884334d96ae502aa66"
+    },
+    {
+      "path": "bib/bibliography.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "838d7c1b4b786c17a718d43ff5eaf20e57567f76",
+      "size": 2078,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/838d7c1b4b786c17a718d43ff5eaf20e57567f76"
+    },
+    {
+      "path": "img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/d564d0bc3dd917926892c55e3706cc116d5b165e"
+    },
+    {
+      "path": "img/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "main.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a67c8df04393c2d20a6bb5a680d5e35ae11e5837",
+      "size": 100485,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/a67c8df04393c2d20a6bb5a680d5e35ae11e5837"
+    },
+    {
+      "path": "main.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1ba31d76f592c36794e1c0931d6136c11e4764a",
+      "size": 8198,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/f1ba31d76f592c36794e1c0931d6136c11e4764a"
+    },
+    {
+      "path": "main.xdv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a27c7249edae3efe43b83125d1c2766ef7ba665",
+      "size": 114240,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/7a27c7249edae3efe43b83125d1c2766ef7ba665"
+    },
+    {
+      "path": "pdfs auxiliares",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be024e15760415123c947b8c1bd02ddcd21d6b5a",
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/be024e15760415123c947b8c1bd02ddcd21d6b5a"
+    },
+    {
+      "path": "pdfs auxiliares/Projeto Interdisciplinar de Extensão III.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60fb9ceb25368d0e4e0f2ec6519609b448b4eba7",
+      "size": 434732,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/60fb9ceb25368d0e4e0f2ec6519609b448b4eba7"
+    },
+    {
+      "path": "pdfs auxiliares/ROTEIRO PIE IV.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d085dafaa09074d26e632e09e6ccb548aec9a96e",
+      "size": 152661,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/d085dafaa09074d26e632e09e6ccb548aec9a96e"
+    },
+    {
+      "path": "template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55b1f9563bb89b95757334a666f944da9a9d1d22",
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/55b1f9563bb89b95757334a666f944da9a9d1d22"
+    },
+    {
+      "path": "template/Cabecalho-Faculdade-2025.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52bd6b5ca6d421719deef9ac0c9704a3a380903a",
+      "size": 24366,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/52bd6b5ca6d421719deef9ac0c9704a3a380903a"
+    },
+    {
+      "path": "template/setrem.sty",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f69fdce98e740454f3cba4db07c4c5ffec027c51",
+      "size": 8118,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/f69fdce98e740454f3cba4db07c4c5ffec027c51"
+    },
+    {
+      "path": "tex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "593026dbf468d09a8eebf50c95eb246e6053cb9d",
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/trees/593026dbf468d09a8eebf50c95eb246e6053cb9d"
+    },
+    {
+      "path": "tex/cap1.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d2955d99b245220519f7ec5eb7b04fb18b3227e",
+      "size": 13063,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/5d2955d99b245220519f7ec5eb7b04fb18b3227e"
+    },
+    {
+      "path": "tex/cap2.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43d12d527195dae42e61c4a3882a28c3351b157e",
+      "size": 15925,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/43d12d527195dae42e61c4a3882a28c3351b157e"
+    },
+    {
+      "path": "tex/cap3.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f6a004cc4c937fb0218abcf25be158ab9bf0bc",
+      "size": 7154,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/70f6a004cc4c937fb0218abcf25be158ab9bf0bc"
+    },
+    {
+      "path": "tex/conclusao.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b3b6785bc8d187db34b5fd56a3554f2e131428",
+      "size": 1753,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/67b3b6785bc8d187db34b5fd56a3554f2e131428"
+    },
+    {
+      "path": "tex/intro.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86bc5740498bd4c3e68b12591b03ba4f3f5153eb",
+      "size": 3221,
+      "url": "https://api.github.com/repos/setrem-robot/doc-interdisciplinar-4-semestre/git/blobs/86bc5740498bd4c3e68b12591b03ba4f3f5153eb"
+    }
+  ],
+  "truncated": false
+}

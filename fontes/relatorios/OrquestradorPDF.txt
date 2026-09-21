@@ -1,0 +1,1429 @@
+## Página 1
+
+KAUÃ RAMBO, EDUARDO AUGUSTO GOETZ, THALES GABRIEL FERNANDES
+DINIZ MARTINS
+CONECTIVIDADE WIFI, BLUETOOTH E GPS DE ROBÔ SOCIAL UTILIZANDO
+RASPBERRY PI
+Três de Maio
+2026
+
+
+## Página 2
+
+KAUÃ RAMBO, EDUARDO AUGUSTO GOETZ, THALES GABRIEL FERNANDES
+DINIZ MARTINS
+CONECTIVIDADE WIFI, BLUETOOTH E GPS DE ROBÔ SOCIAL UTILIZANDO
+RASPBERRY PI
+Trabalho Interdisciplinar de Extensão V do
+Curso de Engenharia da Computação da
+Sociedade Educacional Três de Maio.
+Três de Maio
+2026
+
+
+## Página 3
+
+LISTA DE ABREVIATURAS E SIGLAS
+SETREM
+Sociedade Educacional Três de Maio
+IA
+Inteligência Artificial
+GPS
+Sistema de Posicionamento Global (Global Positioning System)
+
+
+## Página 4
+
+LISTA DE TABELAS
+Tabela 1 – Tabela dos orçamentos do projeto. . . . . . . . . . . . . . . . . . . .
+12
+Tabela 2 – Tabela do cronograma de atividades . . . . . . . . . . . . . . . . . .
+12
+Tabela 3 – Mapeamento de tópicos para telemetria em nuvem . . . . . . . . . .
+33
+
+
+## Página 5
+
+SUMÁRIO
+INTRODUÇÃO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+1
+PLANO DE ESTUDO E PESQUISA . . . . . . . . . . . . . . . . . . .
+9
+1.1
+TEMA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+1.1.1
+Delimitação do Tema
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+1.2
+OBJETIVO GERAL . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+1.2.1
+Objetivos Específicos . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+1.3
+PROBLEMA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.4
+JUSTIFICATIVA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.5
+METODOLOGIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.5.1
+Abordagem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+1.5.2
+Procedimentos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+1.5.3
+Técnicas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+1.6
+ORÇAMENTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+1.7
+CRONOGRAMA DE ATIVIDADES . . . . . . . . . . . . . . . . . . . .
+12
+2
+FUNDAMENTAÇÃO TEÓRICA
+. . . . . . . . . . . . . . . . . . . . .
+13
+2.1
+FLUTTER E LINGUAGEM DART
+. . . . . . . . . . . . . . . . . . . .
+13
+2.2
+ANDROID STUDIO COMO AMBIENTE DE DESENVOLVIMENTO . .
+13
+2.3
+BLUETOOTH E PERFIL SPP(SERIAL PORT PROFILE) . . . . . . .
+14
+2.4
+CONSUMO DE BATERIA EM APLICAÇÕES BLUETOOTH . . . . . .
+15
+2.5
+SISTEMA DE POSICIONAMENTO GLOBAL (GPS) E O PROTOCOLO
+NMEA
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+2.6
+RASPBERRY PI 5 COMO UNIDADE DE PROCESSAMENTO EM-
+BARCADO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2.7
+OPENSTREETMAP E A BIBLIOTECA FLUTTER_MAP . . . . . . . .
+17
+2.8
+BIBLIOTECA FLUTTER_BLUETOOTH_SERIAL . . . . . . . . . . . .
+18
+2.9
+ROBÓTICA SOCIAL
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+2.9.1
+Aplicações em Espaços Educacionais e Públicos . . . . . . . . .
+19
+2.10
+INTERAÇÃO HUMANO-ROBÔ
+. . . . . . . . . . . . . . . . . . . . .
+20
+2.10.1
+Dimensões da Interação Humano-Robô . . . . . . . . . . . . . . .
+21
+
+
+## Página 6
+
+2.10.2
+Proxêmica na Interação com Robôs
+. . . . . . . . . . . . . . . . .
+21
+2.10.3
+Aceitação e Percepção Social de Robôs . . . . . . . . . . . . . . .
+22
+3
+RESULTADOS
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.1
+ARQUITETURA DO APLICATIVO . . . . . . . . . . . . . . . . . . . .
+23
+3.2
+CONFIGURAÇÃO DO AMBIENTE
+. . . . . . . . . . . . . . . . . . .
+23
+3.3
+CRIAÇÃO DO PROJETO E INTEGRAÇÃO DOS ARQUIVOS
+. . . .
+24
+3.4
+PROBLEMAS COM DEPENDÊNCIAS E COMPATIBILIDADE
+. . . .
+24
+3.4.1
+Decisões Arquiteturais Durante o Desenvolvimento . . . . . . . .
+24
+3.5
+IMPLEMENTAÇÃO DAS TELAS . . . . . . . . . . . . . . . . . . . . .
+25
+3.5.1
+Tela de Bluetooth (Bluetooth Screen) . . . . . . . . . . . . . . . . .
+25
+3.5.2
+Tela de Controle (Control Screen) . . . . . . . . . . . . . . . . . . .
+26
+3.5.3
+Comunicação Bluetooth e Envio de Comandos . . . . . . . . . . .
+27
+3.5.4
+Configurações das Permissões para Android . . . . . . . . . . . .
+28
+3.5.5
+Geração do APK e Instalação
+. . . . . . . . . . . . . . . . . . . . .
+28
+3.5.6
+Testes e Validação . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+3.5.7
+Limitações Identificadas no Aplicativo . . . . . . . . . . . . . . . .
+29
+3.6
+ARQUITETURA GERAL DE COMUNICAÇÃO . . . . . . . . . . . . .
+30
+3.7
+CONECTIVIDADE BLUETOOTH
+. . . . . . . . . . . . . . . . . . . .
+31
+3.8
+CONECTIVIDADE WI-FI . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+3.9
+GPS
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+3.10
+TELEMETRIA E PERSISTÊNCIA EM NUVEM . . . . . . . . . . . . .
+33
+3.11
+PAINEL WEB DE VISUALIZAÇÃO DA LOCALIZAÇÃO
+. . . . . . . .
+34
+4
+CONCLUSÃO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+4.1
+TRABALHOS FUTUROS . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+REFERÊNCIAS
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+
+
+## Página 7
+
+RESUMO
+Este trabalho propõe a implementação de conectividade Wifi, Bluetooth e ras-
+tramento GPS em um robô de interação social utilizando uma RaspBerry Pi 5 e um
+módulo GPS.
+
+
+## Página 8
+
+ABSTRACT
+This work proposes the implementation of Wifi, Bluetooth and GPS tracking
+connectivity in a social interaction robot using a Raspberry Pi 5 and an GPS module.
+
+
+## Página 9
+
+INTRODUÇÃO
+A robótica social tem emergido como um campo de crescente interesse tecno-
+lógico e acadêmico, impulsionado pelos avanços recentes em inteligência artificial e
+pela popularização de plataformas de hardware aberto. Robôs capazes de interagir
+com pessoas de forma natural deixaram de ser exclusividade de grandes laboratórios
+de pesquisa e passaram a ser viáveis em projetos de menor escala, graças à disponi-
+bilidade de modelos de linguagem acessíveis e de plataformas embarcadas como o
+Raspberry Pi 5.
+O presente projeto propõe o desenvolvimento de um robô de interação social
+capaz de transitar pelo ambiente da instituição sob controle remoto de um operador via
+aplicativo mobile, abordando pessoas e mantendo conversas por meio de um sistema
+de inteligência artificial. O núcleo computacional do sistema é o Raspberry Pi 5, ao
+qual são integrados módulos de comunicação Wi-Fi e Bluetooth, além de um módulo
+GPS para rastreamento da trajetória percorrida. O sistema é complementado por um
+site para visualização em tempo real dos dados coletados, centralizando informações
+de localização e status operacional do robô.
+A escolha do Raspberry Pi 5 justifica-se pelo seu poder de processamento
+superior às gerações anteriores, pela ampla compatibilidade com módulos externos e
+pela vasta documentação disponível na comunidade. A comunicação Bluetooth garante
+controle responsivo e de baixa latência pelo operador, enquanto a conectividade Wi-
+Fi viabiliza tanto a integração com serviços de IA baseados em nuvem quanto a
+transmissão contínua de dados para o painel de monitoramento.
+
+
+## Página 10
+
+1 PLANO DE ESTUDO E PESQUISA
+1.1
+Tema
+Implementação de conectividade sem fio (Wi-Fi, Bluetooth e GPS) em robô de
+controle remoto para interações sociais em ambiente institucional utilizando Raspberry
+Pi 5.
+1.1.1
+Delimitação do Tema
+O projeto foca na implentação de conectividade Wifi, conexão Bluetooth e rastre-
+amento GPS em um robô que irá transitar e interagir com os estudantes da instituição
+da SETREM.
+1.2
+Objetivo Geral
+Desenvolver e validar um sistema de conectividade e monitoramento para um
+robô social institucional, utilizando Raspberry Pi 5, comunicação Wi-Fi e Bluetooth,
+módulo GPS, aplicativo mobile e painel web, permitindo controle remoto, rastreamento
+da trajetória e suporte à interação com usuários em ambiente real da SETREM.
+1.2.1
+Objetivos Específicos
+1. Implementação de um aplicativo para controlar a movimentação do robô via
+Bluetooth.
+2. Criação de um site para visualizar os dados adquiridos pelo robô.
+3. Integração de um módulo GPS ao Raspberry Pi 5 para registro e transmissão em
+tempo real da trajetória percorrida pelo robô.
+4. Configuração da comunicação Wi-Fi para integração do robô com serviços de
+IA em nuvem e transmissão contínua de dados ao painel de monitoramento.
+
+
+## Página 11
+
+10
+Desenvolvimento de um sistema de controle de motores para a movimentação do
+robô.
+5. Validação do sistema em ambiente real, avaliando a estabilidade da comunicação,
+a qualidade das interações e o desempenho geral do robô em condições de uso.
+1.3
+Problema
+As instituições de ensino e organizações em geral buscam formas inovadoras
+de promover interação, disseminar informações e engajar pessoas em seus ambientes
+físicos. As soluções tradicionais de atendimento e comunicação presencial apresentam
+limitações quanto à disponibilidade, escalabilidade e experiência do usuário. Nesse
+cenário, surge a seguinte questão: como desenvolver uma plataforma robótica de
+baixo custo, baseada em Raspberry Pi 5, capaz de transitar pelo ambiente institucional
+sob controle remoto via aplicativo mobile e interagir com as pessoas por meio de
+conversação com inteligência artificial, integrando conectividade Wi-Fi, Bluetooth e
+rastreamento GPS de forma estável e eficiente?
+1.4
+Justificativa
+O avanço das tecnologias de inteligência artificial, em especial dos modelos de
+linguagem natural, aliado à popularização de plataformas embarcadas de baixo custo
+como o Raspberry Pi, abre caminho para o desenvolvimento de robôs sociais acessíveis
+e funcionalmente relevantes. A combinação de mobilidade controlada remotamente
+via Bluetooth com a capacidade de manter conversas naturais por IA representa uma
+proposta inovadora para o contexto institucional, podendo ser aplicada em recepções,
+corredores, eventos e outros espaços de circulação de pessoas. Além da interação
+conversacional, o sistema proposto integra rastreamento GPS para registro da trajetória
+percorrida e conectividade Wi-Fi para transmissão de dados em tempo real, compondo
+uma solução tecnológica completa. O desenvolvimento de um aplicativo mobile para
+controle do robô e de um site para visualização dos dados coletados complementa o
+escopo do projeto.
+1.5
+Metodologia
+O processo será constituído por múltiplas etapas que serão distribuídas entre os
+membros do projeto.
+
+
+## Página 12
+
+11
+A primeira etapa compreende a configuração do ambiente de desenvolvimento
+no Raspberry Pi 5, incluindo a instalação do sistema operacional, atualização de
+dependências e habilitação das interfaces de comunicação necessárias. Nessa fase
+também será definida a arquitetura geral do sistema, incluindo a escolha do modelo ou
+serviço de inteligência artificial a ser utilizado para a conversação — podendo ser um
+modelo executado localmente no dispositivo ou integrado via API a um serviço externo
+através da conexão Wi-Fi.
+Em seguida, será realizada a integração do módulo GPS, com o desenvolvimento
+dos scripts de leitura e parsing das coordenadas geográficas via protocolo serial. A
+configuração da conectividade Wi-Fi terá foco na estabilidade da conexão em rede local
+institucional, viabilizando tanto a comunicação com serviços de IA em nuvem quanto a
+transmissão de dados para o servidor e o site de visualização.
+Para o Bluetooth, será implementado um serviço de comunicação responsável
+por receber os comandos de controle enviados pelo aplicativo mobile e traduzi-los em
+movimentação do robô, com ênfase na minimização da latência para garantir uma
+experiência de controle fluida ao operador.
+O aplicativo mobile será desenvolvido com foco na interface de controle direcional
+via Bluetooth, oferecendo ao operador uma forma intuitiva de guiar o robô pelo ambiente
+institucional. O site de visualização exibirá os dados de localização GPS e o status
+operacional do robô, consumindo uma API hospedada no próprio Raspberry Pi ou em
+um servidor local.
+Por fim, serão realizados testes integrados em campo, dentro do ambiente
+institucional, avaliando a qualidade das interações com pessoas, a estabilidade das
+conexões, a precisão do rastreamento GPS, a latência no controle via Bluetooth e a
+responsividade da interface web, com os resultados sendo documentados para análise
+e conclusão do projeto.
+1.5.1
+Abordagem
+O projeto se classifica como quantitativo, por ter coleta de dados mensuraveis
+como coordenadas de GPS e intesidade de sinal Wifi/Bluetooth.
+1.5.2
+Procedimentos
+O projeto se classifica como experimental, por se tratar da implementação de
+conectividade para um robô em ambiente real com teste sob condições controladas.
+
+
+## Página 13
+
+12
+1.5.3
+Técnicas
+Nesse projeto teremos a coletada de dados por sensores (Wifi, Bluetooth, GPS),
+também serão feitos testes em campo e a construção do robô com Software e Hardware.
+1.6
+Orçamento
+Tabela 1 – Tabela dos orçamentos do projeto.
+Item
+Quantidade
+Valor Unitário
+Raspberry Pi 5 - 8GB
+1
+R$ 1755,00
+Módulo GPS
+1
+R$ 40,00
+ESP32
+1
+R$ 45,00
+Soma Total
+R$ 1840,00
+Fonte: RAMBO, GOETZ, MARTINS (2026).
+1.7
+Cronograma de Atividades
+Tabela 2 – Tabela do cronograma de atividades
+Atividades
+Mês
+Responsáveis
+Configuração do Raspberry Pi 5 (SO, SSH,
+dependências)
+Abril
+Thales
+Levantamento de requisitos e definição da ar-
+quitetura do sistema
+Abril
+Todos
+Configuração e testes da conexão Wi-Fi
+Abril/Maio
+Thales
+Integração do módulo GPS (leitura serial, par-
+sing NMEA)
+Abril/Maio
+Eduardo
+Configuração do serviço Bluetooth (parea-
+mento e controle)
+Abril/Maio
+Thales
+Desenvolvimento da API / servidor local no
+Raspberry Pi
+Maio
+Eduardo
+Desenvolvimento do site de visualização de
+dados (GPS e status)
+Maio
+Kauã
+Desenvolvimento do aplicativo mobile (con-
+trole via Bluetooth)
+Maio
+Kauã
+Testes integrados em campo (Wi-Fi, GPS, Blu-
+etooth)
+Maio
+Todos
+Correções, ajustes finais e validação do sis-
+tema
+Maio
+Todos
+Redação e revisão do documento científico
+final
+Maio
+Todos
+Apresentação e entrega final do projeto
+Maio
+Todos
+Fonte: RAMBO, GOETZ, MARTINS (2026).
+
+
+## Página 14
+
+2 FUNDAMENTAÇÃO TEÓRICA
+2.1
+Flutter e Linguagem Dart
+O Flutter é um framework de desenvolvimento de interfaces gráficas criado pela
+Google e lançado oficialmente em 2018. Sua principal característica é permitir que
+um único código-fonte seja compilado para diferentes plataformas, incluindo Android,
+iOS, Web e desktop, sem a necessidade de reescrever a aplicação para cada ambiente
+(Google LLC, 2024b). No contexto deste projeto, o Flutter foi escolhido como tecnologia
+central para o desenvolvimento do aplicativo móvel de rastreamento GPS, pois oferece
+alta performance e uma vasta coleção de componentes visuais prontos, denominados
+widgets, que facilitam a construção de interfaces ricas e responsivas.
+O Flutter é fundamentado na linguagem de programação Dart, também desen-
+volvida pela Google. O Dart é uma linguagem orientada a objetos com tipagem estática
+opcional, cujo design foi pensado para aplicações cliente com foco em desempenho
+e produtividade. Uma das principais vantagens do Dart no contexto de aplicações
+móveis é a compilação AOT (Ahead-of-Time), que transforma o código em binário
+nativo antes da execução, resultando em tempos de inicialização mais curtos e menor
+consumo de recursos do dispositivo. Além disso, durante o desenvolvimento, o Dart
+opera no modo JIT (Just-in-Time), possibilitando o recurso de Hot Reload, que atualiza
+a interface do aplicativo em frações de segundo sem reiniciar a aplicação, acelerando
+consideravelmente o ciclo de testes e correções (WINDMILL, 2020).
+No projeto do rastreador GPS, o Dart e o Flutter são utilizados para estruturar
+toda a lógica de comunicação Bluetooth, o processamento dos dados recebidos do
+módulo GPS e a renderização das telas do aplicativo, incluindo a visualização de
+coordenadas e o mapa interativo.
+2.2
+Android Studio como Ambiente de Desenvolvimento
+O Android Studio é o ambiente de desenvolvimento integrado (IDE) oficial para
+aplicações Android, desenvolvido pela Google com base na plataforma IntelliJ IDEA.
+
+
+## Página 15
+
+14
+Ele oferece um conjunto abrangente de ferramentas voltadas ao desenvolvimento,
+depuração e teste de aplicativos para o sistema operacional Android, incluindo emula-
+dores de dispositivos virtuais, analisadores de desempenho e um editor de código com
+suporte a autocompletar, refatoração e detecção de erros em tempo de escrita (Google
+LLC, 2024a).
+Embora o Flutter seja compatível com diferentes editores de código, o Android
+Studio é a IDE mais completa para o desenvolvimento com esse framework, uma vez
+que oferece integração nativa com o plugin Flutter e com o SDK do Android, que é
+necessário para compilar e instalar o aplicativo em dispositivos físicos ou emuladores.
+No desenvolvimento deste projeto, o Android Studio foi utilizado como principal ambiente
+de trabalho, fornecendo suporte à compilação do código Dart, ao gerenciamento de
+dependências e à execução do aplicativo em um dispositivo Android real para validar a
+comunicação Bluetooth com o Raspberry Pi 5.
+Um aspecto relevante do uso do Android Studio neste contexto é a configura-
+ção do arquivo de manifesto da aplicação Android, o AndroidManifest.xml, onde são
+declaradas as permissões necessárias para que o aplicativo acesse os recursos de
+hardware do dispositivo, como Bluetooth e localização geográfica. Sem essas declara-
+ções explícitas, o sistema operacional Android bloqueia o acesso a tais recursos por
+questões de segurança e privacidade do usuário.
+2.3
+Bluetooth e Perfil SPP(Serial Port Profile)
+O Bluetooth é uma tecnologia de comunicação sem fio de curto alcance, pa-
+dronizada pelo IEEE 802.15.1 e mantida pela Bluetooth Special Interest Group (SIG).
+Ele opera na faixa de frequência de 2,4 GHz, a mesma utilizada por redes Wi-Fi e
+outros dispositivos, utilizando a técnica de salto de frequência adaptativo (FHSS) para
+reduzir interferências. Originalmente criado para substituir cabos em comunicações de
+curta distância, o Bluetooth evoluiu ao longo de suas versões e hoje está presente em
+praticamente todos os dispositivos eletrônicos pessoais, como smartphones, fones de
+ouvido, relógios inteligentes e computadores de placa única (BISDIKIAN, 2001).
+Para este projeto, foi adotado o Bluetooth Clássico, especificamente o perfil
+SPP, do inglês Serial Port Profile. O SPP emula uma conexão de porta serial sobre o
+protocolo Bluetooth, permitindo que dois dispositivos troquem dados de forma contínua
+e bidirecional, da mesma maneira que fariam por meio de um cabo serial físico. Essa
+abordagem é particularmente adequada para o envio de dados de telemetria GPS, pois
+o módulo instalado no Raspberry Pi envia sequências de texto de forma periódica, e
+o perfil SPP garante que esses dados cheguem ao aplicativo de maneira ordenada e
+sem a necessidade de um protocolo de comunicação adicional.
+
+
+## Página 16
+
+15
+A comunicação SPP é estabelecida por meio do protocolo RFCOMM, que opera
+sobre a camada L2CAP do Bluetooth e fornece um canal de dados confiável com
+controle de fluxo (Bluetooth Special Interest Group, 2021). No lado do Raspberry Pi,
+o serviço Bluetooth é registrado com um identificador universal único (UUID) corres-
+pondente ao perfil SPP, tornando-o detectável pelo aplicativo. No lado do smartphone
+Android, o aplicativo busca por dispositivos previamente pareados, estabelece a co-
+nexão RFCOMM e passa a ouvir o fluxo de dados de forma assíncrona, processando
+cada linha recebida como um conjunto de informações GPS codificadas em formato
+JSON.
+2.4
+Consumo de Bateria em Aplicações Bluetooth
+O consumo de energia é um fator crítico no desenvolvimento de aplicações
+móveis que fazem uso intensivo de hardware, como é o caso de sistemas de rastrea-
+mento GPS com comunicação Bluetooth. Em dispositivos móveis, a bateria é o recurso
+mais limitado, e aplicações que mantêm conexões ativas de rádio por longos períodos
+tendem a drenar a carga de forma significativamente mais rápida do que aplicações
+comuns (CARROLL; HEISER, 2010).
+O Bluetooth Clássico, utilizado neste projeto para a comunicação com o Rasp-
+berry Pi, possui um consumo de energia maior quando comparado ao Bluetooth Low
+Energy (BLE), pois mantém um canal de dados permanentemente ativo durante a
+transmissão (BISDIKIAN, 2001). No contexto de um rastreador GPS, esse comporta-
+mento é inevitável, pois a aplicação depende do recebimento contínuo de posições
+em intervalos curtos para que a trilha do mapa e os dados exibidos na interface sejam
+precisos e atualizados. A gestão desse consumo é feita, em parte, pelo próprio sistema
+operacional Android, que regula o uso do rádio Bluetooth de acordo com as políticas
+de economia de energia do dispositivo.
+Além do Bluetooth, a exibição do mapa em tempo real representa outro fator de
+consumo relevante. O mapa interativo implementado no aplicativo utiliza a biblioteca
+flutter_map em conjunto com tiles do OpenStreetMap, que são imagens carregadas
+da internet sob demanda conforme o usuário navega pela região visualizada. Esse
+processo envolve o uso simultâneo do módulo de rede do dispositivo e do processador
+gráfico, elevando o consumo de energia durante o uso ativo do mapa. Em aplicações
+de rastreamento de campo, é recomendado o uso de fontes de alimentação externas
+ou baterias de maior capacidade para garantir a operação contínua por períodos
+prolongados.
+Do lado do Raspberry Pi 5, o consumo de energia também é um ponto de
+atenção. O Raspberry Pi 5 possui um consumo típico entre 5 W e 12 W dependendo
+
+
+## Página 17
+
+16
+da carga de processamento, o que representa um consumo consideravelmente maior
+do que microcontroladores como o Arduino (Raspberry Pi Ltd, 2024). Em implantações
+móveis, onde o Raspberry Pi será alimentado por bateria, é necessário dimensionar
+corretamente o banco de baterias ou o power bank utilizado, levando em conta tanto
+o consumo do próprio computador de placa única quanto o do módulo GPS e do
+adaptador Bluetooth ativo.
+2.5
+Sistema de Posicionamento Global (GPS) e o Protocolo NMEA
+O Sistema de Posicionamento Global, conhecido pela sigla GPS (Global Positio-
+ning System), é um sistema de radionavegação baseado em satélites, desenvolvido
+e operado pelo Departamento de Defesa dos Estados Unidos. Ele é composto por
+uma constelação de ao menos 24 satélites que orbitam a Terra a aproximadamente
+20.200 km de altitude, transmitindo continuamente sinais de rádio com informações
+de tempo e posição. Um receptor GPS determina sua localização calculando o tempo
+que os sinais levam para chegar de ao menos quatro satélites diferentes, processo
+denominado trilateração (HOFMANN-WELLENHOF et al., 2001).
+Os módulos GPS disponíveis comercialmente, como os baseados no chip u-blox
+NEO-6M, NEO-7M e similares, são circuitos integrados que recebem os sinais dos
+satélites e os processam internamente, fornecendo ao microcontrolador ou computador
+host as coordenadas geográficas já calculadas por meio de uma interface serial. Es-
+ses módulos comunicam suas leituras no formato NMEA 0183, um protocolo aberto
+padronizado pela National Marine Electronics Association que define o formato textual
+das mensagens enviadas pelo dispositivo GPS para o sistema que o utiliza (National
+Marine Electronics Association, 2012).
+As sentenças NMEA mais utilizadas são a GPRMC, que contém latitude, longi-
+tude, velocidade, direção e status do fix, e a GPGGA, que inclui altitude, número de
+satélites visíveis e a qualidade do sinal (National Marine Electronics Association, 2012).
+No aplicativo desenvolvido, o serviço de Bluetooth foi preparado para interpretar tanto
+essas sentenças NMEA diretamente quanto um formato JSON estruturado, que é o
+formato preferencial enviado pelo script Python rodando no Raspberry Pi, por ser mais
+legível e facilmente extensível. Essa dupla compatibilidade torna o sistema mais flexível,
+permitindo que diferentes configurações de hardware e software sejam utilizadas sem
+necessidade de alterar o código do aplicativo.
+
+
+## Página 18
+
+17
+2.6
+Raspberry Pi 5 como Unidade de Processamento Embarcado
+O Raspberry Pi é uma família de computadores de placa única (SBC, do inglês
+Single Board Computer) desenvolvida pela Raspberry Pi Foundation, organização
+sem fins lucrativos do Reino Unido, com o objetivo original de promover o ensino de
+ciências da computação em escolas. Ao longo dos anos, o projeto ganhou enorme
+popularidade entre entusiastas, pesquisadores e profissionais da indústria, tornando-
+se uma das plataformas embarcadas mais utilizadas no mundo para prototipagem e
+desenvolvimento de sistemas (UPTON; HALFACREE, 2016).
+O Raspberry Pi 5, lançado em 2023, representa a geração mais poderosa da
+família, equipado com um processador ARM Cortex-A76 de quatro núcleos a 2,4 GHz,
+até 8 GB de memória RAM LPDDR4X, interface PCIe 2.0, conector dedicado para
+câmera e display, e suporte nativo a Bluetooth 5.0 e Wi-Fi 802.11ac (Raspberry Pi
+Ltd, 2024). Essas características fazem do Raspberry Pi 5 uma plataforma robusta o
+suficiente para executar sistemas operacionais completos baseados em Linux, como
+o Raspberry Pi OS, ao mesmo tempo em que mantém um fator de forma compacto
+adequado para sistemas embarcados e projetos de campo.
+No contexto deste projeto, o Raspberry Pi 5 atua como a unidade central de
+processamento embarcada, responsável por receber os dados brutos do módulo
+GPS via interface serial UART, processar e estruturar essas informações em formato
+JSON e transmiti-las ao aplicativo Android via Bluetooth. A escolha do Raspberry Pi
+5 em relação a alternativas como o Arduino se justifica pela necessidade de executar
+um servidor Bluetooth SPP completo, o que demanda um sistema operacional e
+uma pilha de protocolos mais sofisticada do que microcontroladores simples podem
+oferecer. O script de comunicação é desenvolvido em Python 3, linguagem amplamente
+suportada no ecossistema do Raspberry Pi, utilizando as bibliotecas PyBluez para o
+gerenciamento da comunicação Bluetooth e PyNMEA2 para o parsing das sentenças
+do módulo GPS.
+2.7
+OpenStreetMap e a Biblioteca flutter_map
+O OpenStreetMap, frequentemente abreviado como OSM, é um projeto colabo-
+rativo de mapeamento geográfico iniciado em 2004 no Reino Unido. Ele funciona de
+maneira análoga à Wikipedia, permitindo que qualquer pessoa contribua com dados
+cartográficos, como ruas, edificações, pontos de interesse e fronteiras administrativas.
+O resultado é um mapa mundial detalhado e de livre acesso, disponibilizado sob a
+licença Open Database License (ODbL), o que o torna uma alternativa ao Google Maps
+e ao Bing Maps sem custos de uso ou necessidade de chaves de API para projetos
+
+
+## Página 19
+
+18
+com volumes moderados de requisições (HAKLAY; WEBER, 2008; OpenStreetMap
+Foundation, 2024).
+No aplicativo desenvolvido, a visualização do mapa é realizada pela biblioteca
+flutter_map, uma implementação do protocolo de tiles de mapa para o Flutter baseada
+na biblioteca Leaflet.js (Flutter Map Contributors, 2024). A flutter_map consome os
+tiles de mapa fornecidos pelos servidores do OpenStreetMap, que são imagens no
+formato PNG divididas em quadrantes geográficos organizados por nível de zoom.
+Quando o usuário visualiza o mapa, a biblioteca solicita automaticamente apenas os
+tiles correspondentes à região visível na tela, otimizando o uso de dados de rede e
+memória. Sobre essa base cartográfica, o aplicativo renderiza camadas adicionais,
+como a linha poligonal que representa o trajeto percorrido e o marcador de posição
+atual com indicação de direção, construindo assim uma interface de rastreamento
+funcional e visualmente informativa.
+2.8
+Biblioteca flutter_bluetooth_serial
+O pacote flutter_bluetooth_serial é uma biblioteca para Flutter que abstrai a
+API nativa de Bluetooth Clássico do Android, fornecendo uma interface em Dart para
+operações de listagem de dispositivos pareados, conexão via RFCOMM e troca de
+dados seriais. Ao contrário de bibliotecas focadas em Bluetooth Low Energy (BLE), o
+flutter_bluetooth_serial foi projetado especificamente para comunicação no perfil SPP,
+tornando-o compatível com microcontroladores como o ESP32 que implementam esse
+perfil.
+A adoção desta biblioteca no projeto se justifica pela necessidade de comunica-
+ção via Bluetooth Clássico com o ESP32, protocolo não suportado de forma adequada
+por bibliotecas mais modernas como o flutter_blue_plus, que são orientadas predo-
+minantemente ao BLE. Durante o desenvolvimento, foi necessário realizar correções
+manuais no arquivo de configuração de build da biblioteca, pois esta ainda referenciava
+o repositório jcenter(), descontinuado pela JFrog em 2021, exigindo sua substituição
+pelo repositório mavenCentral() para compatibilidade com as versões atuais do Android
+Gradle Plugin (FOLLY, 2021).
+2.9
+Robótica Social
+A robótica, enquanto disciplina, percorreu um longo caminho desde seus primei-
+ros desenvolvimentos voltados à automação industrial. Contudo, nas últimas décadas,
+um novo paradigma emergiu: o da robótica social, que desloca o foco da execução de
+
+
+## Página 20
+
+19
+tarefas em ambientes controlados para a interação significativa com seres humanos
+em contextos dinâmicos e imprevisíveis (DAUTENHAHN, 2004).
+Diferentemente dos robôs industriais, projetados para operar de forma isolada e
+repetitiva, os robôs sociais são concebidos para se comunicar, aprender e se adaptar
+em resposta às interações humanas (DAUTENHAHN, 2004). Segundo Youssef et al.
+(2022), a robótica social combina robótica e inteligência artificial para criar máquinas
+capazes de interagir socialmente com os seres humanos de maneira semelhante à que
+estes interagem entre si.
+Fong et al. (2003) apresentam uma taxonomia abrangente dos robôs social-
+mente interativos, distinguindo diferentes categorias conforme o grau e a natureza
+da interação que estabelecem com humanos: robôs socialmente evocativos, que ex-
+ploram a tendência humana à antropomorfização; robôs socialmente receptivos, que
+respondem a estímulos sociais sem necessariamente iniciá-los; robôs pró-ativamente
+sociáveis, que iniciam e sustentam interações de forma autônoma; e robôs socialmente
+inteligentes, dotados de modelos cognitivos e emocionais que permitem comportamen-
+tos socialmente contextualizados. O robô social que transita por instituições de ensino
+e interage com estudantes enquadra-se especialmente nas categorias pró-ativamente
+sociável e socialmente receptivo, uma vez que deve tanto iniciar abordagens quanto
+responder de forma adequada aos estímulos do ambiente e das pessoas ao seu redor.
+A obra seminal de Breazeal (2003), ao desenvolver o robô Kismet no MIT, de-
+monstrou que habilidades sociais — expressão facial, modulação de voz, contato visual
+— são elementos centrais para que humanos aceitem e se engajem com máquinas
+de forma natural. Para a autora, um robô verdadeiramente sociável deve ser capaz
+de compreender, comunicar-se e aprender com as pessoas, funcionando não apenas
+como uma ferramenta sofisticada, mas como um parceiro social. Essa perspectiva
+fundamenta o design de robôs destinados a contextos educacionais, onde a qualidade
+da interação é tão relevante quanto a funcionalidade técnica.
+2.9.1
+Aplicações em Espaços Educacionais e Públicos
+A inserção de robôs sociais em instituições educacionais tem crescido de forma
+expressiva. Mubin et al. (2018) revisam o uso de robôs sociais em espaços públicos
+e concluem que a aceitação e a eficácia desses sistemas dependem não apenas de
+capacidades técnicas, mas também do alinhamento com as expectativas e normas
+sociais dos ambientes em que operam. Segundo os autores, robôs projetados sem
+considerar o contexto social tendem a ser percebidos como intrusos, enquanto aqueles
+integrados de forma natural ao cotidiano institucional geram percepções mais positivas.
+No âmbito da educação, Belpaeme et al. (2026) identificam que robôs sociais
+têm sido implantados em instituições de todos os níveis — de creches a universidades
+
+
+## Página 21
+
+20
+— desempenhando funções que vão desde o apoio pedagógico e a terapia assistida
+até a navegação pelo campus e a provisão de informações aos visitantes. Essa versati-
+lidade reflete a capacidade dos robôs sociais de assumirem papéis complementares
+às atividades humanas, sem substituí-las, mas ampliando o alcance dos serviços
+disponibilizados pela instituição.
+Robôs guias em espaços públicos representam uma das aplicações mais conso-
+lidadas da robótica social. Experiências pioneiras como os robôs RHINO e MINERVA,
+que operaram como guias em museus na década de 1990, demonstraram a viabilidade
+de sistemas autônomos capazes de navegar em ambientes dinâmicos e interagir com
+visitantes (MAVROGIANNIS et al., 2023). Esses projetos evidenciaram tanto o potencial
+quanto os desafios da implantação de robôs sociais em espaços com grande circulação
+de pessoas, servindo como referência para projetos subsequentes em outros contextos
+institucionais, incluindo campi universitários.
+2.10
+Interação Humano-Robô
+A Interação Humano-Robô (IHR), do inglês Human-Robot Interaction (HRI),
+é definida por Goodrich e Schultz (2007) como um campo de estudo dedicado à
+compreensão, ao projeto e à avaliação de sistemas robóticos para uso por ou com
+seres humanos. Trata-se de uma área intrinsecamente multidisciplinar, que reúne
+contribuições da psicologia, das ciências cognitivas, das ciências sociais, da inteligência
+artificial, da engenharia e da interação humano-computador (DAUTENHAHN, 2007a).
+O objetivo central da IHR, conforme Dautenhahn (2007a), é dotar robôs de
+competências que facilitem sua interação com humanos. Para tanto, a área estuda
+como as pessoas percebem, reagem e se relacionam emocionalmente com sistemas
+robóticos, buscando tornar a interação mais eficaz, intuitiva e confortável. A autora
+identifica quatro paradigmas consolidados no campo: o robô como ferramenta, como
+extensão do corpo humano (cyborg), como avatar e como parceiro sociável — sendo
+este último o que fundamenta os robôs sociais projetados para ambientes educacionais.
+A relevância da IHR tem aumentado na medida em que os robôs se tornam mais
+presentes no cotidiano. Quando eram raros, eventuais limitações na interação podiam
+ser compensadas por treinamento intensivo dos usuários. No entanto, à medida que
+robôs passam a ser encontrados por pessoas comuns em situações do dia a dia, a
+qualidade da interação torna-se um fator determinante para sua aceitação e adoção
+efetiva (DAUTENHAHN, 2007a).
+
+
+## Página 22
+
+21
+2.10.1
+Dimensões da Interação Humano-Robô
+Dautenhahn (2007b) apresenta as dimensões da IHR a partir de dois eixos
+complementares. O primeiro é centrado no humano (human-centred HRI), preocupado
+com como o robô pode cumprir sua função de maneira aceitável e confortável para as
+pessoas, investigando como elas reagem e interpretam a aparência e o comportamento
+do robô. O segundo é centrado no robô, examinando os níveis de inteligência social
+necessários para que o sistema atue de forma autônoma e socialmente contextualizada.
+Essas dimensões impõem requisitos concretos ao design de robôs sociais. Para
+um robô que transita por uma instituição de ensino, isso significa que seu comporta-
+mento deve ser previsível e transparente o suficiente para que os estudantes se sintam
+confortáveis ao interagir com ele, ao mesmo tempo em que o sistema deve possuir
+capacidade suficiente de percepção do ambiente e das pessoas para agir de forma
+pertinente em cada contexto.
+Dautenhahn (2007b) também introduz o conceito de robotiquette — as regras
+sociais de comportamento robótico que são confortáveis e aceitáveis para os humanos.
+A ideia central é que o robô deve adaptar-se às convenções sociais humanas, e não o
+contrário. Isso implica que o sistema deve ser projetado considerando normas culturais
+e contextuais específicas do ambiente onde irá operar, como o ritmo de circulação
+de pessoas, as expectativas em relação a um assistente institucional e os padrões
+comunicativos típicos do público-alvo.
+2.10.2
+Proxêmica na Interação com Robôs
+Um aspecto fundamental da IHR diz respeito ao uso do espaço físico durante
+a interação. O conceito de proxêmica, cunhado pelo antropólogo Hall (1966) em sua
+obra The Hidden Dimension, designa o estudo do uso humano do espaço como
+fenômeno cultural e seus efeitos no comportamento e na comunicação interpessoal.
+Hall identificou quatro zonas de distância interpessoal na cultura norte-americana:
+íntima (0 a 45 cm), pessoal (45 cm a 1,2 m), social (1,2 m a 3,6 m) e pública (acima de
+3,6 m), ressaltando que essas distâncias variam significativamente entre culturas.
+A proxêmica foi incorporada à robótica social como um parâmetro de design
+essencial. Estudos em IHR demonstram que robôs que violam as zonas de conforto
+espacial dos usuários — seja por aproximação excessiva ou por manter distâncias
+que dificultam a comunicação — são percebidos negativamente, comprometendo a
+qualidade da interação e reduzindo a disposição das pessoas em interagir com o
+sistema (MAVROGIANNIS et al., 2023). Para um robô que circula por corredores e
+espaços comuns de uma instituição de ensino, o respeito às convenções proxêmicas é,
+portanto, um requisito de projeto tanto técnico quanto social.
+
+
+## Página 23
+
+22
+A navegação social (social navigation), campo que estuda como robôs podem
+se locomover de forma socialmente adequada em ambientes compartilhados com hu-
+manos, baseia-se diretamente nos princípios proxêmicos de Hall. Um robô socialmente
+consciente deve ser capaz de interpretar o movimento das pessoas ao redor, prever
+trajetórias e adaptar seu próprio deslocamento para evitar invadir espaços pessoais,
+respeitar filas e grupos de conversação, e sinalizar suas intenções de movimento de
+forma compreensível aos pedestres próximos (MAVROGIANNIS et al., 2023).
+2.10.3
+Aceitação e Percepção Social de Robôs
+A aceitação de robôs sociais por parte dos usuários é um tema central na IHR,
+influenciada por fatores que vão desde a aparência física do robô até a qualidade e
+naturalidade de seus comportamentos interativos. Breazeal (2003) demonstrou que
+robôs capazes de demonstrar habilidades sociais básicas — como responder a ex-
+pressões faciais, manter contato visual e modular o tom de voz — desempenham um
+papel relevante não apenas nas interações em si, mas também no aprendizado, na
+manutenção da atenção e na construção de vínculos com os usuários ao longo do
+tempo.
+Estudos com estudantes revelam que a percepção de um robô como ser social
+depende fortemente de sua capacidade de adaptar a comunicação a cada interlocutor
+individualmente (LETENDRE; GRAY, 2023). Robôs que recitam informações de forma
+genérica, sem demonstrar atenção ao contexto específico da conversa, tendem a ser
+percebidos como menos sociais e menos úteis, mesmo quando tecnicamente funcionais.
+Isso reforça a importância de capacidades de síntese de voz contextualizada e de
+diálogo adaptativo no design de robôs destinados a interagir com estudantes.
+
+
+## Página 24
+
+3 RESULTADOS
+3.1
+Arquitetura do Aplicativo
+O aplicativo foi estruturado seguindo o padrão de separação de responsabilida-
+des, dividindo o código em três camadas principais:
+• Telas (screens): responsáveis pela interface visual e interação com o usuário.
+• Serviços (services): responsáveis pela lógica de negócio, neste caso a comunica-
+ção Bluetooth.
+• Ponto de entrada (main.dart): configuração do tema, orientação da tela e iniciali-
+zação do aplicativo.
+Essa organização facilita a manutenção e a evolução do projeto, permitindo que
+futuras melhorias na interface sejam feitas sem alterar a lógica de comunicação, e
+vice-versa.
+3.2
+Configuração do Ambiente
+A configuração do ambiente de desenvolvimento representou a primeira etapa
+e também um dos maiores desafios do projeto. O processo envolveu a instalação do
+Flutter SDK, do Android Studio (para obtenção do Android SDK), do VS Code com a
+extensão Flutter, e a configuração das variáveis de ambiente do sistema operacional
+Windows.
+Um problema recorrente nessa etapa foi a ausência do Flutter SDK na variável
+PATH do sistema, o que impedia o reconhecimento do comando flutter no terminal. A
+solução consistiu em adicionar manualmente o caminho da pasta bin do Flutter nas
+variáveis de ambiente do Windows, conforme orientações da documentação oficial.
+Após a instalação, o comando flutter doctor foi utilizado para diagnosticar o
+ambiente. Foram identificadas e resolvidas as seguintes pendências: instalação do
+
+
+## Página 25
+
+24
+componente Android SDK Command-line Tools pelo SDK Manager do Android Studio,
+e aceitação das licenças do Android via flutter doctor –android-licenses.
+Adicionalmente, foi necessário ativar o Modo Desenvolvedor do Windows, exigido
+pelo Flutter para criar links simbólicos entre os pacotes de plugins durante o build.
+3.3
+Criação do Projeto e Integração dos Arquivos
+O projeto foi iniciado com o comando flutter create robot_controller, que gerou a
+estrutura base com os arquivos de configuração Android e iOS já no formato atualizado
+para o Flutter 3.44. Em seguida, os arquivos de código-fonte desenvolvidos (pasta lib,
+pubspec.yaml e AndroidManifest.xml) foram integrados ao projeto gerado.
+Essa abordagem de usar o flutter create como base e substituir apenas os
+arquivos de código foi adotada após identificar que os arquivos de configuração Android
+gerados manualmente estavam no formato legado, incompatível com as versões mais
+recentes do Gradle e do Android Gradle Plugin (AGP).
+3.4
+Problemas com Dependências e Compatibilidade
+O desenvolvimento enfrentou um conjunto significativo de problemas relaciona-
+dos à compatibilidade entre versões de bibliotecas e ferramentas. O principal deles
+foi o uso inicial do pacote flutter_bluetooth_serial, que se mostrou incompatível com
+o AGP 9+ e com o Gradle moderno utilizado pelo Flutter 3.44. O pacote utilizava o
+método jcenter() para resolução de dependências, que foi descontinuado pelo Goo-
+gle. A solução adotada foi migrar para o pacote flutter_blue_plus, mais moderno e
+ativamente mantido, que utiliza repositórios atualizados (mavenCentral e google) e
+possui suporte nativo para Android 12+ com as permissões BLUETOOTH_CONNECT
+e BLUETOOTH_SCAN.
+Paralelamente, os arquivos de configuração do Gradle (settings.gradle e bu-
+ild.gradle) precisaram ser migrados do formato imperativo legado para o formato de-
+clarativo com bloco plugins, exigido pelo AGP 9+. Essa migração foi necessária para
+eliminar erros relacionados ao método apply script, que não é mais suportado nas
+versões recentes do plugin Flutter para Gradle.
+3.4.1
+Decisões Arquiteturais Durante o Desenvolvimento
+O desenvolvimento do sistema de conectividade ocorreu em paralelo com outras
+frentes do projeto, que foram distribuídas entre equipes com responsabilidades distintas:
+a integração da inteligência artificial ao Raspberry Pi 5 e a construção física da estrutura
+
+
+## Página 26
+
+25
+do robô, incluindo o sistema de acionamento dos motores. Essa divisão, necessária
+para viabilizar o progresso simultâneo das diferentes camadas do sistema, impôs
+restrições práticas que influenciaram diretamente as decisões arquiteturais da frente
+de conectividade.
+Durante o período de desenvolvimento e testes, o Raspberry Pi 5, componente
+central do projeto, operava com alta demanda de processamento e memória em função
+da execução dos modelos de inteligência artificial integrados pela equipe responsável
+por essa camada. Essa condição inviabilizou o uso do hardware principal para os
+testes de conectividade Bluetooth em paralelo, levando à adoção de um Raspberry Pi
+3 como ambiente de validação intermediária dos scripts de comunicação e dos fluxos
+de dados. Embora funcionalmente equivalente para os fins de teste do protocolo serial
+e do barramento MQTT, o Raspberry Pi 3 apresentou limitações de desempenho que
+foram consideradas na análise dos resultados obtidos nessa fase.
+Adicionalmente, a ausência de um canal Bluetooth SPP conveniente e estável
+no Raspberry Pi, combinada com a necessidade de não sobrecarregar o processador
+principal com a gestão direta da interface de rádio, motivou a inclusão do ESP32 como
+gateway de entrada dedicado. Essa decisão, embora tenha introduzido uma camada
+adicional na arquitetura de comunicação e gerado novos desafios de compatibilidade
+no aplicativo mobile, mostrou-se tecnicamente justificada ao desacoplar a recepção de
+comandos Bluetooth do processamento central, contribuindo para a modularidade e a
+robustez do sistema como um todo.
+Por fim, a integração com o sistema de acionamento dos motores, desenvolvido
+pela equipe responsável pela estrutura física do robô, permaneceu como dependência
+externa durante o período de validação do aplicativo. Os testes de conectividade foram
+conduzidos de forma isolada, validando o fluxo de comunicação do aplicativo até o
+barramento MQTT interno, com a integração completa prevista para a fase de testes
+em campo descrita na seção de trabalhos futuros.
+3.5
+Implementação das Telas
+3.5.1
+Tela de Bluetooth (Bluetooth Screen)
+A tela de Bluetooth é a tela inicial do aplicativo. Ela é responsável por solicitar
+as permissões necessárias ao sistema operacional, listar os dispositivos Bluetooth já
+pareados com o celular e permitir que o usuário selecione o ESP32 para estabelecer a
+conexão.
+A listagem é obtida por meio do método FlutterBluetoothSerial.instance. getBon-
+dedDevices(), que retorna os dispositivos previamente pareados no sistema Android. O
+
+
+## Página 27
+
+26
+aplicativo não realiza varredura ativa de dispositivos próximos: o pareamento é feito
+uma única vez pelas configurações do sistema operacional, e a tela apenas apresenta
+os dispositivos já conhecidos. Ao tocar em um dispositivo, o aplicativo estabelece a
+conexão RFCOMM via Bluetooth Clássico e navega automaticamente para a tela de
+controle em caso de sucesso.
+Figura 1 – Tela de Bluetooth do aplicativo
+Fonte: Elaborado pelo autor.
+Um problema identificado nessa tela foi o conflito de nomes entre a classe
+BluetoothService, presente no pacote flutter_blue_plus avaliado em versão anterior do
+projeto, e a classe de mesmo nome criada no projeto. A solução foi renomear a classe
+do projeto para RobotBluetoothService, eliminando a ambiguidade de importação.
+3.5.2
+Tela de Controle (Control Screen)
+A tela de controle exibe um D-pad (direcional digital) com cinco botões: frente, ré,
+esquerda, direita e parar. O comportamento dos botões direcionais foi implementado
+com GestureDetector utilizando os eventos onTapDown e onTapUp, de forma que o
+comando é enviado enquanto o botão está pressionado e o comando de parada (S) é
+enviado automaticamente ao soltar.
+Um indicador de status exibe o comando atual em tempo real, e um botão
+
+
+## Página 28
+
+27
+de desconexão na barra superior permite retornar à tela de Bluetooth encerrando a
+conexão com o dispositivo.
+Figura 2 – Tela de controle com o D-pad direcional
+Fonte: Elaborado pelo autor.
+3.5.3
+Comunicação Bluetooth e Envio de Comandos
+A comunicação com o ESP32 é realizada por meio da classe RobotBlueto-
+othService, que encapsula as operações de conexão, envio de dados e desconexão.
+Estabelecido o canal RFCOMM, o serviço utiliza o fluxo de saída da conexão para
+transmitir os comandos.
+O aplicativo transmite os comandos em formato JSON por linha (NDJSON), com
+cada mensagem codificada em UTF-8 e terminada por quebra de linha, delimitador que
+permite ao receptor identificar o fim de cada mensagem em um fluxo serial contínuo. O
+campo cmd identifica a ação a ser executada:
+• F: mover para frente
+• B: mover para trás (ré)
+• L: girar para a esquerda
+
+
+## Página 29
+
+28
+• R: girar para a direita
+• S: parar todos os motores
+Os comandos direcionais são disparados por eventos onTapDown e liberados
+por onTapUp, de modo que o comando de parada é transmitido automaticamente ao
+soltar o botão, garantindo que o robô não permaneça em movimento caso o operador
+interrompa o toque. O tratamento dado às mensagens após a recepção pelo ESP32 é
+descrito na Seção 3.7.
+3.5.4
+Configurações das Permissões para Android
+Um dos erros mais recorrentes durante os testes foi a exceção SecurityEx-
+ception: Need android.permission.BLUETOOTH_CONNECT, lançada pelo sistema
+Android ao tentar listar dispositivos pareados sem a permissão adequada declarada
+no manifesto. A correção exigiu a adição das permissões BLUETOOTH_CONNECT,
+BLUETOOTH_SCAN e BLUETOOTH_ADVERTISE no arquivo AndroidManifest.xml,
+respeitando as restrições de versão de API para compatibilidade retroativa com Android
+anteriores à versão 12.
+3.5.5
+Geração do APK e Instalação
+A geração do pacote de instalação para Android foi realizada por meio do
+comando flutter build apk–release, que compila o código Dart para código nativo ARM64
+e aplica otimizações automáticas, entre elas o tree-shaking de ícones, que reduziu o
+arquivo de fontes de 1,6 MB para 2,5 KB, resultando no arquivo app-release.apk com
+43,3 MB.
+O pacote gerado foi distribuído a outro integrante da equipe e instalado em um
+segundo aparelho Android, mediante habilitação da opção de instalação de fontes
+desconhecidas nas configurações de segurança do sistema. As validações da versão
+de distribuição foram conduzidas nesse aparelho, conforme descrito na Seção 3.5.6.
+O emprego de um dispositivo distinto daquele utilizado no desenvolvimento permitiu
+verificar que o aplicativo opera de forma independente do ambiente de compilação,
+conectando-se ao ESP32 diretamente via Bluetooth sem qualquer vínculo com o
+computador de desenvolvimento.
+A opção pela distribuição direta via APK, em detrimento de publicação na Google
+Play Store, justifica-se pelo caráter experimental e interno do projeto, que não demanda
+distribuição pública na etapa atual.
+O suporte exclusivo à plataforma Android decorre de uma restrição da própria
+plataforma concorrente: no iOS, o Bluetooth Clássico no perfil SPP não é acessível
+a aplicativos de terceiros, ficando reservado a acessórios certificados pelo programa
+
+
+## Página 30
+
+29
+MFi (Made for iPhone) da Apple. Aplicativos iOS de terceiros têm acesso apenas ao
+Bluetooth Low Energy. Portanto, o porte do aplicativo para iOS exigiria a substituição
+do perfil SPP por BLE em ambas as pontas da comunicação, incluindo alteração do
+firmware do ESP32 — decisão que extrapola o escopo desta frente e é registrada em
+Trabalhos Futuros.
+3.5.6
+Testes e Validação
+Os testes foram realizados diretamente no dispositivo físico Motorola Moto G30
+com Android 12, utilizando o modo de depuração USB durante o desenvolvimento para
+observar os logs em tempo real. O uso de emulador foi descartado por não suportar
+hardware Bluetooth, o que inviabilizaria os testes das funcionalidades principais do
+aplicativo.
+O fluxo de teste contemplou: pareamento do celular com o Raspberry Pi nas
+configurações do Android, abertura do aplicativo e listagem do dispositivo, conexão via
+toque na interface, e envio dos comandos direcionais com verificação do comporta-
+mento dos motores no robô.
+3.5.7
+Limitações Identificadas no Aplicativo
+Do ponto de vista do aplicativo, a arquitetura atual é unidirecional: uma vez
+transmitido o comando pelo canal RFCOMM, o aplicativo não recebe confirmação de
+recebimento nem de execução por parte do robô. A consequência para a interface
+merece registro: o indicador de status exibe o último comando enviado pelo operador,
+e não o estado efetivo do robô. Se a comunicação for interrompida ou um comando
+não for executado, a interface continuará apresentando a última intenção do operador
+como se fosse o estado corrente.
+Essa limitação decorre da arquitetura de comunicação adotada pelo projeto e
+sua superação depende de alterações no firmware do ESP32, fora do escopo desta
+frente. Registra-se como trabalho futuro a implementação de um canal bidirecional, que
+permitiria ao aplicativo exibir confirmações de execução, estado operacional e alertas
+de perda de conexão.
+As correções aplicadas ao arquivo build.gradle do pacote flutter_bluetooth_serial,
+descritas na Seção 3.4, são realizadas no diretório local de cache de dependências e
+não integram o código-fonte versionado do projeto. Em consequência, a instalação do
+projeto em outra máquina, ou a limpeza e nova resolução das dependências, restaura
+a versão original do pacote e reintroduz a falha de compilação. Como mitigação,
+recomenda-se manter uma cópia versionada do pacote corrigido, referenciada por
+dependência local, ou documentar o procedimento de correção junto ao código-fonte.
+
+
+## Página 31
+
+30
+Na versão atual, a queda da conexão Bluetooth exige que o operador retorne
+manualmente à tela inicial e selecione novamente o dispositivo. Não há tentativa
+automática de restabelecimento do canal, o que representa uma fragilidade em ope-
+ração móvel, na qual a variação de distância e a presença de obstáculos tornam as
+interrupções previsíveis.
+3.6
+Arquitetura Geral de Comunicação
+A comunicação entre os componentes do robô segue um fluxo hierárquico
+bem definido. O aplicativo móvel se conecta ao ESP32 via Bluetooth SPP, enviando
+comandos em formato JSON por linha (NDJSON). O ESP32 valida e repassa os dados
+por porta serial ao Raspberry Pi, que os distribui internamente por meio de um broker
+MQTT local. A Figura 3 apresenta uma visão macro dessa arquitetura, do aplicativo até
+a nuvem.
+Figura 3 – Visão macro da arquitetura de comunicação do robô
+Fonte: Elaborado pelo autor.
+O broker MQTT executa em contêiner Docker, escutando exclusivamente na
+interface de loopback (127.0.0.1:1883), de modo que nenhuma requisição externa
+alcança o barramento local. A raiz de todos os tópicos é robo, e todas as mensagens
+trafegam em formato JSON em uma única linha.
+O fluxo completo, desde o comando do usuário até a persistência em nuvem, é
+descrito a seguir:
+1. O aplicativo envia o comando ao ESP32 via Bluetooth SPP;
+2. O ESP32 repassa o JSON pela porta serial ao Raspberry Pi;
+3. O serviço serial_ingestor publica a mensagem no tópico robo/comando/entrada;
+4. O orquestrador roteia o comando para o tópico de domínio correspondente
+(motores, voz, Wi-Fi etc.);
+
+
+## Página 32
+
+31
+5. Eventos de status e telemetria são espelhados pelo orquestrador sob o prefixo
+robo/telemetria/#;
+6. A bridge do Mosquitto replica esses tópicos para o broker remoto na nuvem;
+7. O serviço ingestor grava cada mensagem na hypertable telemetria do Times-
+caleDB.
+A Figura 4 detalha esse fluxo dentro do Raspberry Pi, evidenciando o roteamento
+interno entre o ingestor serial, o broker local, o orquestrador e os serviços de domínio.
+Figura 4 – Arquitetura interna de comunicação no Raspberry Pi
+Fonte: Elaborado pelo autor.
+3.7
+Conectividade Bluetooth
+A ponte Bluetooth foi implementada no ESP32, sendo o único canal de entrada
+de comandos externos no robô. O firmware foi desenvolvido com o Arduino IDE,
+utilizando a biblioteca ArduinoJson para validação e serialização das mensagens. A
+placa utilizada foi a ESP32-WROOM-DA.
+Por não haver interface Bluetooth no Raspberry Pi, todo o tráfego originado
+no aplicativo — incluindo credenciais de rede Wi-Fi — transita obrigatoriamente pelo
+ESP32. O microcontrolador funciona exclusivamente como gateway de entrada: recebe
+JSON via Bluetooth SPP e o repassa pela serial, sem interpretação do conteúdo.
+O formato de comandos aceito pelo orquestrador, roteados a partir do tópico
+robo/comando/entrada, é exemplificado a seguir:
+
+
+## Página 33
+
+32
+• Comando de movimento: {"tipo": "motor", "acao": "frente", "velocidade":
+80}
+• Síntese de voz: {"tipo": "voz", "texto": "olá"}
+• Parada de emergência: {"tipo": "parada_emergencia"}
+• Provisionamento Wi-Fi: {"tipo": "wifi", "acao": "conectar", "ssid": "Rede",
+"senha": "senha"}
+Comandos malformados ou de tipo desconhecido são descartados e registrados
+em log, sem interromper o funcionamento dos serviços.
+3.8
+Conectividade Wi-Fi
+O provisionamento da rede Wi-Fi do Raspberry Pi ocorre de forma remota, por
+meio do mesmo canal Bluetooth utilizado para os demais comandos. O fluxo de confi-
+guração é o seguinte: o aplicativo envia um comando do tipo wifi ao ESP32; o ESP32
+o repassa pela serial; o serial_ingestor publica no barramento; e o orquestrador
+roteia o comando para o tópico robo/wifi/comando, onde o serviço wifi o consome e
+aplica a configuração via nmcli.
+Após a aplicação, o estado da conexão é publicado de forma retida (retained)
+no tópico robo/sistema/wifi, com o seguinte formato:
+{"conectado": true, "ssid": "MinhaRede",
+"ip": "192.168.0.42", "ts": 1700000000}
+O serviço wifi opera com privilégios de superusuário, exigência do nmcli para
+alterações de rede, e requer o NetworkManager ativo no sistema operacional. O
+resultado da conexão (sucesso e IP obtido) é publicado no barramento MQTT e
+espelhado para a nuvem, porém não retorna ao aplicativo móvel, pois o firmware do
+ESP32, na versão atual, não possui canal de retorno serial→Bluetooth.
+3.9
+GPS
+O módulo GPS é lido pelo serviço dedicado gps no Raspberry Pi, que interpreta
+sentençasNMEA recebidas pela porta serial e publica a posição processada no tó-
+pico robo/gps/posicao em modo retido. O payload inclui coordenadas geográficas,
+indicador de fix, número de satélites rastreados, velocidade e timestamp:
+
+
+## Página 34
+
+33
+{"lat": -28.2, "lon": -54.0, "fix": true,
+"satelites": 7, "velocidade_kmh": 1.2,
+"ts": 1700000000}
+O intervalo de publicação é configurável pela variável de ambiente GPS_INTERVALO_S
+(padrão: 1 segundo). Os dados de posição são selecionados pelo orquestrador e re-
+publicados em robo/telemetria/gps para replicação na nuvem e persistência no
+TimescaleDB.
+3.10
+Telemetria e Persistência em Nuvem
+Apenas os dados publicados sob o prefixo robo/telemetria/# são replicados
+para a nuvem. Essa decisão de roteamento é centralizada no orquestrador, garantindo
+controle explícito sobre o que trafega para fora da rede local. O Tabela 3 apresenta o
+mapeamento entre os tópicos de origem e seus equivalentes de telemetria.
+Tabela 3 – Mapeamento de tópicos para telemetria em nuvem
+Tópico de origem
+Destino (nuvem)
+robo/gps/posicao
+robo/telemetria/gps
+robo/motores/status
+robo/telemetria/motores
+robo/sistema/bateria
+robo/telemetria/bateria
+robo/sistema/wifi
+robo/telemetria/wifi
+Fonte: Elaborado pelo autor.
+A infraestrutura de nuvem ilustrada na Figura 5 é composta por três contêi-
+neres Docker: o broker Mosquitto remoto (autenticado), o TimescaleDB e o serviço
+ingestor. O ingestor assina robo/telemetria/# e grava cada mensagem na hyper-
+table telemetria, particionada temporalmente pelo campo ts do payload. Isso permite
+consultas eficientes de séries temporais, como o trajeto percorrido em um intervalo de
+tempo ou a última posição conhecida do robô.
+A estrutura da hypertable é criada pelo comando SQL apresentado a seguir. A
+tabela telemetria armazena o instante da leitura (ts), o tipo e o tópico da mensagem,
+além do payload completo em formato JSONB. A chamada a create_hypertable con-
+verte a tabela comum em uma hypertable particionada temporalmente pelo campo
+ts, o que viabiliza o armazenamento e a consulta eficientes das séries temporais de
+telemetria do robô.
+CREATE TABLE IF NOT EXISTS telemetria (
+ts
+TIMESTAMPTZ NOT NULL,
+tipo
+TEXT
+NOT NULL,
+
+
+## Página 35
+
+34
+Figura 5 – Infraestrutura de telemetria na máquina virtual do LARCC
+Fonte: Elaborado pelo autor.
+topico
+TEXT
+NOT NULL,
+payload JSONB
+NOT NULL
+);
+SELECT create_hypertable(’telemetria’, ’ts’, if_not_exists => TRUE);
+Cada serviço Python no Raspberry Pi também publica um heartbeat periódico
+no tópico robo/sistema/heartbeat/<servico>, com intervalo padrão de 10 segundos,
+permitindo monitorar a saúde individual de cada componente do sistema.
+3.11
+Painel Web de Visualização da Localização
+Para permitir o acompanhamento em tempo real da posição e do status operaci-
+onal do robô, foi desenvolvido um painel web de telemetria, responsável por consumir
+os dados persistidos na hypertable telemetria do TimescaleDB e apresentá-los de
+forma geográfica e legível ao operador.
+O backend do painel foi implementado com o framework Quarkus, utilizando as
+extensões RESTEasy Reactive (REST) para exposição dos endpoints HTTP, Jackson
+para serialização e desserialização dos dados em formato JSON, e Hibernate ORM
+para o acesso ao banco de dados. Como os registros de telemetria são armazenados
+na hypertable telemetria com o payload completo em formato JSONB, sem uma
+entidade JPA mapeada individualmente para cada tipo de mensagem, o acesso aos
+dados é realizado por meio de consultas SQL nativas que extraem os campos de
+interesse diretamente do payload (payload-»’lat’, payload-»’lon’), dispensando o
+uso de Panache. Essa camada de acesso a dados permitiu expor uma API REST
+simples, responsável por fornecer tanto a última posição conhecida do robô quanto o
+
+
+## Página 36
+
+35
+histórico de coordenadas dentro de uma janela de tempo configurável pelo usuário.
+Além da API REST convencional, o painel disponibiliza um canal de atualização
+em tempo real por meio de Server-Sent Events (SSE), implementado com o suporte
+reativo do Quarkus (Mutiny). Um serviço de broadcast verifica periodicamente, a
+cada dois segundos, se uma nova posição foi registrada no banco de dados e, em
+caso positivo, a propaga a todos os clientes conectados ao fluxo de eventos. No
+frontend, essa conexão é estabelecida por meio da API EventSource do navegador,
+permitindo que o mapa seja atualizado automaticamente conforme novas coordenadas
+chegam, sem a necessidade de requisições repetidas por polling. O estado da conexão
+é sinalizado visualmente ao operador por meio de um indicador de status, que se
+reconecta automaticamente em caso de falha na comunicação com o servidor.
+O frontend, por sua vez, foi construído com HTML e JavaScript puros, sem
+o uso de frameworks adicionais, consumindo a API exposta pelo Quarkus por meio
+de requisições assíncronas. A renderização do mapa interativo foi realizada com a
+biblioteca Leaflet, utilizando como base cartográfica os tiles do OpenStreetMap. Sobre
+o mapa são exibidos a posição atual do robô, representada por um marcador, e o trajeto
+percorrido na janela de tempo selecionada, desenhado como uma polilinha sobre as
+ruas do ambiente institucional.
+A Figura 6 apresenta a interface do painel, exibindo o mapa com o trajeto do
+robô, as coordenadas de latitude e longitude da posição atual, o horário da última
+atualização recebida, um seletor para a janela de tempo do trajeto exibido e um registro
+dos eventos recentes de conexão e carregamento de dados.
+Figura 6 – Painel web de telemetria com a trajetória do robô
+Fonte: Elaborado pelo autor.
+
+
+## Página 37
+
+36
+Assim como o serviço wifi descrito na Seção 3.8, o painel não interfere no
+fluxo de comandos do robô, atuando exclusivamente como consumidor dos dados de
+telemetria replicados para a nuvem, o que garante que eventuais indisponibilidades do
+painel não afetem a operação do sistema embarcado.
+
+
+## Página 38
+
+4 CONCLUSÃO
+Este trabalho teve como objetivo desenvolver e validar um sistema de conec-
+tividade e monitoramento para um robô social institucional, integrando comunicação
+Bluetooth, Wi-Fi e rastreamento GPS em torno do Raspberry Pi 5, complementado por
+um aplicativo mobile de controle e por uma infraestrutura de telemetria em nuvem. Ao
+longo do desenvolvimento, a arquitetura inicialmente proposta foi refinada à luz das
+restrições encontradas na prática, resultando em uma solução funcional e modular.
+No que se refere ao controle remoto via Bluetooth, o objetivo foi plenamente atin-
+gido. O aplicativo desenvolvido em Flutter, estruturado segundo o padrão de separação
+de responsabilidades, permite parear-se ao robô, listar dispositivos e enviar comandos
+direcionais em tempo real por meio de uma interface de D-pad. Os testes realizados no
+dispositivo físico Motorola Moto G30 confirmaram o envio e a interpretação corretos dos
+comandos, validando a comunicação de baixa latência exigida para uma experiência
+de controle fluida.
+A arquitetura de comunicação consolidou-se em torno de um barramento MQTT
+local executado em contêiner Docker, com o ESP32 atuando como gateway de entrada
+Bluetooth e o Raspberry Pi 5 como unidade central de processamento e roteamento.
+Essa decisão de projeto, motivada pela ausência de um canal Bluetooth SPP con-
+veniente no Raspberry Pi, mostrou-se robusta e permitiu desacoplar a recepção de
+comandos do processamento interno, favorecendo a manutenção e a extensibilidade
+do sistema.
+A integração do módulo GPS foi concluída com sucesso, com o serviço dedicado
+interpretando as sentenças NMEA e publicando a posição processada — coordenadas
+geográficas, indicador de fix, número de satélites e velocidade — no barramento em
+intervalos configuráveis. De forma análoga, o provisionamento remoto da rede Wi-Fi via
+nmcli e a replicação seletiva dos dados de telemetria para a nuvem, com persistência
+em séries temporais no TimescaleDB, atenderam aos objetivos relativos à conectividade
+Wi-Fi e à transmissão contínua de dados ao painel de monitoramento.
+De modo geral, os objetivos específicos relacionados à conectividade sem fio,
+ao rastreamento GPS e à infraestrutura de telemetria foram alcançados, demonstrando
+
+
+## Página 39
+
+38
+a viabilidade técnica de uma plataforma robótica de baixo custo baseada em Rasp-
+berry Pi 5. Alguns componentes previstos no escopo inicial, contudo, permanecem em
+estágio parcial de desenvolvimento e são retomados na seção seguinte.
+4.1
+Trabalhos Futuros
+A partir dos resultados obtidos e das limitações identificadas durante o desenvol-
+vimento, apontam-se as seguintes direções para a continuidade do projeto:
+• Canal de retorno serial→Bluetooth: na versão atual, o firmware do ESP32
+opera apenas como gateway de entrada, de modo que confirmações de estado —
+como o resultado do provisionamento Wi-Fi e o IP obtido — são publicadas na
+nuvem, mas não retornam ao aplicativo. A implementação de um canal bidirecional
+permitiria exibir esse retorno diretamente na interface mobile.
+• Sistema de conversação com inteligência artificial: a interação conversacional
+por IA, elemento central da proposta de robótica social, ainda não foi integrada
+ao sistema de conectividade. Um trabalho futuro consiste em acoplar um modelo
+de linguagem — executado localmente ou acessado via API em nuvem através
+da conexão Wi-Fi — ao fluxo de mensagens do robô.
+• Sistema de controle de motores: o acionamento efetivo dos motores de tração
+a partir dos comandos recebidos deve ser aprofundado, incluindo o ajuste de
+velocidade e a resposta à parada de emergência já previstos no protocolo de
+comandos.
+• Validação em campo ampliada: recomenda-se a realização de testes integrados
+mais extensos no ambiente institucional da SETREM, avaliando a estabilidade
+das conexões, a precisão do rastreamento GPS e a qualidade das interações
+com estudantes em condições reais de circulação, incorporando as convenções
+proxêmicas discutidas na fundamentação teórica.
+• Autonomia energética: dado o consumo típico do Raspberry Pi 5 somado ao
+dos módulos periféricos, sugere-se o dimensionamento de um banco de baterias
+adequado para garantir a operação móvel contínua por períodos prolongados.
+• Cálculo de Distância Percorrida: armazenar, tratar e mostrar ao usuário a
+quantidade de distância percorrida pelo robô, podendo ser total, ou em faixas
+definidas de tempo.
+
+
+## Página 40
+
+REFERÊNCIAS
+BELPAEME, T. et al. Social robots for education: a global analysis of deployments in
+real scenarios. Educational Technology Research and Development, 2026.
+BISDIKIAN, C. An overview of the Bluetooth wireless technology. IEEE
+Communications Magazine, New York, v. 39, n. 12, p. 86–94, dez. 2001.
+Bluetooth Special Interest Group. Bluetooth Core Specification, version 5.3. Kirkland,
+2021. Disponível em: <https://www.bluetooth.com/specifications/specs/>.
+BREAZEAL, C. Designing Sociable Robots. Cambridge: MIT Press, 2003.
+CARROLL, A.; HEISER, G. An analysis of power consumption in a smartphone. In:
+Proceedings of the USENIX Annual Technical Conference. Boston: USENIX
+Association, 2010. p. 21–21.
+DAUTENHAHN, K. Socially intelligent agents in human primate culture. In:
+DAUTENHAHN, K. et al. (Ed.). Socially Intelligent Agents: Creating Relationships
+with Computers and Robots. [S.l.]: Kluwer Academic Publishers, 2004. p. 45–71.
+. Methodology and themes of human-robot interaction: a growing research field.
+International Journal of Advanced Robotic Systems, v. 4, n. 1, p. 103–108, 2007.
+. Socially intelligent robots: dimensions of human–robot interaction. Philosophical
+Transactions of the Royal Society B, v. 362, n. 1480, p. 679–704, 2007.
+Flutter Map Contributors. flutter_map: documentação oficial. 2024. Disponível em:
+<https://docs.fleaflet.dev/>.
+FOLLY, E. flutter_bluetooth_serial: a basic Flutter Bluetooth Serial. [S. l.]: [s.n.],
+2021. Pub.dev. Disponível em: <https://pub.dev/packages/flutter_bluetooth_serial>.
+Acesso em: 18 jul. 2026.
+FONG, T. et al. A survey of socially interactive robots. Robotics and Autonomous
+Systems, v. 42, n. 3–4, p. 143–166, 2003.
+GOODRICH, M. A.; SCHULTZ, A. C. Human–robot interaction: a survey. Foundations
+and Trends in Human–Computer Interaction, v. 1, n. 3, p. 203–275, 2007.
+Google LLC. Android Studio: documentação oficial. 2024. Disponível em:
+<https://developer.android.com/studio>.
+. Flutter: documentação oficial. 2024. Disponível em: <https://flutter.dev/docs>.
+
+
+## Página 41
+
+40
+HAKLAY, M.; WEBER, P. OpenStreetMap: user-generated street maps. IEEE Pervasive
+Computing, Los Alamitos, v. 7, n. 4, p. 12–18, out. 2008.
+HALL, E. T. The Hidden Dimension. New York: Doubleday, 1966.
+HOFMANN-WELLENHOF, B. et al. Global Positioning System: theory and practice.
+5. ed. Vienna: Springer, 2001.
+LETENDRE, G.; GRAY, L. Social robots leave students wanting. Penn State
+News, 2023. Disponível em: <https://www.psu.edu/news/education/story/
+social-robots-leave-students-wanting-education-researchers-find>.
+MAVROGIANNIS, C. et al. Core challenges of social robot navigation: a survey. ACM
+Transactions on Human-Robot Interaction, 2023.
+MUBIN, O. et al. A review of the applicability of robots in education. Journal of
+Technology in Education and Learning, v. 1, 2018.
+National Marine Electronics Association. NMEA 0183: standard for interfacing
+marine electronic devices, version 4.11. Severna Park, 2012.
+OpenStreetMap Foundation. OpenStreetMap: about. 2024. Disponível em:
+<https://www.openstreetmap.org/about>.
+Raspberry Pi Ltd. Raspberry Pi 5: documentação oficial. 2024. Disponível em:
+<https://www.raspberrypi.com/documentation/>.
+UPTON, E.; HALFACREE, G. Raspberry Pi user guide. 4. ed. Chichester: John Wiley
+& Sons, 2016.
+WINDMILL, E. Flutter in action. Shelter Island: Manning Publications, 2020.
+YOUSSEF, A. et al. A survey on social robots. 2022.

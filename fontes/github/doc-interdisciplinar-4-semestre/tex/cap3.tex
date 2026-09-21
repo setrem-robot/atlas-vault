@@ -1,0 +1,62 @@
+% Capítulo 3 — Resultados (conforme ROTEIRO PIE IV).
+% NOTA: conforme o cronograma da disciplina, o Capítulo 3 é desenvolvido a partir
+% de 24/10. Os parágrafos abaixo descrevem, de forma honesta, o que cada seção
+% apresentará -- sem antecipar resultados que ainda não foram produzidos. Nenhum
+% número ou análise deve ser inserido antes de sua execução efetiva sobre os
+% dados reais coletados.
+\chapter{Resultados}\label{chap:Results}
+
+Este capítulo apresenta os resultados obtidos até a presente etapa do desenvolvimento do projeto, organizados do protótipo físico à análise dos dados coletados: o hardware do robô, a solução computacional orientada a objetos, o banco de dados de telemetria, a coleta e a análise estatística dos dados, a integração entre as partes e as evidências de extensão exigidas pelo componente curricular.
+
+% ---------------------------------------------------------------------------
+\section{Desenvolvimento do Hardware / Protótipo} \label{sec:dev_hardware}
+% ---------------------------------------------------------------------------
+% Guia: descrever o protótipo físico (componentes, esquema de ligação, fotos),
+% análogo ao Cap. 3 do PIE III. Inserir fotografias do robô em img/.
+Esta seção descreve o protótipo físico do robô Atlas -- estrutura mecânica, computador embarcado (Raspberry Pi), microcontrolador ESP32, motores de passo com seus respectivos \textit{drivers}, módulo GPS e sistema de alimentação -- e o esquema de ligação entre esses componentes. \textit{(Seção em desenvolvimento: incluir fotografias e o diagrama de ligações do protótipo montado.)}
+
+% ---------------------------------------------------------------------------
+\section{Desenvolvimento da Solução Orientada a Objetos} \label{sec:dev_software}
+% ---------------------------------------------------------------------------
+% Guia: descrever as principais classes/módulos implementados e os padrões de
+% projeto aplicados, retomando a fundamentação da Seção~\ref{sec:poo}.
+Esta seção detalha a implementação da solução computacional, retomando na prática os conceitos apresentados na \autoref{sec:poo}: as principais classes e módulos dos repositórios \texttt{orquestrador} e \texttt{atlas\_ai\_v2}, os padrões de projeto aplicados e a organização em camadas que separa a lógica pura do acesso a hardware, permitindo a verificação por testes automatizados. \textit{(Seção em desenvolvimento.)}
+
+\subsection{Modelagem de Classes} \label{subsec:modelagem_classes}
+% Guia: apresentar o diagrama de classes das partes centrais (roteador de
+% comandos, camada de acionamento dos motores, hierarquia de eventos).
+Apresenta-se aqui o diagrama das classes centrais da solução -- a hierarquia do roteador de comandos, a camada de acionamento dos motores e a hierarquia de eventos do assistente --, evidenciando as relações de herança e a resolução polimórfica descritas na fundamentação teórica. \textit{(Seção em desenvolvimento: inserir o diagrama de classes.)}
+
+% ---------------------------------------------------------------------------
+\section{Banco de Dados} \label{sec:dev_banco}
+% ---------------------------------------------------------------------------
+% Guia: modelo implementado, SGBD utilizado, script de criação da tabela.
+Esta seção apresenta o modelo de dados efetivamente implementado -- a tabela de telemetria em PostgreSQL/TimescaleDB descrita na \autoref{sec:banco_dados} --, o \textit{script} de criação, a transformação em \textit{hypertable} e os índices que sustentam as consultas mais frequentes. \textit{(Seção em desenvolvimento: incluir o script de criação e exemplos de consulta.)}
+
+% ---------------------------------------------------------------------------
+\section{Coleta de Dados} \label{sec:coleta_dados}
+% ---------------------------------------------------------------------------
+% Guia: como os dados reais são coletados, volume obtido e integração com o LARCC.
+Esta seção descreve o mecanismo de coleta de dados reais em operação: a publicação da telemetria pelos serviços do Raspberry Pi, seu espelhamento para o \textit{broker} remoto hospedado no LARCC e sua persistência no banco de dados. Serão relatados o período de coleta e o volume de registros efetivamente obtidos até a análise. \textit{(Seção em desenvolvimento: informar o volume de dados coletados.)}
+
+% ---------------------------------------------------------------------------
+\section{Análise Estatística dos Dados} \label{sec:analise_estatistica}
+% ---------------------------------------------------------------------------
+% Guia: tabelas/gráficos das análises realizadas e a interpretação dos resultados.
+% Aplicar as técnicas fundamentadas na Seção~\ref{sec:estatistica}: estatística
+% descritiva (Bussab e Morettin) e séries temporais (Morettin e Toloi).
+Esta seção apresenta a análise estatística dos dados coletados, voltada à caracterização do desempenho operacional do robô. Serão aplicadas as técnicas fundamentadas na \autoref{sec:estatistica} -- medidas de tendência central e de dispersão \cite{bussab2017} sobre variáveis como o nível de bateria e a velocidade dos motores, e análise de séries temporais \cite{morettin2018} sobre a evolução do consumo de energia e do deslocamento --, acompanhadas das tabelas, dos gráficos e da interpretação correspondente. \textit{(Seção em desenvolvimento: os resultados serão inseridos após a execução da análise sobre os dados reais.)}
+
+% ---------------------------------------------------------------------------
+\section{Integração entre Hardware e Software} \label{sec:integracao}
+% ---------------------------------------------------------------------------
+% Guia: fluxo completo de ponta a ponta (app -> hardware -> nuvem -> banco -> análise).
+Esta seção descreve o funcionamento integrado da solução, do comando enviado pelo aplicativo até a visualização e a análise dos dados na nuvem, percorrendo o caminho detalhado na \autoref{sec:arquitetura} e evidenciando como as partes desenvolvidas separadamente operam em conjunto. \textit{(Seção em desenvolvimento.)}
+
+% ---------------------------------------------------------------------------
+\section{Conexão com a Comunidade} \label{sec:comunidade}
+% ---------------------------------------------------------------------------
+% Guia (exigência do ROTEIRO PIE IV): fotografias, formulários de pesquisa,
+% entrevistas, feedback da instituição parceira e registro das publicações nas
+% redes sociais (stories/LinkedIn) exigidas pelo componente curricular.
+Esta seção reúne as evidências de extensão do projeto, conforme exigido pelo componente curricular: registros de campo, eventual coleta de \textit{feedback} de representantes da instituição parceira e o comprovante das publicações realizadas nas redes sociais institucionais (\textit{stories} no Instagram, marcando o perfil \texttt{@comp.setrem}, ou publicação no LinkedIn). \textit{(Seção em desenvolvimento: anexar os comprovantes das publicações e demais evidências.)}

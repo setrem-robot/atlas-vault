@@ -1,0 +1,1206 @@
+{
+  "sha": "43a6fe025ab5474cc1120d0a71d731392d1234b4",
+  "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/43a6fe025ab5474cc1120d0a71d731392d1234b4",
+  "tree": [
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf002634296413911f30d150cd3f3bcae4f137ab",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/bf002634296413911f30d150cd3f3bcae4f137ab"
+    },
+    {
+      "path": ".claude/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c56bf105bc5390236de7ec1dd4f4c30555f439b6",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/c56bf105bc5390236de7ec1dd4f4c30555f439b6"
+    },
+    {
+      "path": ".claude/agents/roboteye-keeper.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2b24cd40bb78bbe72004107f421bcd1598c04fd",
+      "size": 10155,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/d2b24cd40bb78bbe72004107f421bcd1598c04fd"
+    },
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "412a1ad9a84f07c369d753a86efe441d6f286b1d",
+      "size": 10139,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/412a1ad9a84f07c369d753a86efe441d6f286b1d"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be2e3430f242f81e42ec06e6d0007dac02052968",
+      "size": 462,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/be2e3430f242f81e42ec06e6d0007dac02052968"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e734199805fb468d180ed280f9014adb3c6d94f3",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/e734199805fb468d180ed280f9014adb3c6d94f3"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43b980b4deadf80ee92fbbef76a9b38a4bce40b1",
+      "size": 641,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/43b980b4deadf80ee92fbbef76a9b38a4bce40b1"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "678256dab613af81bb104f371e1e17526b58d309",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/678256dab613af81bb104f371e1e17526b58d309"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "965b7b6067be5d0c4a5897b45f483477502d8286",
+      "size": 1345,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/965b7b6067be5d0c4a5897b45f483477502d8286"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85200772149de8b8a6710cc718ec46e3a8d4e659",
+      "size": 799,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/85200772149de8b8a6710cc718ec46e3a8d4e659"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc88fd92c3bc8bb0ca7f9a06e239225b00937b73",
+      "size": 4709,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/dc88fd92c3bc8bb0ca7f9a06e239225b00937b73"
+    },
+    {
+      "path": "COMO-FUNCIONA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deceee6f9924903c3b9b5b1ea383841e04d87b40",
+      "size": 16673,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/deceee6f9924903c3b9b5b1ea383841e04d87b40"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7530bdcc81e3a23182f48314ccecab2dd5f430c5",
+      "size": 1284,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/7530bdcc81e3a23182f48314ccecab2dd5f430c5"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60ce38ac697569574bb62265da763304f86da192",
+      "size": 73308,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/60ce38ac697569574bb62265da763304f86da192"
+    },
+    {
+      "path": "persona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ebdde5d6ac649ca98f4ac72eabea29869804276e",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/ebdde5d6ac649ca98f4ac72eabea29869804276e"
+    },
+    {
+      "path": "persona/atlas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8ebcda0c4cd50f3faf9e9c3d24cc5ef4f91baea",
+      "size": 5694,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/a8ebcda0c4cd50f3faf9e9c3d24cc5ef4f91baea"
+    },
+    {
+      "path": "persona/iris.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "234dc6d9f16d81e02b97af0532ed81dc9c68ff58",
+      "size": 2138,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/234dc6d9f16d81e02b97af0532ed81dc9c68ff58"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc378d98c2e03d61d0fdc5a2ac813b3d7356bb8",
+      "size": 3572,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4cc378d98c2e03d61d0fdc5a2ac813b3d7356bb8"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14a41bd7fa785164e96f59e111e57164fbe8263d",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/14a41bd7fa785164e96f59e111e57164fbe8263d"
+    },
+    {
+      "path": "scripts/atualizar.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8926837b8535aaaf702e649e247e183808d3d4bd",
+      "size": 8630,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/8926837b8535aaaf702e649e247e183808d3d4bd"
+    },
+    {
+      "path": "scripts/baixar-modelo-escuta.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "96e349668358ac840a47ada225cd5c1c4554121f",
+      "size": 4431,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/96e349668358ac840a47ada225cd5c1c4554121f"
+    },
+    {
+      "path": "scripts/bench-radio.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93383fcb397dfc245bc9a0924658c92baba93309",
+      "size": 1914,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/93383fcb397dfc245bc9a0924658c92baba93309"
+    },
+    {
+      "path": "scripts/bench_face.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b816f8d8592855a07b26f097e6ab83fe9fa50603",
+      "size": 6225,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/b816f8d8592855a07b26f097e6ab83fe9fa50603"
+    },
+    {
+      "path": "scripts/configurar-audio.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a2f16d86dd05933bd3c9c8571a4cac12cf088614",
+      "size": 8528,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/a2f16d86dd05933bd3c9c8571a4cac12cf088614"
+    },
+    {
+      "path": "scripts/roboteye-ble.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "531130df9b7a1cab9ce496195d0690913212c356",
+      "size": 948,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/531130df9b7a1cab9ce496195d0690913212c356"
+    },
+    {
+      "path": "scripts/roboteye-update.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d57e665d10ca98597809b8fc5b7fe4e9ef6e068a",
+      "size": 1454,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/d57e665d10ca98597809b8fc5b7fe4e9ef6e068a"
+    },
+    {
+      "path": "scripts/roboteye.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559dfa27201c0b2fc594fae3087ea6623604bf74",
+      "size": 2467,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/559dfa27201c0b2fc594fae3087ea6623604bf74"
+    },
+    {
+      "path": "scripts/separar-radios.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8902db62d28fcb9ae4b77b098c9feae1925427c6",
+      "size": 4454,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/8902db62d28fcb9ae4b77b098c9feae1925427c6"
+    },
+    {
+      "path": "scripts/setup-raspberry-pi.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2e03c83f67d8e97ada1dfce65d302701681c3847",
+      "size": 15080,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2e03c83f67d8e97ada1dfce65d302701681c3847"
+    },
+    {
+      "path": "scripts/setup.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da177bcb6f9b6cce3221e0d3c4610c62d4b5f68a",
+      "size": 4221,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/da177bcb6f9b6cce3221e0d3c4610c62d4b5f68a"
+    },
+    {
+      "path": "scripts/testar-microfone.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "89abfed465d04e1b3288d297b0cc1ffbdcc5da2f",
+      "size": 2540,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/89abfed465d04e1b3288d297b0cc1ffbdcc5da2f"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ba30dc2b8c36820799cd57c5b0ac0eb291ddf4d",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/7ba30dc2b8c36820799cd57c5b0ac0eb291ddf4d"
+    },
+    {
+      "path": "src/roboteye",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9e4ad5ae0352f01d49a05232e52684d356a7dd3",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/a9e4ad5ae0352f01d49a05232e52684d356a7dd3"
+    },
+    {
+      "path": "src/roboteye/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "520ea5b99f86cda56f59a3bdce99de1961bf1ab6",
+      "size": 117,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/520ea5b99f86cda56f59a3bdce99de1961bf1ab6"
+    },
+    {
+      "path": "src/roboteye/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cb33b02909d560cea8b4ff2c7815587ef90c901",
+      "size": 124,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5cb33b02909d560cea8b4ff2c7815587ef90c901"
+    },
+    {
+      "path": "src/roboteye/app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4d970dea07680af1bc6fc2aa674c0310e0fd72a",
+      "size": 23222,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e4d970dea07680af1bc6fc2aa674c0310e0fd72a"
+    },
+    {
+      "path": "src/roboteye/ble",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad1570c25c3d0f2b09cec7aa01e58afedc9d8ac9",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/ad1570c25c3d0f2b09cec7aa01e58afedc9d8ac9"
+    },
+    {
+      "path": "src/roboteye/ble/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86aa769337fddb97c2e4f34e6617a9da536d4db3",
+      "size": 333,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/86aa769337fddb97c2e4f34e6617a9da536d4db3"
+    },
+    {
+      "path": "src/roboteye/ble/mqtt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "296de368d4ce9a37afe3d952af4a123dc9c888dd",
+      "size": 2522,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/296de368d4ce9a37afe3d952af4a123dc9c888dd"
+    },
+    {
+      "path": "src/roboteye/ble/nus.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d334f36e6246d0924cbf00f55ea96b643da8328c",
+      "size": 12246,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/d334f36e6246d0924cbf00f55ea96b643da8328c"
+    },
+    {
+      "path": "src/roboteye/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5ac3928a19d09c21a938b5b1fd918daa7103a5f",
+      "size": 24506,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/d5ac3928a19d09c21a938b5b1fd918daa7103a5f"
+    },
+    {
+      "path": "src/roboteye/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6810ac8c6d612a4cf86507ae95473a7c00bdd717",
+      "size": 25490,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/6810ac8c6d612a4cf86507ae95473a7c00bdd717"
+    },
+    {
+      "path": "src/roboteye/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "09b0506e3e5ea3df730bad3b25cfa5624922b728",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/09b0506e3e5ea3df730bad3b25cfa5624922b728"
+    },
+    {
+      "path": "src/roboteye/core/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09cb59c6797e75eef2afaa85c2e658299e6c99df",
+      "size": 490,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/09cb59c6797e75eef2afaa85c2e658299e6c99df"
+    },
+    {
+      "path": "src/roboteye/core/assistant.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53c2e70fd40fd4df9d447de461040b8896a790ad",
+      "size": 7556,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/53c2e70fd40fd4df9d447de461040b8896a790ad"
+    },
+    {
+      "path": "src/roboteye/core/events.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89669de3745f26cbbe22245b289a5493401ea658",
+      "size": 5948,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/89669de3745f26cbbe22245b289a5493401ea658"
+    },
+    {
+      "path": "src/roboteye/core/normalize_pt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf04dba1143ed8698859bb78133fced252a254c",
+      "size": 7466,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/faf04dba1143ed8698859bb78133fced252a254c"
+    },
+    {
+      "path": "src/roboteye/core/numbers_pt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6530447bf66170e3bfd1e9f7789ae28fabc1a3a2",
+      "size": 6209,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/6530447bf66170e3bfd1e9f7789ae28fabc1a3a2"
+    },
+    {
+      "path": "src/roboteye/core/text.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52c58572b3f9b8ee4a475524065083112bfbba5",
+      "size": 3218,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e52c58572b3f9b8ee4a475524065083112bfbba5"
+    },
+    {
+      "path": "src/roboteye/diagnostics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a59a85d02683a88cb0dd2830cbe1d8fbdb0cb902",
+      "size": 13280,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/a59a85d02683a88cb0dd2830cbe1d8fbdb0cb902"
+    },
+    {
+      "path": "src/roboteye/face",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7d5c1cf33f1e2be296fa18fd9de24be013416a9",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/c7d5c1cf33f1e2be296fa18fd9de24be013416a9"
+    },
+    {
+      "path": "src/roboteye/face/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d02e3adaddec5fdb24100e2a7ddce68205380c15",
+      "size": 326,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/d02e3adaddec5fdb24100e2a7ddce68205380c15"
+    },
+    {
+      "path": "src/roboteye/face/animator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b42a0d9255b8ac83c5986a0cea4e6f8d8455957",
+      "size": 27368,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2b42a0d9255b8ac83c5986a0cea4e6f8d8455957"
+    },
+    {
+      "path": "src/roboteye/face/app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8887c553239bdb06f006f83abcf65ca432debaa",
+      "size": 12614,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/a8887c553239bdb06f006f83abcf65ca432debaa"
+    },
+    {
+      "path": "src/roboteye/face/easing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5baec8bb421376e95c3446d43307a78836ff9f17",
+      "size": 4424,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5baec8bb421376e95c3446d43307a78836ff9f17"
+    },
+    {
+      "path": "src/roboteye/face/expressions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fda54df30c4b0bb74b8a98caf0e75bd4a5a30f3",
+      "size": 1796,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/1fda54df30c4b0bb74b8a98caf0e75bd4a5a30f3"
+    },
+    {
+      "path": "src/roboteye/face/layout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4addae983513da5df473ce377e63b25102105ac",
+      "size": 1826,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e4addae983513da5df473ce377e63b25102105ac"
+    },
+    {
+      "path": "src/roboteye/face/mask.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98905ab984cad001e9d5b5fa48054e07257be286",
+      "size": 11285,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/98905ab984cad001e9d5b5fa48054e07257be286"
+    },
+    {
+      "path": "src/roboteye/face/preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18514130a44b331361456efcaac1232fdd64ffcc",
+      "size": 4167,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/18514130a44b331361456efcaac1232fdd64ffcc"
+    },
+    {
+      "path": "src/roboteye/face/renderer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a36b699cd183582f40239a2d2a5ab7242f56f03",
+      "size": 12671,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/1a36b699cd183582f40239a2d2a5ab7242f56f03"
+    },
+    {
+      "path": "src/roboteye/face/shapes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6127039ed719c28affad6713169f4e75ba143203",
+      "size": 6301,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/6127039ed719c28affad6713169f4e75ba143203"
+    },
+    {
+      "path": "src/roboteye/face/theme.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d27febc598cb35309145e67a90abbf14f563f25",
+      "size": 622,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/7d27febc598cb35309145e67a90abbf14f563f25"
+    },
+    {
+      "path": "src/roboteye/hearing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b13d4419a3a2d5faefa0208d0a7bd07a74f4c51",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/8b13d4419a3a2d5faefa0208d0a7bd07a74f4c51"
+    },
+    {
+      "path": "src/roboteye/hearing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb3a088306754334b1fc1f5acb008aff5c82f444",
+      "size": 379,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/fb3a088306754334b1fc1f5acb008aff5c82f444"
+    },
+    {
+      "path": "src/roboteye/hearing/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b1111c8db69e0bd290bfaa95ecbbaaa1a4460b7",
+      "size": 2855,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5b1111c8db69e0bd290bfaa95ecbbaaa1a4460b7"
+    },
+    {
+      "path": "src/roboteye/hearing/factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a2bbaa03589437a55b64aaee16411a4e33f69bc",
+      "size": 1431,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/9a2bbaa03589437a55b64aaee16411a4e33f69bc"
+    },
+    {
+      "path": "src/roboteye/hearing/gatilho.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96d9e3b5fb9ecbf72a9b5e3a1b990e1d01e1cd15",
+      "size": 4232,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/96d9e3b5fb9ecbf72a9b5e3a1b990e1d01e1cd15"
+    },
+    {
+      "path": "src/roboteye/hearing/microfone.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccb638b5f0ac966b6498986ed44c295307c78403",
+      "size": 21037,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ccb638b5f0ac966b6498986ed44c295307c78403"
+    },
+    {
+      "path": "src/roboteye/hearing/vosk_ears.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f93b4667e038491b11f7386633e7c636f9ff07b",
+      "size": 14326,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/7f93b4667e038491b11f7386633e7c636f9ff07b"
+    },
+    {
+      "path": "src/roboteye/hearing/whisper_ears.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af6972d78456fd9406899ecaed2be421f4b6761",
+      "size": 5887,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/7af6972d78456fd9406899ecaed2be421f4b6761"
+    },
+    {
+      "path": "src/roboteye/llm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8d40123b17e97f6eb6444fd35501e7bcb11f484",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/e8d40123b17e97f6eb6444fd35501e7bcb11f484"
+    },
+    {
+      "path": "src/roboteye/llm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71411067e7a48d823e27583dd7a53d1bf1b12f91",
+      "size": 386,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/71411067e7a48d823e27583dd7a53d1bf1b12f91"
+    },
+    {
+      "path": "src/roboteye/llm/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd39a1aa09e6b09fba9d83e5e3be65065d8e6d8d",
+      "size": 2291,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/dd39a1aa09e6b09fba9d83e5e3be65065d8e6d8d"
+    },
+    {
+      "path": "src/roboteye/llm/echo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e169e11d73235b5a630a259308672a7a999a2347",
+      "size": 1298,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e169e11d73235b5a630a259308672a7a999a2347"
+    },
+    {
+      "path": "src/roboteye/llm/factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c83571c3014010311b035ec02d01815449605559",
+      "size": 1960,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/c83571c3014010311b035ec02d01815449605559"
+    },
+    {
+      "path": "src/roboteye/llm/fallback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c36a67706f4713a603cc8d493066015ecf82ea",
+      "size": 14440,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/28c36a67706f4713a603cc8d493066015ecf82ea"
+    },
+    {
+      "path": "src/roboteye/llm/memory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6188e4daebc141d235c410ebe947439ccd6251",
+      "size": 1767,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4b6188e4daebc141d235c410ebe947439ccd6251"
+    },
+    {
+      "path": "src/roboteye/llm/ollama.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e59b0f35697800c0673261c7a163d6ee525cdaa1",
+      "size": 8620,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e59b0f35697800c0673261c7a163d6ee525cdaa1"
+    },
+    {
+      "path": "src/roboteye/llm/persona.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce9bea7f05f69182229acc362c7f058da0c3fa5a",
+      "size": 9013,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ce9bea7f05f69182229acc362c7f058da0c3fa5a"
+    },
+    {
+      "path": "src/roboteye/llm/probe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff4d68e9d23ed73625f8b86ec94d8dff4fdd62f9",
+      "size": 3693,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ff4d68e9d23ed73625f8b86ec94d8dff4fdd62f9"
+    },
+    {
+      "path": "src/roboteye/logging_setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e61ce4fd6982e4a6c7b8dcc3d2d1e60d1cdee07a",
+      "size": 1764,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e61ce4fd6982e4a6c7b8dcc3d2d1e60d1cdee07a"
+    },
+    {
+      "path": "src/roboteye/memoria.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6380f61cc3491ad61382fcdc059d015ca4e0cd",
+      "size": 12182,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/7d6380f61cc3491ad61382fcdc059d015ca4e0cd"
+    },
+    {
+      "path": "src/roboteye/radio.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e06a81ba80c9526eaacb0ed59dafbb5155581129",
+      "size": 9424,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e06a81ba80c9526eaacb0ed59dafbb5155581129"
+    },
+    {
+      "path": "src/roboteye/setup_wizard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b681b426eb94086f118917e4bed0fdf61aafde6",
+      "size": 16702,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4b681b426eb94086f118917e4bed0fdf61aafde6"
+    },
+    {
+      "path": "src/roboteye/speech",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "515bfaabcf2d098eb1b4383891e9b8cfecd787bd",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/515bfaabcf2d098eb1b4383891e9b8cfecd787bd"
+    },
+    {
+      "path": "src/roboteye/speech/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c9507543c7f5452b29f5e50ac6e28d0282c298",
+      "size": 332,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/98c9507543c7f5452b29f5e50ac6e28d0282c298"
+    },
+    {
+      "path": "src/roboteye/speech/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3f8a0fc6f1246d1b91fabba79cb02aed86bf2ce",
+      "size": 1675,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/a3f8a0fc6f1246d1b91fabba79cb02aed86bf2ce"
+    },
+    {
+      "path": "src/roboteye/speech/devices.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb8a4c237e62b04177b081e45960afc4b48045f",
+      "size": 6749,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/bbb8a4c237e62b04177b081e45960afc4b48045f"
+    },
+    {
+      "path": "src/roboteye/speech/edge_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1eb4b738a369d0516f9127f1e7f3918cced7422",
+      "size": 6354,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/a1eb4b738a369d0516f9127f1e7f3918cced7422"
+    },
+    {
+      "path": "src/roboteye/speech/envelope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb6ec923f1bd0b0615de393ff5abb6b1b58f4473",
+      "size": 7017,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/bb6ec923f1bd0b0615de393ff5abb6b1b58f4473"
+    },
+    {
+      "path": "src/roboteye/speech/factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6624409bdffe4e7fc064b56d9105d5085905d8",
+      "size": 2111,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5a6624409bdffe4e7fc064b56d9105d5085905d8"
+    },
+    {
+      "path": "src/roboteye/speech/fallback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f99f728045b24261edc83c38a377a0785451ca0d",
+      "size": 8566,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/f99f728045b24261edc83c38a377a0785451ca0d"
+    },
+    {
+      "path": "src/roboteye/speech/kokoro_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ce0e04e63535d7db2cc68c51d331f8124daee3e",
+      "size": 4149,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5ce0e04e63535d7db2cc68c51d331f8124daee3e"
+    },
+    {
+      "path": "src/roboteye/speech/null_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a1a19054f18fc0a06c5d6ca71defebb717f61cb",
+      "size": 677,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/8a1a19054f18fc0a06c5d6ca71defebb717f61cb"
+    },
+    {
+      "path": "src/roboteye/speech/piper_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e7da0abfaae5a7adbabf92880c95648f7b35bf",
+      "size": 3458,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/70e7da0abfaae5a7adbabf92880c95648f7b35bf"
+    },
+    {
+      "path": "src/roboteye/speech/player.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00d68a17d0d11ed8a09a6159f5400d031874e361",
+      "size": 8748,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/00d68a17d0d11ed8a09a6159f5400d031874e361"
+    },
+    {
+      "path": "src/roboteye/speech/polish.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81d34f4463d67f027675b90da3c5471a361da47f",
+      "size": 5075,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/81d34f4463d67f027675b90da3c5471a361da47f"
+    },
+    {
+      "path": "src/roboteye/speech/sinal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cac915e91c9786b72da50b4b8dd95ab4cc9066b0",
+      "size": 4777,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/cac915e91c9786b72da50b4b8dd95ab4cc9066b0"
+    },
+    {
+      "path": "src/roboteye/speech/speaker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b72f2f23ec4ef58c6cef3c697d3678432b920876",
+      "size": 22809,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/b72f2f23ec4ef58c6cef3c697d3678432b920876"
+    },
+    {
+      "path": "src/roboteye/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc5237a169e24563cfe942b10fc72b3f98e9dc9b",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/fc5237a169e24563cfe942b10fc72b3f98e9dc9b"
+    },
+    {
+      "path": "src/roboteye/ui/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae7306f8dc7fd5e272c8af90eea6b518f9993a6f",
+      "size": 112,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ae7306f8dc7fd5e272c8af90eea6b518f9993a6f"
+    },
+    {
+      "path": "src/roboteye/ui/console.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5acdd9c51e36184a3a3ae9924d8719d360ab8323",
+      "size": 7924,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5acdd9c51e36184a3a3ae9924d8719d360ab8323"
+    },
+    {
+      "path": "src/roboteye/voice_catalog.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2275a817c321b4b2df6c9a2e2af7d393bbd6f665",
+      "size": 8156,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2275a817c321b4b2df6c9a2e2af7d393bbd6f665"
+    },
+    {
+      "path": "src/roboteye/voices.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e12c50d308b1194f9c9b5b45a51ee34e4eb53bc",
+      "size": 3658,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/0e12c50d308b1194f9c9b5b45a51ee34e4eb53bc"
+    },
+    {
+      "path": "src/roboteye/web",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "299165f903310008a0951e9e1a282e256a996585",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/299165f903310008a0951e9e1a282e256a996585"
+    },
+    {
+      "path": "src/roboteye/web/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcacfee5f81619be60483e458b7cb2a898ec4da3",
+      "size": 184,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/dcacfee5f81619be60483e458b7cb2a898ec4da3"
+    },
+    {
+      "path": "src/roboteye/web/comandos.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "335f52b461496ebc180131af8429dea5063d2f4a",
+      "size": 6223,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/335f52b461496ebc180131af8429dea5063d2f4a"
+    },
+    {
+      "path": "src/roboteye/web/conversa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3f1960722233d3691757f1276ad2cb7d2befe56",
+      "size": 2406,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e3f1960722233d3691757f1276ad2cb7d2befe56"
+    },
+    {
+      "path": "src/roboteye/web/envfile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78ae408bfb91babd74281519101aa573af4abfd8",
+      "size": 4464,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/78ae408bfb91babd74281519101aa573af4abfd8"
+    },
+    {
+      "path": "src/roboteye/web/estado.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "425a3ff851e9c1ea1b66e6f8ee460b2263473252",
+      "size": 5492,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/425a3ff851e9c1ea1b66e6f8ee460b2263473252"
+    },
+    {
+      "path": "src/roboteye/web/page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d0b3a988e0d9142dac188e405179db9b0f4655c",
+      "size": 22008,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/9d0b3a988e0d9142dac188e405179db9b0f4655c"
+    },
+    {
+      "path": "src/roboteye/web/server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35043c3a63f697fad71ae31f5279f2f73524cde7",
+      "size": 19863,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/35043c3a63f697fad71ae31f5279f2f73524cde7"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a09f96d67083c6b836a5ba95ac887c5e2a70fc9e",
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/trees/a09f96d67083c6b836a5ba95ac887c5e2a70fc9e"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78872bc6713cf8a4de776c9ce70d9058751f6eb0",
+      "size": 6562,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/78872bc6713cf8a4de776c9ce70d9058751f6eb0"
+    },
+    {
+      "path": "tests/test_animator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bd529d446687d23762ce6ae4720d6b9102bfae6",
+      "size": 18443,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2bd529d446687d23762ce6ae4720d6b9102bfae6"
+    },
+    {
+      "path": "tests/test_assistant.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7b0fdc9c9269f0221db648eb089c1b45846f90f",
+      "size": 6667,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/c7b0fdc9c9269f0221db648eb089c1b45846f90f"
+    },
+    {
+      "path": "tests/test_audio_resiliente.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac6e5fe9b507397b893b610d04bfbe90c5bf6dce",
+      "size": 8639,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ac6e5fe9b507397b893b610d04bfbe90c5bf6dce"
+    },
+    {
+      "path": "tests/test_ble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cf2885062b933a393859f204c28eb65dea989d9",
+      "size": 6070,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2cf2885062b933a393859f204c28eb65dea989d9"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f09d59560bdba2e9f5f7e74fd35b2069bc45b946",
+      "size": 7108,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/f09d59560bdba2e9f5f7e74fd35b2069bc45b946"
+    },
+    {
+      "path": "tests/test_comandos_web.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4827a200313c191f73dee6f7b0cfb7c2c7f5e873",
+      "size": 3594,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4827a200313c191f73dee6f7b0cfb7c2c7f5e873"
+    },
+    {
+      "path": "tests/test_config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "381c0b199634636ece135cee73fedf4ea7ea5251",
+      "size": 5247,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/381c0b199634636ece135cee73fedf4ea7ea5251"
+    },
+    {
+      "path": "tests/test_console.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b8d22376cf24d35966c3ffe372eceee463bc15f",
+      "size": 3074,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4b8d22376cf24d35966c3ffe372eceee463bc15f"
+    },
+    {
+      "path": "tests/test_devices.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "223fed6872dcac66c1e9d556b6e0fac1d2a05aa0",
+      "size": 2910,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/223fed6872dcac66c1e9d556b6e0fac1d2a05aa0"
+    },
+    {
+      "path": "tests/test_easing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce3b46fce24f33f2c212d4dbd340563f2fd8a0d6",
+      "size": 3812,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ce3b46fce24f33f2c212d4dbd340563f2fd8a0d6"
+    },
+    {
+      "path": "tests/test_envelope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d3a3c19733f1a1dd06638b4c3e0bd846e242a66",
+      "size": 5345,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/0d3a3c19733f1a1dd06638b4c3e0bd846e242a66"
+    },
+    {
+      "path": "tests/test_escuta_e_pensamento.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81909ebf97607d3824e6d55a8f2d40785e2033d9",
+      "size": 9296,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/81909ebf97607d3824e6d55a8f2d40785e2033d9"
+    },
+    {
+      "path": "tests/test_events.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59bf5ccb7c365e1f6a0ed07ae062cfe472841b23",
+      "size": 2124,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/59bf5ccb7c365e1f6a0ed07ae062cfe472841b23"
+    },
+    {
+      "path": "tests/test_face_app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0067b86c6de82afb26aba01a26b7f0e56f6d28a0",
+      "size": 3389,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/0067b86c6de82afb26aba01a26b7f0e56f6d28a0"
+    },
+    {
+      "path": "tests/test_factories.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "757d5454e908b9c2f6f7e1cc42c1995e405f0e28",
+      "size": 3672,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/757d5454e908b9c2f6f7e1cc42c1995e405f0e28"
+    },
+    {
+      "path": "tests/test_fallback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21fa9a0ef6d1e09a8a8da1b7684cc7cf2bcae9a2",
+      "size": 11390,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/21fa9a0ef6d1e09a8a8da1b7684cc7cf2bcae9a2"
+    },
+    {
+      "path": "tests/test_gatilho.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc45f9ba4aa058a0f946661dfbc2c6ff825ea540",
+      "size": 4320,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/cc45f9ba4aa058a0f946661dfbc2c6ff825ea540"
+    },
+    {
+      "path": "tests/test_llm_fallback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d77447641189529abff440f129afc92b366fab",
+      "size": 11328,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/89d77447641189529abff440f129afc92b366fab"
+    },
+    {
+      "path": "tests/test_memoria.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8410a7c94b05f2a9519914703d106a62b934d8d2",
+      "size": 4217,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/8410a7c94b05f2a9519914703d106a62b934d8d2"
+    },
+    {
+      "path": "tests/test_microfone.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3d4e36964c60052d29486b8aa6db283ff458593",
+      "size": 5890,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/b3d4e36964c60052d29486b8aa6db283ff458593"
+    },
+    {
+      "path": "tests/test_normalize_pt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d34417d1b23627ce18cb8c285b8a8f511571332",
+      "size": 3258,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/5d34417d1b23627ce18cb8c285b8a8f511571332"
+    },
+    {
+      "path": "tests/test_numbers_pt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8ed58a466b487d4b2c7ed40e14e2dfc1f1c0ee6",
+      "size": 4259,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e8ed58a466b487d4b2c7ed40e14e2dfc1f1c0ee6"
+    },
+    {
+      "path": "tests/test_ollama.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3184ca5118830c14bac258eb315afd2aa0948b4b",
+      "size": 8568,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/3184ca5118830c14bac258eb315afd2aa0948b4b"
+    },
+    {
+      "path": "tests/test_persona.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf228f05bfafe25130798611df2e1c042e757fd7",
+      "size": 7873,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/cf228f05bfafe25130798611df2e1c042e757fd7"
+    },
+    {
+      "path": "tests/test_polish.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4880ef5d4b243cefe61ffd348dfca9f2d57ca215",
+      "size": 4366,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4880ef5d4b243cefe61ffd348dfca9f2d57ca215"
+    },
+    {
+      "path": "tests/test_probe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "549462000d6a0316152e3e15aa28c6a15fa2221a",
+      "size": 3044,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/549462000d6a0316152e3e15aa28c6a15fa2221a"
+    },
+    {
+      "path": "tests/test_radio.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73f550403c3e9730a5555cd2798d28a849dae233",
+      "size": 5348,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/73f550403c3e9730a5555cd2798d28a849dae233"
+    },
+    {
+      "path": "tests/test_renderer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e3a97f487784234b82f83efa7f5ea2e91d4b791",
+      "size": 12335,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2e3a97f487784234b82f83efa7f5ea2e91d4b791"
+    },
+    {
+      "path": "tests/test_setup_wizard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80e9b9005c331f27392124fafce6b74d5e27d37",
+      "size": 11133,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/c80e9b9005c331f27392124fafce6b74d5e27d37"
+    },
+    {
+      "path": "tests/test_shapes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9d1a674233906ed3f7bf535745863e03b6fcc61",
+      "size": 3906,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/d9d1a674233906ed3f7bf535745863e03b6fcc61"
+    },
+    {
+      "path": "tests/test_sinal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9121316379e493f02047db743d123737a03d0b",
+      "size": 15586,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/cf9121316379e493f02047db743d123737a03d0b"
+    },
+    {
+      "path": "tests/test_speaker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ec6b2f37f2ac46f23c30fe4a1cbd80faa0bd780",
+      "size": 10516,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/9ec6b2f37f2ac46f23c30fe4a1cbd80faa0bd780"
+    },
+    {
+      "path": "tests/test_text.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3fcf4fdc7b9e894ada2b188e4b89b24dea3ea15",
+      "size": 3092,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/e3fcf4fdc7b9e894ada2b188e4b89b24dea3ea15"
+    },
+    {
+      "path": "tests/test_voice_catalog.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52f2e553b6c35a51d2bcea9cdd5cf33ee9c65a13",
+      "size": 11937,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/52f2e553b6c35a51d2bcea9cdd5cf33ee9c65a13"
+    },
+    {
+      "path": "tests/test_voices.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef8551ad2fd341c965369d40e016d929818de384",
+      "size": 3648,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/ef8551ad2fd341c965369d40e016d929818de384"
+    },
+    {
+      "path": "tests/test_vosk.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4abd2ca1a41a00000c8a183a8e7f7b26279a5cac",
+      "size": 11333,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/4abd2ca1a41a00000c8a183a8e7f7b26279a5cac"
+    },
+    {
+      "path": "tests/test_web.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6858315df1214737d14f4c9e27a75d7df15fce",
+      "size": 14712,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/fc6858315df1214737d14f4c9e27a75d7df15fce"
+    },
+    {
+      "path": "tests/test_whisper_ears.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c2b856bf4a6329b49f6e70698900a0a3622cc42",
+      "size": 1707,
+      "url": "https://api.github.com/repos/setrem-robot/atlas_ai_v2/git/blobs/2c2b856bf4a6329b49f6e70698900a0a3622cc42"
+    }
+  ],
+  "truncated": false
+}

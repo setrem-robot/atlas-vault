@@ -1,0 +1,189 @@
+\documentclass[
+    % -- opções da classe memoir --
+    12pt,               % tamanho da fonte
+    openany,            % capítulos começam em qualquer página (entrega digital, sem páginas em branco)
+    oneside,            % para impressão em recto e verso. Oposto a oneside
+    a4paper,            % tamanho do papel.
+    % -- opções da classe abntex2 --
+    chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+    section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+    % -- opções do pacote babel --
+    english,            % idioma adicional para hifenização
+    brazil,             % o último idioma é o principal do documento
+    ]{abntex2}
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais
+% ---
+\usepackage[T1]{fontenc}        % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}     % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}        % Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}              % Controle das cores
+\usepackage{graphicx}           % Inclusão de gráficos
+\usepackage{microtype}          % para melhorias de justificação
+\usepackage[absolute]{textpos}
+
+% ---
+% PACOTES PARA DIAGRAMAS (TikZ) — usar se necessário no Cap. 2/3
+% ---
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+\RequirePackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}  % O mais próximo que temos de arial
+\usepackage{template/setrem}
+% ---
+
+% ---
+% Pacotes adicionais
+% ---
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  captionpos=b
+}
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=2,abnt-etal-cite=2,abnt-etal-text=2,abnt-repeated-title-omit=yes]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Robô Atlas: plataforma robótica orientada a objetos para coleta e análise de dados de telemetria}
+\autor{ENZO ALLEBRAND, FERNANDO BASTIAN, KERLON RIBEIRO E VICTOR GENZ}
+\local{Três de Maio}
+\data{2026}
+\instituicao{%
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{template/Cabecalho-Faculdade-2025.png}
+}
+\tipotrabalho{Projeto Interdisciplinar de Extensão IV}
+\preambulo{Relatório do Projeto Interdisciplinar de Extensão IV apresentado ao Curso de Bacharelado em Engenharia de Computação da Faculdade Três de Maio (SETREM), como requisito de avaliação dos componentes curriculares de Estatística, Programação Orientada a Objetos, Banco de Dados e Gerenciamento de Projetos.}
+% Confirme os nomes e papéis dos professores antes da versão definitiva.
+\orientador[Professores:]{Rodrigo Danielowski, Tiago Luis Cesa Seibel, Jonas Pacheco e Eduardo Mildner}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+\definecolor{blue}{RGB}{41,5,195}
+
+\makeatletter
+\hypersetup{
+        pdftitle={\@title},
+        pdfauthor={\@author},
+        pdfsubject={\imprimirpreambulo},
+        pdfcreator={LaTeX with abnTeX2},
+        pdfkeywords={abnt}{latex}{abntex}{abntex2}{projeto de pesquisa},
+        colorlinks=true,
+        linkcolor=black,
+        citecolor=black,
+        filecolor=black,
+        urlcolor=black,
+        bookmarksdepth=4
+}
+\makeatother
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\imprimircapa
+\imprimirfolhaderosto
+
+% --- Resumo e palavras-chave ---
+\begin{resumo}
+O robô Atlas é uma plataforma robótica móvel desenvolvida no curso de Engenharia de Computação da SETREM, operada remotamente e capaz de registrar dados de telemetria durante seu funcionamento. Este trabalho apresenta a consolidação dessa plataforma como uma solução computacional orientada a objetos que integra um aplicativo móvel, desenvolvido em Flutter; comunicação sem fio de curto alcance por Bluetooth Low Energy; serviços embarcados em um Raspberry Pi, coordenados por troca de mensagens sobre o protocolo MQTT; e um serviço de telemetria em nuvem, hospedado na infraestrutura do LARCC, no qual os dados de posição, estado dos motores, nível de bateria e conectividade são persistidos em um banco de dados relacional de séries temporais (PostgreSQL com a extensão TimescaleDB) e disponibilizados por uma interface de programação de aplicações de leitura. Metodologicamente, a pesquisa classifica-se como aplicada, de natureza exploratória e experimental, com abordagem mista, aplicando de forma integrada os fundamentos de Programação Orientada a Objetos, Banco de Dados, Estatística e Gerenciamento de Projetos. Até a presente etapa, encontram-se implementados o aplicativo, os serviços embarcados e o armazenamento e a leitura da telemetria, com a verificação de corretude apoiada em testes automatizados executáveis sem o robô físico. A análise estatística dos dados coletados, voltada à caracterização do desempenho operacional do robô, encontra-se em desenvolvimento e constitui a etapa central do Capítulo de resultados.
+
+\vspace{\onelineskip}
+\noindent\textbf{Palavras-chave}: Robótica móvel. Programação orientada a objetos. Telemetria. Banco de dados de séries temporais. Análise de dados.
+\end{resumo}
+
+% --- Lista de ilustrações ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+% --- Lista de tabelas ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+% --- Lista de abreviaturas e siglas (após as listas, antes do sumário) ---
+% Manter em ordem alfabética e restrita às siglas efetivamente usadas no texto.
+\begin{siglas}
+  \item[API] \textit{Application Programming Interface} (Interface de Programação de Aplicações)
+  \item[BLE] \textit{Bluetooth Low Energy} (Bluetooth de Baixa Energia)
+  \item[GPIO] \textit{General Purpose Input/Output} (Entrada/Saída de Propósito Geral)
+  \item[GPS] \textit{Global Positioning System} (Sistema de Posicionamento Global)
+  \item[HTTP] \textit{Hypertext Transfer Protocol} (Protocolo de Transferência de Hipertexto)
+  \item[IC] Integração Contínua
+  \item[IoT] \textit{Internet of Things} (Internet das Coisas)
+  \item[JSON] \textit{JavaScript Object Notation} (Notação de Objetos JavaScript)
+  \item[LARCC] \textit{Laboratory of Advanced Research on Cloud Computing}
+  \item[MQTT] \textit{Message Queuing Telemetry Transport} (protocolo de mensagens no modelo publicação/assinatura)
+  \item[NUS] \textit{Nordic UART Service} (perfil de serviço BLE para comunicação serial)
+  \item[POO] Programação Orientada a Objetos
+  \item[PWM] \textit{Pulse Width Modulation} (Modulação por Largura de Pulso)
+  \item[SGBD] Sistema Gerenciador de Banco de Dados
+  \item[SQL] \textit{Structured Query Language} (Linguagem de Consulta Estruturada)
+\end{siglas}
+\cleardoublepage
+
+% --- Sumário ---
+\pdfbookmark[0]{\contentsname}{toc}
+\vspace*{138pt}
+\tableofcontents*
+\cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+\input{tex/intro}
+\input{tex/cap1}
+\input{tex/cap2}
+\input{tex/cap3}
+\input{tex/conclusao}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+% Referências bibliográficas
+\bibliography{bib/bibliography}
+
+% Anexos / Apêndices
+% NOTA: inserir aqui o conteúdo dos anexos quando disponível (ex.: código-fonte,
+% fotografias do protótipo/hardware, formulários de pesquisa, prints de stories/
+% publicações no Instagram/LinkedIn exigidos pelo roteiro, e demais evidências de
+% extensão). Mantido comentado para não gerar uma página "ANEXO" vazia.
+% \begin{anexosenv}
+% \phantomsection
+% \chapter*{\MakeUppercase{\appendixname}}
+% \addcontentsline{toc}{chapter}{\MakeUppercase{\appendixname}}
+% % ... conteúdo do anexo aqui ...
+% \end{anexosenv}
+
+\end{document}

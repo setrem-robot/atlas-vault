@@ -1,0 +1,1346 @@
+## Página 1
+
+ 
+ 
+ 
+ 
+ 
+ 
+ANDRIEL FELIPE SCHULTZ 
+CRÍSTOFER MATEUS RUTZEN 
+GABRIEL KASPARY 
+ 
+CONCEPÇÃO E CONSTRUÇÃO DA ESTRUTURA MECÂNICA DE UM 
+ROBÔ MÓVEL 
+Três de Maio 
+ 2025 
+
+
+## Página 2
+
+ 
+ANDRIEL FELIPE SCHULTZ 
+CRÍSTOFER MATEUS RUTZEN 
+GABRIEL KASPARY 
+CONCEPÇÃO E CONSTRUÇÃO DA ESTRUTURA MECÂNICA DE UM ROBÔ 
+MÓVEL 
+Projeto de pesquisa do componente 
+curricular de Projeto Interdisciplinar 
+de Extensão V da Faculdade de 
+Engenharia de Computação da 
+Sociedade Educacional Três de Maio. 
+Três de Maio 
+2026 
+
+
+## Página 3
+
+ 
+RESUMO 
+Este trabalho apresenta o desenvolvimento da estrutura mecânica de um robô 
+móvel destinado à interação com a comunidade acadêmica da Sociedade 
+Educacional Três de Maio (SETREM). O projeto contemplou a modelagem 
+tridimensional em SolidWorks, a fabricação de um chassi tubular de aço e de uma 
+carenagem modular produzida por impressão 3D em PLA, resultando em uma 
+estrutura híbrida que combina resistência mecânica, baixo peso e facilidade de 
+manutenção. Após a fabricação do protótipo, foram realizados testes físicos voltados 
+à avaliação da estabilidade estrutural, resistência da carenagem, resistência do 
+chassi, trepidação e ruído em diferentes superfícies. Os resultados demonstraram 
+que a estrutura suporta as cargas previstas sem deformações permanentes e 
+apresenta comportamento satisfatório em pisos regulares, embora tenha sido 
+observado aumento de trepidação e ruído em pisos de tijolos. Em razão de 
+limitações na integração do sistema eletrônico de acionamento dos motores, os 
+ensaios de locomoção motorizada previstos no plano de validação não puderam ser 
+executados, permanecendo como etapa futura do projeto. Conclui-se que a estrutura 
+mecânica desenvolvida atende aos requisitos físicos estabelecidos e constitui uma 
+plataforma adequada para a integração dos demais subsistemas do robô. 
+
+
+## Página 4
+
+ 
+ABSTRACT 
+This work presents the development of the mechanical structure of a mobile 
+robot designed to interact with the academic community at Sociedade Educacional 
+Três de Maio (SETREM). The project included three-dimensional modeling in 
+SolidWorks, the fabrication of a tubular steel chassis, and a modular outer shell 
+manufactured through PLA 3D printing, resulting in a hybrid structure that combines 
+mechanical strength, low weight, and ease of maintenance. After fabrication, physical 
+tests were carried out to evaluate structural stability, chassis and shell strength, 
+vibration, and noise under different surface conditions. The results demonstrated that 
+the structure withstands the expected loads without permanent deformation and 
+performs satisfactorily on regular surfaces, although increased vibration and noise 
+were observed on brick pavements. Due to limitations in the integration of the motor 
+control system, the planned powered locomotion tests could not be completed and 
+remain as future work. Overall, the developed mechanical structure met the 
+established physical requirements and provides a suitable platform for the integration 
+of the remaining robotic subsystems. 
+
+
+## Página 5
+
+ 
+LISTA DE ABREVIATURAS E SIGLAS​ 
+ 
+CAD – Computer-Aided Design (Projeto Assistido por Computador) 
+FDM – Fused Deposition Modeling (Modelagem por Fusão e 
+Deposição)  
+IoT – Internet of Things (Internet das Coisas)  
+PLA – Polylactic Acid (Ácido Polilático)  
+SETREM – Sociedade Educacional Três de Maio  
+ 
+ 
+LISTA DE QUADROS​
+ 
+ 
+ 
+Quadro 1 — Especificações técnicas e parâmetros de projeto. 
+Quadro 2 — Plano de validação com testes, procedimentos e 
+métricas de aprovação. 
+Quadro 3 — Testes físicos realizados com resultados. 
+ 
+
+
+## Página 6
+
+ 
+LISTA DE IMAGENS 
+ 
+Imagem 1— Vista Explodida  
+Imagem 2— Vista da Parte Inferior  
+Imagem 3— Vista Lateral 
+
+
+## Página 7
+
+ 
+SUMÁRIO 
+1. CONTEXTUALIZAÇÃO......................................................................................... 10 
+1.1 TEMA.............................................................................................................. 10 
+1.1.1 Delimitação do tema...............................................................................10 
+1.2 OBJETIVOS.................................................................................................... 11 
+1.2.1 Objetivo geral..........................................................................................11 
+1.2.2 Objetivos Específicos......................................................................................... 11 
+1.3 PROBLEMA.................................................................................................... 12 
+1.4 JUSTIFICATIVA.............................................................................................. 12 
+1.5 METODOLOGIA............................................................................................. 12 
+1.5.1 Classificação quanto à finalidade do estudo:......................................... 12 
+1.5.2 Classificação quanto aos objetivos do estudo:.......................................12 
+1.5.3 Classificação quanto ao tipo de abordagem:......................................... 13 
+1.5.4 Classificação quanto ao método aplicado:............................................. 13 
+1.5.5 Classificação quanto ao tipo de procedimento:......................................13 
+1.6 Cronograma.......................................................................................................... 13 
+1.7 Orçamento............................................................................................................ 13 
+2 REFERENCIAL TEÓRICO..................................................................................................14 
+2.1 Robótica Móvel e Plataformas Híbridas......................................................................14 
+2.2 Modelagem Computacional (CAD) no Desenvolvimento Robótico............................ 16 
+2.3  Manufatura Aditiva na Robótica (Impressão 3D e PLA)............................................ 16 
+2.4 Sistemas de Locomoção: Motores Nema 23 e Tração...............................................18 
+2.5 Robótica de Serviço e Interação com Pessoas.......................................................... 19 
+2.6 Especificações Técnicas e Desafios Concretos de Projeto........................................20 
+2.6 Plano de Validação..................................................................................................... 21 
+3 RESULTADOS.....................................................................................................................21 
+3.1 Requisitos e Metas de Desempenho.......................................................................... 21 
+3.1.1 Dimensões Físicas.............................................................................................22 
+3.1.2 Peso Total.......................................................................................................... 22 
+3.1.3 Inclinação de Rampa......................................................................................... 22 
+3.1.4 Estabilidade e Segurança.................................................................................. 22 
+3.2 Estrutura e Prototipagem............................................................................................ 23 
+
+
+## Página 8
+
+ 
+3.2.1 Arquitetura de Componentes e Vista Explodida................................................ 23 
+3.2.2 Dimensionamento e Envelopamento do Protótipo.............................................24 
+3.3 Limitações na Execução dos Testes de Validação..................................................... 26 
+3.4 Testes Físicos Realizados.......................................................................................... 26 
+3.5 Análise dos Resultados.............................................................................................. 28 
+4 CONCLUSÃO......................................................................................................................29 
+REFERÊNCIAS..........................................................................................................30 
+ 
+
+
+## Página 9
+
+ 
+INTRODUÇÃO 
+A 
+robótica 
+móvel 
+constitui 
+uma 
+área 
+multidisciplinar 
+que 
+integra 
+conhecimentos de mecânica, eletrônica e programação, sendo fundamental para o 
+desenvolvimento de soluções tecnológicas aplicadas à automação industrial, 
+exploração 
+de 
+ambientes 
+e 
+sistemas 
+autônomos. 
+Nesse 
+contexto, 
+o 
+desenvolvimento de plataformas robóticas móveis robustas e funcionais torna-se 
+essencial para atender às exigências de resistência estrutural, mobilidade e 
+eficiência operacional. 
+Nos últimos anos, a evolução dos softwares de modelagem tridimensional, 
+aliados às técnicas de manufatura aditiva, tem proporcionado avanços significativos 
+na prototipagem mecânica. A utilização de ferramentas CAD, como o SolidWorks, 
+permite o desenvolvimento e a validação virtual das peças antes da fabricação, 
+reduzindo falhas de projeto e desperdício de material. Paralelamente, a impressão 
+3D possibilita a produção de componentes personalizados, leves e de baixo custo, 
+contribuindo para a otimização estética e funcional da estrutura robótica. 
+Este projeto foi desenvolvido a partir de uma demanda formal da Faculdade 
+de Engenharia de Computação da SETREM, com o objetivo de construir a base 
+mecânica de um robô móvel institucional. O robô resultante será uma plataforma 
+móvel interativa destinada a circular pelo campus da SETREM, interagindo com 
+alunos, visitantes e a comunidade em geral. Outros projetos complementares, 
+desenvolvidos em paralelo no mesmo componente curricular, são responsáveis 
+pelas demais camadas do sistema, como navegação por localização, interação por 
+inteligência artificial, interface visual e controle remoto, cabendo a este projeto 
+entregar a estrutura mecânica funcional que servirá de base física para todo o 
+conjunto. 
+ 
+
+
+## Página 10
+
+ 
+1. CONTEXTUALIZAÇÃO 
+A robótica móvel é uma área multidisciplinar que exige a integração de 
+conceitos mecânicos, eletrônicos e de software. O desenvolvimento de plataformas 
+móveis robustas é essencial para aplicações que vão desde a automação industrial 
+até a exploração de ambientes. Nos últimos anos, a união do design assistido por 
+computador (CAD) com técnicas de manufatura aditiva (impressão 3D) revolucionou 
+a prototipagem, permitindo a criação de peças customizadas, leves e de baixo custo, 
+que podem ser facilmente combinadas com materiais estruturais tradicionais. 
+O contexto de extensão universitária reforça a relevância deste projeto: o robô 
+circulará pelo campus interagindo diretamente com a comunidade acadêmica e 
+visitantes, funcionando como um artefato tecnológico vivo que demonstra a 
+capacidade técnica do curso de Engenharia de Computação da SETREM. 
+1.1 TEMA 
+Projeto e construção de um robô móvel com estrutura mecânica híbrida, 
+utilizando modelagem CAD e impressão 3D. 
+ 
+1.1.1 Delimitação do tema 
+O projeto restringe-se ao dimensionamento, modelagem CAD e construção 
+física da estrutura mecânica (chassi e carenagem) de um robô móvel de tração de 
+alto torque. O escopo abrange a integração de um chassi tubular interno com 
+componentes externos fabricados em filamento PLA via impressão 3D, bem como a 
+realização de testes físicos de validação de carga, equilíbrio e locomoção. O projeto 
+é desenvolvido para atender a uma demanda institucional da Sociedade Educacional 
+Três de Maio (SETREM), entregando uma plataforma robótica funcional que servirá 
+de infraestrutura base para futuras aplicações de extensão e pesquisa tecnológica. 
+
+
+## Página 11
+
+ 
+1.2 OBJETIVOS 
+Para alcançar o propósito central deste projeto, foram definidos um objetivo 
+geral, que representa o resultado final esperado, e os objetivos específicos, que 
+detalham as etapas necessárias para sua concretização. 
+1.2.1 Objetivo geral 
+Projetar e construir o protótipo funcional de um robô móvel com tração de alto 
+torque, utilizando uma estrutura mecânica híbrida que combina chassi tubular e 
+carenagem impressa em 3D, validando a integração entre os projetos mecânico e 
+eletrônico. 
+1.2.2 Objetivos Específicos 
+ 
+●​ Modelar a estrutura completa do robô (chassi e carenagem) em ambiente 
+CAD utilizando o software SolidWorks. 
+ 
+●​ Dimensionar e fabricar o chassi interno utilizando tubos e ferragens para 
+garantir a rigidez torcional. 
+ 
+●​ Manufaturar a carenagem externa do robô utilizando impressão 3D com 
+filamentos PLA (preto e branco). 
+ 
+●​ Integrar o sistema de locomoção utilizando dois motores de passo Nema 23 
+(30 kgf.cm) e rodas de borracha maciça de 100mm. 
+ 
+●​ O sistema de locomoção ter capacidade de subir rampas íngremes, curtas ou 
+longas. Além disso, deve ser capaz de percorrer pisos de tijolos, que ficam 
+escorregadios em dias úmidos e possuem frestas. 
+ 
+ 
+
+
+## Página 12
+
+ 
+1.3 PROBLEMA 
+O projeto busca responder ao seguinte desafio tecnológico: Como projetar e 
+manufaturar uma plataforma robótica móvel que integre alta capacidade de torque e 
+tração com uma estrutura mecânica simultaneamente resistente e de fácil 
+customização estética e funcional? 
+ 
+ 
+1.4 JUSTIFICATIVA 
+A construção da base de um robô móvel apresenta o desafio de equilibrar 
+peso, rigidez estrutural e capacidade de tração. A escolha por uma abordagem 
+híbrida na construção deste protótipo justifica-se pela necessidade de otimização 
+mecânica. A utilização de um chassi tubular interno oferece a resistência necessária 
+para suportar componentes de alto peso e o torque gerado pelos motores, enquanto 
+a fabricação da carenagem externa em impressão 3D (filamento PLA) permite 
+liberdade de design e proteção dos circuitos eletrônicos, sem agregar peso 
+excessivo. Além disso, o uso prévio do software SolidWorks garante a validação 
+virtual das peças antes da fabricação, minimizando erros e desperdício de material. 
+1.5 METODOLOGIA 
+1.5.1 Classificação quanto à finalidade do estudo: 
+É classificada como aplicada, pois busca-se aplicar o conhecimento técnico 
+para resolver um problema prático em um ambiente real. 
+1.5.2 Classificação quanto aos objetivos do estudo: 
+A pesquisa possui caráter exploratório e descritivo, uma vez que busca 
+explorar soluções mecânicas para plataformas robóticas e descrever o processo de 
+desenvolvimento do protótipo. 
+ 
+
+
+## Página 13
+
+ 
+1.5.3 Classificação quanto ao tipo de abordagem: 
+A abordagem é qualitativa, pois o foco principal está na análise estrutural, no 
+processo de prototipagem e na validação funcional do sistema. 
+1.5.4 Classificação quanto ao método aplicado: 
+O método utilizado é experimental, considerando que será realizada a 
+construção física do protótipo e testes práticos de funcionamento. 
+ 
+1.5.5 Classificação quanto ao tipo de procedimento: 
+O procedimento metodológico caracteriza-se como estudo experimental e 
+prototipagem, visto que o projeto envolve modelagem, fabricação, montagem e 
+validação de um protótipo físico. 
+ 
+1.6 Cronograma 
+O projeto é desenvolvido ao longo do semestre letivo de 2026, com as 
+seguintes etapas: 
+Etapa 
+Atividade 
+fev 
+mar 
+abr 
+mai 
+jun 
+1 
+Levantamento de requisitos 
+✓ 
+ 
+ 
+ 
+ 
+2 
+Modelagem CAD 
+(SolidWorks) 
+✓ 
+✓ 
+ 
+ 
+ 
+3 
+Fabricação do chassi tubular 
+ 
+✓ 
+✓ 
+ 
+ 
+4 
+Impressão 3D da carenagem 
+ 
+ 
+✓ 
+✓ 
+ 
+5 
+Montagem e integração 
+ 
+ 
+ 
+✓ 
+ 
+6 
+Testes de validação 
+ 
+ 
+ 
+✓ 
+✓ 
+7 
+Análise de resultados e 
+ajustes 
+ 
+ 
+ 
+ 
+✓ 
+8 
+Redação do relatório final 
+ 
+✓ 
+✓ 
+✓ 
+✓ 
+ 
+1.7 Orçamento 
+Os principais itens de custo do projeto estão listados a seguir. Valores 
+estimados com base em cotações realizadas em maio de 2026. 
+
+
+## Página 14
+
+ 
+ 
+Item 
+Quantidade 
+Custo Unitário 
+(R$) 
+Custo Total 
+(R$) 
+Motor de passo Nema 23 (30 
+kgf.cm) 
+2 
+280,00 
+560,00 
+Rodas de borracha 100 mm 
+4 
+35,00 
+140,00 
+Tubos de aço 25x25x1,5 mm 
+6 m 
+18,00/m 
+108,00 
+Filamento PLA 1 kg (preto) 
+2 
+90,00 
+180,00 
+Filamento PLA 1 kg (branco) 
+1 
+90,00 
+90,00 
+Parafusos, insertos e ferragens 
+– 
+– 
+80,00 
+Eletrônica básica (fios, 
+conectores) 
+– 
+– 
+60,00 
+Total estimado 
+ 
+ 
+1.218,00 
+ 
+ 
+2 REFERENCIAL TEÓRICO 
+Este capítulo apresenta a fundamentação teórica que constitui a base de 
+sustentação de toda a pesquisa. Esta seção visa explicar o problema de pesquisa, 
+contribuir para a escolha dos elementos metodológicos e, posteriormente, permitir a 
+discussão e o confronto dos resultados obtidos. 
+2.1 Robótica Móvel e Plataformas Híbridas 
+A robótica móvel é uma vertente da inteligência artificial e da engenharia 
+mecatrônica focada em sistemas dotados de locomoção autônoma ou teleoperada 
+(ROMERO et al., 2014). O desenvolvimento da estrutura (ou chassi) de um robô 
+móvel é a fundação que determina as suas capacidades físicas, limitando ou 
+
+
+## Página 15
+
+ 
+expandindo as suas aplicações. Segundo a literatura da área, o principal desafio na 
+engenharia de plataformas robóticas de médio porte é a relação peso e potência. O 
+aumento da rigidez torcional geralmente implica no uso de materiais mais densos e 
+pesados, o que sobrecarrega os motores e aumenta o consumo energético (DEMIR 
+et al., 2021).  
+Para contornar esse obstáculo, abordagens híbridas têm se tornado uma 
+tendência. A união de um núcleo estrutural resistente, como tubos metálicos ou 
+perfis de alumínio, com um exoesqueleto leve de polímero permite isolar as tensões 
+mecânicas no chassi principal, enquanto a carenagem desempenha funções de 
+proteção aerodinâmica e elétrica (CHUGUNOV et al., 2021). O domínio do equilíbrio 
+do robô e do seu centro de massa é vital para evitar tombamentos, especialmente 
+durante a subida de rampas ou transposição de obstáculos. Estudos de análise por 
+elementos finitos demonstram que estruturas em aço tubular apresentam 
+deformações consideravelmente menores quando submetidas a cargas combinadas 
+de força, aceleração e variação térmica, em comparação com estruturas similares 
+em alumínio (MUTHIAH et al., 2021). 
+O controle do centro de massa do robô é vital para evitar tombamentos, 
+especialmente durante a subida de rampas ou a transposição de obstáculos. Em 
+robôs de médio porte com tração diferencial, a concentração dos componentes mais 
+pesados (motores e baterias) na seção mais baixa do chassi é a estratégia mais 
+eficaz para manter a estabilidade dinâmica em superfícies irregulares (OLIVEIRA et 
+al., 2024). A largura da base e a altura do centro de massa são os parâmetros 
+físicos determinantes da estabilidade estática e dinâmica do veículo, e devem ser 
+definidos ainda na fase de modelagem (REBHI et al., 2025). 
+No contexto deste projeto, a plataforma híbrida (chassi tubular de aço 
+combinado com carenagem em PLA por impressão 3D) é a abordagem mais 
+adequada por combinar: (a) resistência suficiente para suportar as camadas de 
+hardware que serão integradas pelos projetos complementares; (b) leveza para não 
+sobrecarregar os motores Nema 23 selecionados; e (c) facilidade de customização 
+da carenagem para acomodar os componentes das demais camadas do robô. 
+
+
+## Página 16
+
+ 
+2.2 Modelagem Computacional (CAD) no Desenvolvimento Robótico 
+​
+O Design Assistido por Computador (CAD) é uma ferramenta indispensável 
+na engenharia mecânica contemporânea. Ali et al. (2013) demonstram que o uso de 
+softwares CAD tridimensionais, como o SolidWorks, permite visualizar e simular os 
+componentes mecânicos antes da fabricação, reduzindo erros e custos no 
+desenvolvimento de sistemas mecânicos automatizados. Dragne e Iliescu (2022) 
+reforçam que a modelagem paramétrica no SolidWorks é particularmente eficaz no 
+desenvolvimento de sistemas robóticos, pois permite alterar dimensões de forma 
+propagada por toda a árvore de montagem, tornando iterações de projeto 
+substancialmente mais rápidas. 
+A utilização do SolidWorks neste projeto contempla: (a) modelagem 
+paramétrica de cada peça do chassi e da carenagem; (b) cálculo do centro de 
+gravidade do conjunto motor-chassi-carenagem; (c) detecção de interferências 
+internas 
+entre 
+componentes; 
+(d) 
+exportação 
+de 
+vistas 
+explodidas 
+para 
+documentação técnica e validação dimensional.  
+Chittawadigi (2023) demonstra que a API do SolidWorks permite ainda validar 
+o movimento cinemático de mecanismos antes da fabricação, eliminando retrabalhos 
+dispendiosos. Para robôs, essa capacidade é especialmente relevante na verificação 
+da trajetória das rodas e do posicionamento correto dos eixos dos motores de tração 
+em relação ao centro de massa.  
+Estudos que aplicaram o SolidWorks no desenvolvimento de robôs (como o 
+trabalho de Zhao et al. (2025) com exoesqueletos de reabilitação) confirmam que a 
+modelagem CAD prévia reduz significativamente os erros de fabricação e o número 
+de ciclos de prototipagem, resultando em protótipos mais precisos e com menor 
+custo total de desenvolvimento. 
+ 
+2.3  Manufatura Aditiva na Robótica (Impressão 3D e PLA)  
+​
+A manufatura aditiva, popularmente denominada impressão 3D, revolucionou 
+os métodos tradicionais de prototipagem e fabricação de robôs. A técnica de 
+Modelagem por Fusão e Deposição (FDM, do inglês Fused Deposition Modeling) 
+
+
+## Página 17
+
+ 
+utilizando Ácido Polilático (PLA) destaca-se por seu baixo custo, facilidade de 
+processamento e resistência mecânica adequada para partes não estruturais 
+(RAIMUNDO; SANTOS, 2025). Uma revisão sistemática recente sobre os fatores 
+que afetam o desempenho mecânico do PLA em impressão FDM confirma que os 
+parâmetros de processo, especialmente densidade de preenchimento, altura de 
+camada e temperatura de impressão, são determinantes para a resistência final das 
+peças (WAHYUDIN et al., 2025).  
+Hikmat, Rostam e Ahmed (2021) investigaram as propriedades de tração de 
+peças em PLA fabricadas por FDM utilizando o método de Taguchi, demonstrando 
+que a densidade de preenchimento é o parâmetro de maior influência na resistência 
+à tração. Para aplicações robóticas não estruturais, como a carenagem externa 
+deste projeto, os autores recomendam densidades entre 25% e 40%, intervalo que 
+equilibra resistência mecânica e redução de peso. Adotou-se neste projeto o valor 
+de 30% de infill, alinhado com essa recomendação.  
+Frunzaverde et al. (2022) avaliaram a influência da temperatura de impressão 
+e da cor do filamento nas propriedades dimensionais e mecânicas de peças em 
+PLA, 
+confirmando 
+que 
+variações 
+de 
+temperatura 
+de 
+±5°C 
+impactam 
+significativamente a precisão dimensional. A utilização de filamentos PLA de cores 
+distintas preto e branco, conforme adotado neste projeto, requer calibração 
+específica da temperatura de extrusão para cada cor, devido às diferenças nos 
+pigmentos incorporados ao polímero. Complementarmente, Frunzaverde et al. 
+(2023) demonstraram que a altura de camada tem impacto direto sobre a resistência 
+à tração das peças, recomendando camadas entre 0,15 mm e 0,25 mm para 
+componentes sujeitos a esforços mecânicos leves, intervalo no qual se enquadra a 
+camada de 0,20 mm adotada neste projeto. A fixação entre a carenagem em PLA e 
+o chassi metálico representa um ponto crítico de projeto. A utilização de insertos 
+metálicos M3 embutidos termicamente nas peças impressas é uma solução 
+amplamente documentada na literatura, pois cria pontos de ancoragem com 
+resistência ao torque de aperto muito superior à do polímero isolado (MÕTSHÄRG et 
+al., 2024). O projeto Robotont 3, uma plataforma robótica móvel educacional de 
+código aberto com chassi inteiramente impresso em FDM, é um exemplo de 
+referência que adota essa estratégia de fixação, demonstrando que a impressão 3D 
+viabiliza plataformas robóticas funcionais, modulares e de baixo custo para 
+
+
+## Página 18
+
+ 
+ambientes acadêmicos. É relevante destacar uma limitação inerente do PLA: o 
+material apresenta deformação térmica em temperaturas acima de 60°C e absorção 
+de umidade em exposição prolongada (WAHYUDIN et al., 2025). Por esse motivo, a 
+carenagem em PLA foi projetada exclusivamente como elemento de proteção e 
+cobertura estética, sem função estrutural. Todos os esforços mecânicos significativos 
+são absorvidos pelo chassi tubular de aço. 
+ 
+2.4 Sistemas de Locomoção: Motores Nema 23 e Tração 
+​
+O sistema de locomoção define a eficiência do robô em superar 
+irregularidades do terreno e transpor as rampas previstas no projeto. Motores de 
+passo são amplamente utilizados na robótica de precisão devido ao controle exato 
+da posição angular de seus eixos sem a necessidade de encoders adicionais 
+(BORJA; ALVARADO; DE LA PEÑA, 2020). O padrão de dimensionamento NEMA 
+(National Electrical Manufacturers Association) define as dimensões da flange do 
+motor, no caso do Nema 23, uma face quadrada de 57 × 57 mm com quatro furos 
+M5 em um círculo de 47,14 mm, o que garante compatibilidade direta com uma 
+ampla variedade de suportes e interfaces mecânicas (SMOOTH MOTOR, 2024). 
+Os motores Nema 23 selecionados entregam torque de 30 kgf.cm a baixas 
+rotações, característica indispensável para mover uma estrutura metálica encorpada 
+e 
+evitar 
+deslizamentos 
+em 
+subidas 
+íngremes (STEPPERONLINE, 2024). 
+Considerando o peso total estimado de 8 kg do robô e a inclinação máxima de 
+projeto de 20°, a força necessária para subida é de aproximadamente F = m × g × 
+sin(20°) ≈ 8 × 9,81 × 0,342 ≈ 26,8 N por roda, equivalendo a um torque de T = F × r 
+= 26,8 × 0,05 ≈ 1,34 N.m ≈ 13,7 kgf.cm por motor. Os motores selecionados (30 
+kgf.cm) oferecem, portanto, margem de segurança de aproximadamente 2,2× em 
+relação ao torque necessário para subida. 
+As rodas de borracha maciça de 100 mm proporcionam o coeficiente de atrito 
+necessário entre a banda de rodagem e o piso, minimizando a perda de tração e 
+dissipando as vibrações inerentes ao movimento mecânico do chassi tubular. O 
+coeficiente de atrito estático entre borracha e piso de tijolos úmidos é tipicamente μ ≈ 
+0,4–0,6 (ANTONELLI; CHIAVERINI; FUSCO, 2006), valor que, aliado ao torque 
+
+
+## Página 19
+
+ 
+disponível, permite superar o deslizamento esperado nas condições de piso 
+definidas nos testes. 
+Estudos de controle de tração adaptativa para robôs móveis (KELLY; 
+GARCIA, 2005) reforçam que a manutenção do torque de saída dentro dos limites 
+de atrito disponíveis é a condição fundamental para evitar o deslizamento das rodas 
+em superfícies de coeficiente variável. 
+A revisão de García-Torres et al. (2024) sobre sistemas de locomoção de 
+robôs móveis com rodas em terrenos irregulares confirma que rodas de borracha 
+sólida de diâmetro entre 80 mm e 120 mm representam o melhor equilíbrio entre 
+tração, peso e custo para robôs de médio porte destinados a ambientes internos e 
+semi estruturados, como o campus universitário que constitui o ambiente de 
+operação deste projeto. 
+ 
+2.5 Robótica de Serviço e Interação com Pessoas 
+O robô desenvolvido neste projeto não é apenas uma plataforma de 
+locomoção: ele é concebido para circular pelo campus da SETREM e interagir com 
+pessoas. Essa função o classifica como um robô de serviço social, categoria 
+amplamente estudada na literatura de interação humano-robô (HRI, do inglês 
+Human-Robot Interaction). Mahdi et al. (2022) apresentam uma ampla revisão sobre 
+o design e a evolução de robôs sociais, identificando que a forma física do robô, 
+incluindo altura, proporcionalidade e modulação da estrutura, tem impacto direto na 
+receptividade das pessoas e na qualidade da interação.  
+Nakanishi et al. (2020) documentam a implantação de robôs de serviço em 
+hotéis no Japão, demonstrando que robôs com mobilidade autônoma e interfaces de 
+conversação geram maior engajamento do público em comparação com terminais 
+fixos.  
+A altura operacional do robô, neste projeto de 875 mm,  posiciona a seção de 
+interação (tela e interface de voz) em nível adequado para uma pessoa em pé ou 
+sentada em cadeira, alinhando-se às recomendações ergonômicas para robôs de 
+recepção (MAHDI et al., 2022). A base alargada (480 × 420 mm) e o afunilamento 
+estrutural da cintura para 220 mm foram dimensionados também com critério 
+ergonômico: a cintura estreita facilita a passagem do robô em corredores com fluxo 
+
+
+## Página 20
+
+ 
+de pedestres e reduz a sensação de obstrução para as pessoas ao redor, 
+aumentando a aceitação da presença do robô no ambiente (AIZAWA; UMEMURO, 
+2021). Essa característica é especialmente relevante em um campus universitário, 
+onde o robô deverá circular em áreas de convívio com alto fluxo de pessoas. 
+ 
+2.6 Especificações Técnicas e Desafios Concretos de Projeto 
+A definição clara das especificações técnicas é condição fundamental para o 
+sucesso do projeto. O Quadro 1 consolida os parâmetros de projeto estabelecidos a 
+partir dos requisitos da SETREM e das análises de engenharia realizadas. 
+ 
+Parâmetro 
+Valor / Descrição 
+Peso total estimado do robô 
+≈ 15 kg (chassi + motores + carenagem + 
+eletrônica básica) 
+Altura total do robô 
+875,00 mm 
+Posição dos motores 
+Eixo central lateral, simetria bilateral, altura ≈ 80 
+mm do solo 
+Centro de massa estimado 
+Plano médio do chassi, h ≈ 120 mm do solo 
+Risco de tombamento lateral 
+Avaliado em curvas com v < 0,3 m/s; centro de 
+massa baixo mitiga risco 
+Inclinação máxima de rampa 
+20°  
+Tipo de piso de teste 
+Piso plano, piso de tijolos 
+Resistência da carenagem 
+PLA; resistência ao impacto lateral leve;  
+Fixação chassi ↔ carenagem 
+Insertos M3 embutidos termicamente + parafusos 
+de aço inox 
+Quadro 1 — Especificações técnicas e parâmetros de projeto. Fonte: autores (2026). 
+Entre os principais desafios técnicos identificados durante o levantamento de 
+requisitos, destacam-se: (a) garantir rigidez torcional do chassi tubular sem elevar o 
+peso a ponto de comprometer a autonomia dos motores; (b) projetar a fixação da 
+carenagem de forma que resista às vibrações geradas pelos motores de passo (que 
+operam com micro-vibrações em frequências audíveis); (c) posicionar os motores de 
+modo a manter o centro de massa dentro dos limites de estabilidade para rampas de 
+20°; (d) garantir que as frestas do piso de tijolos não causem engasgamento das 
+rodas de 100 mm. 
+
+
+## Página 21
+
+ 
+2.6 Plano de Validação 
+A validação do protótipo será realizada por meio de um conjunto de testes 
+físicos padronizados, executados após a montagem completa do robô. Os testes 
+estão descritos no Quadro 2. 
+Teste 
+Procedimento 
+Métrica de Aprovação 
+T1 — Carga 
+estática 
+Aplicar carga de 15 kg sobre o 
+chassi por 10 minutos 
+Sem deformação permanente 
+visível  
+T2 — Piso plano 
+Deslocar o robô (motor ligado) por 
+10 m em piso liso 
+Percurso completo sem falha 
+estrutural ou tração 
+T3 — Piso de 
+tijolos 
+Deslocar o robô por 5 m em piso de 
+tijolos 
+Percurso completo sem 
+deslizamento ou tombamento 
+T4 — Rampa 
+20° 
+Subir rampa de 20° com robô 
+carregando sua massa própria 
+Subida completa sem 
+deslizamento dos motores 
+T5 — 
+Estabilidade 
+lateral 
+Realizar curva fechada a 0,3 m/s em 
+piso plano 
+Sem tombamento ou perda de 
+contato de roda 
+T6 — Fadiga 
+estrutural 
+Executar 20 ciclos de T2 + T3 em 
+sequência 
+Sem folgas, trincas ou 
+desalinhamento após ciclos 
+T7 — Inspeção 
+da carenagem 
+Verificar fixações e superfície após 
+T6 
+Sem trincas, parafusos soltos ou 
+deformação do PLA 
+ 
+Quadro 2 — Plano de validação com testes, procedimentos e métricas de aprovação. Fonte: autores 
+(2026). 
+Os resultados de cada teste serão registrados em formulário padronizado, 
+com fotos e medições documentadas. Não-conformidades identificadas após os 
+testes gerarão ações corretivas registradas no relatório final do projeto. 
+ 
+3 RESULTADOS 
+3.1 Requisitos e Metas de Desempenho 
+
+
+## Página 22
+
+ 
+Esta seção define os parâmetros técnicos, operacionais e de design que o 
+robô deve atender para garantir seu funcionamento seguro e eficiente no ambiente 
+de destino. As metas foram estabelecidas considerando a viabilidade mecânica, o 
+consumo energético e a usabilidade. 
+3.1.1 Dimensões Físicas 
+De acordo com o dimensionamento definido no modelo 3D, o projeto 
+apresenta as seguintes medidas: 
+•​
+Altura Total: 875,00 mm 
+•​
+Largura da Base: 420,00 mm 
+•​
+Comprimento/Profundidade da Base: 480,00 mm 
+•​
+Altura da Base (Carenagem inferior): 180,00 mm 
+•​
+Largura da "Cintura"/Pescoço: 220,00 mm 
+ 
+3.1.2 Peso Total 
+O equipamento completo, incluindo chassi, eletrônica, baterias e carenagem, 
+tem peso estimado de 15 kg. Esse valor foi definido para evitar sobrecarga nos 
+motores de tração e permitir que o robô seja manuseado ou erguido por um 
+operador humano em caso de manutenção, sem necessidade de equipamentos 
+auxiliares. 
+3.1.3 Inclinação de Rampa 
+Os motores de tração e o controle de torque foram dimensionados para 
+garantir a subida e descida seguras em rampas com inclinação de até 5 a 7 graus, 
+que corresponde ao padrão de acessibilidade adotado nos ambientes do campus da 
+SETREM. 
+3.1.4 Estabilidade e Segurança 
+A base alargada de 420 × 480 mm em relação ao topo assegura que o centro 
+de gravidade do robô, com seus 15 kg e os componentes mais pesados (baterias e 
+motores) concentrados na parte inferior, seja mantido baixo. A meta de desempenho 
+para estabilidade é garantir que o robô não tombe sob acelerações bruscas, 
+
+
+## Página 23
+
+ 
+frenagens de emergência ou durante a navegação nas inclinações máximas 
+permitidas. 
+ 
+ 
+3.2 Estrutura e Prototipagem 
+Esta seção apresenta a arquitetura mecânica e a concepção estrutural do 
+robô, desenvolvida através de modelagem tridimensional (CAD). O design foi 
+projetado sob uma abordagem modular, visando otimizar os processos de 
+fabricação, montagem e manutenção em campo. 
+ 
+3.2.1 Arquitetura de Componentes e Vista Explodida 
+ 
+Imagem 1— Vista Explodida 
+
+
+## Página 24
+
+ 
+A imagem acima ilustra o design modular da carenagem externa e do chassi 
+estrutural. A fragmentação da estrutura em seções independentes (base inferior, 
+colunas de sustentação e bloco superior) cumpre as seguintes funções técnicas: 
+Manutenção: Permite o acesso isolado a subsistemas específicos (como o 
+compartimento de baterias na base ou placas eletrônicas no corpo central) sem a 
+necessidade de desmontagem total do robô. 
+Resistência Mecânica: As junções e encaixes foram desenhados para 
+distribuir o estresse mecânico de forma homogênea pela estrutura. 
+ 
+3.2.2 Dimensionamento e Envelopamento do Protótipo 
+ 
+Imagem 2— Vista da Parte Inferior 
+ 
+
+
+## Página 25
+
+ 
+ 
+Imagem 3— Vista Lateral 
+As imagens técnicas detalham o envelope dimensional do protótipo, 
+garantindo que o robô atenda aos requisitos de estabilidade e mobilidade 
+estabelecidos: 
+Estabilidade Dinâmica (Base Inferior): Com uma base de 480,00 mm de 
+comprimento por 420,00 mm de largura, o robô possui uma área de apoio ampla. 
+Esse arranjo permite acomodar os motores de tração e as rodas nos extremos da 
+estrutura, o que, somado à altura reduzida da base (180,00 mm), abaixa 
+consideravelmente 
+o 
+centro 
+de 
+gravidade total da máquina, prevenindo 
+tombamentos. 
+Afunilamento Estrutural ("Cintura"): A redução da largura para 220,00 mm na 
+seção intermediária reduz o peso morto do topo e melhora a ergonomia visual do 
+equipamento, além de facilitar a passagem e a operação em corredores ou 
+ambientes com fluxo de pedestres. 
+Altura Operacional: A altura total de 875,00 mm posiciona a seção superior 
+em um nível adequado para a interação humana ou posicionamento de sensores de 
+
+
+## Página 26
+
+ 
+navegação (como LiDAR ou câmeras), maximizando o campo de visão desobstruído 
+do sistema de sensores. 
+ 
+3.3 Limitações na Execução dos Testes de Validação 
+O plano de validação original previsto na seção 2.7 contemplava sete testes 
+físicos padronizados (T1 a T7), cobrindo desde carga estática até fadiga estrutural 
+após ciclos de locomoção. Entretanto, durante o período de desenvolvimento do 
+projeto, foram identificados problemas técnicos na implementação do sistema de 
+controle dos motores de passo Nema 23, que impediram a conclusão da etapa de 
+integração eletrônica responsável pelo acionamento autônomo das rodas de tração. 
+Em decorrência dessa limitação, os testes T2 (Piso Regular), T3 (Piso de 
+Tijolos), T4 (Rampa 20°), T5 (Estabilidade Lateral) e T6 (Fadiga Estrutural), todos 
+dependentes de locomoção autônoma ou motorizada do robô, não puderam ser 
+executados conforme o protocolo estabelecido. Esses testes serão realizados em 
+etapa posterior, quando a integração do sistema de controle for concluída, e seus 
+resultados serão documentados no relatório final do projeto. 
+A impossibilidade de execução dos testes de movimento não compromete a 
+validade dos resultados obtidos nos testes que foram realizados. Os testes 
+executados incidiram sobre aspectos independentes do sistema de controle, 
+nomeadamente a integridade estrutural e o comportamento físico da plataforma 
+diante de cargas e vibrações mecânicas externas, conforme detalhado na seção 3.4. 
+3.4 Testes Físicos Realizados 
+Em substituição parcial ao plano de validação original, foram elaborados e 
+executados testes focados exclusivamente nas propriedades físicas e estruturais da 
+plataforma, independentes do sistema de locomoção motorizada. Os testes foram 
+conduzidos manualmente, com o robô sendo deslocado à mão sobre as superfícies 
+de teste, ou com cargas aplicadas diretamente sobre a estrutura. Os critérios de 
+aprovação foram definidos com base nos requisitos de projeto e nas especificações 
+técnicas estabelecidas na seção 3.1. 
+
+
+## Página 27
+
+ 
+Os resultados obtidos estão consolidados no Quadro 3. 
+Quadro 3 — Testes físicos realizados, procedimentos e resultados. 
+ 
+Teste 
+Descrição 
+Procedimento 
+Resultado 
+TP1 — 
+Trepidação em 
+piso liso 
+Verificar se a 
+estrutura apresenta 
+trepidação visível ao 
+ser deslocada 
+manualmente em 
+piso regular. 
+Deslocamento manual 
+do robô por 3 m em 
+piso liso de concreto, 
+com observação visual 
+e tátil da carenagem. 
+APROVADO: Nenhuma 
+trepidação visível ou 
+perceptível ao toque 
+durante o deslocamento 
+em piso liso. 
+TP2 — 
+Trepidação em 
+piso de tijolos 
+Verificar se a 
+estrutura apresenta 
+trepidação visível ao 
+ser deslocada 
+manualmente em 
+piso de tijolos. 
+Deslocamento manual 
+do robô por 3 m em 
+piso de tijolos, com 
+observação visual e tátil 
+da carenagem e do 
+chassi. 
+PARCIAL: Trepidação 
+visível identificada 
+durante o deslocamento 
+em piso de tijolos, 
+decorrente das 
+irregularidades e frestas 
+da superfície. Nenhuma 
+folga estrutural ou 
+desalinhamento detectado 
+após o teste. 
+TP3 — Ruído 
+em piso liso 
+Avaliar o nível de 
+ruído gerado pela 
+estrutura durante o 
+deslocamento em 
+piso regular. 
+Deslocamento manual 
+do robô por 3 m em 
+piso liso, com avaliação 
+auditiva qualitativa do 
+ruído gerado pelas 
+rodas e encaixes da 
+estrutura. 
+MODERADO: Ruído 
+moderado identificado, 
+proveniente 
+principalmente do contato 
+das rodas de borracha 
+com o piso liso. Sem 
+ruídos de folga estrutural 
+ou atrito entre peças da 
+carenagem. 
+TP4 — Ruído 
+em piso de 
+tijolos 
+Avaliar o nível de 
+ruído gerado pela 
+estrutura durante o 
+deslocamento em 
+piso de tijolos. 
+Deslocamento manual 
+do robô por 3 m em 
+piso de tijolos, com 
+avaliação auditiva 
+qualitativa do ruído 
+gerado. 
+REPROVADO: Ruído 
+elevado identificado, 
+gerado pelo impacto 
+repetido das rodas nas 
+frestas entre tijolos e pela 
+trepidação da carenagem 
+sobre a superfície 
+irregular. Sem danos 
+estruturais após o teste. 
+TP5 — 
+Resistência da 
+carenagem a 20 
+kg 
+Verificar se a 
+carenagem em PLA 
+resiste à aplicação 
+de carga de 20 kg 
+sem deformação 
+permanente. 
+Aplicação de carga de 
+20 kg sobre a superfície 
+superior da carenagem 
+por 10 minutos, com 
+verificação visual e 
+dimensional antes e 
+após o teste. 
+APROVADO: Nenhuma 
+deformação permanente 
+visível ou mensurável 
+identificada na carenagem 
+após a aplicação e 
+remoção da carga. 
+
+
+## Página 28
+
+ 
+Teste 
+Descrição 
+Procedimento 
+Resultado 
+TP6 — 
+Resistência do 
+chassi a 30 kg 
+Verificar se o chassi 
+tubular de aço 
+resiste à aplicação 
+de carga de 30 kg 
+sem deformação 
+permanente. 
+Aplicação de carga de 
+30 kg sobre o chassi 
+tubular, com o robô 
+posicionado sobre 
+superfície plana, por 10 
+minutos. Verificação 
+visual e com 
+paquímetro nos tubos 
+estruturais antes e após 
+o teste. 
+APROVADO: Nenhuma 
+deformação permanente 
+visível ou mensurável 
+identificada no chassi 
+após a aplicação e 
+remoção da carga. 
+ 
+Quadro 3 — Testes físicos realizados com resultados. Fonte: autores (2026). 
+ 
+3.5 Análise dos Resultados 
+A análise dos resultados obtidos nos testes TP1 a TP6 permite extrair as 
+seguintes conclusões sobre o desempenho atual da plataforma mecânica: 
+•​
+Trepidação (TP1 e TP2): a ausência de trepidação em piso liso (TP1) 
+confirma que a estrutura modular da carenagem e os encaixes entre peças 
+impressas em PLA têm rigidez suficiente para absorver as pequenas 
+irregularidades de superfícies regulares. A trepidação identificada no piso de 
+tijolos (TP2), por outro lado, é inerente ao tipo de superfície, as frestas entre 
+os tijolos geram impactos periódicos nas rodas, e não representa uma falha 
+estrutural da plataforma. Recomenda-se, para mitigação futura, a avaliação 
+de rodas com perfil levemente abaulado ou com material de maior capacidade 
+de absorção de vibração. 
+•​
+Ruído (TP3 e TP4): o ruído moderado em piso liso (TP3) está dentro do 
+esperado para rodas de borracha sólida, sem indicar folgas ou falhas nos 
+encaixes da estrutura. O ruído elevado em piso de tijolos (TP4) decorre 
+diretamente da mesma causa da trepidação identificada em TP2: o impacto 
+das rodas nas frestas. Esse comportamento é esperado para qualquer 
+plataforma com rodas sólidas nesse tipo de superfície e não compromete a 
+integridade estrutural do robô. A correção definitiva desse comportamento, 
+que pode impactar negativamente a experiência de interação com pessoas, 
+depende de ajustes no sistema de amortecimento ou na escolha das rodas, a 
+ser avaliada em etapa subsequente ao projeto. 
+•​
+Resistência estrutural (TP5 e TP6): os resultados de ambos os testes de 
+carga confirman que a estrutura híbrida atende plenamente aos requisitos de 
+resistência definidos no projeto. A carenagem em PLA com 30% de infill 
+suportou 20 kg sem deformação, valor superior ao peso total estimado do 
+robô (15 kg), demonstrando margem estrutural adequada. O chassi tubular de 
+aço suportou 30 kg sem deformação, o dobro do peso de projeto, 
+
+
+## Página 29
+
+ 
+confirmando que o dimensionamento dos tubos 25×25×1,5 mm foi 
+conservador e garante durabilidade estrutural ao longo do ciclo de vida da 
+plataforma. 
+ 
+Em síntese, os testes realizados confirmam a hipótese H1 do projeto, a 
+estrutura híbrida atinge rigidez estrutural adequada com peso controlado, e 
+fornecem evidências parciais sobre o desempenho em superfícies irregulares, que 
+deverão ser complementadas pelos testes de locomoção motorizada em etapa 
+posterior. Os testes pendentes (T2 a T6 do plano original) permanecem como 
+trabalho futuro e são condição para a validação completa do protótipo antes da 
+integração com os projetos complementares do sistema. 
+4 CONCLUSÃO​
+ ​
+ 
+O presente trabalho atingiu o objetivo de conceber, modelar e construir a 
+estrutura mecânica de um robô móvel destinado às atividades de extensão da 
+SETREM. A utilização de uma arquitetura híbrida, composta por um chassi tubular 
+de aço e uma carenagem modular produzida por impressão 3D em PLA, possibilitou 
+o desenvolvimento de uma plataforma estruturalmente resistente, leve e adequada 
+para futuras integrações eletrônicas e computacionais.  
+Os testes físicos executados demonstraram que a estrutura apresenta 
+resistência compatível com os requisitos definidos no projeto, suportando as cargas 
+aplicadas sem deformações permanentes e mantendo estabilidade estrutural 
+durante os ensaios realizados. Embora tenham sido observados aumento de 
+trepidação e de ruído em pisos de tijolos, tais comportamentos foram associados às 
+características da superfície, não sendo identificadas falhas estruturais na 
+plataforma.  
+
+
+## Página 30
+
+ 
+A 
+principal 
+limitação encontrada durante o desenvolvimento foi a 
+impossibilidade de concluir a integração do sistema eletrônico responsável pelo 
+acionamento dos motores Nema 23, o que impediu a realização dos testes de 
+locomoção motorizada previstos no plano de validação. Dessa forma, os resultados 
+obtidos 
+validam 
+apenas 
+os aspectos físicos e estruturais do protótipo, 
+permanecendo a validação dinâmica como etapa futura.  
+Como continuidade do projeto, recomenda-se a conclusão da integração 
+eletrônica, a execução dos ensaios de locomoção, estabilidade dinâmica e 
+transposição de rampas, bem como a integração dos módulos de navegação, 
+inteligência artificial e interação humano-robô. Assim, a plataforma desenvolvida 
+estabelece uma base sólida para a evolução do robô móvel e para sua utilização em 
+atividades de ensino, pesquisa e extensão na instituição. 
+ 
+REFERÊNCIAS 
+​
+ ​
+ 
+​
+ ​
+ 
+AIZAWA, M.; UMEMURO, H. Behavioral design of guiding agents to 
+encourage their use by visitors in public spaces. In: COMPANION OF THE 
+ACM/IEEE 
+INTERNATIONAL 
+CONFERENCE 
+ON 
+HUMAN-ROBOT 
+INTERACTION, 2021, Boulder. Anais [...]. New York: ACM/IEEE, 2021. 
+ALI, Hazrat; KATSUKI, Akio; KUROKAWA, Syuhei; SAJIMA, Takao. Design of 
+mechanical actuator in 3D CAD software. Procedia Engineering, v. 64, p. 
+473–478, 2013. DOI: 10.1016/j.proeng.2013.09.121. 
+
+
+## Página 31
+
+ 
+ANTONELLI, G.; CHIAVERINI, S.; FUSCO, G. A fuzzy-logic-based approach 
+for mobile robot path tracking. IEEE Transactions on Fuzzy Systems, v. 15, n. 
+2, p. 211–221, 2006. DOI: 10.1109/TFUZZ.2006.880001. 
+BORJA, J. A.; ALVARADO, I.; DE LA PEÑA, D. M. Low cost two-wheels 
+self-balancing robot for control education powered by stepper motors. 
+IFAC-PapersOnLine, 
+v. 
+53, 
+n. 
+2, 
+p. 
+17518–17523, 
+2020. 
+DOI: 
+10.1016/j.ifacol.2020.12.2440. 
+BRATOVANOV, N. SolidWorks add-in for motion simulation, layout analysis 
+and collision detection of substrate handling robots. Proceedings of Technical 
+University of Sofia, v. 70, n. 1, p. 29–39, 2020. 
+CHITTAWADIGI, R. G. Effective visualization and validation of motion of a 
+mechanical system using application programming interface of a CAD 
+software. In: INTERNATIONAL AND NATIONAL CONFERENCE ON 
+MACHINES AND MECHANISM, 2023, Singapore. Anais [...]. Singapore: 
+Springer Nature, 2023. p. 823–834. 
+CHUGUNOV, M. V.; POLUNINA, I. N.; DIVIN, A. G. et al. Integrated mobile 
+robotic platform model. Engineering Technologies and Systems, v. 31, n. 4, p. 
+609–627, 2021. DOI: 10.15507/2658-4123.031.202104.609-627. 
+DASSAULT SYSTÈMES. Interference detection. SolidWorks Design Help, 
+2025. 
+Disponível 
+em: 
+https://help.solidworks.com/2025/english/solidworks/sldworks/c_Interference_
+Detection.htm. Acesso em: 20 maio 2026. 
+DEMIR, N.; SUCUOGLU, H. S.; BOGREKCI, I.; DEMIRCIOGLU, P. Structural 
+& dynamic analyses and simulation of mobile transportation robot. 
+International Journal of 3D Printing Technologies and Digital Industry, v. 5, n. 
+3, p. 587–595, 2021. DOI: 10.46519/ij3dptdi.1006490. 
+DRAGNE, C.; ILIESCU, M. Mechanical engineering of robotic systems by 
+SolidWorks. International Journal of Modern Manufacturing Technologies, v. 
+14, n. 1, p. 45–52, 2022. 
+
+
+## Página 32
+
+ 
+FRUNZAVERDE, D.; COJOCARU, V.; CIUBOTARIU, C. R.; MICLOSINA, C. 
+O.; ARDELJAN, D. D.; IGNAT, E. F. et al. The influence of the printing 
+temperature and the filament color on the dimensional accuracy, tensile 
+strength, and friction performance of FFF-printed PLA specimens. Polymers, v. 
+14, n. 10, art. 1978, 2022. DOI: 10.3390/polym14101978. 
+FRUNZAVERDE, D.; COJOCARU, V.; BACESCU, N.; CIUBOTARIU, C. R.; 
+MICLOSINA, C. O.; TURIAC, R. R. et al. The influence of the layer height and 
+the filament color on the dimensional accuracy and the tensile strength of 
+FDM-printed 
+PLA 
+specimens. 
+Polymers, 
+v. 
+15, 
+2023. 
+DOI: 
+10.3390/polym15030602. 
+GARCÍA-TORRES, J. et al. Mobile rolling robots designed to overcome 
+obstacles: a review. Results in Engineering, v. 24, art. 102888, 2024. DOI: 
+10.1016/j.rineng.2024.102888. 
+HIKMAT, M.; ROSTAM, S.; AHMED, Y. M. Investigation of tensile 
+property-based Taguchi method of PLA parts fabricated by FDM 3D printing 
+technology. Results in Engineering, v. 11, art. 100264, 2021. DOI: 
+10.1016/j.rineng.2021.100264. 
+HOJATI, M.; BAKTASH, A. Hybrid stepper motor with two rows of teeth on a 
+cup-shaped rotor and a two-part stator. Precision Engineering, v. 73, p. 
+228–233, 2022. DOI: 10.1016/j.precisioneng.2021.09.006. 
+KELLY, R.; GARCIA, M. Dynamic modelling and adaptive traction control for 
+mobile robots. arXiv preprint, arXiv:cs/0411020, 2005. Disponível em: 
+https://arxiv.org/abs/cs/0411020. Acesso em: 15 maio 2026. 
+MAHDI, H.; AKGUN, S. A.; SALEH, S.; DAUTENHAHN, K. A survey on the 
+design and evolution of social robots — past, present and future. Robotics and 
+Autonomous 
+Systems, 
+v. 
+156, 
+art. 
+104193, 
+2022. 
+DOI: 
+10.1016/j.robot.2022.104193. 
+MÕTSHÄRG, E.; VUNDER, V.; RAUDMÄE, R.; MURO, M.; DRIKKIT, I.; 
+TŠIGRINSKI, L. et al. Robotont 3 — an accessible 3D-printable 
+
+
+## Página 33
+
+ 
+ROS-supported open-source mobile robot for education and research. 
+Frontiers 
+in 
+Robotics 
+and 
+AI, 
+v. 
+11, 
+art. 
+1406645, 
+2024. 
+DOI: 
+10.3389/frobt.2024.1406645. 
+MUTHIAH, G.; KARTHICK, M.; KALIMUTHU, K.; MUTHUSAMY, C.; 
+KANAGARAJ, C. Modal analysis of chassis using CAE prediction. 
+International Journal of Science Technology & Engineering, v. 7, n. 11, p. 
+40–43, 2021. 
+NAKANISHI, J.; KURAMOTO, I.; BABA, J. et al. Continuous hospitality with 
+social robots at a hotel. SN Applied Sciences, v. 2, n. 3, art. 452, 2020. DOI: 
+10.1007/s42452-020-2192-7. 
+OLIVEIRA, Acácia Albertina de; FRANCO, João Pedro Emidio de Lima; 
+SANTOS, Natália Oliveira dos; ALVES, Wendrick Vinícius Costa; SILVA, Vera 
+Lúcia da. Desenvolvimento de robô móvel com ESP32 para olimpíadas de 
+robótica. In: CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO 
+IFSP, 2024, [S.l.]. Anais [...]. [S.l.]: IFSP, 2024. 
+RAIMUNDO, Roger Serafim; SANTOS, Paulo Sérgio Barbosa dos. Impressão 
+3D de braço robótico: revisão sistemática da literatura. RECIMA21 — Revista 
+Científica 
+Multidisciplinar, 
+v. 
+6, 
+n. 
+11, 
+e611867, 
+2025. 
+DOI: 
+10.47820/recima21.v6i11.6867. 
+REBHI, L.; KHALFALLAH, S.; HAMEL, A.; BOUZAR ESSAIDI, A. Design 
+optimization of a four-wheeled robot chassis frame based on artificial neural 
+network. Proceedings of the Institution of Mechanical Engineers, Part C: 
+Journal 
+of 
+Mechanical 
+Engineering 
+Science, 
+2025. 
+DOI: 
+10.1177/09544062251316755. 
+ROMERO, Roseli Aparecida Francelin; SILVA JUNIOR, Edson Prestes e; 
+OSÓRIO, Fernando Santos; WOLF, Denis Fernando. Robótica móvel. Rio de 
+Janeiro: LTC, 2014. 
+SMOOTH MOTOR. NEMA 23 stepper motors: powering high-torque 
+applications. 
+Smooth 
+Motor 
+Blog, 
+2024. 
+Disponível 
+em: 
+
+
+## Página 34
+
+ 
+https://www.smoothmotor.com/a-news-nema-23-stepper-motors-powering-high
+-torque-applications.html. Acesso em: 10 maio 2026. 
+STEPPERONLINE. Nema 23 – 57 × 57 mm stepper motor. 2024. Disponível 
+em: https://www.omc-stepperonline.com/nema-23-stepper-motor. Acesso em: 
+10 maio 2026. 
+WAHYUDIN, D. et al. A review of factors affecting the mechanical performance 
+of PLA in FDM 3D printing. Advance Sustainable Science Engineering and 
+Technology, v. 7, n. 1, art. 1215, 2025. DOI: 10.26877/asset.v7i1.1215. 
+ZBOTIC. Robot wheel traction: surface & tire type selection guide. Zbotic Blog, 
+2026. 
+Disponível 
+em: 
+https://zbotic.in/robot-wheel-traction-surface-tire-type-selection-guide/. Acesso 
+em: 15 maio 2026. 
+ZHAO, C.; LIU, Z.; OU, Y.; ZHU, L. Mechanical structure design and motion 
+simulation analysis of a lower limb exoskeleton rehabilitation robot based on 
+human–machine integration. Sensors, v. 25, n. 5, art. 1611, 2025. DOI: 
+10.3390/s25051611. 
+ 

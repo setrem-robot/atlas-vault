@@ -1,0 +1,99 @@
+% Capítulo 1 — Projeto (conforme ROTEIRO PIE IV: Justificativa, Objetivos e
+% Metodologia, cronograma e orçamento). Ajuste o título do capítulo conforme a
+% exigência estrutural final.
+\chapter{Projeto} \label{chap:ResearchPlan}
+
+\section{Tema} \label{sec:Theme}
+O projeto consiste na consolidação de uma plataforma robótica de controle remoto -- o robô Atlas, desenvolvido no curso de Engenharia de Computação da SETREM -- como uma solução computacional integrada, unindo aplicativo móvel, orquestração embarcada e um serviço de telemetria em nuvem, sob a aplicação conjunta dos fundamentos de Estatística, Programação Orientada a Objetos, Banco de Dados e Gerenciamento de Projetos.
+
+\subsection{Delimitação do Tema} \label{subsec:ThemeDelimitation}
+O desenvolvimento e os testes concentram-se no ambiente do curso de Engenharia de Computação da SETREM, em Três de Maio/RS, utilizando a infraestrutura de nuvem do LARCC (\textit{Laboratory of Advanced Research on Cloud Computing}) para a hospedagem do serviço de telemetria. O escopo abrange os três repositórios que compõem o sistema: \texttt{app} (aplicativo Flutter que controla o robô e exibe seu histórico de telemetria), \texttt{orquestrador} (firmware do ESP32, serviços do Raspberry Pi e ingestão/leitura de dados na nuvem) e \texttt{atlas\_ai\_v2} (assistente de voz e rosto animado da plataforma). Este último, embora seja um subsistema majoritariamente independente, integra-se aos demais por meio de uma ponte Bluetooth que pode substituir o ESP32 na recepção dos comandos do aplicativo, e é considerado parte do escopo entregue -- sobretudo como conjunto de exemplos de Programação Orientada a Objetos. A coleta e a análise estatística de dados, contudo, restringem-se à telemetria de operação do robô (posição, motores, bateria e conectividade), não abrangendo o comportamento interno do assistente de voz.
+
+\section{Objetivos} \label{sec:objectives}
+
+\subsection{Objetivo Geral} \label{subsec:general_objective}
+Desenvolver, de forma integrada e orientada por boas práticas de gerenciamento de projetos, uma solução computacional orientada a objetos para o robô Atlas, contemplando a coleta de dados reais de telemetria (posição, estado dos motores, bateria e conectividade), seu armazenamento em banco de dados relacional de séries temporais e a aplicação de técnicas estatísticas sobre esses dados para apoiar a validação da solução desenvolvida.
+
+\subsection{Objetivos Específicos} \label{subsec:specific_objectives}
+% Guia: lista extraída/adaptada do ROTEIRO PIE IV (Objetivos Específicos, pág. 2).
+% Ajustar cada item ao escopo real do projeto do grupo.
+Para alcançar o objetivo geral proposto, estabelecem-se os seguintes passos:
+\begin{itemize}
+    \item Planejar o projeto computacional utilizando fundamentos da disciplina de Gerenciamento de Projetos, definindo escopo, cronograma, responsabilidades e entregas;
+    \item Aplicar os princípios da Programação Orientada a Objetos na estruturação do software, promovendo modularidade, reutilização de código e organização lógica da solução;
+    \item Realizar a modelagem, criação e manipulação de banco de dados relacionais para o armazenamento dos dados coletados no projeto;
+    \item Projetar e implementar mecanismos eficientes de coleta de dados reais, garantindo sua integridade e relevância para posterior análise;
+    \item Analisar os dados coletados com base nos fundamentos da Estatística, extraindo informações úteis para a tomada de decisão ou validação da solução desenvolvida;
+    \item Construir um protótipo para testes, unindo componentes de automação, controle e software;
+    \item Utilizar a infraestrutura do LARCC para o envio, manipulação e visualização de dados;
+    \item Divulgar, ao longo do semestre, as atividades desenvolvidas nas redes sociais institucionais, conforme exigência do roteiro (\textit{stories} ou publicação no LinkedIn).
+\end{itemize}
+
+\section{Problema} \label{sec:Problem}
+O robô Atlas opera hoje majoritariamente por teleoperação: o usuário comanda o movimento pelo aplicativo e a telemetria (posição por GPS, estado dos motores, nível de bateria e estado do Wi-Fi) é publicada via MQTT, replicada para a nuvem e persistida em um banco de dados TimescaleDB. Uma API de leitura publicada recentemente disponibiliza esses dados para visualização no aplicativo -- mapa do trajeto, painel de estado, histórico de eventos -- mas, até o momento, nenhum dos repositórios do projeto implementa qualquer etapa de tratamento estatístico sobre os dados coletados.
+
+Diante disso, o problema de pesquisa define-se como: \textit{de que forma os dados reais de telemetria coletados pelo robô Atlas podem ser tratados estatisticamente para caracterizar o desempenho operacional do robô -- em particular, o consumo de bateria, a utilização dos motores e o deslocamento ao longo do tempo?}
+
+\section{Justificativa} \label{sec:justification}
+Do ponto de vista técnico, a justificativa apoia-se no estado atual do sistema: o robô Atlas já opera como uma plataforma completa, integrando aplicativo móvel (Flutter, comunicação Bluetooth Low Energy no padrão Nordic UART Service), firmware embarcado (ESP32) e serviços orquestrados em um Raspberry Pi que se comunicam via protocolo MQTT, com telemetria persistida em nuvem por um banco de dados relacional de séries temporais (TimescaleDB) e disponibilizada por uma API de leitura publicada por meio de túnel Cloudflare. Essa infraestrutura de coleta e armazenamento de dados, já em operação, constitui a base sobre a qual a etapa de análise estatística -- ainda não implementada -- pode ser construída, sem exigir instrumentação adicional do robô.
+
+Do ponto de vista acadêmico, o trabalho possui relevância ao aplicar, de forma interdisciplinar, os quatro componentes curriculares do Projeto Interdisciplinar de Extensão IV. A Programação Orientada a Objetos é exercitada na estruturação dos serviços do robô, com destaque para o roteador de comandos (\texttt{orquestrador/roteador.py}), implementado com o padrão de projeto \textit{Command} \cite{gamma2000} sobre uma classe abstrata, e para a camada de acionamento dos motores (\texttt{motores/acionamento.py}), que abstrai o hardware por meio de outra classe abstrata com implementações concreta (motores de passo reais) e simulada. O Banco de Dados é representado pela modelagem da tabela de telemetria em TimescaleDB e pela camada de consultas parametrizadas da API de leitura. A Estatística, embora ainda pendente de implementação, dispõe de uma base de dados real e crescente para sustentar a análise.
+
+Do ponto de vista social, o projeto mantém sua natureza de extensão, com divulgação periódica das atividades desenvolvidas nas redes sociais institucionais, conforme exigido pelo roteiro do componente curricular.
+
+\section{Metodologia} \label{sec:Methodology}
+A pesquisa classifica-se como aplicada, de natureza exploratória e experimental, uma vez que parte de um sistema já em funcionamento -- o robô Atlas -- para investigar, por meio de testes e da coleta de dados reais, o comportamento e o desempenho da solução desenvolvida. A abordagem é mista: qualitativa na descrição da arquitetura, das decisões de projeto orientado a objetos e da integração entre os subsistemas; e quantitativa na análise dos dados numéricos de telemetria (posição, velocidade, nível de bateria, estado de conectividade) armazenados no banco de dados.
+
+\subsection{Procedimentos Metodológicos} \label{subsec:methodological_procedures}
+O desenvolvimento é conduzido de forma incremental e iterativa \cite{prikladnicki2014} em três repositórios versionados independentemente (\texttt{app}, \texttt{orquestrador} e \texttt{atlas\_ai\_v2}), com controle de versão via Git e revisão automatizada de dependências (Dependabot). A verificação de corretude apoia-se em testes automatizados, prática central da garantia de qualidade de software \cite{sommerville2018}: o roteador de comandos e a camada de acionamento dos motores do \texttt{orquestrador} somam dezenas de testes unitários executáveis sem hardware físico -- sem broker MQTT, sem Raspberry Pi e sem motores conectados --, a API de leitura da telemetria possui suíte própria de testes cobrindo cabeçalhos de segurança e consultas, e o subsistema \texttt{atlas\_ai\_v2} mantém integração contínua via GitHub Actions, executando sua suíte de testes em múltiplas versões do Python e sistemas operacionais a cada alteração. O aplicativo móvel utiliza entrega contínua (Shorebird), permitindo atualizações incrementais sem reinstalação. Essas práticas sustentam a rastreabilidade entre implementação e relatório exigida pelas diretrizes deste trabalho.
+
+\subsection{Coleta e Análise de Dados} \label{subsec:data_collection}
+A coleta de dados ocorre continuamente durante a operação do robô: os serviços do Raspberry Pi publicam, via protocolo MQTT, o estado dos motores, a posição obtida por GPS, o nível de bateria e o estado da conexão Wi-Fi; esses tópicos são espelhados para um broker remoto e persistidos por um serviço de ingestão em uma tabela única do TimescaleDB, particionada por tempo (\textit{hypertable}), com o payload de cada tipo de telemetria armazenado em formato \texttt{JSONB}. O uso de uma tabela genérica, em vez de uma tabela por tipo de dado, evita migração de esquema a cada nova categoria de telemetria introduzida.
+
+Até o momento, esses dados são consumidos apenas para fins operacionais -- visualização do trajeto e do estado do robô no aplicativo, por meio da API de leitura -- sem qualquer etapa de análise estatística. Esta é a principal lacuna identificada no sistema atual e o ponto de partida para o Capítulo~\ref{chap:Results} deste relatório. Para caracterizar o desempenho operacional do robô, prevê-se a aplicação de medidas de tendência central e de dispersão (média, mediana e desvio padrão) sobre variáveis como o nível de bateria e a velocidade dos motores, e de técnicas de análise de séries temporais para descrever a evolução dessas variáveis e do deslocamento ao longo do tempo. Em coerência com a diretriz de rastreabilidade adotada neste trabalho, nenhum resultado de análise será descrito antes de sua execução efetiva sobre os dados reais coletados.
+
+\section{Cronograma de Atividades} \label{sec:schedule_activities_table}
+% Guia: cronograma alinhado às datas do ROTEIRO PIE IV (15/08 a 19/12/2026).
+% Ajustar as atividades internas do grupo mantendo os marcos de entrega oficiais.
+O desenvolvimento da pesquisa respeitará as datas avaliativas estipuladas para a disciplina, conforme a \autoref{tab:cronograma}.
+
+\begin{table}[htb]
+\centering
+\caption{Cronograma de Atividades do Projeto de Extensão}
+\label{tab:cronograma}
+\begin{tabular}{|p{7.5cm}|c|c|c|c|}
+\hline
+\textbf{Atividade} & \textbf{Set.} & \textbf{Out.} & \textbf{Nov.} & \textbf{Dez.} \\ \hline
+Definição de tema, escopo e levantamento de requisitos & X & & & \\ \hline
+Modelagem do banco de dados e planejamento do projeto & X & & & \\ \hline
+Desenvolvimento da solução orientada a objetos & & X & & \\ \hline
+Implementação da coleta de dados e integração & & X & X & \\ \hline
+Análise estatística dos dados coletados & & & X & \\ \hline
+Escrita do relatório final e ajustes documentais & & & X & X \\ \hline
+Apresentação final do projeto (bancas) & & & & X \\ \hline
+\end{tabular}
+\fonte{Elaborado pelos autores (2026).}
+\end{table}
+
+\section{Orçamento} \label{sec:budget}
+A \autoref{tab:orcamento} relaciona os principais itens de hardware que compõem o protótipo do robô Atlas, base física sobre a qual o software e a coleta de dados são desenvolvidos. A infraestrutura de nuvem utilizada para a telemetria é fornecida pelo LARCC, sem custo direto para o grupo, assim como as ferramentas de software empregadas, todas de código aberto ou gratuitas para uso acadêmico. Os valores unitários e totais serão confirmados pelo grupo a partir das notas fiscais e cotações efetivas dos componentes já adquiridos.
+
+\begin{table}[htb]
+\centering
+\caption{Orçamento Previsto para o Desenvolvimento do Projeto}
+\label{tab:orcamento}
+\begin{tabular}{|p{7.2cm}|c|r|}
+\hline
+\textbf{Item} & \textbf{Quantidade} & \textbf{Valor Total Estimado (R\$)} \\ \hline
+Raspberry Pi (computador embarcado) & 1 & a confirmar \\ \hline
+Microcontrolador ESP32 (ponte BLE) & 1 & a confirmar \\ \hline
+Motores de passo & 2 & a confirmar \\ \hline
+Drivers de motor de passo TMC2209 & 2 & a confirmar \\ \hline
+Módulo receptor GPS & 1 & a confirmar \\ \hline
+Bateria e sistema de alimentação & 1 & a confirmar \\ \hline
+Estrutura/chassi e componentes mecânicos & 1 & a confirmar \\ \hline
+Infraestrutura de nuvem (LARCC) & 1 & sem custo \\ \hline
+\textbf{Total} & \textbf{--} & \textbf{a confirmar} \\ \hline
+\end{tabular}
+\fonte{Elaborado pelos autores (2026).}
+\end{table}

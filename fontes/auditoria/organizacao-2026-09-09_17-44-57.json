@@ -1,0 +1,41 @@
+{
+  "data": "2026-09-09_17-44-57",
+  "backup": "fontes\\auditoria\\organizacao-backup-2026-09-09_17-44-57.zip",
+  "movimentacoes": [
+    {
+      "origem": "Relatorios\\EstruturaPDF.pdf",
+      "destino": "AtlasVault\\fontes\\relatorios\\EstruturaPDF.pdf",
+      "sha256": "9cb9a97dc894f2999aae958b8d4b2f0023ddcc3274d914df73812fd2a5aa0528"
+    },
+    {
+      "origem": "Relatorios\\InterfacePDF.pdf",
+      "destino": "AtlasVault\\fontes\\relatorios\\InterfacePDF.pdf",
+      "sha256": "19f93f368687def48cd893a1217858d851966f99884c8d6d49c91c01015466fd"
+    },
+    {
+      "origem": "Relatorios\\OrquestradorPDF.pdf",
+      "destino": "AtlasVault\\fontes\\relatorios\\OrquestradorPDF.pdf",
+      "sha256": "a464b8e80322fd496dba2c88adea36b6b80a5e5e0b8d442a44818b0a89fd3c61"
+    },
+    {
+      "origem": "atlas-icone-1024.png",
+      "destino": "AtlasVault\\fontes\\identidade\\atlas-icone-1024.png",
+      "sha256": "156f36ef639ed98e5b4bbf883c6aa193379c444bab099db07117fb4d4a7654fe"
+    },
+    {
+      "origem": "atlas-olhos-1024.png",
+      "destino": "AtlasVault\\fontes\\identidade\\atlas-olhos-1024.png",
+      "sha256": "553b43d349b99af03b582176b69532d88e30169e8baf7390db4f6d140e6c22a9"
+    },
+    {
+      "origem": "MAPA-COMUNICACAO.md",
+      "destino": "AtlasVault\\fontes\\auditoria\\ponteiro-mapa-original.md",
+      "sha256": "26eb05521ac2e9da7d50239967bbe6a9a561fd2b0a2da04dd95c35e1f838e68d"
+    },
+    {
+      "origem": ".claude\\settings.local.json",
+      "destino": "AtlasVault\\.claude\\settings.local.json",
+      "sha256": "f927c1e0b66332e6e08cbc36e3470bbf3d422f673d53a2000897024dbd80036c"
+    }
+  ]
+}

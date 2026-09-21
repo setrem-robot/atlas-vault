@@ -1,0 +1,1942 @@
+{
+  "sha": "44d500160ecf13d7d1db2a4fe0c54052d352c0aa",
+  "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/44d500160ecf13d7d1db2a4fe0c54052d352c0aa",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "141c62f65461748e5456ee74b65e727ca279ff04",
+      "size": 464,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/141c62f65461748e5456ee74b65e727ca279ff04"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c7138b81944b6b77793d65c9d78a9aaf83f750b",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/3c7138b81944b6b77793d65c9d78a9aaf83f750b"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d05794039835098242ff37ea773c51f602083c25",
+      "size": 1261,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d05794039835098242ff37ea773c51f602083c25"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2892ad0ce2be7af1dbe79e709085923a50988bb8",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/2892ad0ce2be7af1dbe79e709085923a50988bb8"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06f84c76eb47c85b7c219d186bd109be533ad59d",
+      "size": 7042,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/06f84c76eb47c85b7c219d186bd109be533ad59d"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880495d25d78ae149ef8da70ef8b3a5d63e88b43",
+      "size": 1734,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/880495d25d78ae149ef8da70ef8b3a5d63e88b43"
+    },
+    {
+      "path": ".metadata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "768732a894a34d432733f6d61d04ad7fdf0b6e3e",
+      "size": 1706,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/768732a894a34d432733f6d61d04ad7fdf0b6e3e"
+    },
+    {
+      "path": "ARQUITETURA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3898676a6750432a6c81b9cddf39370ade822b93",
+      "size": 16205,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/3898676a6750432a6c81b9cddf39370ade822b93"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e54df4cc30799e717398c1c3c78dffe9a8209aee",
+      "size": 5557,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/e54df4cc30799e717398c1c3c78dffe9a8209aee"
+    },
+    {
+      "path": "COMO-FUNCIONA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d57e89339e6876832ff23b56d96b07134459d7e",
+      "size": 12955,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/5d57e89339e6876832ff23b56d96b07134459d7e"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d388f7013849cad962714001e02a978c66d422a",
+      "size": 19695,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1d388f7013849cad962714001e02a978c66d422a"
+    },
+    {
+      "path": "analysis_options.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbcf83af61f4f2036af8ec445e4d4ed951681124",
+      "size": 1189,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fbcf83af61f4f2036af8ec445e4d4ed951681124"
+    },
+    {
+      "path": "android",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6584c14f90bbce4451dff61c8ae51023736f212d",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/6584c14f90bbce4451dff61c8ae51023736f212d"
+    },
+    {
+      "path": "android/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9082585a535b3dee4052706248ac3782322b50a",
+      "size": 267,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c9082585a535b3dee4052706248ac3782322b50a"
+    },
+    {
+      "path": "android/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "457bda843ccbeb56de9899cf166b6d35927f8ba8",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/457bda843ccbeb56de9899cf166b6d35927f8ba8"
+    },
+    {
+      "path": "android/app/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e97deaa9a59794c3e8fcf5631d2a606c0e04960",
+      "size": 3574,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1e97deaa9a59794c3e8fcf5631d2a606c0e04960"
+    },
+    {
+      "path": "android/app/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f014e4ae3aef5ab4eb2d3b894a463beba06ec5b5",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/f014e4ae3aef5ab4eb2d3b894a463beba06ec5b5"
+    },
+    {
+      "path": "android/app/src/debug",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30b6821145654d3724128e1cc66dc992e1ecb562",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/30b6821145654d3724128e1cc66dc992e1ecb562"
+    },
+    {
+      "path": "android/app/src/debug/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ffe024642253939383a59fd6357dda4b34cb53b",
+      "size": 385,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/8ffe024642253939383a59fd6357dda4b34cb53b"
+    },
+    {
+      "path": "android/app/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "280e3e3261208735642f5bf6723184ddeccf03dc",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/280e3e3261208735642f5bf6723184ddeccf03dc"
+    },
+    {
+      "path": "android/app/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c20145eca6a651bbeb6fbacf5f45d60acef1e970",
+      "size": 2796,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c20145eca6a651bbeb6fbacf5f45d60acef1e970"
+    },
+    {
+      "path": "android/app/src/main/kotlin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f33c7ec26e725b5f97405d0de6cb2ad41bd60e01",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/f33c7ec26e725b5f97405d0de6cb2ad41bd60e01"
+    },
+    {
+      "path": "android/app/src/main/kotlin/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc3157daacdb4f052fc98109af1b7c8d6bfd7cbb",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/fc3157daacdb4f052fc98109af1b7c8d6bfd7cbb"
+    },
+    {
+      "path": "android/app/src/main/kotlin/com/setrem",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f52dc0017774e3fde78537a84bef3ae2aa7f9a32",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/f52dc0017774e3fde78537a84bef3ae2aa7f9a32"
+    },
+    {
+      "path": "android/app/src/main/kotlin/com/setrem/robot_controller",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5e8abf82e8d3cd356efe3fb3e0e79cd25461fc3",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/a5e8abf82e8d3cd356efe3fb3e0e79cd25461fc3"
+    },
+    {
+      "path": "android/app/src/main/kotlin/com/setrem/robot_controller/MainActivity.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f3e134587591b13483d91ea7efc511ac443f3f",
+      "size": 134,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/70f3e134587591b13483d91ea7efc511ac443f3f"
+    },
+    {
+      "path": "android/app/src/main/res",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "205d385cfc55cb2180a2c7db155de58ad3babf8e",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/205d385cfc55cb2180a2c7db155de58ad3babf8e"
+    },
+    {
+      "path": "android/app/src/main/res/drawable-v21",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1bd5e18db951ebb5db685bf0d4dc1d5aa9dcf482",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/1bd5e18db951ebb5db685bf0d4dc1d5aa9dcf482"
+    },
+    {
+      "path": "android/app/src/main/res/drawable-v21/launch_background.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cb7aa2f6e8c2438e50149b6ec567b515c243c88",
+      "size": 450,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1cb7aa2f6e8c2438e50149b6ec567b515c243c88"
+    },
+    {
+      "path": "android/app/src/main/res/drawable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "907d954c4a7118aaa0c345f522e68678233a94b2",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/907d954c4a7118aaa0c345f522e68678233a94b2"
+    },
+    {
+      "path": "android/app/src/main/res/drawable/launch_background.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84037589b06bb17b24ba7acffee949159cd99a16",
+      "size": 446,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/84037589b06bb17b24ba7acffee949159cd99a16"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce96d0c2010d97761ff98c2087eba841ecb81f51",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/ce96d0c2010d97761ff98c2087eba841ecb81f51"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f5e952646f3e7bbd823f62269b200269821bdbb",
+      "size": 566,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/8f5e952646f3e7bbd823f62269b200269821bdbb"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3165d8b234608de1c137b8115d02eaab271343c2",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/3165d8b234608de1c137b8115d02eaab271343c2"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a588babe04f051dfff05300f52bfcc298e211299",
+      "size": 2552,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a588babe04f051dfff05300f52bfcc298e211299"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618d8245ecddcb2a35b3fe22a7fb00d48fb30058",
+      "size": 3059,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/618d8245ecddcb2a35b3fe22a7fb00d48fb30058"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e952e09cc2a3d28198359a449b6d1c76cfd9a222",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/e952e09cc2a3d28198359a449b6d1c76cfd9a222"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "030881071305d51df57b2b13536692b84cb5821f",
+      "size": 1697,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/030881071305d51df57b2b13536692b84cb5821f"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38f0b9378d0b29468ec7defab024e173680c95d2",
+      "size": 2017,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/38f0b9378d0b29468ec7defab024e173680c95d2"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f08d3595b212e805888d029660e4933c0fb9a6fc",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/f08d3595b212e805888d029660e4933c0fb9a6fc"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de157695bdbbf9f3c5dbf2b056b8f821f2931571",
+      "size": 3385,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/de157695bdbbf9f3c5dbf2b056b8f821f2931571"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ded4192e867acf96a8cdde50b4c9bc23c3168828",
+      "size": 4077,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ded4192e867acf96a8cdde50b4c9bc23c3168828"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5a58fc4769c18fb5fc97c6634accf7c74a91a9c",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/c5a58fc4769c18fb5fc97c6634accf7c74a91a9c"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3b04e76de04f04d3f4a89e92feab182bc72de2e",
+      "size": 5238,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d3b04e76de04f04d3f4a89e92feab182bc72de2e"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4113fa7d5ac3f85b51dde5a0bf89536663178f",
+      "size": 6216,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/eb4113fa7d5ac3f85b51dde5a0bf89536663178f"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4c9784fb164bb466eef1b7609d9282441b853c4e",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/4c9784fb164bb466eef1b7609d9282441b853c4e"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37d52573791acaf74374eeab109b30dfae9ac96f",
+      "size": 7131,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/37d52573791acaf74374eeab109b30dfae9ac96f"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d09bfd5fe5509996122cc2c80adf703ac4b8992",
+      "size": 8358,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1d09bfd5fe5509996122cc2c80adf703ac4b8992"
+    },
+    {
+      "path": "android/app/src/main/res/values-night",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cfbf212fa95377fc1def71b50d22901f5a0b36db",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/cfbf212fa95377fc1def71b50d22901f5a0b36db"
+    },
+    {
+      "path": "android/app/src/main/res/values-night/styles.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "360a1605cd6d544ad23ddd7515862ff2c9df6ab8",
+      "size": 1013,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/360a1605cd6d544ad23ddd7515862ff2c9df6ab8"
+    },
+    {
+      "path": "android/app/src/main/res/values",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bbedb7cef9a487af56e3aeb8f5c1b5547fb50d0a",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/bbedb7cef9a487af56e3aeb8f5c1b5547fb50d0a"
+    },
+    {
+      "path": "android/app/src/main/res/values/ic_launcher_background.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67341130a81640be6e030f6722fcb61e72e4a62",
+      "size": 270,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d67341130a81640be6e030f6722fcb61e72e4a62"
+    },
+    {
+      "path": "android/app/src/main/res/values/styles.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fac679616bbc0255412f37eea3eae0a3716e7d7",
+      "size": 1014,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/5fac679616bbc0255412f37eea3eae0a3716e7d7"
+    },
+    {
+      "path": "android/app/src/main/res/xml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "182e1deaa3dd73543a0d381de8e48d6e4bfb7201",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/182e1deaa3dd73543a0d381de8e48d6e4bfb7201"
+    },
+    {
+      "path": "android/app/src/main/res/xml/network_security_config.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dac5602a0b3494b2b6389c89f5fb988cfcd5676d",
+      "size": 1554,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/dac5602a0b3494b2b6389c89f5fb988cfcd5676d"
+    },
+    {
+      "path": "android/app/src/profile",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30b6821145654d3724128e1cc66dc992e1ecb562",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/30b6821145654d3724128e1cc66dc992e1ecb562"
+    },
+    {
+      "path": "android/app/src/profile/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ffe024642253939383a59fd6357dda4b34cb53b",
+      "size": 385,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/8ffe024642253939383a59fd6357dda4b34cb53b"
+    },
+    {
+      "path": "android/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f88145b6b91073cc0a28f44e1df8c8437669a02",
+      "size": 561,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1f88145b6b91073cc0a28f44e1df8c8437669a02"
+    },
+    {
+      "path": "android/gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78586ffcdbb65179e36eab3fe3a1c336bbce270c",
+      "size": 1323,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/78586ffcdbb65179e36eab3fe3a1c336bbce270c"
+    },
+    {
+      "path": "android/gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "781f3ecd1514573907b634df6dbf9368d82acb8f",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/781f3ecd1514573907b634df6dbf9368d82acb8f"
+    },
+    {
+      "path": "android/gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b20ca008ad5d19607a0d90f2b1fc3f5834b7a27",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/0b20ca008ad5d19607a0d90f2b1fc3f5834b7a27"
+    },
+    {
+      "path": "android/gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "913c8648fbbf2d15f9c4dc15f580dde90135f256",
+      "size": 207,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/913c8648fbbf2d15f9c4dc15f580dde90135f256"
+    },
+    {
+      "path": "android/key.properties.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10a4e3efe372a09131e8cf657aeac1d1b5bcfba5",
+      "size": 706,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/10a4e3efe372a09131e8cf657aeac1d1b5bcfba5"
+    },
+    {
+      "path": "android/settings.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6101f5f50cffc1bec145048602f2eabd0c052329",
+      "size": 797,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/6101f5f50cffc1bec145048602f2eabd0c052329"
+    },
+    {
+      "path": "ios",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2762c154fa2fd5b52ca8f806a269ad839f870e54",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/2762c154fa2fd5b52ca8f806a269ad839f870e54"
+    },
+    {
+      "path": "ios/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad322bc09d2bbd018667440c592d2a42d1ef6805",
+      "size": 603,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ad322bc09d2bbd018667440c592d2a42d1ef6805"
+    },
+    {
+      "path": "ios/Flutter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06c66f40907dc2452c729ea9824dbfb5b504609f",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/06c66f40907dc2452c729ea9824dbfb5b504609f"
+    },
+    {
+      "path": "ios/Flutter/AppFrameworkInfo.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "256cf28a09f6a7e8a6a9f586d60fb4e12bf954bd",
+      "size": 744,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/256cf28a09f6a7e8a6a9f586d60fb4e12bf954bd"
+    },
+    {
+      "path": "ios/Flutter/Debug.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b2d479c08504549ca6e74f0743bd584f068f9bd",
+      "size": 31,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/0b2d479c08504549ca6e74f0743bd584f068f9bd"
+    },
+    {
+      "path": "ios/Flutter/Release.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b2d479c08504549ca6e74f0743bd584f068f9bd",
+      "size": 31,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/0b2d479c08504549ca6e74f0743bd584f068f9bd"
+    },
+    {
+      "path": "ios/Podfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "090b2f45f53a0d607210e66b80c5e48e9cd03056",
+      "size": 3355,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/090b2f45f53a0d607210e66b80c5e48e9cd03056"
+    },
+    {
+      "path": "ios/Runner.xcodeproj",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7145404081a1514e070152aa91ebf2971003d5d0",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/7145404081a1514e070152aa91ebf2971003d5d0"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.pbxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7ec1b0adb6a24b4a7b9bf8cf6f1d91acc9f166d",
+      "size": 26294,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a7ec1b0adb6a24b4a7b9bf8cf6f1d91acc9f166d"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ffe1678d6d94ee69f898f72bf0f36dc595139c4",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/6ffe1678d6d94ee69f898f72bf0f36dc595139c4"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4b79bd8c0e5b685bc62bc82f93335b2a95fd7fd",
+      "size": 142,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c4b79bd8c0e5b685bc62bc82f93335b2a95fd7fd"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d391f7782fe327f591c910de9439a28879f8e88e",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/d391f7782fe327f591c910de9439a28879f8e88e"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db",
+      "size": 246,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af0309c4dc26b0880121296bc3fd0bd14aad8420",
+      "size": 234,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/af0309c4dc26b0880121296bc3fd0bd14aad8420"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b47e2a549c937b97aa1b567d95b63a143b171f0b",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/b47e2a549c937b97aa1b567d95b63a143b171f0b"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/xcshareddata/xcschemes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6bb46ab15972f44c83fc9846d701d2dca7b091c5",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/6bb46ab15972f44c83fc9846d701d2dca7b091c5"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee3172123dbbbae3b70d128eb0d94a57a69e708b",
+      "size": 4836,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ee3172123dbbbae3b70d128eb0d94a57a69e708b"
+    },
+    {
+      "path": "ios/Runner.xcworkspace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8872b004d9a9fa105402aec51178e71ceba5cb83",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/8872b004d9a9fa105402aec51178e71ceba5cb83"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/contents.xcworkspacedata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c6d39465edc08bd1e919a6248c68b1b72cfd33",
+      "size": 159,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/59c6d39465edc08bd1e919a6248c68b1b72cfd33"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d391f7782fe327f591c910de9439a28879f8e88e",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/d391f7782fe327f591c910de9439a28879f8e88e"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db",
+      "size": 246,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af0309c4dc26b0880121296bc3fd0bd14aad8420",
+      "size": 234,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/af0309c4dc26b0880121296bc3fd0bd14aad8420"
+    },
+    {
+      "path": "ios/Runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9bda0774490295e298eb74fbba0b3f34df7e720",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/e9bda0774490295e298eb74fbba0b3f34df7e720"
+    },
+    {
+      "path": "ios/Runner/AppDelegate.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed1c097e68a6fa0e56041c21e9c43761e9e4335f",
+      "size": 555,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ed1c097e68a6fa0e56041c21e9c43761e9e4335f"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f36b7c88af8d1f92f9ccdb8ccfce697ac3c965a4",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/f36b7c88af8d1f92f9ccdb8ccfce697ac3c965a4"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "643d03b46d0d971f2cdf4ccd4e8bd1b7b45c55c4",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/643d03b46d0d971f2cdf4ccd4e8bd1b7b45c55c4"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1950fd80edd4b0b01afb3901a2f4787251280206",
+      "size": 2641,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1950fd80edd4b0b01afb3901a2f4787251280206"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba0457b43152930ef5a520d0c58bfd91622bb702",
+      "size": 31205,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ba0457b43152930ef5a520d0c58bfd91622bb702"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a15677ce80dcb698345cd7234789390f6d498b1d",
+      "size": 505,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a15677ce80dcb698345cd7234789390f6d498b1d"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a296ce340450d90bf46fcd47a6f9980866408b9c",
+      "size": 954,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a296ce340450d90bf46fcd47a6f9980866408b9c"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e0e2f06ee0661a95fa3eca7f84f5e1215e40c4",
+      "size": 1386,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/34e0e2f06ee0661a95fa3eca7f84f5e1215e40c4"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b463675de190f843130cf5a8a66f2263469d00f",
+      "size": 756,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/2b463675de190f843130cf5a8a66f2263469d00f"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3baca9d39ca86803414f3a5891ef390151312b7c",
+      "size": 1375,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/3baca9d39ca86803414f3a5891ef390151312b7c"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd13476042130065dc0b1fa8cec94d77228d468b",
+      "size": 2008,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/bd13476042130065dc0b1fa8cec94d77228d468b"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a296ce340450d90bf46fcd47a6f9980866408b9c",
+      "size": 954,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a296ce340450d90bf46fcd47a6f9980866408b9c"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e271a8e01f94a01d2c36b6350956ea781d46bcc",
+      "size": 1813,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/7e271a8e01f94a01d2c36b6350956ea781d46bcc"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4845c4cdaab5f2dd2077aef4d7988d7f23ccca83",
+      "size": 2722,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4845c4cdaab5f2dd2077aef4d7988d7f23ccca83"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4845c4cdaab5f2dd2077aef4d7988d7f23ccca83",
+      "size": 2722,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4845c4cdaab5f2dd2077aef4d7988d7f23ccca83"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29d210be065615cd6c8722e65e3c926931863f2e",
+      "size": 4119,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/29d210be065615cd6c8722e65e3c926931863f2e"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3c76a9483900a91d6f06a54f8307db3196e6e0a",
+      "size": 1768,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a3c76a9483900a91d6f06a54f8307db3196e6e0a"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8b34ff4df8af31f5fb3cf91414412ff5f9d160d",
+      "size": 3475,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d8b34ff4df8af31f5fb3cf91414412ff5f9d160d"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "604b0b5be6bd7d4a164407605beefc8db9c98fe6",
+      "size": 3811,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/604b0b5be6bd7d4a164407605beefc8db9c98fe6"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "366dd0a5f259f1d18bb6238298025225904b59dd",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/366dd0a5f259f1d18bb6238298025225904b59dd"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d08a4de320fe20e3d3b11b519313713413c7e21e",
+      "size": 414,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d08a4de320fe20e3d3b11b519313713413c7e21e"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da19eacad3b03bb08bbddbbf4ac48dd78b3d838",
+      "size": 68,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/9da19eacad3b03bb08bbddbbf4ac48dd78b3d838"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da19eacad3b03bb08bbddbbf4ac48dd78b3d838",
+      "size": 68,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/9da19eacad3b03bb08bbddbbf4ac48dd78b3d838"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da19eacad3b03bb08bbddbbf4ac48dd78b3d838",
+      "size": 68,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/9da19eacad3b03bb08bbddbbf4ac48dd78b3d838"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65a94b5db54ec02257c0fd4e74ebea1a7a34e881",
+      "size": 340,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/65a94b5db54ec02257c0fd4e74ebea1a7a34e881"
+    },
+    {
+      "path": "ios/Runner/Base.lproj",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "445c500fac34e1628eec8dd5bde937c3154fc3a6",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/445c500fac34e1628eec8dd5bde937c3154fc3a6"
+    },
+    {
+      "path": "ios/Runner/Base.lproj/LaunchScreen.storyboard",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "497371ea23a88889b582a79836d65568268f5fd3",
+      "size": 2414,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/497371ea23a88889b582a79836d65568268f5fd3"
+    },
+    {
+      "path": "ios/Runner/Base.lproj/Main.storyboard",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb83caaec5481ea63968cdfdf6e574aa9584a1b",
+      "size": 1631,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/bbb83caaec5481ea63968cdfdf6e574aa9584a1b"
+    },
+    {
+      "path": "ios/Runner/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1802b3edc7062de5a2df6ed8111743939899b5ef",
+      "size": 2236,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1802b3edc7062de5a2df6ed8111743939899b5ef"
+    },
+    {
+      "path": "ios/Runner/Runner-Bridging-Header.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae207f9e2b9302728c2199314243bda2088bb8b",
+      "size": 39,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fae207f9e2b9302728c2199314243bda2088bb8b"
+    },
+    {
+      "path": "ios/Runner/SceneDelegate.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b79be9bdfe815bb1f5f0ea10679dfee5f099f98e",
+      "size": 82,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/b79be9bdfe815bb1f5f0ea10679dfee5f099f98e"
+    },
+    {
+      "path": "ios/RunnerTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "136c53f656f4b0a0b4e2a46e770a6b78ad536221",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/136c53f656f4b0a0b4e2a46e770a6b78ad536221"
+    },
+    {
+      "path": "ios/RunnerTests/RunnerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d206ded9e1cc1a76c409afcfc90f8de4e7c99ec",
+      "size": 297,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4d206ded9e1cc1a76c409afcfc90f8de4e7c99ec"
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ab051864c630e18eb2bda6a8b6ce1e78d536716",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/6ab051864c630e18eb2bda6a8b6ce1e78d536716"
+    },
+    {
+      "path": "lib/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a04c0c9c8130e8fdb59618f388a058577c0aca18",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/a04c0c9c8130e8fdb59618f388a058577c0aca18"
+    },
+    {
+      "path": "lib/app/theme.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f677b6827548fe386b429b591e088bebc8d396d1",
+      "size": 5796,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/f677b6827548fe386b429b591e088bebc8d396d1"
+    },
+    {
+      "path": "lib/app/versao.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad7c000013be2f28a5467e121e44ba634602db27",
+      "size": 1242,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ad7c000013be2f28a5467e121e44ba634602db27"
+    },
+    {
+      "path": "lib/main.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f875c13dc8af595dd9d26f7e73c4167f4d442c16",
+      "size": 1002,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/f875c13dc8af595dd9d26f7e73c4167f4d442c16"
+    },
+    {
+      "path": "lib/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8a0f587c344359a8a2d3025df079ab21369d3b6",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/a8a0f587c344359a8a2d3025df079ab21369d3b6"
+    },
+    {
+      "path": "lib/models/robot_command.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aed39f60d3af0b09f50c69c20e3a93a26bfb431",
+      "size": 718,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/3aed39f60d3af0b09f50c69c20e3a93a26bfb431"
+    },
+    {
+      "path": "lib/models/rota_segura.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "855ea07244923b5622b91eedffe9200359443665",
+      "size": 5623,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/855ea07244923b5622b91eedffe9200359443665"
+    },
+    {
+      "path": "lib/models/telemetria.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08cc92967624bb1a733e1d0a83f026da528baf9e",
+      "size": 6189,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/08cc92967624bb1a733e1d0a83f026da528baf9e"
+    },
+    {
+      "path": "lib/screens",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78634ce1032517d0d11aee01a4712a4669dc2265",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/78634ce1032517d0d11aee01a4712a4669dc2265"
+    },
+    {
+      "path": "lib/screens/ajustes_api_screen.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01de6a815b74d59a1d1468a162d8bc3c555a9368",
+      "size": 7968,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/01de6a815b74d59a1d1468a162d8bc3c555a9368"
+    },
+    {
+      "path": "lib/screens/connect_screen.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "944eda31c6d467fd3b7c7aae42373e12d20f9c65",
+      "size": 14695,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/944eda31c6d467fd3b7c7aae42373e12d20f9c65"
+    },
+    {
+      "path": "lib/screens/control_screen.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f4836f4b128cfd540a93eb163e43c802c88c805",
+      "size": 10891,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4f4836f4b128cfd540a93eb163e43c802c88c805"
+    },
+    {
+      "path": "lib/screens/rota_segura_screen.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a430f81b34241b5bad60e7d6c8896970937b28",
+      "size": 14185,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/76a430f81b34241b5bad60e7d6c8896970937b28"
+    },
+    {
+      "path": "lib/screens/telemetria_screen.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33d2b72375f320f23cb9c62d9e5b057537887d19",
+      "size": 13322,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/33d2b72375f320f23cb9c62d9e5b057537887d19"
+    },
+    {
+      "path": "lib/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "715516f1d566876c249f370970173aacb9e83aa0",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/715516f1d566876c249f370970173aacb9e83aa0"
+    },
+    {
+      "path": "lib/services/robot_connection.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e70e7a5e8fc5d7b431733f84f0dcb38945474d1",
+      "size": 9442,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/2e70e7a5e8fc5d7b431733f84f0dcb38945474d1"
+    },
+    {
+      "path": "lib/services/rota_store.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ded62cf9c940bc17f9d5770a2c5e40cedce5fd5",
+      "size": 1358,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/3ded62cf9c940bc17f9d5770a2c5e40cedce5fd5"
+    },
+    {
+      "path": "lib/services/telemetry_api.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45e86a80dc1fe7a964469ca0daf1b53489caefde",
+      "size": 10757,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/45e86a80dc1fe7a964469ca0daf1b53489caefde"
+    },
+    {
+      "path": "lib/widgets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0ccea6060b2179f71094ba630df7a1af87fe147",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/f0ccea6060b2179f71094ba630df7a1af87fe147"
+    },
+    {
+      "path": "lib/widgets/app_card.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc44257a2968b2294d2ea04e0b67122f7a27c50c",
+      "size": 2854,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/cc44257a2968b2294d2ea04e0b67122f7a27c50c"
+    },
+    {
+      "path": "lib/widgets/brand_glow.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d695d29cedf8488cb9fa692edb18ab2cb5d51b33",
+      "size": 1144,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d695d29cedf8488cb9fa692edb18ab2cb5d51b33"
+    },
+    {
+      "path": "lib/widgets/camada_osm.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e369a60c5fa684baf182542672bc8fd370896772",
+      "size": 1699,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/e369a60c5fa684baf182542672bc8fd370896772"
+    },
+    {
+      "path": "lib/widgets/carregando.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84b0dddddcd35a1084d3e5011600f0c89f520f96",
+      "size": 6353,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/84b0dddddcd35a1084d3e5011600f0c89f520f96"
+    },
+    {
+      "path": "lib/widgets/device_tile.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e67b1ac82c4007fd8883479023779a62aa5dc2",
+      "size": 2057,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/10e67b1ac82c4007fd8883479023779a62aa5dc2"
+    },
+    {
+      "path": "lib/widgets/direction_pad.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7331dbd62cad39b7aed172b662cb0d7acc5c0ab",
+      "size": 6659,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/e7331dbd62cad39b7aed172b662cb0d7acc5c0ab"
+    },
+    {
+      "path": "lib/widgets/frescor.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bb4d276bd5488800608df4c4907113bae55a419",
+      "size": 5496,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/5bb4d276bd5488800608df4c4907113bae55a419"
+    },
+    {
+      "path": "lib/widgets/grafico_serie.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "506f427c8e714a2a363901d4ec6f655828d110a2",
+      "size": 10639,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/506f427c8e714a2a363901d4ec6f655828d110a2"
+    },
+    {
+      "path": "lib/widgets/lista_eventos.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "904e617bc753ea1508cc7ed097ad10a91d948b36",
+      "size": 5873,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/904e617bc753ea1508cc7ed097ad10a91d948b36"
+    },
+    {
+      "path": "lib/widgets/mapa_trajeto.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e47a5f3446e25d3660e4014bd6494d3ff4d3041",
+      "size": 8817,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/8e47a5f3446e25d3660e4014bd6494d3ff4d3041"
+    },
+    {
+      "path": "lib/widgets/painel_estado.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6ef82358a8cc278e72d819627860138d8271899",
+      "size": 20365,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d6ef82358a8cc278e72d819627860138d8271899"
+    },
+    {
+      "path": "lib/widgets/radar_pulse.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed5f3018625f78c5d677fc4a2bd16af18a832424",
+      "size": 4678,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ed5f3018625f78c5d677fc4a2bd16af18a832424"
+    },
+    {
+      "path": "lib/widgets/selo_versao.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d83565ae40a25cdff4bc753e000b8e882afbf62",
+      "size": 1806,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/7d83565ae40a25cdff4bc753e000b8e882afbf62"
+    },
+    {
+      "path": "linux",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9eb80e9e337d941bdab887d576ecd55a226c9d74",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/9eb80e9e337d941bdab887d576ecd55a226c9d74"
+    },
+    {
+      "path": "linux/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7ea17fcf58850d5159ef3bff70925c988731c0c",
+      "size": 19,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c7ea17fcf58850d5159ef3bff70925c988731c0c"
+    },
+    {
+      "path": "linux/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa1973c51fa6182aba3c5d9fce5021da0e6180bb",
+      "size": 4899,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fa1973c51fa6182aba3c5d9fce5021da0e6180bb"
+    },
+    {
+      "path": "linux/flutter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aaa72a190104066d3bcc9ab5046bb0a25253be65",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/aaa72a190104066d3bcc9ab5046bb0a25253be65"
+    },
+    {
+      "path": "linux/flutter/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27860e801899e7d2a1772919c22bc2875ba541a6",
+      "size": 2903,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/27860e801899e7d2a1772919c22bc2875ba541a6"
+    },
+    {
+      "path": "linux/flutter/generated_plugin_registrant.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e71a16d23d05881b554326e645083799ab9bfc5e",
+      "size": 161,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/e71a16d23d05881b554326e645083799ab9bfc5e"
+    },
+    {
+      "path": "linux/flutter/generated_plugin_registrant.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0f0a47bc08f30b550b47b01de4c9206b6824dd9",
+      "size": 303,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/e0f0a47bc08f30b550b47b01de4c9206b6824dd9"
+    },
+    {
+      "path": "linux/flutter/generated_plugins.cmake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be1ee3e5b4dc65715a29818d2a392e8aa3164c22",
+      "size": 745,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/be1ee3e5b4dc65715a29818d2a392e8aa3164c22"
+    },
+    {
+      "path": "linux/runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "515fb5bcf44beaccfa90ef4244c0911281303677",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/515fb5bcf44beaccfa90ef4244c0911281303677"
+    },
+    {
+      "path": "linux/runner/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed6f3e4f57a42aca8b68af9f7ea6290780d78f3",
+      "size": 1000,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/7ed6f3e4f57a42aca8b68af9f7ea6290780d78f3"
+    },
+    {
+      "path": "linux/runner/main.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4340ffc17f21cfe31bd06431fd1129291874b2c0",
+      "size": 186,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4340ffc17f21cfe31bd06431fd1129291874b2c0"
+    },
+    {
+      "path": "linux/runner/my_application.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e596b4eedaafe8d6541598d260bf32b487535c29",
+      "size": 5619,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/e596b4eedaafe8d6541598d260bf32b487535c29"
+    },
+    {
+      "path": "linux/runner/my_application.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c4a71ebeab3ce47453413a2e1b8e5723d6cefe",
+      "size": 472,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c4c4a71ebeab3ce47453413a2e1b8e5723d6cefe"
+    },
+    {
+      "path": "macos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd78ac54d14047b196401b7673f877c1195e7448",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/cd78ac54d14047b196401b7673f877c1195e7448"
+    },
+    {
+      "path": "macos/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4e056954a940c3833d812eaadbd1fac28a2b82e",
+      "size": 96,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d4e056954a940c3833d812eaadbd1fac28a2b82e"
+    },
+    {
+      "path": "macos/Flutter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5eecf854f2715d032fc67f21beeda18d71d87d3",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/a5eecf854f2715d032fc67f21beeda18d71d87d3"
+    },
+    {
+      "path": "macos/Flutter/Flutter-Debug.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f022c34e5b87fe6b6bb32fdf9857a928ffa028d7",
+      "size": 49,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/f022c34e5b87fe6b6bb32fdf9857a928ffa028d7"
+    },
+    {
+      "path": "macos/Flutter/Flutter-Release.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f022c34e5b87fe6b6bb32fdf9857a928ffa028d7",
+      "size": 49,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/f022c34e5b87fe6b6bb32fdf9857a928ffa028d7"
+    },
+    {
+      "path": "macos/Flutter/GeneratedPluginRegistrant.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a12b734916a55b31861ad266e6f6a11fa546f297",
+      "size": 410,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a12b734916a55b31861ad266e6f6a11fa546f297"
+    },
+    {
+      "path": "macos/Runner.xcodeproj",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19f3259d90201109696b64bca5ba6bf30c9c43bc",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/19f3259d90201109696b64bca5ba6bf30c9c43bc"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/project.pbxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cecf0c844a68bef403d424871c1521f47137326f",
+      "size": 28687,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/cecf0c844a68bef403d424871c1521f47137326f"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/project.xcworkspace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2459fcebc5cf843f271890e85d92214a8fde615",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/a2459fcebc5cf843f271890e85d92214a8fde615"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec93cf299d74c646a4e76f8ef0481a002f4b6c15",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/ec93cf299d74c646a4e76f8ef0481a002f4b6c15"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db",
+      "size": 246,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ddbb873650cee51c669186cb4b769e61927b1d3a",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/ddbb873650cee51c669186cb4b769e61927b1d3a"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/xcshareddata/xcschemes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a430817f50215a7ef33931e3cb241dfc2fe08307",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/a430817f50215a7ef33931e3cb241dfc2fe08307"
+    },
+    {
+      "path": "macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "025aaf21bad8ebdfedcb794d790fb8be2d8c3daf",
+      "size": 4727,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/025aaf21bad8ebdfedcb794d790fb8be2d8c3daf"
+    },
+    {
+      "path": "macos/Runner.xcworkspace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33a93445e27cfe3c8ddca3617199e98667d38e7d",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/33a93445e27cfe3c8ddca3617199e98667d38e7d"
+    },
+    {
+      "path": "macos/Runner.xcworkspace/contents.xcworkspacedata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c6d39465edc08bd1e919a6248c68b1b72cfd33",
+      "size": 159,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/59c6d39465edc08bd1e919a6248c68b1b72cfd33"
+    },
+    {
+      "path": "macos/Runner.xcworkspace/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec93cf299d74c646a4e76f8ef0481a002f4b6c15",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/ec93cf299d74c646a4e76f8ef0481a002f4b6c15"
+    },
+    {
+      "path": "macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db",
+      "size": 246,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fc6bf8074854f8fd9fea8d9cc80d5ca1b8d932db"
+    },
+    {
+      "path": "macos/Runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f860aee4bf12541ff6efcb0c7c9d9d169a31f70",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/0f860aee4bf12541ff6efcb0c7c9d9d169a31f70"
+    },
+    {
+      "path": "macos/Runner/AppDelegate.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c474d9235f4c06267e76cccdc98ba2aedd3249",
+      "size": 324,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c5c474d9235f4c06267e76cccdc98ba2aedd3249"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89f882957cd84d2fa8e39bc8170db1599d0a2f7b",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/89f882957cd84d2fa8e39bc8170db1599d0a2f7b"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0132c64ff109daae3ea422891e42a006fae59e4",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/b0132c64ff109daae3ea422891e42a006fae59e4"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d4e7cb8e7fa82532e515c40051ad7e482256175",
+      "size": 1359,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/8d4e7cb8e7fa82532e515c40051ad7e482256175"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82b6f9d9a33e198f5747104729e1fcef999772a5",
+      "size": 102994,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/82b6f9d9a33e198f5747104729e1fcef999772a5"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13b35eba55c6dabc3aac36f33d859266c18fa0d0",
+      "size": 5680,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/13b35eba55c6dabc3aac36f33d859266c18fa0d0"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a3f5fa40fb3d1e0710331a48de5d256da3f275d",
+      "size": 520,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/0a3f5fa40fb3d1e0710331a48de5d256da3f275d"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdb57226d5f2bd20f11934f4903f16459cf52379",
+      "size": 14142,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/bdb57226d5f2bd20f11934f4903f16459cf52379"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f083318e09ca1b6b8484b1694a149f0c5d5cac1d",
+      "size": 1066,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/f083318e09ca1b6b8484b1694a149f0c5d5cac1d"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "326c0e72c9d820600887813b3b98d0dd69c5d4e8",
+      "size": 36406,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/326c0e72c9d820600887813b3b98d0dd69c5d4e8"
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f1632cfddf3d9dade342351e627a0a75609fb46",
+      "size": 2218,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/2f1632cfddf3d9dade342351e627a0a75609fb46"
+    },
+    {
+      "path": "macos/Runner/Base.lproj",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4379bce825ab317baefb29f1f4762a3aed4088b4",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/4379bce825ab317baefb29f1f4762a3aed4088b4"
+    },
+    {
+      "path": "macos/Runner/Base.lproj/MainMenu.xib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4632c6967f03841f921da7c757f2b37c97471054",
+      "size": 24072,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4632c6967f03841f921da7c757f2b37c97471054"
+    },
+    {
+      "path": "macos/Runner/Configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23934568d01db9d77190ab524d1b3654f42e583f",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/23934568d01db9d77190ab524d1b3654f42e583f"
+    },
+    {
+      "path": "macos/Runner/Configs/AppInfo.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "770b6dab5f85a47ca49d940f6ab4959ad34a422e",
+      "size": 632,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/770b6dab5f85a47ca49d940f6ab4959ad34a422e"
+    },
+    {
+      "path": "macos/Runner/Configs/Debug.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3988237237176c5c80b9f06dcecda471b32da64",
+      "size": 79,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/b3988237237176c5c80b9f06dcecda471b32da64"
+    },
+    {
+      "path": "macos/Runner/Configs/Release.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d93e5dc4ae5d6583b5562588bd6297eec851ac59",
+      "size": 81,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d93e5dc4ae5d6583b5562588bd6297eec851ac59"
+    },
+    {
+      "path": "macos/Runner/Configs/Warnings.xcconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb4d7d3fb5a2e71bac84a05dbd8c1d0ae1d3b827",
+      "size": 593,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fb4d7d3fb5a2e71bac84a05dbd8c1d0ae1d3b827"
+    },
+    {
+      "path": "macos/Runner/DebugProfile.entitlements",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d096708dc10772d5a8c149a432f53a306c9a0b",
+      "size": 360,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/51d096708dc10772d5a8c149a432f53a306c9a0b"
+    },
+    {
+      "path": "macos/Runner/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3733c1a8eea33dd8914531934be543badf8c1350",
+      "size": 1092,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/3733c1a8eea33dd8914531934be543badf8c1350"
+    },
+    {
+      "path": "macos/Runner/MainFlutterWindow.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab30cba82cc767f3f490e642e8e744e10e7550ed",
+      "size": 403,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ab30cba82cc767f3f490e642e8e744e10e7550ed"
+    },
+    {
+      "path": "macos/Runner/Release.entitlements",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04336df3c19b88aa730e073f7a8c43225258dbff",
+      "size": 248,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/04336df3c19b88aa730e073f7a8c43225258dbff"
+    },
+    {
+      "path": "macos/RunnerTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d9a60946e8bd012617de7b24fde43fc7ece338a5",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/d9a60946e8bd012617de7b24fde43fc7ece338a5"
+    },
+    {
+      "path": "macos/RunnerTests/RunnerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21fe1ab9d96b95e93539a11deb5610c4a9d25b3c",
+      "size": 302,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/21fe1ab9d96b95e93539a11deb5610c4a9d25b3c"
+    },
+    {
+      "path": "pubspec.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd82a21863e434b39142363e5ec137ca6c4a7d5f",
+      "size": 22481,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/dd82a21863e434b39142363e5ec137ca6c4a7d5f"
+    },
+    {
+      "path": "pubspec.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abd32e393e74adedaea13352d5311319b548e719",
+      "size": 2652,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/abd32e393e74adedaea13352d5311319b548e719"
+    },
+    {
+      "path": "shorebird.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336964d11d98be793db78eaac51f3995cc50cf7a",
+      "size": 772,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/336964d11d98be793db78eaac51f3995cc50cf7a"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2312fce1e8b1680c6abfc4e2ccdc4697ae1e9dfd",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/2312fce1e8b1680c6abfc4e2ccdc4697ae1e9dfd"
+    },
+    {
+      "path": "test/direction_pad_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "001d405c64dbd970b95a3c83118835cfe970ab1c",
+      "size": 3998,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/001d405c64dbd970b95a3c83118835cfe970ab1c"
+    },
+    {
+      "path": "test/robot_command_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fe7c3d9dee8e2bc23af2c50c3db0c91daae4cea",
+      "size": 982,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/6fe7c3d9dee8e2bc23af2c50c3db0c91daae4cea"
+    },
+    {
+      "path": "test/rota_segura_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79b6ce412c795b728123b9deb508a0e7cef685b5",
+      "size": 4058,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/79b6ce412c795b728123b9deb508a0e7cef685b5"
+    },
+    {
+      "path": "test/telemetria_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dcb03d3210bec4c08b15ded9f2e432927e3ee60",
+      "size": 5773,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4dcb03d3210bec4c08b15ded9f2e432927e3ee60"
+    },
+    {
+      "path": "tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "520695a7e81b5ea52d4c09f18cdd1efcbe385c52",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/520695a7e81b5ea52d4c09f18cdd1efcbe385c52"
+    },
+    {
+      "path": "tool/gerar_icones.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1b2540fe705b7da6538b34eee7c932cff6ba797",
+      "size": 6478,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d1b2540fe705b7da6538b34eee7c932cff6ba797"
+    },
+    {
+      "path": "tool/gerar_icones_ios.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14bc14c595496259a72445195ed5f7a6e47d39bd",
+      "size": 1327,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/14bc14c595496259a72445195ed5f7a6e47d39bd"
+    },
+    {
+      "path": "web",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8df5515386b631a980d7619a098fa46d5ef5817e",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/8df5515386b631a980d7619a098fa46d5ef5817e"
+    },
+    {
+      "path": "web/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aaa46ac1ae21512746f852a42ba87e4165dfdd1",
+      "size": 917,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/8aaa46ac1ae21512746f852a42ba87e4165dfdd1"
+    },
+    {
+      "path": "web/icons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b92a0d854da9a8f73216c4a0ef07a0f0a44e4373",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/b92a0d854da9a8f73216c4a0ef07a0f0a44e4373"
+    },
+    {
+      "path": "web/icons/Icon-192.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b749bfef07473333cf1dd31e9eed89862a5d52aa",
+      "size": 5292,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/b749bfef07473333cf1dd31e9eed89862a5d52aa"
+    },
+    {
+      "path": "web/icons/Icon-512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88cfd48dff1169879ba46840804b412fe02fefd6",
+      "size": 8252,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/88cfd48dff1169879ba46840804b412fe02fefd6"
+    },
+    {
+      "path": "web/icons/Icon-maskable-192.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb9b4d76e525556d5d89141648c724331630325d",
+      "size": 5594,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/eb9b4d76e525556d5d89141648c724331630325d"
+    },
+    {
+      "path": "web/icons/Icon-maskable-512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d69c56691fbdb0b7efa65097c7cc1edac12a6d3e",
+      "size": 20998,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/d69c56691fbdb0b7efa65097c7cc1edac12a6d3e"
+    },
+    {
+      "path": "web/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "545bc800ee7ac4741988b7898eeac80e41f7d349",
+      "size": 1583,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/545bc800ee7ac4741988b7898eeac80e41f7d349"
+    },
+    {
+      "path": "web/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fce879344d1e30d79bd0780e4acc3bd15e6be10d",
+      "size": 963,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/fce879344d1e30d79bd0780e4acc3bd15e6be10d"
+    },
+    {
+      "path": "windows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73d915194b7dfd7ad1cd4c1137c147040567d502",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/73d915194b7dfd7ad1cd4c1137c147040567d502"
+    },
+    {
+      "path": "windows/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec4098aa65acfc141a8dde49a52563985fe738c6",
+      "size": 308,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ec4098aa65acfc141a8dde49a52563985fe738c6"
+    },
+    {
+      "path": "windows/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a16c4468ba16dc522f36b94d7ff9f9e474786a96",
+      "size": 4276,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a16c4468ba16dc522f36b94d7ff9f9e474786a96"
+    },
+    {
+      "path": "windows/flutter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff1a56085ba27245c006516459336d6e147258dc",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/ff1a56085ba27245c006516459336d6e147258dc"
+    },
+    {
+      "path": "windows/flutter/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efb62ebe7ddbf1d5961ae854d14fe8d6695d5c99",
+      "size": 3851,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/efb62ebe7ddbf1d5961ae854d14fe8d6695d5c99"
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a50d620b52b2c0bbf638f791f8a709ca41c6e1b2",
+      "size": 540,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/a50d620b52b2c0bbf638f791f8a709ca41c6e1b2"
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc139d85a93101cc0f6e9db03a3e1a9f68e8dd7e",
+      "size": 302,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/dc139d85a93101cc0f6e9db03a3e1a9f68e8dd7e"
+    },
+    {
+      "path": "windows/flutter/generated_plugins.cmake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00046c3bfe2bb64d8863dad6a7b5ad00c9cf9d0c",
+      "size": 804,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/00046c3bfe2bb64d8863dad6a7b5ad00c9cf9d0c"
+    },
+    {
+      "path": "windows/runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7d2568f6390de4d65a68aca10e4be62d4ab6816",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/c7d2568f6390de4d65a68aca10e4be62d4ab6816"
+    },
+    {
+      "path": "windows/runner/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2041a0441082ae7295179dd095457caecb7b3842",
+      "size": 1836,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/2041a0441082ae7295179dd095457caecb7b3842"
+    },
+    {
+      "path": "windows/runner/Runner.rc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1715765c7c865e9f2b7d76f9cbc7bc37a2a571cb",
+      "size": 3182,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/1715765c7c865e9f2b7d76f9cbc7bc37a2a571cb"
+    },
+    {
+      "path": "windows/runner/flutter_window.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c819cb083f2cbe0ff97e661bfb885b114792b38c",
+      "size": 2193,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c819cb083f2cbe0ff97e661bfb885b114792b38c"
+    },
+    {
+      "path": "windows/runner/flutter_window.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c23839b96e0dbf6238372ae04fc46044e670b8",
+      "size": 961,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/28c23839b96e0dbf6238372ae04fc46044e670b8"
+    },
+    {
+      "path": "windows/runner/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efb4a5c1ce9190c1774c0702db7ba0fa7b992b81",
+      "size": 1312,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/efb4a5c1ce9190c1774c0702db7ba0fa7b992b81"
+    },
+    {
+      "path": "windows/runner/resource.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddc7f3efc0e6c820aec21ceccd42537b74645a9a",
+      "size": 448,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/ddc7f3efc0e6c820aec21ceccd42537b74645a9a"
+    },
+    {
+      "path": "windows/runner/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bd06bdf095c809f80d639847440b06b0199a88c",
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/trees/8bd06bdf095c809f80d639847440b06b0199a88c"
+    },
+    {
+      "path": "windows/runner/resources/app_icon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c04e20caf6370ebb9253ad831cc31de4a9c965f6",
+      "size": 33772,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/c04e20caf6370ebb9253ad831cc31de4a9c965f6"
+    },
+    {
+      "path": "windows/runner/runner.exe.manifest",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b962bbeb71c54552723c41980a5cf20bc9cfdd3",
+      "size": 616,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/4b962bbeb71c54552723c41980a5cf20bc9cfdd3"
+    },
+    {
+      "path": "windows/runner/utils.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f62cc57f517408395769d8e46bff43dfd0e339",
+      "size": 2237,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/b7f62cc57f517408395769d8e46bff43dfd0e339"
+    },
+    {
+      "path": "windows/runner/utils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f0e05cba3cc07d7982c48e0e5a49129d4dddfbb",
+      "size": 691,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/3f0e05cba3cc07d7982c48e0e5a49129d4dddfbb"
+    },
+    {
+      "path": "windows/runner/win32_window.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5ba2a099fb8fb39e4638338df01b754f0174a8c",
+      "size": 8822,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/b5ba2a099fb8fb39e4638338df01b754f0174a8c"
+    },
+    {
+      "path": "windows/runner/win32_window.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49b847f07511cb8fca530a23cf0e711f4bb6e5cf",
+      "size": 3624,
+      "url": "https://api.github.com/repos/setrem-robot/aplicativo/git/blobs/49b847f07511cb8fca530a23cf0e711f4bb6e5cf"
+    }
+  ],
+  "truncated": false
+}

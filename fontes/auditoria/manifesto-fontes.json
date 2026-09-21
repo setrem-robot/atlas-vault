@@ -1,0 +1,2080 @@
+[
+  {
+    "origem": "D:\\SetremRobot\\Relatorios\\EstruturaPDF.pdf",
+    "copia": "fontes/relatorios/EstruturaPDF.pdf",
+    "paginas": 34,
+    "sha256": "9cb9a97dc894f2999aae958b8d4b2f0023ddcc3274d914df73812fd2a5aa0528"
+  },
+  {
+    "origem": "D:\\SetremRobot\\Relatorios\\InterfacePDF.pdf",
+    "copia": "fontes/relatorios/InterfacePDF.pdf",
+    "paginas": 34,
+    "sha256": "19f93f368687def48cd893a1217858d851966f99884c8d6d49c91c01015466fd"
+  },
+  {
+    "origem": "D:\\SetremRobot\\Relatorios\\OrquestradorPDF.pdf",
+    "copia": "fontes/relatorios/OrquestradorPDF.pdf",
+    "paginas": 41,
+    "sha256": "a464b8e80322fd496dba2c88adea36b6b80a5e5e0b8d442a44818b0a89fd3c61"
+  },
+  {
+    "origem": "app/.gitattributes",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e6da600d98d436f807c371d95ec34be414f3e05a212a13722dd5571554655ae5"
+  },
+  {
+    "origem": "app/.github/dependabot.yml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e52439535ce88a0f4279a14c9526dbe5b85afe6c4446052c635e88d63aa65d18"
+  },
+  {
+    "origem": "app/.github/workflows/deploy.yml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "983b579aa98850482cb7bd0bc2f8fb9bc9cc98e63af64971a63be7df49e4d417"
+  },
+  {
+    "origem": "app/.gitignore",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "23179f5adebd76f875fc7eb6529545b097484fd3c42f4e214545e761297bc8a1"
+  },
+  {
+    "origem": "app/.metadata",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b2cdb731da51c32c593f0e9b065d20e6da3ee844e28f314f7ded2805f7da3e37"
+  },
+  {
+    "origem": "app/ARQUITETURA.md",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a956445d52234a6e4e27b83538fddf9f12f3ae168dc81cc72cee7fdacd40434b"
+  },
+  {
+    "origem": "app/CLAUDE.md",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b3a0f6ccb67fe10ff0ad03d9f81514aaeab92e919a09f159876b96ce3d6791cf"
+  },
+  {
+    "origem": "app/COMO-FUNCIONA.md",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "38a4abf20ecd5702c82b972d06785a36f9d787cdd7c40679cf4a529ee03345d0"
+  },
+  {
+    "origem": "app/README.md",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3a5850feed221713386df331fb831784578cb8d6dcc398bcf4c9a471d42502d7"
+  },
+  {
+    "origem": "app/analysis_options.yaml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "615f05fe86755fd20d4c3eb064b98dbe69f18d0abde518794110779335458f5c"
+  },
+  {
+    "origem": "app/android/.gitignore",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c9af75dbc2c8aa867476a09426c80b178c4aeed8b9393ae48503eedfa3273d71"
+  },
+  {
+    "origem": "app/android/app/build.gradle.kts",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3f307e17a2902f659b60b2ef71e43043bb6d96c4a9ac054ac04c77d2eb8abace"
+  },
+  {
+    "origem": "app/android/app/src/debug/AndroidManifest.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c"
+  },
+  {
+    "origem": "app/android/app/src/main/AndroidManifest.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "66b6072347748c4674d02249903d19f160ec4eb6797ac8a0ed7f7d5e3348421a"
+  },
+  {
+    "origem": "app/android/app/src/main/kotlin/com/setrem/robot_controller/MainActivity.kt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e06abdd78699a4797276e3c96d993448d06c66117b8ade618c70280f257dfb37"
+  },
+  {
+    "origem": "app/android/app/src/main/res/drawable-v21/launch_background.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "dca312ec77de83e43ef70a825c299b51451247286c29167d62f19165750b8793"
+  },
+  {
+    "origem": "app/android/app/src/main/res/drawable/launch_background.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "2df60e2cfbee873ce2858088cf003e6b93498f2f568476da437610467ea1a9d7"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "bcbfd25f8635217b2e17ddd89c447ec668f3809735bb4c10226d06aeae311158"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "81c08b013f20a044783cfa47308ad38092a26c9fb1f2e34efe4892c650ebdd59"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "4d9497dea929191b8aeaa046284cfea5f0cc18882e0c2efddcab1fa424dedf3d"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a4ccc7b092a3e327b57ced4bab466194a2f36d34e81045a5ef7405c3f9cb6340"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "9e9e46179afbdc85664b86cc1bf936c09e1cde508626fecb4ca553f051f5b576"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d49502a719dd7d49b0030eb4b46c7c4ea3f3b93577b3cca87f4e15753046e260"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "8fb3c1652330320b267084706939cd48333d7614cfe388772198870a4c60d759"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "9f0f3927e87804ab8ce8891d46688cb1ac3d13e919420301e97ae83981433e14"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "99b82772efedd90849f6bacd164e59bc531d26c7febf8c64c9bfcb86692023ff"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "398f6225dff95320441f293fb6a4b6959bcf80f5f183ff8dfc70ef60d5cd0727"
+  },
+  {
+    "origem": "app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "06387e962969e03f973614291c8c7ec453f5645a31c6226ee0a220ad337638f7"
+  },
+  {
+    "origem": "app/android/app/src/main/res/values-night/styles.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "ea763597dc1a84c8034251caee98d7753e0fbf57340ffc94677427de4b537516"
+  },
+  {
+    "origem": "app/android/app/src/main/res/values/ic_launcher_background.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3b43c29a17aced0a5152f4f58a55e32e8ad84882f6ec7c63110c2c00a1933015"
+  },
+  {
+    "origem": "app/android/app/src/main/res/values/styles.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "cca15a99b59380a548bf6a890f7ca5380ee509b1f9bbb2f5f9ec3589fa25c2f7"
+  },
+  {
+    "origem": "app/android/app/src/main/res/xml/network_security_config.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "01eafb83b61cb0685545896db89a6c71eea9fdf7c41151cfe52505f13629d92d"
+  },
+  {
+    "origem": "app/android/app/src/profile/AndroidManifest.xml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c"
+  },
+  {
+    "origem": "app/android/build.gradle.kts",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "218f400e3fff31c9c986a2535dfb974560e1b4d33cc27b7c1fee96a2b7e44454"
+  },
+  {
+    "origem": "app/android/gradle.properties",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "38ed4e91454057c9d5fd7e6edfd9c5f0524f7cf6ef80117053984b4ef0468428"
+  },
+  {
+    "origem": "app/android/gradle/wrapper/gradle-wrapper.properties",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "670071e5c2e25f86f82bc9db52f5d8d7c8f7b1788686a9d4c967753c69d9a2b4"
+  },
+  {
+    "origem": "app/android/key.properties.example",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "60a3d7944a7212f05b6acbb40716f969f621e34b661aab3bd79f90e0e4c17ef3"
+  },
+  {
+    "origem": "app/android/settings.gradle.kts",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d6b16579d5f6a6066cc22323c4e34adb82020f7b75378bffed7f0358bc949ce3"
+  },
+  {
+    "origem": "app/ios/.gitignore",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e85b4db8ba6ed14708e5f7d3c60336e5a3067ce11329b84aa8ba5d98603ee253"
+  },
+  {
+    "origem": "app/ios/Flutter/AppFrameworkInfo.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e51cfa76fca1ae586244b43bf97423577315d2906394c1e7768ef43b8d23e161"
+  },
+  {
+    "origem": "app/ios/Flutter/Debug.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c0d1da54718e75f2028962b689258ecc741abf7cdaed50483aa5225264d0a7d7"
+  },
+  {
+    "origem": "app/ios/Flutter/Release.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c0d1da54718e75f2028962b689258ecc741abf7cdaed50483aa5225264d0a7d7"
+  },
+  {
+    "origem": "app/ios/Podfile",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "7689ac5a0e70c577e484973695073fda1507e5063d490fbef32732d38e319b65"
+  },
+  {
+    "origem": "app/ios/Runner.xcodeproj/project.pbxproj",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "85ed83b58e7f20e2a3de682f6ab190948e2e35240e2af41733935b19d92fe5c3"
+  },
+  {
+    "origem": "app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "ac28b35c2b940210bec0fff8e424b07fd0efe9112ab178a10533583f251a386c"
+  },
+  {
+    "origem": "app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+  },
+  {
+    "origem": "app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "dd64c0308ab2971c456871b990b24a008bdc3ece09833e8dbe9675e33a496e74"
+  },
+  {
+    "origem": "app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a46c0d064503db8bf9f452b492c61fdf76f9febb8894005fe30b2facec21e550"
+  },
+  {
+    "origem": "app/ios/Runner.xcworkspace/contents.xcworkspacedata",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "706a4c812f2a1e220e6785c27580020d58048e2ae4d30d1280f3c43344ce6b38"
+  },
+  {
+    "origem": "app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+  },
+  {
+    "origem": "app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "dd64c0308ab2971c456871b990b24a008bdc3ece09833e8dbe9675e33a496e74"
+  },
+  {
+    "origem": "app/ios/Runner/AppDelegate.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "54a5e98d6c3e8a79413ad50607b83aac8ded8828bc913eda1fe86bb33a66cd5d"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "5f8b941b774bde4496d73347c1f79cbdd786bb76fbdab9ed1f3f0cb78a0fb0d3"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "37eaa9548e95c8ba06f7f3e5af62dc59bae3e7a92aa7ffdb85eca82b9bd78312"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "8d584a0756cf4612f5b95aa7481743490146ab90680a6b4369d6cc355c5c694f"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "5e7e76379d1c65e4a8679007ac48c73c2b994924e7f25cd9e5a7436311df12de"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "5b12e32f99f744e07e23730abe3cca71ebfc9d16f82bbe7c2041cf9629e6587a"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a5d449a8b37395d802bea0e2b6729bb64335bfbf1a0d61b22d9da3783629c665"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d7a7a594a3cea6f35fc8defc80ba7edf6b12cbffbd2e864ba3f88b82f294efd0"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d8add0077f6d798e8dc67c1e8b068f7d2c17c7457bdc5b8566f89142cc05ece1"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "5e7e76379d1c65e4a8679007ac48c73c2b994924e7f25cd9e5a7436311df12de"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "05da0cca9c565cc1e9f0afbdda89c67b38358758301f20c075131db3d49b792a"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "89066cec44853fcc8eea75ec5d2c996dd3fffc7cdf28d39073be02ce3cae24ab"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "89066cec44853fcc8eea75ec5d2c996dd3fffc7cdf28d39073be02ce3cae24ab"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "039081175bf93955d2a13f5b29aaa6cd7d327e70127d0c1bdf6f46e9ffdbaf7b"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "4efab1760356be37f92b7dedbb3fbc8dfdebf97f7f367503371ee51205de698a"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "84182eec1e49fd4b81a796b963e2bc30319a85714c14413cd131c7dc53370e0b"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "9f9247c2c8ec0b52d75e75d35d2e2eb9fe82e0bf8eb575e85dd6dc3edf2cddf9"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "fbd112a9f3b541a1d811f71ac8e4fe68b6176687d973a5f4d99b7aa4a722e94e"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+  },
+  {
+    "origem": "app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "853ac958e2416fe2540f6f61165283a3618b71a7ba5f85f65ac41c2158dfcd21"
+  },
+  {
+    "origem": "app/ios/Runner/Base.lproj/LaunchScreen.storyboard",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "bc3644fbb251ff1e18de25a4932c927850ae1a025be3dd1447940429633fe4b2"
+  },
+  {
+    "origem": "app/ios/Runner/Base.lproj/Main.storyboard",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "dcea4686c02065e56217fd19fcfb73d7509b41872e7486126149d47a18559363"
+  },
+  {
+    "origem": "app/ios/Runner/Info.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3d0870c362350823d76bbc414f096dd5c2afab850abb3ddfc77b992703bef90e"
+  },
+  {
+    "origem": "app/ios/Runner/Runner-Bridging-Header.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "efe657d8b27f7f8595a0d416bffb33fe7d93bd2869d81f7353b556c439d7a1a7"
+  },
+  {
+    "origem": "app/ios/Runner/SceneDelegate.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "edce811c671ca0a6ccb14753e14e16deb0d89a0adf4f1b685e362d87d8f4c366"
+  },
+  {
+    "origem": "app/ios/RunnerTests/RunnerTests.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c0e04141287eb7f9c9f3d31cf5be8cb626a9ea71351206c9121578e8b8f480c3"
+  },
+  {
+    "origem": "app/lib/app/theme.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a496b20825aaac0d51c271dd31c38c4ef27d259ad0a40d91dd75742dde216075"
+  },
+  {
+    "origem": "app/lib/app/versao.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "30744feeb7b786667a5978b9c78b680eaedb7d2b0e1f57fc1df93203b5b43ed1"
+  },
+  {
+    "origem": "app/lib/main.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "94a0aa62b438c158ef35f62931f868024faec3fc78ba82ac5cbccb1c65b5a75b"
+  },
+  {
+    "origem": "app/lib/models/robot_command.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "40a28433072d6e754dac753a10967c912daa564285b3d4fde8525722b70dbe08"
+  },
+  {
+    "origem": "app/lib/models/rota_segura.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "24aa29cd709c405fb868407f40a450ec7c7e9c2d537d9e72c6e1a9ece9f30110"
+  },
+  {
+    "origem": "app/lib/models/telemetria.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e24ac90c0f5426f5a37c94bafe5fd58037bbf21de83d70f14cba0f3c188c6f12"
+  },
+  {
+    "origem": "app/lib/screens/ajustes_api_screen.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "54e28060bea73b83ecc0960d74f8cc7606bd4aff2009f2bd558a63b55d730f42"
+  },
+  {
+    "origem": "app/lib/screens/connect_screen.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "88dd27b790305cb1c2fe2eda789420c8aa2235e6f58ce7b15da0bfe5f9d088d4"
+  },
+  {
+    "origem": "app/lib/screens/control_screen.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "208fd80bd9387c504e1b9ec60eb034a65460ecf8afa6546fec02eac92108a0af"
+  },
+  {
+    "origem": "app/lib/screens/rota_segura_screen.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "58ed5bedf6e0e1717f7f5d3bebb3de052f1ed558901e2ddbac94c4e66eed6085"
+  },
+  {
+    "origem": "app/lib/screens/telemetria_screen.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "06c34f7ff89eeabb22a4be08f5056f1518bfa0f36af78834dfe5ac26bfd7f958"
+  },
+  {
+    "origem": "app/lib/services/robot_connection.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "7dca857d23bf3d6e078f4f792aca5c7ead34c826b76b69f9e9259c6e5bbb432e"
+  },
+  {
+    "origem": "app/lib/services/rota_store.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d355377d5fcf81e9d8b0eccd2f6cc0c56e20dfe92d67ad8fb1a33c2b6a84851e"
+  },
+  {
+    "origem": "app/lib/services/telemetry_api.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b7297f392e06df1c0aabfd07a08b7b698dbd186977b76761967d55424eacd36e"
+  },
+  {
+    "origem": "app/lib/widgets/app_card.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "4c855306de3d6edc37b9977f4b0cee07dd30dc8fbbf8cc382c9ef528675e6604"
+  },
+  {
+    "origem": "app/lib/widgets/brand_glow.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "bfdc642ec60dd4be59f60697d9c741a1d749edc7dc3dc713381627da89f507f3"
+  },
+  {
+    "origem": "app/lib/widgets/camada_osm.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "74b0a7d874027fe3c67e519a6ab5a0bb29dabf9063deba40423d051b29c9aba7"
+  },
+  {
+    "origem": "app/lib/widgets/carregando.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3adb19179e3764429c65c0628ab91b087f72b2152af240b33d0894b17db2f7c4"
+  },
+  {
+    "origem": "app/lib/widgets/device_tile.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "61236671131422cf7154da34b39f49866fce49d20744575502c382b38e4d9431"
+  },
+  {
+    "origem": "app/lib/widgets/direction_pad.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "39fbcd480e4b9b583c8e7c97b0502729822d0d83d394227ab78d11a347bde57b"
+  },
+  {
+    "origem": "app/lib/widgets/frescor.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c1bb30171cd2946b6faefd6dbabac80b789cd4e222d374408fc01bb84894e027"
+  },
+  {
+    "origem": "app/lib/widgets/grafico_serie.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d7ec9cad040caeb8181227684393f8b642a752dac6046f160bcb7b369f7525d8"
+  },
+  {
+    "origem": "app/lib/widgets/lista_eventos.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a1829c731f0fb8af28a8cae8c38404dea42b661b2b3be22414c16c92368672c5"
+  },
+  {
+    "origem": "app/lib/widgets/mapa_trajeto.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "47be3a2b5ab838565d36353f17b9a3aaa12817b0efa88a6c20e8ee3a24b68a7b"
+  },
+  {
+    "origem": "app/lib/widgets/painel_estado.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "2674c9df5e4167f596f2809d29c4739ea76b446195017b4393106a75513eb6b7"
+  },
+  {
+    "origem": "app/lib/widgets/radar_pulse.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "00ed9a44311d18887864a604e143c6ffac81c457c1cd839088eb9eafef0218d8"
+  },
+  {
+    "origem": "app/lib/widgets/selo_versao.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "8226c6babf2ca2b27407977f578b19182da1a01a23053f109d1db29a2a079d24"
+  },
+  {
+    "origem": "app/linux/.gitignore",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d7bbeac6ba86e2d94d8ccc63a1a2fbbac5ee7467f52f75c168165412d6ac3b60"
+  },
+  {
+    "origem": "app/linux/CMakeLists.txt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "796c8956b8ada837010bafba999f99a2ea88e6f65b9b8c62bdfec7f3466a366c"
+  },
+  {
+    "origem": "app/linux/flutter/CMakeLists.txt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "4eb17836308c1cd53f6b2bb8edb3b7b30610bff3b1d9df7fecc9317f9109700c"
+  },
+  {
+    "origem": "app/linux/flutter/generated_plugin_registrant.cc",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "7861b227b10a10cc1d7643f82a246b7db35b503f2d9ff1d3c906136e6c260dce"
+  },
+  {
+    "origem": "app/linux/flutter/generated_plugin_registrant.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "00f93bb5b1faefdede8f6065df327522900fb0b8efee86bacf424fd947ed14bb"
+  },
+  {
+    "origem": "app/linux/flutter/generated_plugins.cmake",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e03f251c12778bd5a5d1ae831ce0c8d057bcd94d239a1e4e0f7222075fa0bec7"
+  },
+  {
+    "origem": "app/linux/runner/CMakeLists.txt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "81ecf2604c50f480c23d460b2ddf653ecd39df29cc5b2fe4913f1a59f008a5a7"
+  },
+  {
+    "origem": "app/linux/runner/main.cc",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "905b4dfa4eab584c1eb6244899b7d5ef56d0bceaf3bffb5ea335ed7e0ba3c549"
+  },
+  {
+    "origem": "app/linux/runner/my_application.cc",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "432b8023d2be1d4bcf47069e530a5236b6457e92978526e10b9cb577509d98ec"
+  },
+  {
+    "origem": "app/linux/runner/my_application.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "880393cb82d7feaaa95d9acd6c2317749afae0e17ea5f5ee44b456bc081b5987"
+  },
+  {
+    "origem": "app/macos/.gitignore",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "236a523a43625a2d63af3cd0f2ce8600a3668846f8cb278c1c7c5cbfd4aa4088"
+  },
+  {
+    "origem": "app/macos/Flutter/Flutter-Debug.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "7e9b3ee3961b7d7718b418ceaed812a5f06a4e4cec894aae712a78e159c32ab0"
+  },
+  {
+    "origem": "app/macos/Flutter/Flutter-Release.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "7e9b3ee3961b7d7718b418ceaed812a5f06a4e4cec894aae712a78e159c32ab0"
+  },
+  {
+    "origem": "app/macos/Flutter/GeneratedPluginRegistrant.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b742b3e9db07ce17c6a500ef5cb89d076439eefa1a57c24f4db4de1f9c7c0cbd"
+  },
+  {
+    "origem": "app/macos/Runner.xcodeproj/project.pbxproj",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c8ab43fab86afbcc28e1c86246b8a6525c35c9bf2e202f81490b63e622d00669"
+  },
+  {
+    "origem": "app/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+  },
+  {
+    "origem": "app/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "946dc8acea443af62029b775fc63e131420cf3e09a5451602586a34da4e4362f"
+  },
+  {
+    "origem": "app/macos/Runner.xcworkspace/contents.xcworkspacedata",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "706a4c812f2a1e220e6785c27580020d58048e2ae4d30d1280f3c43344ce6b38"
+  },
+  {
+    "origem": "app/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d557c2c32fc6258ec28981fa45dc847b76c9968beb90a2e26d13ef9c4ea45c30"
+  },
+  {
+    "origem": "app/macos/Runner/AppDelegate.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "5b9cbdcb563ad8578a99b7c283958490e4af537322e9092fe1efbb3c29ab3e1b"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "992ba63d183dfb8f8e3af38ac203d834d23c004da1417c438b4c5a3d7d1d7103"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "6232e5815af17e25e0268b2fec7aea9e068cc92ec709e9605c2b31df4ff2a313"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "15591f03f31313af6fd644ed0512106cc04365130b8b73244f1cfa6dddfb4400"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "cc6928b5adfc00dbf526192e2705dd9af641cdf20ab4c6c7ca7cd4936dca59f0"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "416efd77cde932d42ef34168da24dd428a495b1f4f34bbbd125a18d2add186a2"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "ae8c4458e41f1e28b1e851ed87d3268d4a0351ceea427fa2a84cc94ddfb6d4c5"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "0a91c6c1bf242e54ee179e34629e9ef3e8a6d286c0fce01e302280a8be9277e6"
+  },
+  {
+    "origem": "app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "6ad229623498e5f1277800db3ab7cb11faf85eb2569e1213f7d8e55003c07b42"
+  },
+  {
+    "origem": "app/macos/Runner/Base.lproj/MainMenu.xib",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "776c35481f6581f14148b90071558b25f6ce6262e771988985e9fe8d3e70a472"
+  },
+  {
+    "origem": "app/macos/Runner/Configs/AppInfo.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "790b895278615291762416808b90d1e206ebfaee472d50f5ba234c40efe049c9"
+  },
+  {
+    "origem": "app/macos/Runner/Configs/Debug.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "86be603022e2a385dd7884fce4cc29255676c3dda579d3d4a56c958bf1e57de0"
+  },
+  {
+    "origem": "app/macos/Runner/Configs/Release.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d1bf3f0349aadd5c58ee9d46c0ce4ce45467127c438936e9bb481d861d296565"
+  },
+  {
+    "origem": "app/macos/Runner/Configs/Warnings.xcconfig",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "aa8ded4c14068cb05f51f5446509fe56805cf1e29961ad6d5a97233bb0632bc1"
+  },
+  {
+    "origem": "app/macos/Runner/DebugProfile.entitlements",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b2aa41d03e18907d360b721b7bb3edb302897c8a3de98ec47b6665033fea0b0e"
+  },
+  {
+    "origem": "app/macos/Runner/Info.plist",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "047f9cb0f1122c04589483beaedbbe23492fdc8946b94e09bb13080736af4f93"
+  },
+  {
+    "origem": "app/macos/Runner/MainFlutterWindow.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "8178ad756f958f986f794a8bb06e321a6630ceaaf8f235b3b4ae3936e415dc7c"
+  },
+  {
+    "origem": "app/macos/Runner/Release.entitlements",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c3b881c72aa4cca9cf50da6654c4d675dec929056692af46a6fbecd00aef5990"
+  },
+  {
+    "origem": "app/macos/RunnerTests/RunnerTests.swift",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "8a0ff977c64ceac0750fffa48087988b7b4125d1b1c49019221e7fffb574423e"
+  },
+  {
+    "origem": "app/pubspec.lock",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "01e36a7cce630ca6f3e989d4ad53d7c563af8db81ba389c35707af0cc954f8b1"
+  },
+  {
+    "origem": "app/pubspec.yaml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3f944ee42867885e16c22f05f9ff4e5d1917f23eb1ca112d29062bc133adf317"
+  },
+  {
+    "origem": "app/shorebird.yaml",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "5d2e3790d01d539923496ca350bc95b8ea9e2b0affc0f0977b0f383a2e9775d3"
+  },
+  {
+    "origem": "app/test/direction_pad_test.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "28cd22317b68a65406114053ed5cc8be55ec80e298c7b0834037cbdef97bf0ea"
+  },
+  {
+    "origem": "app/test/robot_command_test.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "0ddbfd9804bbe08b60c5c31f36baa22373b1f4eb5e8cf9a4482b7209e295d43b"
+  },
+  {
+    "origem": "app/test/rota_segura_test.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "41ca104f570db090d39476cebd01a6484c54cfc992effc5101ab9dee5ed44710"
+  },
+  {
+    "origem": "app/test/telemetria_test.dart",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "4727971caf3b37412295be32b7d72334bda670e623848564d902a7fb78c1219d"
+  },
+  {
+    "origem": "app/tool/gerar_icones.py",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "e90bbc85bf809d1d677c3e087b0862cecf2e03cd334b64d91246e94225c92a3f"
+  },
+  {
+    "origem": "app/tool/gerar_icones_ios.py",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a090242dba679252fd03b72fcd80ea453f1642c74499a2969984e7d3426181ce"
+  },
+  {
+    "origem": "app/web/favicon.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "7ab2525f4b86b65d3e4c70358a17e5a1aaf6f437f99cbcc046dad73d59bb9015"
+  },
+  {
+    "origem": "app/web/icons/Icon-192.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "3dce99077602f70421c1c6b2a240bc9b83d64d86681d45f2154143310c980be3"
+  },
+  {
+    "origem": "app/web/icons/Icon-512.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "baccb205ae45f0b421be1657259b4943ac40c95094ab877f3bcbe12cd544dcbe"
+  },
+  {
+    "origem": "app/web/icons/Icon-maskable-192.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d2c842e22a9f4ec9d996b23373a905c88d9a203b220c5c151885ad621f974b5c"
+  },
+  {
+    "origem": "app/web/icons/Icon-maskable-512.png",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "6aee06cdcab6b2aef74b1734c4778f4421d2da100b0ff9e52b21b55240202929"
+  },
+  {
+    "origem": "app/web/index.html",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "354285fc8941b5a3d4b0f8dbad6b83aaf385bac405d70a62832cf63750e4bdbf"
+  },
+  {
+    "origem": "app/web/manifest.json",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "49a09e4b2560ccb0f41c121fe645986aeb7041755f6a7d9f89b74b60278c4b8f"
+  },
+  {
+    "origem": "app/windows/.gitignore",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "955e3110cb16494ee76e1cd5df47e2c212309eb94a49a123fe87f718de413cb8"
+  },
+  {
+    "origem": "app/windows/CMakeLists.txt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "231edb06d508dd8bf1b8aa5f31ca828ab2972c0430c9062efac4b052019a3ffd"
+  },
+  {
+    "origem": "app/windows/flutter/CMakeLists.txt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "bd05e3268b2f246bcbafdb778165fe67a7bafdba04eb73599502563a67b8ae7e"
+  },
+  {
+    "origem": "app/windows/flutter/generated_plugin_registrant.cc",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c3b6506e3b777be5e5eb3c8003ab0a43947cac40fb0bb0f67cbfd87e64d08dfd"
+  },
+  {
+    "origem": "app/windows/flutter/generated_plugin_registrant.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "dbc11635d7b1ba1887adf40df5b83d634e9c3ab0bee34510c71528bb4d73602a"
+  },
+  {
+    "origem": "app/windows/flutter/generated_plugins.cmake",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "b8a17ac442efe481db466ed2aee06f9efae758e162774ea9365c4beb8386d9c0"
+  },
+  {
+    "origem": "app/windows/runner/CMakeLists.txt",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d765fdd05f63ad099e585a2cced0cbff13ec3229b7de68c8681b2107db850089"
+  },
+  {
+    "origem": "app/windows/runner/Runner.rc",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "f040db29829baee9025e953a4c54581e1046e3679e2a8d85e799de4fc2e4a59a"
+  },
+  {
+    "origem": "app/windows/runner/flutter_window.cpp",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d615eedc06ae37321e59c2c00c7687d1887dcd97904eb7225fafd8dcb5b83da6"
+  },
+  {
+    "origem": "app/windows/runner/flutter_window.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "0252b804f5da380c7709cbe1daff2b8d18daf6c49d7e6dd43e5af3c99c19f56c"
+  },
+  {
+    "origem": "app/windows/runner/main.cpp",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d5fb04c4ada0a7e5d4f66492878b8e8acb96b486829764c5d349a58773296835"
+  },
+  {
+    "origem": "app/windows/runner/resource.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d0e8bf7835468b4b6b1f8f0747f2e8f25c19841f2df2ac60aaa584ddae3aa7c6"
+  },
+  {
+    "origem": "app/windows/runner/resources/app_icon.ico",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "c098d3fc85cacff98b8e69811b48e9f0d852fcee278132d794411d978869cbf8"
+  },
+  {
+    "origem": "app/windows/runner/runner.exe.manifest",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "639a56233fcd8cbcb8bbefcd93e4680ec2664f32d9acfb3d2ec1d8726a96e090"
+  },
+  {
+    "origem": "app/windows/runner/utils.cpp",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "a128b67b9f3c2579e2ecef5b0dde2c33f222a097cdfe5da2a3067c73d1485b39"
+  },
+  {
+    "origem": "app/windows/runner/utils.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "832e246b6758253f89016fb0374b30791242e97ad950d27fc678b3d9feacfdc4"
+  },
+  {
+    "origem": "app/windows/runner/win32_window.cpp",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "4e4f4dcf8e86ea6e097562cb3476039e693449bd8045367538afee579c017511"
+  },
+  {
+    "origem": "app/windows/runner/win32_window.h",
+    "arquivo_zip": "codigo-app-2026-09-09.zip",
+    "sha256": "d154cf89ba85f820631a9b5bedacbe64fc5815e428fe6bc5da579ce649f69841"
+  },
+  {
+    "origem": "orquestrador/.github/dependabot.yml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "320a96951fcaf3e04c78e25300dcbd155d3a2a0a9f437fbcee2bc54b9ce368a7"
+  },
+  {
+    "origem": "orquestrador/.gitignore",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "ffdeaa09af78a32304063ab34a5c4526d5771ef5e10e098f00d9fd912e06e7bb"
+  },
+  {
+    "origem": "orquestrador/CLAUDE.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "2475b03544a02b8ef7856e167d309896b86d1e4263ed2ae244a8191b96cdabd8"
+  },
+  {
+    "origem": "orquestrador/COMO-FUNCIONA.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "3517e604f9ccccd7e31c45654fa6297641220fead9e74ccd90df085c941d881b"
+  },
+  {
+    "origem": "orquestrador/MAPA-COMUNICACAO.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "baac4f1ed7f0bf3fb7605629593e8cd8fb3ea6ef56e15af1c01544392b2c4327"
+  },
+  {
+    "origem": "orquestrador/README.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b2d7d40501b4d3a4cadebaf4da4cf07044e1081e25aee4edf80336c721e864e8"
+  },
+  {
+    "origem": "orquestrador/cloud/.env.example",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "cad3f03024d1a7b1cb6c410ee8656eec2935a98b05c42a7de46a480b6218aa93"
+  },
+  {
+    "origem": "orquestrador/cloud/.env.local.example",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e26f2932d6a40fad034a003000fd110a0cb8e4d8d15b2e45caccac6edcdb8a9a"
+  },
+  {
+    "origem": "orquestrador/cloud/api/Dockerfile",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b6beca1ddf647e39ff8eaabf6ee1c07dc5ca10ff21d8ce231f3f61732c3243e6"
+  },
+  {
+    "origem": "orquestrador/cloud/api/app/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "origem": "orquestrador/cloud/api/app/banco.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "aca1fcebc5146c9ae2e3111a9c034b994df1274a7238123650b9f1a843eaa72d"
+  },
+  {
+    "origem": "orquestrador/cloud/api/app/consultas.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "05d7a5a9968f7a6a96014210f5f84cd52e0d952f8a11874c23bb86de4f8ce3b1"
+  },
+  {
+    "origem": "orquestrador/cloud/api/app/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "8d531bf7cf8c23f98a472368b8b0535113a3fa7bc415a0d655933f3dedda5310"
+  },
+  {
+    "origem": "orquestrador/cloud/api/app/seguranca.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "6805551e0909e9a666acd68c41cd7d1a86c9463e9abf2d1f26304b00cb552e76"
+  },
+  {
+    "origem": "orquestrador/cloud/api/requirements-dev.txt",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "331c1a5081eb2b6d6a273815d12d35f4df4b183bdafbe643dcd96ec2c9ca3757"
+  },
+  {
+    "origem": "orquestrador/cloud/api/requirements.txt",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "2fa7e45ce79da35c2340489abb6d9c316cce6be16801969bf61da391d0780ae6"
+  },
+  {
+    "origem": "orquestrador/cloud/api/tests/test_banco.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e7ac33f060bdef7505fe8b3b29dc1f01386e205a19a6641f183c10bae77a2e16"
+  },
+  {
+    "origem": "orquestrador/cloud/api/tests/test_cabecalhos.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "70c1d9365dc82e4cc043b80b5848cde15228c2658d93c05f1ec80ebf5b5d7793"
+  },
+  {
+    "origem": "orquestrador/cloud/api/tests/test_consultas.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "c1a7b9780ec003e20e21c625d0192ee4e38ab7af4233aeadeb78a83773b98ac7"
+  },
+  {
+    "origem": "orquestrador/cloud/api/tests/test_seguranca.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "04bce7cb04db1d80471196191eceab6a3db8eff5b585cf46abc69b79b56511d0"
+  },
+  {
+    "origem": "orquestrador/cloud/compose.local.yml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b8de0ca947ed86f3119ac5ae123ace5d9e8153ef6f46341397af8e24df10119a"
+  },
+  {
+    "origem": "orquestrador/cloud/docker-compose.yml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "a1282bc14cd5534b3bbcb52ab819c98c99ab9f02b440ce390318320373960718"
+  },
+  {
+    "origem": "orquestrador/cloud/ingestor/Dockerfile",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b6086725903f9fdd2f16017686473356e970b944f54406efda9ad510a205f780"
+  },
+  {
+    "origem": "orquestrador/cloud/ingestor/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "96022e7992bb74d9b2dd959c383009c516ff5374cc60882c7b18edf3c371c147"
+  },
+  {
+    "origem": "orquestrador/cloud/ingestor/requirements.txt",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "33984e4b09f4829602e4b6b52d24ee229ae5f427f569bda082f0000b06e5a5e7"
+  },
+  {
+    "origem": "orquestrador/cloud/mosquitto/config/mosquitto.conf",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "a590832f81c8254e7a67194acb852c8e2bc00ce3798d7cfd961479bad1c6f71c"
+  },
+  {
+    "origem": "orquestrador/cloud/mosquitto/config/mosquitto.local.conf",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b1a9f3d1cfeb63d813dd9b1dcaa4d6dfcb081e637b5ebf851290ee9b76942e3f"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/ambiente-local.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "0d6966877642902b8c23f53616a831f040cdc9f31ac48569af0c0c5f788c9457"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/instalar-docker-wsl.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "eda3755175588936fa7c58d0bfda3fcf24ec31952eb28e1ab03efd54beb8bd23"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/liberar-portas-wsl.ps1",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "15817a498be5c292ee28770e76c62fad7765f2b1805692abdd274e2fb5480052"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/liberar-rede.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "c58caa39200624befd2c37ac3b4d5d9ed53bbbeb2415bc92e4428bb7d68dc656"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/robo-falso.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "26840b9a3d216eeb33149d636eabe95dca79b2562dcccee1887585d90b80015c"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/semear-demonstracao.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "3007a995d5551cff5553409dea0ffff0be665a31c5ef5631f5039bff7b335de2"
+  },
+  {
+    "origem": "orquestrador/cloud/scripts/telemetria_falsa.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "8cde8baf4c62cc163651a83e2f44985a1d2d7473b8fcd41a329d06dd17b96b9a"
+  },
+  {
+    "origem": "orquestrador/cloud/timescaledb/init/01_schema.sql",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "7996e43d90ac7d4220489eec2dc79611927bcf910465df9020cf4a05898574bb"
+  },
+  {
+    "origem": "orquestrador/cloud/timescaledb/init/02_usuario_leitura.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "2a30a78e31172aca57e7dedb06371d795da1ad26c3bb2403f6aa94ddecc7a128"
+  },
+  {
+    "origem": "orquestrador/docs/README.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "06750c7a44b831f6cd2e89687516ea78c5b0dbda59ac91c2d75399400e2fc5fc"
+  },
+  {
+    "origem": "orquestrador/docs/ambiente-local.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "275bb4da6616f6916a50e809ec40f76b682712ae7524370144310ba6239683de"
+  },
+  {
+    "origem": "orquestrador/docs/contrato-mqtt.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "836ddde56cc6cce8cfd13b38e6e6525cb7cd5ca1d21aa3a474adb8c04c46e407"
+  },
+  {
+    "origem": "orquestrador/docs/setup-cloud.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "2cbdaf7748e63abe85c233f74b6c08cd6512f172326193cda029759c9a23d43f"
+  },
+  {
+    "origem": "orquestrador/docs/setup-esp32.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "3e5123101fd0139d4e14a82e545dc3de449fcdaaafaaf9e6d1502b6f54880c7f"
+  },
+  {
+    "origem": "orquestrador/docs/setup-pi.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "0773315ce6b9dc1158deb02cc2d60f7b7a26fbd523409636be78339da9280558"
+  },
+  {
+    "origem": "orquestrador/esp32/esp32_ble_bridge/esp32_ble_bridge.ino",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "d5eb0c52d6c3d45164469f2e92facc79a78b2559651d6631891da250527445ad"
+  },
+  {
+    "origem": "orquestrador/pi/docker-compose.yml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "638a4f0d224ab617800140a4daed0019cd3a202a853bd23c26e106fbde2ac7ed"
+  },
+  {
+    "origem": "orquestrador/pi/mosquitto/apt/robo.conf.example",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "ae38f0449eb936100524c7de53bcac875200b85c0c6a39b62601b2b28d03b7b7"
+  },
+  {
+    "origem": "orquestrador/pi/mosquitto/config/conf.d/bridge.conf.example",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "5a61a8d391a8c2709dc96247ee28ead59b80d4627d9246aca02a8d86744aeef2"
+  },
+  {
+    "origem": "orquestrador/pi/mosquitto/config/mosquitto.conf",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "c344c5dce33d3c7c0e772ae50afe6f00b66e6fb581a0918c9d0bbd5a53edcac5"
+  },
+  {
+    "origem": "orquestrador/pi/scripts/install.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e0bcdad486da34a117e2a7fdb91295747c1385e0c0d253b95a3711449854783c"
+  },
+  {
+    "origem": "orquestrador/pi/scripts/verificar-telemetria.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "ecdf2e8a4dcbda7d75410aaf3d1879bdf19083c8dff188b2ba296a8bfabc37bd"
+  },
+  {
+    "origem": "orquestrador/pi/services/_common/pyproject.toml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "8c8d2f5bdb4070801dbaf5f15b793f2eb2958cd12f39b57451e5a59507a65b63"
+  },
+  {
+    "origem": "orquestrador/pi/services/_common/src/robo_common/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "cf75e181824b0ae9f65c5933e84cddc31c464303e7e0255413b7bd0d01846867"
+  },
+  {
+    "origem": "orquestrador/pi/services/_common/src/robo_common/mqtt_client.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e28ad0dbc4d01d9dbd87a3cebabd5bc109758186918dd78041ff2ad79488b2ff"
+  },
+  {
+    "origem": "orquestrador/pi/services/_common/src/robo_common/topics.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "319d710ca612b7aef7618fdcb9ea12b7481e5ad161d50217738d194fc4ab06e4"
+  },
+  {
+    "origem": "orquestrador/pi/services/gps/pyproject.toml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "7a9ce613d06129c15597417616df70428f2cf41ccaf543b18cf50c89e5f653d7"
+  },
+  {
+    "origem": "orquestrador/pi/services/gps/src/gps/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "6e86be02dea3a6cc69b0e98810e78a0ad3335f60035225735766a89a298597cc"
+  },
+  {
+    "origem": "orquestrador/pi/services/gps/src/gps/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "403a18d5b159d9f0fc4d496691ef0886c050c34ad31319a6b388908dff3ced49"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/pyproject.toml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "0e416d1352e142262e46023dcf11fc155e0f261476734cf07bc59c9b5268cc50"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/src/motores/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/src/motores/acionamento.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "7595b02b01bb899813121a8aa26da56663f126066327eb17ae95ff3694e3eb42"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/src/motores/cinematica.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "9f6fa0b57bfecf16eb156f746b3f6b7c0c214c685728ef92b1ddf30ca92d09e6"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/src/motores/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "8565b56b9bc39a0f980f174fcb522e24bb49f58fe6723fad6ecb41ceaebdab71"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/src/motores/vigia.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "022f4a388db3f1304d7fa8107fc9fce1a7e0c7c24bc38fe9d1cb9a88a94db8b0"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/tests/test_cinematica.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "c8dfe1aa4b4ce6aec14746625526a5d98998e7d83681883f2d9858124f067681"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/tests/test_concorrencia.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "3af275ef57b89349d5ee77e0b7e1dfb98d216458f4aa1df34eebf741d1458522"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/tests/test_servico.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "9b411b9a2f9183c44811c8d4259b507ca1d7913a077838826b55e63cd9f1e812"
+  },
+  {
+    "origem": "orquestrador/pi/services/motores/tests/test_vigia.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "25a0da17da481b04152a903e59a39bb78c71d4d42a7722abda25481c19ef5c65"
+  },
+  {
+    "origem": "orquestrador/pi/services/orquestrador/pyproject.toml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "6ce9319900dfd48c78381b4da767eac953803ab75500a3cb2f2d97b560436db8"
+  },
+  {
+    "origem": "orquestrador/pi/services/orquestrador/src/orquestrador/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "cc983c044a6d196b2eb2e6bfc29d5c656e954a762de71135dc25735b6eaa9664"
+  },
+  {
+    "origem": "orquestrador/pi/services/orquestrador/src/orquestrador/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "43c590d847f4dcda97ff7234fb907da1d00b6053140f38e07c46b6099bab2317"
+  },
+  {
+    "origem": "orquestrador/pi/services/orquestrador/src/orquestrador/roteador.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b8c1c32a94bdb00949fe321ee0966f77a2222ee7bfff6d022c5fbba3f681a49c"
+  },
+  {
+    "origem": "orquestrador/pi/services/orquestrador/tests/test_roteador.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "8c8994903315e3f5889091d6798cfb9b1d774bd11bbfc8a4b88e75b6e964c0ac"
+  },
+  {
+    "origem": "orquestrador/pi/services/serial_ingestor/pyproject.toml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "23a7d0709c4a5149ae38fff7a7797e913cd2cd4a21a624ba8fa200642a3f2e38"
+  },
+  {
+    "origem": "orquestrador/pi/services/serial_ingestor/src/serial_ingestor/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "781e92f5cd313a7aae0770990636ffc2d3058cd8444d21245445e789e108f26d"
+  },
+  {
+    "origem": "orquestrador/pi/services/serial_ingestor/src/serial_ingestor/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "d90a66980eac97159357239ab1a96be55bdf54ed7789c3e246b7b954c0e622c2"
+  },
+  {
+    "origem": "orquestrador/pi/services/wifi/pyproject.toml",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "e8f4c8e4a3b0ab9ed02c6b35c1c126e5fb29402a90d85bb8680f5d63eeaeb1c5"
+  },
+  {
+    "origem": "orquestrador/pi/services/wifi/src/wifi/__init__.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "488c46780a294dae2790727e0cc84fc76ae665b79453d7fb8ff69a5f1833b957"
+  },
+  {
+    "origem": "orquestrador/pi/services/wifi/src/wifi/main.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "b0fa41ea653486a40dc4cafbbcaea40bbcaf2ba1a022d1fbb7fb0272c0ba0251"
+  },
+  {
+    "origem": "orquestrador/pi/services/wifi/src/wifi/rede.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "c757bd35194ddff0152d78d63464153c2bfe976123a3487dd0681314cdf83474"
+  },
+  {
+    "origem": "orquestrador/pi/services/wifi/tests/test_rede.py",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "6a411a193419c9ced9ef5da713e68861b9025bcf95786975332733608e32e932"
+  },
+  {
+    "origem": "orquestrador/pi/systemd/robo-gps.service",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "eccee8e076033f9c62f6cc73aba3632c3616047a07496f1258bfa25d67ed2780"
+  },
+  {
+    "origem": "orquestrador/pi/systemd/robo-motores.service",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "1f3961cbed3b44670b4dc6be91d885b09c7a3cf57e8ac52e182f00957dad9f06"
+  },
+  {
+    "origem": "orquestrador/pi/systemd/robo-orquestrador.service",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "5f65faaf394a293831fd80fbb2cf0e0e625b5961b79cfbba1529c87b8e9d4377"
+  },
+  {
+    "origem": "orquestrador/pi/systemd/robo-serial-ingestor.service",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "c9bbc68136b6b7d29cadd3a4b715ea797bb44d9d7b569b775a45e003b4ad2bbb"
+  },
+  {
+    "origem": "orquestrador/pi/systemd/robo-wifi.service",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "54bb35a6f0dcd81d8d956213e9472ee4a8b5d003fd31b832204fa5cd1722916a"
+  },
+  {
+    "origem": "orquestrador/scripts/gen-mosquitto-passwd.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "785db084a315bc70fc36a3fc93c1c837c9043c255bdaaca0027a43210e62e286"
+  },
+  {
+    "origem": "orquestrador/scripts/testar.sh",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "ab0ef463269343185c85cdf877c22ed0ddbe8967c74bcd0c13a47112ca6bf1f1"
+  },
+  {
+    "origem": "orquestrador/site/README.md",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "4f1e6abdd11dd53dde6732e29adced98f26891945c4210f75ad7a584cfc9bd6d"
+  },
+  {
+    "origem": "orquestrador/site/ao-vivo.js",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "085bce0c913a0f00d0e715c456f377c1afa042ac21d09dda669a2ddefcdcd967"
+  },
+  {
+    "origem": "orquestrador/site/config.js",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "f965cb2c0bff90b0635aa094291c97d069c0079df67b16a9a9310a46a7ae9bea"
+  },
+  {
+    "origem": "orquestrador/site/estilo.css",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "fefc76fb93ef643735715951a54f0269fbfc0789c356a3eb4ccc551502c97d62"
+  },
+  {
+    "origem": "orquestrador/site/index.html",
+    "arquivo_zip": "codigo-orquestrador-2026-09-09.zip",
+    "sha256": "9ed2c0e77fcb8adb29e5cbc2b007dcf640cdd9a7270c5deee8dea678dc9ea876"
+  },
+  {
+    "origem": "RobotEye/.claude/agents/roboteye-keeper.md",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7ff395626bb4b7fd7030b4123887af4b7f1d48cc6daea6dd214fcd7f84b54bdc"
+  },
+  {
+    "origem": "RobotEye/.env.example",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "bbe75a7b08772a83e779066e1d3942b585e38d08ed6f18d640ffa989e77b2fad"
+  },
+  {
+    "origem": "RobotEye/.gitattributes",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "fdcac8c3e0e42e4e8830849f174e638b055b7bc69426a3d868fa2856b6a12089"
+  },
+  {
+    "origem": "RobotEye/.github/dependabot.yml",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "69cc444023f6add731383d51ec880d177d76dd45cf75b9ed76000f5fb0dd1b12"
+  },
+  {
+    "origem": "RobotEye/.github/workflows/ci.yml",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0278f5406f5528802802cfecd6b22ed434a1c1f2495aaf56b26b0efbe281ae52"
+  },
+  {
+    "origem": "RobotEye/.gitignore",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "45bf5fef40cd5639bad281cc8e7d8dd2634e8b03d8fc2b8c84bf7229ab94e3f0"
+  },
+  {
+    "origem": "RobotEye/CLAUDE.md",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "c008c541b1993c3d7ba359f5030f9df53e9836278d5c79078e590124f8909eed"
+  },
+  {
+    "origem": "RobotEye/COMO-FUNCIONA.md",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "507472726f312cdce3fa89f438d78961ad8c0c2f0f1598e2de388acb7862b94e"
+  },
+  {
+    "origem": "RobotEye/LICENSE",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7e4add654e0db3019aa379f29df09ce3ae31375af8fe643003343a089f9f4447"
+  },
+  {
+    "origem": "RobotEye/README.md",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "31a5b354edf41d056e208cc34523c250334b311aef74ab5f4f1a8341052a9fe4"
+  },
+  {
+    "origem": "RobotEye/persona/atlas.md",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "ec0ae4cd360a932ac9b10c64473d779917a0ed39ae4bb390958eff7871447a95"
+  },
+  {
+    "origem": "RobotEye/persona/iris.md",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "50f7216c43f0148338ad29bdd23af935d27b9836ae7af3a2ecc22478420782e6"
+  },
+  {
+    "origem": "RobotEye/pyproject.toml",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0ec1569e0e239e4b9d3c3416b492374e25f445af60ed7ad85d8b4922853e96b3"
+  },
+  {
+    "origem": "RobotEye/scripts/atualizar.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "999ae9c50218bb1841295f475563a9ed050aecc3bfb1ca022b28b63ea5866fce"
+  },
+  {
+    "origem": "RobotEye/scripts/baixar-modelo-escuta.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "9b3502f2e8461114db65e7c105b946855818d1d97566d7a3d8130770562e622e"
+  },
+  {
+    "origem": "RobotEye/scripts/bench-radio.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7098cf9039aad86e8872af8515446a1dc15c06960420573489008a8de0fccc26"
+  },
+  {
+    "origem": "RobotEye/scripts/bench_face.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "c308fae85f95c05429c2c438f061a150d5c8b08f915f522e3242a6f401d7eb32"
+  },
+  {
+    "origem": "RobotEye/scripts/configurar-audio.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1806ec9c93cbd7dad93501f22322533d27eb8fa8ff45fbe18704e47019bcbe76"
+  },
+  {
+    "origem": "RobotEye/scripts/roboteye-ble.service",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "e7084c7679897f6c9f4ee566ff6b142e36fb5bfc3940f0b0a978a4366d1f27f9"
+  },
+  {
+    "origem": "RobotEye/scripts/roboteye-update.service",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "4b5bdd9b03564628f9131b34ac4ca080db094f863b49a6dc337ff263e303bdb6"
+  },
+  {
+    "origem": "RobotEye/scripts/roboteye.service",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1a0a124a7878f1191f63c15e5b10dfed4bfa489b054f10c2b6a8b20aad38dcfa"
+  },
+  {
+    "origem": "RobotEye/scripts/separar-radios.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "c9934cb258c7312600bd1b0fae0f461b0a0b3f955020d7b402789dbec27d1237"
+  },
+  {
+    "origem": "RobotEye/scripts/setup-raspberry-pi.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "cdf161b866214c51b32b61c86f7cfb0ee7029dfa34b6ce7197876af1d09d7a5a"
+  },
+  {
+    "origem": "RobotEye/scripts/setup.ps1",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "801d04fd256016d064bf437003b3cb293ab6081262151963915d653ea26ddcb0"
+  },
+  {
+    "origem": "RobotEye/scripts/testar-microfone.sh",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2f07d2494d47fe25d6c36cac805c7414c7f27b884b63d0b0ba8059e55c65d786"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "cf1b64ac52e08f70f13463af4608dcf1e1110c83c389f0a16921c8a95cb4e1d1"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/__main__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "974e94c4fcf0794e01b063ad2f68603866ffabd571f32c9f7a653eeb0a62d5fb"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/app.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "fbf8da12550581e0bec9cf904cde7e17afeecfc4a68382c808332d5ef4c2f18a"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/ble/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "01478b91ef0b708501c2140866ed468aa12ee8f01ca0f9e5faacc86c84d22a52"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/ble/mqtt.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "ef10a3e267a1aba70425a286eea881da267cd27bdcdc88f814f5e733b17135c5"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/ble/nus.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a16220f39cd77afd4dbd887cf481162fdaa9a95e96ba53b55339d4879ed49630"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/cli.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "4c79b1bda7aaed32d078e2981ff14f4b4f99c247f2f0cb6bc1920bfc127ff90c"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/config.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5287d131a1ce40a979edc4d0fb2f2325b086ece274976f3e0998a6b1daac1e34"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/core/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "ac9cea97557c1adb760f946ca798260e9c22ee47a894f679abe48cbced362943"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/core/assistant.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2725fb252925f4ee8d88f39bbb1fbc085c1798cb0b0998eef168e3c061ee3c5c"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/core/events.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "488e8bb0e890f023964c097337cb00844c9d6e61efe3c6231f4caefe12cfb726"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/core/normalize_pt.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1541836c14c9bea40062f9a9264f1781809c3215268abdcf52bebb4b7c2e52ca"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/core/numbers_pt.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a130703d1c297cb79e0c77dbfde8bd11e45cde7acfb35eec48c0c78f7e8dcb23"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/core/text.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "bbbe3df12fddc57cce8dae0e994271c6b608ebb963802448bf64f8924e620ad0"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/diagnostics.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "00d88939cd49cee7c63d80841b236a61137191a2fc109f8d378c515bb665c69e"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "8933dbe3a161ef9e737f8799f2843c0cce115fd824c42f27b45be7b609c19059"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/animator.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "534bcc2bd786740bb956b5289397a4d4cb0bacbb3695ab2eaa7305e38aad9ef2"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/app.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2e69ea26590e9f4fc31ed20b446c505a37a9350764badee9e4a96dadeb2602aa"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/easing.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "d4af5fe4712859ca32bc29d975abd8efb87468980fa1051db0cffc74221d96a6"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/expressions.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b026574993feafe060ef7cfe6feaf8d73cac49d01ed66d92a19957e8b5a18f48"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/layout.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "3e49df601ee0c9a4b55a15f790484439780a76b429c4b5b5e5b4fb8ac480afa6"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/mask.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "be2545400d52c3a0a5d4eee4914c185a7ef3f4aa3a53019e2b6f18a6f118c8a4"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/preview.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "56b0f98d20286673730339b154062dce8512c7d44660963ff13910f1b0257171"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/renderer.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0ebc4dd6a38ac17c206d452d3c1d703b69ec8221e4dc54b4194384620a253726"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/shapes.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5770d5ed46614d74d7822aefffa693aa267de4b53695166ab9e344ae304d6eb0"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/face/theme.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2c029ec58839c1149bf593c6396157ef020ff3630ed795e22c82f57369861d40"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "4738727d0dee782d8298c2aab581a30168149469dcaa378c625edd90aec23999"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/base.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0f5000daa3f89361ba85c4fba82293aace8d927df28095a89f9ba901d1c172e6"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/factory.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5844a12fe9e0aadf58eeadb7deb03673500943587aa0b734b2838f4f47e81b80"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/gatilho.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b9e1d8ffde5fab74dd1d71c3b1c9e0b3e5e9fff5ca41b05c9f32e82a12e19962"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/microfone.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "63fee81db4294952a99cfce796f9d23dea359b43c1a68c0b7578d7c571792855"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/vosk_ears.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "530aa98da313a90adc98560fa07a22d16f8613db23e2e7360678ab5970b1564d"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/hearing/whisper_ears.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "05c435a69626c02f57ea94c2a6756ace0580439cd3e0f3d1258fc87a4ace272b"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b1aa939a4fc87e52c252b7e554bd5e1dd9806124274b9057505f7102ee9babec"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/base.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1fbeff60be628a136e18c53df811c42971fdce1b213a2474f8ddb25bc12a360d"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/echo.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a000514444d177ff15f3c1a3a402600d332a5d088fca3a872be3f59f42d94248"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/factory.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2d62e13f835ed5fa06985eb48a0b6172bf0f65607c6d92e13dbf88f91989cb66"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/fallback.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "81f6e976e7a7640920729c740b99f525e4dc0befd066216e1be97c1c0cd73f64"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/memory.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7f00e9d15da92667ff665749351f8ad7b38ae8c9302deb5d9b8f19b466e5b746"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/ollama.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "71b292305cdc5805fd7e50d6e58233b81cf18c26842c532f9c6d91a6987c1ab1"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/persona.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "c8ac94d492fcf3dc8d2f270aa7938a972d14d466c14888338d446d26831e26ba"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/llm/probe.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7db07a72d9975fb90069ad95c459ca311086fce035c0afbaed8547f8a063128a"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/logging_setup.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5b87c68823cb0dc87f83c7e0ee8b7fe8816a1923e100dd741d5a44d3372c7fa0"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/memoria.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "232a7c071f88ee1806c7aff00216053072debc3bb659db14adec96f0cdf14a13"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/radio.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "698fa5ca4d89a282c11a5e366c7c18c6cf7c670914180f21f648f82fd8d7e680"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/setup_wizard.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7978325ebf6970ef6742ca99e7fba8cb0d7d21b4f1ae82c82e4dc03eecf6a015"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7885363419c4a63da5b7dd7f8ec6ed9d788009c15d44daf5d774028696941e13"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/base.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "7ee55f4ee2f53ae00143cd7d0c7bd6fe2e2469fa4ff909e8a8b86779e07d0e66"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/devices.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "33ca1d6ad74813a4c6a2bf842320b63722c7459b3eab76dcb9bd6e70a07a51ae"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/edge_engine.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2314d43d57213c771674cf2461003b0e7b390bd7d2bef6e185953e5a857a4053"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/envelope.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "983540026f2209015b788e4f9163059dbc610f6322808ae3679434b62060fd19"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/factory.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "ca56f1d6b49ca833a41406e32f4239f95dff0f69c3852a914e8344923e4dff75"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/fallback.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b6b4375ad5cde5cd69de35c4200ee69d7f18c5dcc6d24496e7ec4100201fe28f"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/kokoro_engine.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b7b1fd6971d7538c9c9c00a7fa061c91ff6a407315bd8a5b2671df33038f6f0e"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/null_engine.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a7c497439feb6e625fcc334148b6ae3e7cb3d7d59c25dd9168ee7ff73d3385c6"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/piper_engine.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "6cb9994df6d6a531e73834520642f9b4bd69684da6e20bc9cd3cbd591be05caa"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/player.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "dcb44bbb2c7aa689537c39687b0244ad763a887e76b25aca2343290bacd7fcf9"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/polish.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "e74016d1a1dca16b424557891c00f8458725da971ca58be3fd9211febc3394e1"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/sinal.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "8baa86d03532652f73314ce73e9551ab60d89b8ec5714542a5e1b24e016465a0"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/speech/speaker.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "00573ab97828a8897dc6c9d3dcd786b3e779cd4d19bb5d049693fa00963fb348"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/ui/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "31d194d452c95b5a01aa6e03e9649aa9360bf7411b2bde1dd36392c36a6c785c"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/ui/console.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a8db89ea314429ddfac062b02e0c1a7a8c11b81f329b198f318166b085bb2ab4"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/voice_catalog.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1055541b5f8c85a850d5594e9561bc54ce221052b1e75cd4288c00e2df81971e"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/voices.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b18d719c25f43a3595f916e067d4b6d66093a34260d25096c533b2c3d39bfb0d"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/__init__.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "21fb6e6d6a2641de4580be53163fba2b394ec73143e9ee78372af4a426e1b6c3"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/comandos.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a834bb5b00bd0b84848731e6b45b604ec6500484c65c2e65eaa73b662c23af67"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/conversa.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "d6e71d0dadff42f7dd40f51b09253c74ff1ce4cb000c76a8fd7b2e74241252b5"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/envfile.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "59952501b290273d25ee824e502c2bf488a7833073cb3d2d70c0b4fe9c21aa7d"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/estado.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "79ad13a81415491b5142fcd2af6d1c00031c73781877ad1431331d0949a81ca6"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/page.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "ad3d60bb230d086e11df3bd390d1fe876799412075e004513bd6c190357c54cf"
+  },
+  {
+    "origem": "RobotEye/src/roboteye/web/server.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "007760d701242844892cb14beec001fc1b5ba98bb0b2ec3d45acf165bb9cb1de"
+  },
+  {
+    "origem": "RobotEye/tests/conftest.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "8373df5fe5a1f7aaa3ca54338083f0ebf5896795a07230601598ec6da92360fa"
+  },
+  {
+    "origem": "RobotEye/tests/test_animator.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "e872dfd1655023b497b678fa4c031a56eb408ead82ea7ecaed0a88d1281a09c5"
+  },
+  {
+    "origem": "RobotEye/tests/test_assistant.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0f79b16cc894ccefed6fb0b82b5be6898d563c857b1164b21369e4226ea23e17"
+  },
+  {
+    "origem": "RobotEye/tests/test_audio_resiliente.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0cb1fc0da97949bcddebaa85262aa1185fd40c4d05132fd5f368efd98d10790c"
+  },
+  {
+    "origem": "RobotEye/tests/test_ble.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "cbb2d1729a28205c89a872626513c7bab4afd116f22bd30115a041203d3b9a43"
+  },
+  {
+    "origem": "RobotEye/tests/test_cli.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a4996d8745b32245172439d2710989910a7b13a6e4c9893686df5628d4f15634"
+  },
+  {
+    "origem": "RobotEye/tests/test_comandos_web.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "893a6339e05a68f37ac36d902c7fe6fe15906ef72c1acc0e757ccdf132d30806"
+  },
+  {
+    "origem": "RobotEye/tests/test_config.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "53a3e918ce63642195163bd45e3f5350f047b6665ac447f659772e4fc7bb5cc7"
+  },
+  {
+    "origem": "RobotEye/tests/test_console.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "3eb42dff3a5662daa41836e2aeddd2a9217f1b134c59555acb9dc825aa017859"
+  },
+  {
+    "origem": "RobotEye/tests/test_devices.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "d57e9b06414b336e6703f09a6f15c45b55862b0f3c48c9ddea159b3e44625deb"
+  },
+  {
+    "origem": "RobotEye/tests/test_easing.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0724c77a49acc91adb2fac82a42013282ad956947f17325a061b96a75514f67b"
+  },
+  {
+    "origem": "RobotEye/tests/test_envelope.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "6b3330a528bcc2342ed7c386b1c92275b758e52fa1f8d27d42df157b3711ade4"
+  },
+  {
+    "origem": "RobotEye/tests/test_escuta_e_pensamento.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "85932c31971007266f0202c4521d26e83de1b21a0910b35b0ea6641c162004c4"
+  },
+  {
+    "origem": "RobotEye/tests/test_events.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "afc184260bd4dccaca521bed1e1ab77e8ee4f7469c64da67312ecae9f028d219"
+  },
+  {
+    "origem": "RobotEye/tests/test_face_app.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "f90bc1031186061c8b80416b78be7e3437cf0fbb30a68784b47c643374875bcd"
+  },
+  {
+    "origem": "RobotEye/tests/test_factories.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "d986758765f95603ddefd64f9cd3dc9d0bda5ecc40001e6d633aee2858c594ce"
+  },
+  {
+    "origem": "RobotEye/tests/test_fallback.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "eb9eadffb74b74c91fb79d262d02fd2a70f732110d6a965a69448abac1bdaf7e"
+  },
+  {
+    "origem": "RobotEye/tests/test_gatilho.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "982626d45d3d7b4c5624bd4a31dea06b7251954a2449196e9ebcac5f0c1afe9d"
+  },
+  {
+    "origem": "RobotEye/tests/test_llm_fallback.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a0b635759714aa6153b0cb202cae2965d28a129ec010772b218719acfa733a71"
+  },
+  {
+    "origem": "RobotEye/tests/test_memoria.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "e1f5ad69317cfea9ab2e880a85f123d2523137a13f92d7d37e71d840c8c8c97e"
+  },
+  {
+    "origem": "RobotEye/tests/test_microfone.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "2ab3aafc5da009689dbcc2b4ac7b3f10c7f8c99c21c9794dfd134b30a39572dd"
+  },
+  {
+    "origem": "RobotEye/tests/test_normalize_pt.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "e3847d492f41e51dce560f1b53a5945a1389c15898362cb9162cd73fe3079adc"
+  },
+  {
+    "origem": "RobotEye/tests/test_numbers_pt.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1f2ec4f4e84b02cdb0a3d54744ba39a375109ac2f09643669c2c11fe0bbdb987"
+  },
+  {
+    "origem": "RobotEye/tests/test_ollama.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "0af3cca5ac74bc3383128fe8e2000e6d4c0d791b8a026ef1862084429c828586"
+  },
+  {
+    "origem": "RobotEye/tests/test_persona.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "c9eb4b20943536d7abcc916abd20dd18a4cf1328879ad1f708e14450be5a8bc5"
+  },
+  {
+    "origem": "RobotEye/tests/test_polish.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "67f13a6f5a5f028cb8e763423b95a54cf631d7405c6ee0b9939ec397d76d2a0e"
+  },
+  {
+    "origem": "RobotEye/tests/test_probe.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "1f638bf95ce8b6ab11be6c5ffad7e7b845c04a3fbd4eb4e20716a51566311878"
+  },
+  {
+    "origem": "RobotEye/tests/test_radio.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5f3efe3718c18db0697223d29ad5a4089016946882863d90f68cda0d651adb41"
+  },
+  {
+    "origem": "RobotEye/tests/test_renderer.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "e46cdea76561550ab19b52c0fe609fccc91997c161156f1eb46416c69801b7e3"
+  },
+  {
+    "origem": "RobotEye/tests/test_setup_wizard.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "c9eafac6db4e710f282d242a2fc12736b60bdf688dda2fad1918ef8b8fc8c06e"
+  },
+  {
+    "origem": "RobotEye/tests/test_shapes.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5b506ee925049615b885e499436aab7f4c67d5a7838cfe730ca556b01fa3da29"
+  },
+  {
+    "origem": "RobotEye/tests/test_sinal.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "a8e7a1e98104321fa5b6cfd56c9c2bd31fb0ce9690fb9c58e8b18f5435fd2760"
+  },
+  {
+    "origem": "RobotEye/tests/test_speaker.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "283bba553e1a46ba81cb4c56dfd76e2d192e211bee79845ae5e6a5dca67a5782"
+  },
+  {
+    "origem": "RobotEye/tests/test_text.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "5148f980623c09c8765869c1242977da00609c9e2573a9ca15aa0a9fb65a3a7c"
+  },
+  {
+    "origem": "RobotEye/tests/test_voice_catalog.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "525a29e452720efe9f2198bce9e85f7dada96972fa0e3601d79a65b419fccc1e"
+  },
+  {
+    "origem": "RobotEye/tests/test_voices.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "b62d5778f83fc03b900feb47fe257ef44f19cace4e7155bfbe97e86a6ca5c5e9"
+  },
+  {
+    "origem": "RobotEye/tests/test_vosk.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "6f3b4383b3343e5a9d5490f40c2e022a43d538bd2b7b04e6fe3601e62b0e5181"
+  },
+  {
+    "origem": "RobotEye/tests/test_web.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "61afc65e9992aaab21e636261aea339406e62c595d07914f0f5c17c3d35c04f5"
+  },
+  {
+    "origem": "RobotEye/tests/test_whisper_ears.py",
+    "arquivo_zip": "codigo-RobotEye-2026-09-09.zip",
+    "sha256": "f211f8f3eae287ca3cb0e007f1a7a7af76c8ce71ebd6229e3742fc4a39bcc919"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/main.tex",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/main.tex",
+    "sha256": "a9421291153a6d0ba2b990aee9ff8de09cbdaa47ec5ae6d14c65cca756a8e462"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/main.pdf",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/main.pdf",
+    "sha256": "a79cf47e5687ae3074fc1599636ef5aec739463df1f10a5b9e7f74b5f95f2a9c"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/tex/intro.tex",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/tex/intro.tex",
+    "sha256": "aee9f4df487ba90ec0edf3fd3941a0b19ab12f987ffb09e8d0123f15e73d1ce5"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/tex/cap1.tex",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/tex/cap1.tex",
+    "sha256": "b7e4a2d0c989350dae2e982f80e11311686d3fa2ea984e457ee01bcfbb81bbbf"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/tex/cap2.tex",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/tex/cap2.tex",
+    "sha256": "962667941e3df0da30f8cd20453e3cc246f7dfdf87c376853850d8202724c101"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/tex/cap3.tex",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/tex/cap3.tex",
+    "sha256": "9ab30858f4f1990a76698426825e58206714bf3c144548a2a1046f53d7cfca40"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre/blob/710546172a38294bc8c1ef4fda42855bec78c034/tex/conclusao.tex",
+    "copia": "fontes/github/doc-interdisciplinar-4-semestre/tex/conclusao.tex",
+    "sha256": "336d1eadb22bd47be9db57b1d11760dc21685953d5b65eaec8e77408a2000fa5"
+  },
+  {
+    "origem": "https://github.com/setrem-robot/.github/blob/22f5957d33304a9d99fc8296251f2f2fe437a81b/profile/README.md",
+    "copia": "fontes/github/.github/profile/README.md",
+    "sha256": "caaf69c4d49060f37e0c0a8175adce0003b7643990ea67e8a98b26f4ede57834"
+  }
+]

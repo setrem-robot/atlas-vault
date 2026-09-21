@@ -1,0 +1,22 @@
+[
+  {
+    "sha": "710546172a38294bc8c1ef4fda42855bec78c034",
+    "data": "2026-09-02T21:45:18Z",
+    "mensagem": "a porra toda ai"
+  },
+  {
+    "sha": "caca9c180a20978872489c0bcb1d4a4c3b35d9b6",
+    "data": "2026-08-31T22:49:36Z",
+    "mensagem": "primeira botada no doc"
+  },
+  {
+    "sha": "d5d2a50e8e6ba5c89c71f697a8a444321ae42a02",
+    "data": "2026-08-22T01:52:36Z",
+    "mensagem": "docs: map app/orquestrador/atlas_ai_v2 repos and add fourth author\n\nSubstitui o esboço inicial do mapa do repositório por um cruzamento\ndetalhado dos três repositórios do robô (app Flutter/BLE, orquestrador\nESP32+Pi+nuvem, atlas_ai_v2), incluindo o schema do TimescaleDB, a\ntabela de tópicos MQTT e onde cada componente curricular do PIE IV\n(POO, Banco de Dados, Estatística, Gerenciamento de Projetos) aparece\nhoje no código. Também adiciona Kerlon Ribeiro à lista de autores.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+  },
+  {
+    "sha": "aa1ce9c5d6a7ad2fa6655e51b06c5ed8cbeb0133",
+    "data": "2026-08-22T01:45:15Z",
+    "mensagem": "docs: scaffold PIE IV LaTeX report based on PIE III template\n\nEstrutura mínima definida pelo ROTEIRO PIE IV (Capítulo 1 - Projeto,\nCapítulo 2 - Fundamentação Teórica, Capítulo 3 - Resultados), reaproveitando\no template abnTeX2/SETREM do relatório do 3º semestre. Conteúdo dos\ncapítulos é apenas esboço (lorem ipsum + texto-guia), a ser preenchido\nposteriormente.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+  }
+]

@@ -1,0 +1,19 @@
+# Estado local do Obsidian (nao e conteudo, muda por maquina)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/graph.json
+
+# Lixeira do Obsidian
+.trash/
+
+# Config de ferramenta (nao faz parte da documentacao)
+.claude/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Cache do Python
+__pycache__/
+*.pyc

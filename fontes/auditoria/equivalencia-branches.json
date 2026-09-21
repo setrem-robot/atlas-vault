@@ -1,0 +1,103 @@
+[
+  {
+    "repo": "app",
+    "branch": "dados-do-robo",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "99348578fb6edc2b315836e0987de7322624230f",
+        "assunto": "Dados do robô: mapa do trajeto, painel, histórico e eventos (#2)"
+      }
+    ],
+    "cherry_main": "+ 6f8a0d6ba01709ac85243c1ea31f346f39bbda0e\n+ bb8d204b6be2f360155e7e8feaa53238529e2e71\n+ fb1bd737ce81dbb9b52fce31f080c0617c83accd\n+ f2983aa43d6f43c084b771b8be4c9b63b3621a5f\n+ 161da96658d20151ef6d5b204a59b1bb98396896\n+ 66e48c7ad037a0199589c52b9d5f4d0181b795df\n+ 8fe9120e190c4abdb10bc7c8a67fbca34640ac54\n+ 8ed46229deef28494e7d4c30d9e2078e1cdae2e2\n+ ba8bfc05b93a71bc27c8a1a5d09f8e65894df4d9\n+ 32350b7a8cb25a14f99d75e4bee3a5b011140201\n+ cbe3dd2646d42e0d575c55084a6ae637fbad0629"
+  },
+  {
+    "repo": "app",
+    "branch": "dependabot",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "7e5a873d4ebefc34b95b81e2534888b9ca78412b",
+        "assunto": "seguranca: Dependabot vigia os pacotes do pub e as Actions (#3)"
+      }
+    ],
+    "cherry_main": "- d78ed228b1f4c7941ab69235bc327493d73032dc"
+  },
+  {
+    "repo": "app",
+    "branch": "ios-e-parada-automatica",
+    "arvore_igual_em_remoto": [],
+    "cherry_main": "+ 6f8a0d6ba01709ac85243c1ea31f346f39bbda0e"
+  },
+  {
+    "repo": "app",
+    "branch": "ui-mais-limpa",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "3b3edaf3e61922c717bdf19527dc5b65d61ac3a7",
+        "assunto": "ui: gráfico com leitura no topo, farol no mapa, painel animado e selo de versão (#9)"
+      }
+    ],
+    "cherry_main": "- ade4b03a2fe39806df4f029ac064d60eeb09b74a"
+  },
+  {
+    "repo": "orquestrador",
+    "branch": "api-e-landing",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "19815b8c3e684ca410140b0b663ddf3961441cde",
+        "assunto": "O caminho de volta: API de leitura, túnel da Cloudflare e a landing page (#3)"
+      }
+    ],
+    "cherry_main": "+ acf6b81e67d656d28b1d4a6e61b052b320155f84\n+ eefca6dd568180797383fd5a5c680bbfedc95b4d\n+ c575dc6772ba7dfe12fd89030156f5ef3bf3f0b9\n+ 5b57be042ad94d421ebf636a282d9338110f98f6\n+ b44cda8afb3d780de3b36590c1a94a6112e45958\n+ 116c6a58046d81559520c8caea728b2fb44621f9\n+ 3426408fb80d2ef75dddaf8a120125eda83f963d\n+ 1c506b2f25698b20939500b390ea9cba5e3fc000\n+ 58478c4572cd5947435188883e3169acbe45f7f5\n+ f083ba9c8739a2a484ce2b1bf613c2d94a81bfe7\n+ 5ad510a552fb26c298a7a30becaf346e70369855\n+ ccd71fb2384ce27fb2020875164fbb923b772ab2\n+ 49356dcc6123787c709f60d3ecf43f9d5bccfa07\n+ 147e38be238a68c0f4710d64292d6c8af530e9d0\n+ 14b4aab46f7b5d53ae2bfd091961261b8b42843c\n+ 7f07b9a1a7434f401420adb82a2cf53ad48109c7\n+ b45730e79dabf43a3ef73a0eba70718be270352f\n+ a948e037c5b35cba4d099b702edba9a6b6da6ee9\n+ bab84e277ea4753c94de15059cb9a470f9ecff12\n+ 52fb91989a8d47e63aef04c40fa77afd609cf24e\n+ d6c2e86f3a2fbd44c03e1819083c847412382b92\n+ 70c54ee7e2a2642b932b17ac1cc8876b4c6480e0\n+ 677e2a057d2a7cc32ba5dc713da1aa9749ce3ace\n+ 6cb29dcb6ade7a85b51c7dce1f180ef5406f2fa8"
+  },
+  {
+    "repo": "orquestrador",
+    "branch": "motores-escalaveis",
+    "arvore_igual_em_remoto": [],
+    "cherry_main": "+ acf6b81e67d656d28b1d4a6e61b052b320155f84\n+ eefca6dd568180797383fd5a5c680bbfedc95b4d\n+ c575dc6772ba7dfe12fd89030156f5ef3bf3f0b9\n+ 5b57be042ad94d421ebf636a282d9338110f98f6"
+  },
+  {
+    "repo": "orquestrador",
+    "branch": "parada-automatica",
+    "arvore_igual_em_remoto": [],
+    "cherry_main": "+ acf6b81e67d656d28b1d4a6e61b052b320155f84"
+  },
+  {
+    "repo": "orquestrador",
+    "branch": "seguranca-api",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "a63a92cb17a3c44f5438434eac8c6c4c71486874",
+        "assunto": "seguranca: cabeçalhos de segurança em toda resposta, e Dependabot (#4)"
+      }
+    ],
+    "cherry_main": "- c0553a99583b8c8e990001cd9a3bfaf13aab7dd4"
+  },
+  {
+    "repo": "RobotEye",
+    "branch": "ble-no-raspberry",
+    "arvore_igual_em_remoto": [],
+    "cherry_main": "+ 452168cfec8d703676edbd25c98c2a03ed00f0e7\n+ 34f90577b73a0ac39165192977f35d361fd4b3d7\n+ 799a70ca46d61bd04ba1b63e0c5ce91c5668676d\n+ fdfd64ff6ab951df7a649ba1d0bdc4eae97e0c8c\n+ 5dae983c98959eb207e0141afd476306aa7a4c52\n+ c838c00b8dbde13e94b12471b418dc4ceea542e7\n+ 5ef1179631a0807da9c9e35149c325dba1e308c1\n+ b6659eea30214526e27c910998f12825c9770b59"
+  },
+  {
+    "repo": "RobotEye",
+    "branch": "dependabot",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "cc634031529dabac04a134aca69d688342fbc8d8",
+        "assunto": "seguranca: Dependabot vigia as dependências e as Actions (#7)"
+      }
+    ],
+    "cherry_main": "- f7fe55303401d62a99d97acb8fa75917c90e3443"
+  },
+  {
+    "repo": "RobotEye",
+    "branch": "otimizacao-ram-e-radio",
+    "arvore_igual_em_remoto": [
+      {
+        "sha": "60abf91ad9fdacc5b71d4214f78639b54a913c74",
+        "assunto": "Memória: a reserva local para de ocupar 1,5 GB o dia inteiro; e o Wi-Fi sai de cima do Bluetooth (#6)"
+      }
+    ],
+    "cherry_main": "+ 452168cfec8d703676edbd25c98c2a03ed00f0e7\n+ 34f90577b73a0ac39165192977f35d361fd4b3d7\n+ 799a70ca46d61bd04ba1b63e0c5ce91c5668676d\n+ fdfd64ff6ab951df7a649ba1d0bdc4eae97e0c8c\n+ 5dae983c98959eb207e0141afd476306aa7a4c52\n+ c838c00b8dbde13e94b12471b418dc4ceea542e7\n+ 5ef1179631a0807da9c9e35149c325dba1e308c1\n+ b6659eea30214526e27c910998f12825c9770b59\n+ 097f0330d1b692f1dc29c1986af1dd562beacf56\n+ 15526310b4a5ff2d05d61e64ab4703845e6c019d\n+ c901b4b85397064e89b39199cf98f3f5c53db6f0\n+ 83167a3b7a18b9a0e3db8054c8899640db118982\n+ 1c9aa51d74a9fa9d0a0363337aaf8d76e9533d23"
+  }
+]

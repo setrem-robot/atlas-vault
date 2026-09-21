@@ -1,0 +1,2699 @@
+{
+  "coletado_em": "2026-09-09T17:16:47.737370-03:00",
+  "fetch_solicitado": true,
+  "repositorios": [
+    {
+      "pasta": "app",
+      "github": "https://github.com/setrem-robot/aplicativo",
+      "fetch_ok": true,
+      "head": "44d500160ecf13d7d1db2a4fe0c54052d352c0aa",
+      "branch": "main",
+      "status": "",
+      "alteracoes_resumo": "",
+      "commits_locais_nao_alcancaveis_por_remotos": [
+        {
+          "sha": "ade4b03a2fe39806df4f029ac064d60eeb09b74a",
+          "data_autoria": "2026-08-27T22:20:23-03:00",
+          "data_commit": "2026-08-27T22:20:23-03:00",
+          "assunto": "ui: gráfico com leitura no topo, farol no mapa, painel animado e selo de versão"
+        },
+        {
+          "sha": "d78ed228b1f4c7941ab69235bc327493d73032dc",
+          "data_autoria": "2026-08-27T19:59:08-03:00",
+          "data_commit": "2026-08-27T19:59:08-03:00",
+          "assunto": "seguranca: Dependabot vigia os pacotes do pub e as Actions"
+        },
+        {
+          "sha": "cbe3dd2646d42e0d575c55084a6ae637fbad0629",
+          "data_autoria": "2026-08-27T19:37:49-03:00",
+          "data_commit": "2026-08-27T19:37:49-03:00",
+          "assunto": "build: 1.1.4+6, com o redesenho da main junto"
+        },
+        {
+          "sha": "f2ebea32f8f70d665e6e1b4cc0c882c104ebd009",
+          "data_autoria": "2026-08-27T19:35:08-03:00",
+          "data_commit": "2026-08-27T19:35:08-03:00",
+          "assunto": "merge: traz o redesenho e o Shorebird da main"
+        },
+        {
+          "sha": "32350b7a8cb25a14f99d75e4bee3a5b011140201",
+          "data_autoria": "2026-08-27T19:29:11-03:00",
+          "data_commit": "2026-08-27T19:29:11-03:00",
+          "assunto": "docs: o app não fala mais com um ESP32, e agora faz duas coisas"
+        },
+        {
+          "sha": "ba8bfc05b93a71bc27c8a1a5d09f8e65894df4d9",
+          "data_autoria": "2026-08-27T19:05:55-03:00",
+          "data_commit": "2026-08-27T19:05:55-03:00",
+          "assunto": "build: 1.1.3+5, e o aviso de que instalar por cima não reconfigura"
+        },
+        {
+          "sha": "8ed46229deef28494e7d4c30d9e2078e1cdae2e2",
+          "data_autoria": "2026-08-27T18:48:34-03:00",
+          "data_commit": "2026-08-27T18:48:34-03:00",
+          "assunto": "fix: o app não tinha permissão de internet em release"
+        },
+        {
+          "sha": "8fe9120e190c4abdb10bc7c8a67fbca34640ac54",
+          "data_autoria": "2026-08-27T18:36:29-03:00",
+          "data_commit": "2026-08-27T18:36:29-03:00",
+          "assunto": "fix: o Android bloqueava o http:// antes de a requisição sair do aparelho"
+        },
+        {
+          "sha": "66e48c7ad037a0199589c52b9d5f4d0181b795df",
+          "data_autoria": "2026-08-27T09:36:34-03:00",
+          "data_commit": "2026-08-27T09:36:34-03:00",
+          "assunto": "chore: versão 1.1.0 — a que tem as telas de dados"
+        },
+        {
+          "sha": "161da96658d20151ef6d5b204a59b1bb98396896",
+          "data_autoria": "2026-08-27T09:19:01-03:00",
+          "data_commit": "2026-08-27T09:19:01-03:00",
+          "assunto": "docs: o app deixou de ter uma fonte de dados só"
+        },
+        {
+          "sha": "f2983aa43d6f43c084b771b8be4c9b63b3621a5f",
+          "data_autoria": "2026-08-27T09:19:00-03:00",
+          "data_commit": "2026-08-27T09:19:00-03:00",
+          "assunto": "fix: o build morria no shared_preferences com o cache incremental do Kotlin"
+        },
+        {
+          "sha": "fb1bd737ce81dbb9b52fce31f080c0617c83accd",
+          "data_autoria": "2026-08-27T09:18:46-03:00",
+          "data_commit": "2026-08-27T09:18:46-03:00",
+          "assunto": "feat: quatro telas para quatro perguntas diferentes sobre o robô"
+        },
+        {
+          "sha": "bb8d204b6be2f360155e7e8feaa53238529e2e71",
+          "data_autoria": "2026-08-27T09:18:30-03:00",
+          "data_commit": "2026-08-27T09:18:30-03:00",
+          "assunto": "feat: o app ganha uma segunda fonte de dados — o histórico na nuvem"
+        },
+        {
+          "sha": "6f8a0d6ba01709ac85243c1ea31f346f39bbda0e",
+          "data_autoria": "2026-08-23T21:45:28-03:00",
+          "data_commit": "2026-08-23T21:45:28-03:00",
+          "assunto": "fix: o app derrubava a si mesmo no iPhone, e não avisava o robô que ainda estava lá"
+        }
+      ],
+      "historico_todas_branches": [
+        {
+          "sha": "44d500160ecf13d7d1db2a4fe0c54052d352c0aa",
+          "data_autoria": "2026-09-03T19:35:24-03:00",
+          "data_commit": "2026-09-03T19:35:24-03:00",
+          "assunto": "Merge pull request #14 from setrem-robot/deps/ignora-permission-handler-13"
+        },
+        {
+          "sha": "9633b3ed54d54263c556d6a4539ee78e612c2959",
+          "data_autoria": "2026-09-03T19:34:53-03:00",
+          "data_commit": "2026-09-03T19:34:53-03:00",
+          "assunto": "Merge pull request #13 from setrem-robot/dependabot/pub/flutter_map-8.3.2"
+        },
+        {
+          "sha": "2d6e2b1d33474adc46a171da18060c2ca4445f47",
+          "data_autoria": "2026-09-03T19:34:34-03:00",
+          "data_commit": "2026-09-03T19:34:34-03:00",
+          "assunto": "deps: o Dependabot para de repropor o permission_handler 13"
+        },
+        {
+          "sha": "baebbe95503653eb5184329c29894e08592b93f3",
+          "data_autoria": "2026-09-03T18:25:44Z",
+          "data_commit": "2026-09-03T18:25:44Z",
+          "assunto": "deps: bump flutter_map from 8.3.1 to 8.3.2"
+        },
+        {
+          "sha": "c090a0e8c601a4d9124a69ee919043c4f20d78cc",
+          "data_autoria": "2026-09-03T13:21:50-03:00",
+          "data_commit": "2026-09-03T13:21:50-03:00",
+          "assunto": "Merge pull request #11 from setrem-robot/docs/como-funciona"
+        },
+        {
+          "sha": "af43997938da185fe6858c751191692597617581",
+          "data_autoria": "2026-09-03T12:43:10-03:00",
+          "data_commit": "2026-09-03T12:43:10-03:00",
+          "assunto": "docs: um passeio guiado pela arquitetura do app"
+        },
+        {
+          "sha": "d984adef2bad4e46f5587d0e73762ead836bf37d",
+          "data_autoria": "2026-09-03T01:11:11-03:00",
+          "data_commit": "2026-09-03T01:11:11-03:00",
+          "assunto": "Merge: deps: bump actions/setup-java from 4 to 6 (#5)"
+        },
+        {
+          "sha": "1b0206c6b9b317c6f1d0ed04a451c16f868905fa",
+          "data_autoria": "2026-09-03T01:11:10-03:00",
+          "data_commit": "2026-09-03T01:11:10-03:00",
+          "assunto": "Merge: deps: bump actions/checkout from 4 to 7 (#4)"
+        },
+        {
+          "sha": "80072c73fb9dc59ac3727d83d8cba3a2b1536f6e",
+          "data_autoria": "2026-09-03T01:09:05-03:00",
+          "data_commit": "2026-09-03T01:09:05-03:00",
+          "assunto": "Merge: soltar o dedo vale mesmo quando a cruz some (fix/rede-e-parada)"
+        },
+        {
+          "sha": "b33cb09620dfdc766fe00e007008b71e4e7b7b62",
+          "data_autoria": "2026-09-03T00:43:27-03:00",
+          "data_commit": "2026-09-03T00:43:27-03:00",
+          "assunto": "docs: diz onde mora o mapa, e que o robo parado nao e culpa do app"
+        },
+        {
+          "sha": "04b7ad28d77e394da635f55c843fd779ba393029",
+          "data_autoria": "2026-09-03T00:34:58-03:00",
+          "data_commit": "2026-09-03T00:34:58-03:00",
+          "assunto": "fix: soltar o dedo vale mesmo quando a cruz some da tela"
+        },
+        {
+          "sha": "b66103c258515ab1f9931069aa31e04069d8fa4f",
+          "data_autoria": "2026-08-30T20:25:23-03:00",
+          "data_commit": "2026-08-30T20:25:23-03:00",
+          "assunto": "fix: permission_handler volta para ^11 — a 13 não compila o APK"
+        },
+        {
+          "sha": "cf52b55e132b655761743e3f58b78957175fec59",
+          "data_autoria": "2026-08-30T19:40:38-03:00",
+          "data_commit": "2026-08-30T19:40:38-03:00",
+          "assunto": "Merge: rota segura — planejar no mapa e enviar ao robô por BLE (#10)"
+        },
+        {
+          "sha": "7c0d360ad81c662974bb1e28822525c6f50d6f4d",
+          "data_autoria": "2026-08-30T19:23:17-03:00",
+          "data_commit": "2026-08-30T19:23:17-03:00",
+          "assunto": "ui: a cor da marca passa a ser o verde #09D085"
+        },
+        {
+          "sha": "c98b146d6eab216cff93c3594cbcdcf1dbaaac0f",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "docs: registra a rota segura na ARQUITETURA"
+        },
+        {
+          "sha": "4b2aff65a416ba6bfaeedffe4a250cd45b6f744f",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "test: valida a cerca e o fatiamento da rota"
+        },
+        {
+          "sha": "325cc873389a20eafe193b71452d3a2c91494212",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "feat: tela de planejamento da rota sobre o mapa"
+        },
+        {
+          "sha": "d5c3fd2098dc248f2e2dcb1a3e2454133e553131",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "feat: guarda a rota planejada no aparelho"
+        },
+        {
+          "sha": "f891cd13cf958fdf64f6c69856f7c2d049fb409a",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "feat: RobotConnection envia a rota por BLE"
+        },
+        {
+          "sha": "e1ed32d759ddde6622dd9d36e0a2dd6420c3ba12",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "feat: modela a rota segura e o protocolo BLE fatiado"
+        },
+        {
+          "sha": "79912fee0e7dbc1a6c116d2ac3223153114efb57",
+          "data_autoria": "2026-08-30T18:55:12-03:00",
+          "data_commit": "2026-08-30T18:55:12-03:00",
+          "assunto": "refactor: extrai a camada OSM do mapa para um widget compartilhado"
+        },
+        {
+          "sha": "ecc2d0f298ac6f531c0e012f64798bae41f7e93d",
+          "data_autoria": "2026-08-30T18:41:36-03:00",
+          "data_commit": "2026-08-30T18:41:36-03:00",
+          "assunto": "deps: permission_handler 11 -> 13 (Dependabot)"
+        },
+        {
+          "sha": "e18640d10deb919158ff41da8d9c9b9baa6b8657",
+          "data_autoria": "2026-08-30T18:40:40-03:00",
+          "data_commit": "2026-08-30T18:40:40-03:00",
+          "assunto": "deps: latlong2 0.10.1 (Dependabot)"
+        },
+        {
+          "sha": "e874393eb0fd641169fdfbac84f568cf639e1612",
+          "data_autoria": "2026-08-30T18:40:18-03:00",
+          "data_commit": "2026-08-30T18:40:18-03:00",
+          "assunto": "deps: flutter_lints 6.0.0 (Dependabot)"
+        },
+        {
+          "sha": "985ad33bc763aceb4d7dd010b46f3cbacac14573",
+          "data_autoria": "2026-08-28T23:18:31-03:00",
+          "data_commit": "2026-08-28T23:18:31-03:00",
+          "assunto": "ui: os dois olhos do ícone ficam do mesmo tamanho"
+        },
+        {
+          "sha": "b459f917dae56e20368b37f8727c7836963fe157",
+          "data_autoria": "2026-08-28T17:46:42-03:00",
+          "data_commit": "2026-08-28T17:46:42-03:00",
+          "assunto": "ui: o ícone do app passa a ser os olhos da Atlas, e o selo é só o número"
+        },
+        {
+          "sha": "2cfe5da35a17583ad2d747122a78f53ddd3015d7",
+          "data_autoria": "2026-08-28T12:49:44-03:00",
+          "data_commit": "2026-08-28T12:49:44-03:00",
+          "assunto": "fix: volta o ícone da bateria, que impedia o patch pelo ar"
+        },
+        {
+          "sha": "d00f12254b9a7edca9a08a2cd3cadb51bc5794d1",
+          "data_autoria": "2026-08-28T12:42:30-03:00",
+          "data_commit": "2026-08-28T12:42:30-03:00",
+          "assunto": "ui: o frescor do dado vira a linguagem visual do painel"
+        },
+        {
+          "sha": "3b3edaf3e61922c717bdf19527dc5b65d61ac3a7",
+          "data_autoria": "2026-08-27T22:21:05-03:00",
+          "data_commit": "2026-08-27T22:21:05-03:00",
+          "assunto": "ui: gráfico com leitura no topo, farol no mapa, painel animado e selo de versão (#9)"
+        },
+        {
+          "sha": "ade4b03a2fe39806df4f029ac064d60eeb09b74a",
+          "data_autoria": "2026-08-27T22:20:23-03:00",
+          "data_commit": "2026-08-27T22:20:23-03:00",
+          "assunto": "ui: gráfico com leitura no topo, farol no mapa, painel animado e selo de versão"
+        },
+        {
+          "sha": "421885c4a85f5978be0d3274156f367a7766e3c6",
+          "data_autoria": "2026-08-27T23:02:52Z",
+          "data_commit": "2026-08-27T23:02:52Z",
+          "assunto": "deps: bump flutter_lints from 3.0.2 to 6.0.0"
+        },
+        {
+          "sha": "ea42ac2ffce92e557c51212eea0e10a59cb683e1",
+          "data_autoria": "2026-08-27T23:02:45Z",
+          "data_commit": "2026-08-27T23:02:45Z",
+          "assunto": "deps: bump permission_handler from 11.4.0 to 13.0.1"
+        },
+        {
+          "sha": "88d1fc078afb34f50071a11f8a85bd44e649fc74",
+          "data_autoria": "2026-08-27T23:02:40Z",
+          "data_commit": "2026-08-27T23:02:40Z",
+          "assunto": "deps: bump latlong2 from 0.9.1 to 0.10.1"
+        },
+        {
+          "sha": "4ff426aeefbd5eeb4cde6e97db96720f94494c48",
+          "data_autoria": "2026-08-27T23:01:21Z",
+          "data_commit": "2026-08-27T23:01:21Z",
+          "assunto": "deps: bump actions/setup-java from 4 to 6"
+        },
+        {
+          "sha": "3c311b72d1ce2bf83b4988be560f509e56af734b",
+          "data_autoria": "2026-08-27T23:01:12Z",
+          "data_commit": "2026-08-27T23:01:12Z",
+          "assunto": "deps: bump actions/checkout from 4 to 7"
+        },
+        {
+          "sha": "7e5a873d4ebefc34b95b81e2534888b9ca78412b",
+          "data_autoria": "2026-08-27T20:00:37-03:00",
+          "data_commit": "2026-08-27T20:00:37-03:00",
+          "assunto": "seguranca: Dependabot vigia os pacotes do pub e as Actions (#3)"
+        },
+        {
+          "sha": "d78ed228b1f4c7941ab69235bc327493d73032dc",
+          "data_autoria": "2026-08-27T19:59:08-03:00",
+          "data_commit": "2026-08-27T19:59:08-03:00",
+          "assunto": "seguranca: Dependabot vigia os pacotes do pub e as Actions"
+        },
+        {
+          "sha": "99348578fb6edc2b315836e0987de7322624230f",
+          "data_autoria": "2026-08-27T19:44:25-03:00",
+          "data_commit": "2026-08-27T19:44:25-03:00",
+          "assunto": "Dados do robô: mapa do trajeto, painel, histórico e eventos (#2)"
+        },
+        {
+          "sha": "cbe3dd2646d42e0d575c55084a6ae637fbad0629",
+          "data_autoria": "2026-08-27T19:37:49-03:00",
+          "data_commit": "2026-08-27T19:37:49-03:00",
+          "assunto": "build: 1.1.4+6, com o redesenho da main junto"
+        },
+        {
+          "sha": "f2ebea32f8f70d665e6e1b4cc0c882c104ebd009",
+          "data_autoria": "2026-08-27T19:35:08-03:00",
+          "data_commit": "2026-08-27T19:35:08-03:00",
+          "assunto": "merge: traz o redesenho e o Shorebird da main"
+        },
+        {
+          "sha": "32350b7a8cb25a14f99d75e4bee3a5b011140201",
+          "data_autoria": "2026-08-27T19:29:11-03:00",
+          "data_commit": "2026-08-27T19:29:11-03:00",
+          "assunto": "docs: o app não fala mais com um ESP32, e agora faz duas coisas"
+        },
+        {
+          "sha": "ba8bfc05b93a71bc27c8a1a5d09f8e65894df4d9",
+          "data_autoria": "2026-08-27T19:05:55-03:00",
+          "data_commit": "2026-08-27T19:05:55-03:00",
+          "assunto": "build: 1.1.3+5, e o aviso de que instalar por cima não reconfigura"
+        },
+        {
+          "sha": "8ed46229deef28494e7d4c30d9e2078e1cdae2e2",
+          "data_autoria": "2026-08-27T18:48:34-03:00",
+          "data_commit": "2026-08-27T18:48:34-03:00",
+          "assunto": "fix: o app não tinha permissão de internet em release"
+        },
+        {
+          "sha": "8fe9120e190c4abdb10bc7c8a67fbca34640ac54",
+          "data_autoria": "2026-08-27T18:36:29-03:00",
+          "data_commit": "2026-08-27T18:36:29-03:00",
+          "assunto": "fix: o Android bloqueava o http:// antes de a requisição sair do aparelho"
+        },
+        {
+          "sha": "66e48c7ad037a0199589c52b9d5f4d0181b795df",
+          "data_autoria": "2026-08-27T09:36:34-03:00",
+          "data_commit": "2026-08-27T09:36:34-03:00",
+          "assunto": "chore: versão 1.1.0 — a que tem as telas de dados"
+        },
+        {
+          "sha": "161da96658d20151ef6d5b204a59b1bb98396896",
+          "data_autoria": "2026-08-27T09:19:01-03:00",
+          "data_commit": "2026-08-27T09:19:01-03:00",
+          "assunto": "docs: o app deixou de ter uma fonte de dados só"
+        },
+        {
+          "sha": "f2983aa43d6f43c084b771b8be4c9b63b3621a5f",
+          "data_autoria": "2026-08-27T09:19:00-03:00",
+          "data_commit": "2026-08-27T09:19:00-03:00",
+          "assunto": "fix: o build morria no shared_preferences com o cache incremental do Kotlin"
+        },
+        {
+          "sha": "fb1bd737ce81dbb9b52fce31f080c0617c83accd",
+          "data_autoria": "2026-08-27T09:18:46-03:00",
+          "data_commit": "2026-08-27T09:18:46-03:00",
+          "assunto": "feat: quatro telas para quatro perguntas diferentes sobre o robô"
+        },
+        {
+          "sha": "bb8d204b6be2f360155e7e8feaa53238529e2e71",
+          "data_autoria": "2026-08-27T09:18:30-03:00",
+          "data_commit": "2026-08-27T09:18:30-03:00",
+          "assunto": "feat: o app ganha uma segunda fonte de dados — o histórico na nuvem"
+        },
+        {
+          "sha": "105a48e846a6c377a50b64c526a1aa3653859322",
+          "data_autoria": "2026-08-24T23:23:27-03:00",
+          "data_commit": "2026-08-24T23:23:27-03:00",
+          "assunto": "Atlas Controller v2: identidade e animacoes na paleta da Setrem"
+        },
+        {
+          "sha": "1c74d88f55316e30c4e71e05268f00e7594e7653",
+          "data_autoria": "2026-08-24T21:32:02-03:00",
+          "data_commit": "2026-08-24T21:32:02-03:00",
+          "assunto": "Corrige o subtitulo da tela de conexao para BLE"
+        },
+        {
+          "sha": "8e0c5a29323c3412e16d22e7127b2528413b454d",
+          "data_autoria": "2026-08-24T20:45:31-03:00",
+          "data_commit": "2026-08-24T20:50:27-03:00",
+          "assunto": "Entrega continua via Shorebird"
+        },
+        {
+          "sha": "6f8a0d6ba01709ac85243c1ea31f346f39bbda0e",
+          "data_autoria": "2026-08-23T21:45:28-03:00",
+          "data_commit": "2026-08-23T21:45:28-03:00",
+          "assunto": "fix: o app derrubava a si mesmo no iPhone, e não avisava o robô que ainda estava lá"
+        },
+        {
+          "sha": "b4d5a0eaef2952e96897423c2bfc175e06717a7c",
+          "data_autoria": "2026-08-21T21:42:16-03:00",
+          "data_commit": "2026-08-21T21:42:16-03:00",
+          "assunto": "docs: reescreve README com indice e instrucoes atuais de teste"
+        },
+        {
+          "sha": "a86efe8d6d8642f3cc7efead3dba9689bda7e348",
+          "data_autoria": "2026-08-21T21:42:16-03:00",
+          "data_commit": "2026-08-21T21:42:16-03:00",
+          "assunto": "style: reduz densidade de comentarios em lib/"
+        },
+        {
+          "sha": "0c72394699575b0ff4e8150137272efb206f6258",
+          "data_autoria": "2026-08-21T21:26:23-03:00",
+          "data_commit": "2026-08-21T21:26:23-03:00",
+          "assunto": "add CLAUDE.md com contexto tecnico do projeto e do ambiente"
+        },
+        {
+          "sha": "a50926eb16d9a9b25e22b216490bcdabe87662da",
+          "data_autoria": "2026-08-21T21:20:22-03:00",
+          "data_commit": "2026-08-21T21:20:22-03:00",
+          "assunto": "atualiza documentacao para refletir a migracao para BLE"
+        },
+        {
+          "sha": "aa5ab55fb3425899eff3dfe018528aa757e7f7ff",
+          "data_autoria": "2026-08-21T21:20:22-03:00",
+          "data_commit": "2026-08-21T21:20:22-03:00",
+          "assunto": "adiciona permissao de bluetooth exigida pelo iOS"
+        },
+        {
+          "sha": "ff8534fc1896250e2717db054ff404b00147eea6",
+          "data_autoria": "2026-08-21T21:20:22-03:00",
+          "data_commit": "2026-08-21T21:20:22-03:00",
+          "assunto": "troca tela de conexao para escanear via BLE em vez de listar pareados"
+        },
+        {
+          "sha": "1c424e68f08a496b505bf7f55d56302e823658e8",
+          "data_autoria": "2026-08-21T21:20:22-03:00",
+          "data_commit": "2026-08-21T21:20:22-03:00",
+          "assunto": "reescreve RobotConnection para BLE (NUS) em vez de Bluetooth Classic"
+        },
+        {
+          "sha": "e40fd01b8af87bc25aaa93e9fb1e974a13a31c2e",
+          "data_autoria": "2026-08-21T21:20:22-03:00",
+          "data_commit": "2026-08-21T21:20:22-03:00",
+          "assunto": "troca flutter_bluetooth_serial_plus por flutter_blue_plus (BLE)"
+        },
+        {
+          "sha": "a0f60af6051e8ddb6f6925ad5c973b2f2716f095",
+          "data_autoria": "2026-08-18T23:48:38-03:00",
+          "data_commit": "2026-08-18T23:48:38-03:00",
+          "assunto": "Ajustado tema do app e renomeado o mesmo"
+        },
+        {
+          "sha": "bbecc2c3e5ecefd383f177f7f4deb0b3292ce0b9",
+          "data_autoria": "2026-08-17T23:46:24-03:00",
+          "data_commit": "2026-08-17T23:46:24-03:00",
+          "assunto": "App Android para controlar robo ESP32 via Bluetooth"
+        }
+      ],
+      "branches": [
+        {
+          "nome": "dados-do-robo",
+          "sha": "cbe3dd2646d42e0d575c55084a6ae637fbad0629",
+          "upstream": "origin/dados-do-robo",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 12,
+            "exclusivos_main": 36
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "cbe3dd2646d42e0d575c55084a6ae637fbad0629",
+              "data_autoria": "2026-08-27T19:37:49-03:00",
+              "data_commit": "2026-08-27T19:37:49-03:00",
+              "assunto": "build: 1.1.4+6, com o redesenho da main junto"
+            },
+            {
+              "sha": "f2ebea32f8f70d665e6e1b4cc0c882c104ebd009",
+              "data_autoria": "2026-08-27T19:35:08-03:00",
+              "data_commit": "2026-08-27T19:35:08-03:00",
+              "assunto": "merge: traz o redesenho e o Shorebird da main"
+            },
+            {
+              "sha": "32350b7a8cb25a14f99d75e4bee3a5b011140201",
+              "data_autoria": "2026-08-27T19:29:11-03:00",
+              "data_commit": "2026-08-27T19:29:11-03:00",
+              "assunto": "docs: o app não fala mais com um ESP32, e agora faz duas coisas"
+            },
+            {
+              "sha": "ba8bfc05b93a71bc27c8a1a5d09f8e65894df4d9",
+              "data_autoria": "2026-08-27T19:05:55-03:00",
+              "data_commit": "2026-08-27T19:05:55-03:00",
+              "assunto": "build: 1.1.3+5, e o aviso de que instalar por cima não reconfigura"
+            },
+            {
+              "sha": "8ed46229deef28494e7d4c30d9e2078e1cdae2e2",
+              "data_autoria": "2026-08-27T18:48:34-03:00",
+              "data_commit": "2026-08-27T18:48:34-03:00",
+              "assunto": "fix: o app não tinha permissão de internet em release"
+            },
+            {
+              "sha": "8fe9120e190c4abdb10bc7c8a67fbca34640ac54",
+              "data_autoria": "2026-08-27T18:36:29-03:00",
+              "data_commit": "2026-08-27T18:36:29-03:00",
+              "assunto": "fix: o Android bloqueava o http:// antes de a requisição sair do aparelho"
+            },
+            {
+              "sha": "66e48c7ad037a0199589c52b9d5f4d0181b795df",
+              "data_autoria": "2026-08-27T09:36:34-03:00",
+              "data_commit": "2026-08-27T09:36:34-03:00",
+              "assunto": "chore: versão 1.1.0 — a que tem as telas de dados"
+            },
+            {
+              "sha": "161da96658d20151ef6d5b204a59b1bb98396896",
+              "data_autoria": "2026-08-27T09:19:01-03:00",
+              "data_commit": "2026-08-27T09:19:01-03:00",
+              "assunto": "docs: o app deixou de ter uma fonte de dados só"
+            },
+            {
+              "sha": "f2983aa43d6f43c084b771b8be4c9b63b3621a5f",
+              "data_autoria": "2026-08-27T09:19:00-03:00",
+              "data_commit": "2026-08-27T09:19:00-03:00",
+              "assunto": "fix: o build morria no shared_preferences com o cache incremental do Kotlin"
+            },
+            {
+              "sha": "fb1bd737ce81dbb9b52fce31f080c0617c83accd",
+              "data_autoria": "2026-08-27T09:18:46-03:00",
+              "data_commit": "2026-08-27T09:18:46-03:00",
+              "assunto": "feat: quatro telas para quatro perguntas diferentes sobre o robô"
+            },
+            {
+              "sha": "bb8d204b6be2f360155e7e8feaa53238529e2e71",
+              "data_autoria": "2026-08-27T09:18:30-03:00",
+              "data_commit": "2026-08-27T09:18:30-03:00",
+              "assunto": "feat: o app ganha uma segunda fonte de dados — o histórico na nuvem"
+            },
+            {
+              "sha": "6f8a0d6ba01709ac85243c1ea31f346f39bbda0e",
+              "data_autoria": "2026-08-23T21:45:28-03:00",
+              "data_commit": "2026-08-23T21:45:28-03:00",
+              "assunto": "fix: o app derrubava a si mesmo no iPhone, e não avisava o robô que ainda estava lá"
+            }
+          ]
+        },
+        {
+          "nome": "dependabot",
+          "sha": "d78ed228b1f4c7941ab69235bc327493d73032dc",
+          "upstream": "origin/dependabot",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 1,
+            "exclusivos_main": 35
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "d78ed228b1f4c7941ab69235bc327493d73032dc",
+              "data_autoria": "2026-08-27T19:59:08-03:00",
+              "data_commit": "2026-08-27T19:59:08-03:00",
+              "assunto": "seguranca: Dependabot vigia os pacotes do pub e as Actions"
+            }
+          ]
+        },
+        {
+          "nome": "deps/ignora-permission-handler-13",
+          "sha": "2d6e2b1d33474adc46a171da18060c2ca4445f47",
+          "upstream": "origin/deps/ignora-permission-handler-13",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 3
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "docs/como-funciona",
+          "sha": "af43997938da185fe6858c751191692597617581",
+          "upstream": "origin/docs/como-funciona",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 5
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "ios-e-parada-automatica",
+          "sha": "6f8a0d6ba01709ac85243c1ea31f346f39bbda0e",
+          "upstream": "origin/ios-e-parada-automatica",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 1,
+            "exclusivos_main": 39
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "6f8a0d6ba01709ac85243c1ea31f346f39bbda0e",
+              "data_autoria": "2026-08-23T21:45:28-03:00",
+              "data_commit": "2026-08-23T21:45:28-03:00",
+              "assunto": "fix: o app derrubava a si mesmo no iPhone, e não avisava o robô que ainda estava lá"
+            }
+          ]
+        },
+        {
+          "nome": "main",
+          "sha": "44d500160ecf13d7d1db2a4fe0c54052d352c0aa",
+          "upstream": "origin/main",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 0
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "ui-mais-limpa",
+          "sha": "ade4b03a2fe39806df4f029ac064d60eeb09b74a",
+          "upstream": "origin/ui-mais-limpa",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 1,
+            "exclusivos_main": 34
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "ade4b03a2fe39806df4f029ac064d60eeb09b74a",
+              "data_autoria": "2026-08-27T22:20:23-03:00",
+              "data_commit": "2026-08-27T22:20:23-03:00",
+              "assunto": "ui: gráfico com leitura no topo, farol no mapa, painel animado e selo de versão"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "orquestrador",
+      "github": "https://github.com/setrem-robot/orquestrador",
+      "fetch_ok": true,
+      "head": "98ee681498e05426ff47041ae7f8e7ec97d0ffaf",
+      "branch": "main",
+      "status": "",
+      "alteracoes_resumo": "",
+      "commits_locais_nao_alcancaveis_por_remotos": [
+        {
+          "sha": "c0553a99583b8c8e990001cd9a3bfaf13aab7dd4",
+          "data_autoria": "2026-08-27T19:58:45-03:00",
+          "data_commit": "2026-08-27T19:58:45-03:00",
+          "assunto": "seguranca: cabeçalhos de segurança em toda resposta, e Dependabot"
+        },
+        {
+          "sha": "6cb29dcb6ade7a85b51c7dce1f180ef5406f2fa8",
+          "data_autoria": "2026-08-27T19:26:47-03:00",
+          "data_commit": "2026-08-27T19:26:47-03:00",
+          "assunto": "docs: o README passa a contar o que existe hoje, e um script roda tudo"
+        },
+        {
+          "sha": "677e2a057d2a7cc32ba5dc713da1aa9749ce3ace",
+          "data_autoria": "2026-08-27T19:08:19-03:00",
+          "data_commit": "2026-08-27T19:08:19-03:00",
+          "assunto": "docs: as duas causas de 502 no túnel, e como distinguir"
+        },
+        {
+          "sha": "70c54ee7e2a2642b932b17ac1cc8876b4c6480e0",
+          "data_autoria": "2026-08-27T19:06:57-03:00",
+          "data_commit": "2026-08-27T19:06:57-03:00",
+          "assunto": "fix: os scripts param de repetir o token de teste como literal"
+        },
+        {
+          "sha": "d6c2e86f3a2fbd44c03e1819083c847412382b92",
+          "data_autoria": "2026-08-27T18:59:50-03:00",
+          "data_commit": "2026-08-27T18:59:50-03:00",
+          "assunto": "config: a landing page aponta para o domínio de verdade"
+        },
+        {
+          "sha": "52fb91989a8d47e63aef04c40fa77afd609cf24e",
+          "data_autoria": "2026-08-27T18:26:19-03:00",
+          "data_commit": "2026-08-27T18:26:19-03:00",
+          "assunto": "fix: no modo espelhado, o pacote atravessa DOIS firewalls"
+        },
+        {
+          "sha": "bab84e277ea4753c94de15059cb9a470f9ecff12",
+          "data_autoria": "2026-08-27T15:17:33-03:00",
+          "data_commit": "2026-08-27T15:17:33-03:00",
+          "assunto": "feat: liberar a rede para o celular vira um comando do Linux"
+        },
+        {
+          "sha": "a948e037c5b35cba4d099b702edba9a6b6da6ee9",
+          "data_autoria": "2026-08-27T15:04:00-03:00",
+          "data_commit": "2026-08-27T15:04:00-03:00",
+          "assunto": "fix: a checagem de firewall dava alarme falso"
+        },
+        {
+          "sha": "b45730e79dabf43a3ef73a0eba70718be270352f",
+          "data_autoria": "2026-08-27T14:55:54-03:00",
+          "data_commit": "2026-08-27T14:55:54-03:00",
+          "assunto": "fix: a rede espelhada resolve o endereço, não a permissão"
+        },
+        {
+          "sha": "7f07b9a1a7434f401420adb82a2cf53ad48109c7",
+          "data_autoria": "2026-08-27T13:45:50-03:00",
+          "data_commit": "2026-08-27T13:45:50-03:00",
+          "assunto": "docs: API_BIND no .env da VM, com o valor que ela deve usar"
+        },
+        {
+          "sha": "14b4aab46f7b5d53ae2bfd091961261b8b42843c",
+          "data_autoria": "2026-08-27T13:45:29-03:00",
+          "data_commit": "2026-08-27T13:45:29-03:00",
+          "assunto": "docs: o que fazer sem reiniciar o WSL, e a landing page no ambiente local"
+        },
+        {
+          "sha": "147e38be238a68c0f4710d64292d6c8af530e9d0",
+          "data_autoria": "2026-08-27T13:45:15-03:00",
+          "data_commit": "2026-08-27T13:45:15-03:00",
+          "assunto": "fix: três coisas que só apareceram subindo o ambiente de verdade"
+        },
+        {
+          "sha": "49356dcc6123787c709f60d3ecf43f9d5bccfa07",
+          "data_autoria": "2026-08-27T13:20:43-03:00",
+          "data_commit": "2026-08-27T13:20:43-03:00",
+          "assunto": "feat: um comando sobe tudo, e o guia do que muda ao ir para a VM"
+        },
+        {
+          "sha": "ccd71fb2384ce27fb2020875164fbb923b772ab2",
+          "data_autoria": "2026-08-27T13:20:26-03:00",
+          "data_commit": "2026-08-27T13:20:26-03:00",
+          "assunto": "feat: um robô falso que publica pelo caminho inteiro, não só no banco"
+        },
+        {
+          "sha": "5ad510a552fb26c298a7a30becaf346e70369855",
+          "data_autoria": "2026-08-27T13:20:25-03:00",
+          "data_commit": "2026-08-27T13:20:25-03:00",
+          "assunto": "feat: a nuvem inteira roda na máquina de quem desenvolve"
+        },
+        {
+          "sha": "f083ba9c8739a2a484ce2b1bf613c2d94a81bfe7",
+          "data_autoria": "2026-08-27T13:20:05-03:00",
+          "data_commit": "2026-08-27T13:20:05-03:00",
+          "assunto": "feat: Docker Engine no WSL, sem precisar do Docker Desktop"
+        },
+        {
+          "sha": "58478c4572cd5947435188883e3169acbe45f7f5",
+          "data_autoria": "2026-08-27T09:18:04-03:00",
+          "data_commit": "2026-08-27T09:18:04-03:00",
+          "assunto": "docs: o caminho de volta, do banco até a tela"
+        },
+        {
+          "sha": "1c506b2f25698b20939500b390ea9cba5e3fc000",
+          "data_autoria": "2026-08-27T09:18:03-03:00",
+          "data_commit": "2026-08-27T09:18:03-03:00",
+          "assunto": "feat: landing page do projeto, com o robô ao vivo embaixo"
+        },
+        {
+          "sha": "3426408fb80d2ef75dddaf8a120125eda83f963d",
+          "data_autoria": "2026-08-27T09:17:46-03:00",
+          "data_commit": "2026-08-27T09:17:46-03:00",
+          "assunto": "feat: dá para ver as telas antes de o GPS existir"
+        },
+        {
+          "sha": "116c6a58046d81559520c8caea728b2fb44621f9",
+          "data_autoria": "2026-08-27T09:17:46-03:00",
+          "data_commit": "2026-08-27T09:17:46-03:00",
+          "assunto": "feat: o domínio da Cloudflare publica a API sem abrir porta no LARCC"
+        },
+        {
+          "sha": "b44cda8afb3d780de3b36590c1a94a6112e45958",
+          "data_autoria": "2026-08-27T09:17:28-03:00",
+          "data_commit": "2026-08-27T09:17:28-03:00",
+          "assunto": "feat: a telemetria entrava no banco e não saía; agora o app consegue lê-la"
+        },
+        {
+          "sha": "5b57be042ad94d421ebf636a282d9338110f98f6",
+          "data_autoria": "2026-08-27T08:23:48-03:00",
+          "data_commit": "2026-08-27T08:23:48-03:00",
+          "assunto": "docs: o contrato ganha o modo contínuo, e o CLAUDE.md a camada nova"
+        },
+        {
+          "sha": "c575dc6772ba7dfe12fd89030156f5ef3bf3f0b9",
+          "data_autoria": "2026-08-27T08:23:39-03:00",
+          "data_commit": "2026-08-27T08:23:39-03:00",
+          "assunto": "fix: a telemetria parava de existir quando a rede caía por mais de 17 minutos"
+        },
+        {
+          "sha": "eefca6dd568180797383fd5a5c680bbfedc95b4d",
+          "data_autoria": "2026-08-27T08:23:24-03:00",
+          "data_commit": "2026-08-27T08:23:24-03:00",
+          "assunto": "refactor: o motor deixa de ser pulsado à mão, e o comando vira velocidade"
+        },
+        {
+          "sha": "acf6b81e67d656d28b1d4a6e61b052b320155f84",
+          "data_autoria": "2026-08-23T21:44:35-03:00",
+          "data_commit": "2026-08-23T21:44:35-03:00",
+          "assunto": "feat: o robô para sozinho quando o controle emudece"
+        }
+      ],
+      "historico_todas_branches": [
+        {
+          "sha": "98ee681498e05426ff47041ae7f8e7ec97d0ffaf",
+          "data_autoria": "2026-09-03T13:21:44-03:00",
+          "data_commit": "2026-09-03T13:21:44-03:00",
+          "assunto": "Merge pull request #12 from setrem-robot/docs/como-funciona"
+        },
+        {
+          "sha": "1f3c8f99df1dec388c9133fe84507978e27f4a0a",
+          "data_autoria": "2026-09-03T12:43:09-03:00",
+          "data_commit": "2026-09-03T12:43:09-03:00",
+          "assunto": "docs: um passeio guiado pela arquitetura, e o mapa vira diagrama"
+        },
+        {
+          "sha": "72b6a172a5d173372a0f46ae5e2d0b78ea85756a",
+          "data_autoria": "2026-09-03T12:26:36-03:00",
+          "data_commit": "2026-09-03T12:26:36-03:00",
+          "assunto": "Merge: deps: update httpx requirement from >=0.27 to >=0.28.1 (#11)"
+        },
+        {
+          "sha": "61d3817b88600d670cd1afa2797a65f012159c22",
+          "data_autoria": "2026-09-03T12:26:05-03:00",
+          "data_commit": "2026-09-03T12:26:05-03:00",
+          "assunto": "Merge: deps: update pytest requirement from >=8.0 to >=9.1.1 (#10)"
+        },
+        {
+          "sha": "c2a6cc1a878de229b84d7fcfbdc1a86c44d08c34",
+          "data_autoria": "2026-09-03T08:15:16Z",
+          "data_commit": "2026-09-03T08:15:16Z",
+          "assunto": "deps: update httpx requirement from >=0.27 to >=0.28.1 in /cloud/api"
+        },
+        {
+          "sha": "fbadf240328789941791b047c79e28bef49efa29",
+          "data_autoria": "2026-09-03T08:15:12Z",
+          "data_commit": "2026-09-03T08:15:12Z",
+          "assunto": "deps: update pytest requirement from >=8.0 to >=9.1.1 in /cloud/api"
+        },
+        {
+          "sha": "e97df0e08ca6498dd9c3bde43fea40224e7e18ea",
+          "data_autoria": "2026-09-03T01:08:15-03:00",
+          "data_commit": "2026-09-03T01:08:15-03:00",
+          "assunto": "Merge: o teto de tempo do banco volta a valer (fix/api-e-motores)"
+        },
+        {
+          "sha": "94bb6206d81411b5b8d4967db028b974119348b6",
+          "data_autoria": "2026-09-03T00:42:36-03:00",
+          "data_commit": "2026-09-03T00:42:36-03:00",
+          "assunto": "docs: o mapa das tres frentes entra no repositorio, com o estado real do robo"
+        },
+        {
+          "sha": "cdb5553f3d8e71d5394c0e7706ef56c322c51f96",
+          "data_autoria": "2026-09-03T00:31:10-03:00",
+          "data_commit": "2026-09-03T00:31:10-03:00",
+          "assunto": "fix: o teto de tempo do banco volta a valer, e os motores ganham cadeado"
+        },
+        {
+          "sha": "367d9f4ae023977f77a644e0119b64e06c02f843",
+          "data_autoria": "2026-08-30T19:26:22-03:00",
+          "data_commit": "2026-08-30T19:26:22-03:00",
+          "assunto": "Merge: rota segura — o app planeja, o orquestrador valida e republica (#9)"
+        },
+        {
+          "sha": "20d5f02ac230eb11ef5a9ea02683e3fd3e0a4b6e",
+          "data_autoria": "2026-08-30T18:46:29-03:00",
+          "data_commit": "2026-08-30T18:46:29-03:00",
+          "assunto": "docs: especifica o contrato da rota segura em contrato-mqtt.md"
+        },
+        {
+          "sha": "70ce36cd0e5d4418f7d5b412eb5d3440003a3a77",
+          "data_autoria": "2026-08-30T18:46:29-03:00",
+          "data_commit": "2026-08-30T18:46:29-03:00",
+          "assunto": "test: cobre ComandoRota (validacao e despacho polimorfico)"
+        },
+        {
+          "sha": "fb88165bb23bd172cb93aeb0ffae1cf44a154549",
+          "data_autoria": "2026-08-30T18:46:29-03:00",
+          "data_commit": "2026-08-30T18:46:29-03:00",
+          "assunto": "feat: topico robo/rota/comando e ComandoRota no roteador"
+        },
+        {
+          "sha": "22c4d12e683f2b9868d292b813ed008c6a83a6a5",
+          "data_autoria": "2026-08-30T18:45:04-03:00",
+          "data_commit": "2026-08-30T18:45:04-03:00",
+          "assunto": "deps: uvicorn >=0.30 -> >=0.52.4 (Dependabot)"
+        },
+        {
+          "sha": "96eb8745822317f56e17bb1ac7a8029bedd72d85",
+          "data_autoria": "2026-08-30T18:44:30-03:00",
+          "data_commit": "2026-08-30T18:44:30-03:00",
+          "assunto": "deps: psycopg-pool -> >=3.3.1 (Dependabot)"
+        },
+        {
+          "sha": "fa7760557260f5973098a6ba1812b77b83ba3f52",
+          "data_autoria": "2026-08-30T18:43:27-03:00",
+          "data_commit": "2026-08-30T18:43:27-03:00",
+          "assunto": "deps: psycopg >=3.1 -> >=3.3.4 (Dependabot)"
+        },
+        {
+          "sha": "35faa5310536f1ca80b422bd162bad0cc4e5c6b6",
+          "data_autoria": "2026-08-30T18:43:26-03:00",
+          "data_commit": "2026-08-30T18:43:26-03:00",
+          "assunto": "deps: fastapi >=0.115 -> >=0.141.1 (Dependabot)"
+        },
+        {
+          "sha": "f93ed37421f9b5fe6ac6adb9c3b47bc1bde52085",
+          "data_autoria": "2026-08-27T23:01:36Z",
+          "data_commit": "2026-08-27T23:01:36Z",
+          "assunto": "deps: update fastapi requirement from >=0.115 to >=0.141.1 in /cloud/api"
+        },
+        {
+          "sha": "6b4ef3353445178bbcfe4d2e71a82fbd5cc0f672",
+          "data_autoria": "2026-08-27T23:01:30Z",
+          "data_commit": "2026-08-27T23:01:30Z",
+          "assunto": "deps: update psycopg requirement from >=3.1 to >=3.3.4 in /cloud/api"
+        },
+        {
+          "sha": "0a333374c27a8971c74190d0271d163436890342",
+          "data_autoria": "2026-08-27T23:01:27Z",
+          "data_commit": "2026-08-27T23:01:27Z",
+          "assunto": "deps: update psycopg-pool requirement in /cloud/api"
+        },
+        {
+          "sha": "12dee0ba33c4d7a237c77b5a86e3048277ff9bf8",
+          "data_autoria": "2026-08-27T23:01:23Z",
+          "data_commit": "2026-08-27T23:01:23Z",
+          "assunto": "deps: update uvicorn requirement from >=0.30 to >=0.52.4 in /cloud/api"
+        },
+        {
+          "sha": "a63a92cb17a3c44f5438434eac8c6c4c71486874",
+          "data_autoria": "2026-08-27T20:00:29-03:00",
+          "data_commit": "2026-08-27T20:00:29-03:00",
+          "assunto": "seguranca: cabeçalhos de segurança em toda resposta, e Dependabot (#4)"
+        },
+        {
+          "sha": "c0553a99583b8c8e990001cd9a3bfaf13aab7dd4",
+          "data_autoria": "2026-08-27T19:58:45-03:00",
+          "data_commit": "2026-08-27T19:58:45-03:00",
+          "assunto": "seguranca: cabeçalhos de segurança em toda resposta, e Dependabot"
+        },
+        {
+          "sha": "19815b8c3e684ca410140b0b663ddf3961441cde",
+          "data_autoria": "2026-08-27T19:44:21-03:00",
+          "data_commit": "2026-08-27T19:44:21-03:00",
+          "assunto": "O caminho de volta: API de leitura, túnel da Cloudflare e a landing page (#3)"
+        },
+        {
+          "sha": "6cb29dcb6ade7a85b51c7dce1f180ef5406f2fa8",
+          "data_autoria": "2026-08-27T19:26:47-03:00",
+          "data_commit": "2026-08-27T19:26:47-03:00",
+          "assunto": "docs: o README passa a contar o que existe hoje, e um script roda tudo"
+        },
+        {
+          "sha": "677e2a057d2a7cc32ba5dc713da1aa9749ce3ace",
+          "data_autoria": "2026-08-27T19:08:19-03:00",
+          "data_commit": "2026-08-27T19:08:19-03:00",
+          "assunto": "docs: as duas causas de 502 no túnel, e como distinguir"
+        },
+        {
+          "sha": "70c54ee7e2a2642b932b17ac1cc8876b4c6480e0",
+          "data_autoria": "2026-08-27T19:06:57-03:00",
+          "data_commit": "2026-08-27T19:06:57-03:00",
+          "assunto": "fix: os scripts param de repetir o token de teste como literal"
+        },
+        {
+          "sha": "d6c2e86f3a2fbd44c03e1819083c847412382b92",
+          "data_autoria": "2026-08-27T18:59:50-03:00",
+          "data_commit": "2026-08-27T18:59:50-03:00",
+          "assunto": "config: a landing page aponta para o domínio de verdade"
+        },
+        {
+          "sha": "52fb91989a8d47e63aef04c40fa77afd609cf24e",
+          "data_autoria": "2026-08-27T18:26:19-03:00",
+          "data_commit": "2026-08-27T18:26:19-03:00",
+          "assunto": "fix: no modo espelhado, o pacote atravessa DOIS firewalls"
+        },
+        {
+          "sha": "bab84e277ea4753c94de15059cb9a470f9ecff12",
+          "data_autoria": "2026-08-27T15:17:33-03:00",
+          "data_commit": "2026-08-27T15:17:33-03:00",
+          "assunto": "feat: liberar a rede para o celular vira um comando do Linux"
+        },
+        {
+          "sha": "a948e037c5b35cba4d099b702edba9a6b6da6ee9",
+          "data_autoria": "2026-08-27T15:04:00-03:00",
+          "data_commit": "2026-08-27T15:04:00-03:00",
+          "assunto": "fix: a checagem de firewall dava alarme falso"
+        },
+        {
+          "sha": "b45730e79dabf43a3ef73a0eba70718be270352f",
+          "data_autoria": "2026-08-27T14:55:54-03:00",
+          "data_commit": "2026-08-27T14:55:54-03:00",
+          "assunto": "fix: a rede espelhada resolve o endereço, não a permissão"
+        },
+        {
+          "sha": "7f07b9a1a7434f401420adb82a2cf53ad48109c7",
+          "data_autoria": "2026-08-27T13:45:50-03:00",
+          "data_commit": "2026-08-27T13:45:50-03:00",
+          "assunto": "docs: API_BIND no .env da VM, com o valor que ela deve usar"
+        },
+        {
+          "sha": "14b4aab46f7b5d53ae2bfd091961261b8b42843c",
+          "data_autoria": "2026-08-27T13:45:29-03:00",
+          "data_commit": "2026-08-27T13:45:29-03:00",
+          "assunto": "docs: o que fazer sem reiniciar o WSL, e a landing page no ambiente local"
+        },
+        {
+          "sha": "147e38be238a68c0f4710d64292d6c8af530e9d0",
+          "data_autoria": "2026-08-27T13:45:15-03:00",
+          "data_commit": "2026-08-27T13:45:15-03:00",
+          "assunto": "fix: três coisas que só apareceram subindo o ambiente de verdade"
+        },
+        {
+          "sha": "49356dcc6123787c709f60d3ecf43f9d5bccfa07",
+          "data_autoria": "2026-08-27T13:20:43-03:00",
+          "data_commit": "2026-08-27T13:20:43-03:00",
+          "assunto": "feat: um comando sobe tudo, e o guia do que muda ao ir para a VM"
+        },
+        {
+          "sha": "ccd71fb2384ce27fb2020875164fbb923b772ab2",
+          "data_autoria": "2026-08-27T13:20:26-03:00",
+          "data_commit": "2026-08-27T13:20:26-03:00",
+          "assunto": "feat: um robô falso que publica pelo caminho inteiro, não só no banco"
+        },
+        {
+          "sha": "5ad510a552fb26c298a7a30becaf346e70369855",
+          "data_autoria": "2026-08-27T13:20:25-03:00",
+          "data_commit": "2026-08-27T13:20:25-03:00",
+          "assunto": "feat: a nuvem inteira roda na máquina de quem desenvolve"
+        },
+        {
+          "sha": "f083ba9c8739a2a484ce2b1bf613c2d94a81bfe7",
+          "data_autoria": "2026-08-27T13:20:05-03:00",
+          "data_commit": "2026-08-27T13:20:05-03:00",
+          "assunto": "feat: Docker Engine no WSL, sem precisar do Docker Desktop"
+        },
+        {
+          "sha": "58478c4572cd5947435188883e3169acbe45f7f5",
+          "data_autoria": "2026-08-27T09:18:04-03:00",
+          "data_commit": "2026-08-27T09:18:04-03:00",
+          "assunto": "docs: o caminho de volta, do banco até a tela"
+        },
+        {
+          "sha": "1c506b2f25698b20939500b390ea9cba5e3fc000",
+          "data_autoria": "2026-08-27T09:18:03-03:00",
+          "data_commit": "2026-08-27T09:18:03-03:00",
+          "assunto": "feat: landing page do projeto, com o robô ao vivo embaixo"
+        },
+        {
+          "sha": "3426408fb80d2ef75dddaf8a120125eda83f963d",
+          "data_autoria": "2026-08-27T09:17:46-03:00",
+          "data_commit": "2026-08-27T09:17:46-03:00",
+          "assunto": "feat: dá para ver as telas antes de o GPS existir"
+        },
+        {
+          "sha": "116c6a58046d81559520c8caea728b2fb44621f9",
+          "data_autoria": "2026-08-27T09:17:46-03:00",
+          "data_commit": "2026-08-27T09:17:46-03:00",
+          "assunto": "feat: o domínio da Cloudflare publica a API sem abrir porta no LARCC"
+        },
+        {
+          "sha": "b44cda8afb3d780de3b36590c1a94a6112e45958",
+          "data_autoria": "2026-08-27T09:17:28-03:00",
+          "data_commit": "2026-08-27T09:17:28-03:00",
+          "assunto": "feat: a telemetria entrava no banco e não saía; agora o app consegue lê-la"
+        },
+        {
+          "sha": "5b57be042ad94d421ebf636a282d9338110f98f6",
+          "data_autoria": "2026-08-27T08:23:48-03:00",
+          "data_commit": "2026-08-27T08:23:48-03:00",
+          "assunto": "docs: o contrato ganha o modo contínuo, e o CLAUDE.md a camada nova"
+        },
+        {
+          "sha": "c575dc6772ba7dfe12fd89030156f5ef3bf3f0b9",
+          "data_autoria": "2026-08-27T08:23:39-03:00",
+          "data_commit": "2026-08-27T08:23:39-03:00",
+          "assunto": "fix: a telemetria parava de existir quando a rede caía por mais de 17 minutos"
+        },
+        {
+          "sha": "eefca6dd568180797383fd5a5c680bbfedc95b4d",
+          "data_autoria": "2026-08-27T08:23:24-03:00",
+          "data_commit": "2026-08-27T08:23:24-03:00",
+          "assunto": "refactor: o motor deixa de ser pulsado à mão, e o comando vira velocidade"
+        },
+        {
+          "sha": "acf6b81e67d656d28b1d4a6e61b052b320155f84",
+          "data_autoria": "2026-08-23T21:44:35-03:00",
+          "data_commit": "2026-08-23T21:44:35-03:00",
+          "assunto": "feat: o robô para sozinho quando o controle emudece"
+        },
+        {
+          "sha": "638e754a5003abe54b105ba9659eec7f8c10b2f1",
+          "data_autoria": "2026-08-21T21:42:22-03:00",
+          "data_commit": "2026-08-21T21:42:22-03:00",
+          "assunto": "style: reduz densidade de comentarios no firmware BLE e no roteador"
+        },
+        {
+          "sha": "1eb5892df7a480a44d5401bb5b3f060c7340c1ae",
+          "data_autoria": "2026-08-21T21:26:23-03:00",
+          "data_commit": "2026-08-21T21:26:23-03:00",
+          "assunto": "add CLAUDE.md com contexto tecnico do projeto e do ambiente"
+        },
+        {
+          "sha": "1c967ecfedb8d7f08630115aa864bdc8b2aec758",
+          "data_autoria": "2026-08-21T21:23:37-03:00",
+          "data_commit": "2026-08-21T21:23:37-03:00",
+          "assunto": "add testes para roteador.py"
+        },
+        {
+          "sha": "1ab99b859618a156c0ec233c1258ab8c1d5e0061",
+          "data_autoria": "2026-08-21T21:23:37-03:00",
+          "data_commit": "2026-08-21T21:23:37-03:00",
+          "assunto": "refatora roteador.py para Command Pattern (POO)"
+        },
+        {
+          "sha": "905efc6b308ede8d4061fdcc778471c52b209003",
+          "data_autoria": "2026-08-21T21:20:34-03:00",
+          "data_commit": "2026-08-21T21:20:34-03:00",
+          "assunto": "atualiza documentacao para refletir a migracao para BLE"
+        },
+        {
+          "sha": "bcc89edfdcee69631a078bd79feab2cd9db9b8b3",
+          "data_autoria": "2026-08-21T21:20:34-03:00",
+          "data_commit": "2026-08-21T21:20:34-03:00",
+          "assunto": "migra firmware do ESP32 de Bluetooth Classic (SPP) para BLE"
+        },
+        {
+          "sha": "2d4fbfc6a556aa375a7ef7a9156640f92641fb8e",
+          "data_autoria": "2026-07-02T20:03:11-03:00",
+          "data_commit": "2026-07-02T20:03:11-03:00",
+          "assunto": "add controle do motor pelo app"
+        },
+        {
+          "sha": "7f631ed66252d04055afc5d91db3d936afb2fa1b",
+          "data_autoria": "2026-06-27T20:04:44-03:00",
+          "data_commit": "2026-06-27T20:04:44-03:00",
+          "assunto": "add serviços orquestrador, gps, wifi e ingestor cloud"
+        },
+        {
+          "sha": "1c06b1dd3873903a3e08ea8b08975b6db679e293",
+          "data_autoria": "2026-06-27T16:48:01-03:00",
+          "data_commit": "2026-06-27T16:48:01-03:00",
+          "assunto": "teste"
+        },
+        {
+          "sha": "179b43d7a81ec213f69653511d406a33c4f9f7b9",
+          "data_autoria": "2026-06-27T16:42:26-03:00",
+          "data_commit": "2026-06-27T16:42:26-03:00",
+          "assunto": "add lib comum a todos os serviços"
+        },
+        {
+          "sha": "3e6ec211abe29ee4649c1457314f256725cb3a0c",
+          "data_autoria": "2026-06-21T22:52:25-03:00",
+          "data_commit": "2026-06-21T22:52:25-03:00",
+          "assunto": "removendo mapeamento do diretório certs/ do compose"
+        },
+        {
+          "sha": "0d2e1712943a15fb17dfcab85051240975cba75d",
+          "data_autoria": "2026-06-21T22:52:03-03:00",
+          "data_commit": "2026-06-21T22:52:03-03:00",
+          "assunto": "removendo a verificação de certificado"
+        },
+        {
+          "sha": "7a35468201ffb12e9e5fee212d44e44ac9b7aa7f",
+          "data_autoria": "2026-06-21T22:47:59-03:00",
+          "data_commit": "2026-06-21T22:47:59-03:00",
+          "assunto": "chmod +x"
+        },
+        {
+          "sha": "bcdf312cbba3dd7cb65254833ebe000ab60b2c9b",
+          "data_autoria": "2026-06-21T22:43:07-03:00",
+          "data_commit": "2026-06-21T22:43:07-03:00",
+          "assunto": "corrigindo portas e comentários"
+        },
+        {
+          "sha": "4d4b5a5e57a8ed2c2842ec299c0e825dde1c5ed6",
+          "data_autoria": "2026-06-21T22:40:22-03:00",
+          "data_commit": "2026-06-21T22:40:22-03:00",
+          "assunto": "add script para gerar a senha no broker mqtt remoto"
+        },
+        {
+          "sha": "1709e9954f25b2432c0779e57f241dc49e88d495",
+          "data_autoria": "2026-06-21T22:40:10-03:00",
+          "data_commit": "2026-06-21T22:40:10-03:00",
+          "assunto": "add broker mqtt remoto"
+        },
+        {
+          "sha": "c02cbc6b63fefd7134076b338360b563d983ef4c",
+          "data_autoria": "2026-06-21T22:40:00-03:00",
+          "data_commit": "2026-06-21T22:40:00-03:00",
+          "assunto": "add broker mqtt local"
+        },
+        {
+          "sha": "935dc67daaf5fca830a6ce6d2883f32e2e329883",
+          "data_autoria": "2026-06-21T22:39:35-03:00",
+          "data_commit": "2026-06-21T22:39:35-03:00",
+          "assunto": "add ignore dos brokers mqtt"
+        },
+        {
+          "sha": "e9b8b92bb2ff5d1f943b1be7b4e38fc8cccaba16",
+          "data_autoria": "2026-06-21T22:04:14-03:00",
+          "data_commit": "2026-06-21T22:04:14-03:00",
+          "assunto": "renomeando a pasta mãe para esp32/"
+        },
+        {
+          "sha": "e4cbebf2f6a967aeee57bd223542329bf4a8291d",
+          "data_autoria": "2026-06-21T21:54:02-03:00",
+          "data_commit": "2026-06-21T21:54:02-03:00",
+          "assunto": "corrigindo extensão faltando"
+        },
+        {
+          "sha": "a3bea700089b3920cebd22665ef98c249f626fa5",
+          "data_autoria": "2026-06-21T21:52:08-03:00",
+          "data_commit": "2026-06-21T21:52:08-03:00",
+          "assunto": "add documentação apra o setup da ponte bluetooth"
+        },
+        {
+          "sha": "f7cbdc0521cf4dd21e2cab1ca71429a3086c31e3",
+          "data_autoria": "2026-06-21T21:42:14-03:00",
+          "data_commit": "2026-06-21T21:42:14-03:00",
+          "assunto": "add código base para a ponte bluetooth via esp32 no arduino IDE"
+        },
+        {
+          "sha": "5447444e66c601d771a1654935099359f45c064a",
+          "data_autoria": "2026-06-21T21:34:15-03:00",
+          "data_commit": "2026-06-21T21:34:15-03:00",
+          "assunto": "add documentalção central"
+        },
+        {
+          "sha": "adf032670b77901e213bf75dd669b656462acb2e",
+          "data_autoria": "2026-06-21T21:33:58-03:00",
+          "data_commit": "2026-06-21T21:33:58-03:00",
+          "assunto": "add apontamento para a documentação central"
+        },
+        {
+          "sha": "7ac45e501e8027934bdf7bb0564abcd0a84f135e",
+          "data_autoria": "2026-06-21T21:28:56-03:00",
+          "data_commit": "2026-06-21T21:28:56-03:00",
+          "assunto": "add documentações iniciais do projeto"
+        },
+        {
+          "sha": "06eaa237e491ee626db7b5a24951dd6dbf276cce",
+          "data_autoria": "2026-06-21T20:58:46-03:00",
+          "data_commit": "2026-06-21T20:58:46-03:00",
+          "assunto": "Initial commit"
+        }
+      ],
+      "branches": [
+        {
+          "nome": "api-e-landing",
+          "sha": "6cb29dcb6ade7a85b51c7dce1f180ef5406f2fa8",
+          "upstream": "origin/api-e-landing",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 24,
+            "exclusivos_main": 23
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "6cb29dcb6ade7a85b51c7dce1f180ef5406f2fa8",
+              "data_autoria": "2026-08-27T19:26:47-03:00",
+              "data_commit": "2026-08-27T19:26:47-03:00",
+              "assunto": "docs: o README passa a contar o que existe hoje, e um script roda tudo"
+            },
+            {
+              "sha": "677e2a057d2a7cc32ba5dc713da1aa9749ce3ace",
+              "data_autoria": "2026-08-27T19:08:19-03:00",
+              "data_commit": "2026-08-27T19:08:19-03:00",
+              "assunto": "docs: as duas causas de 502 no túnel, e como distinguir"
+            },
+            {
+              "sha": "70c54ee7e2a2642b932b17ac1cc8876b4c6480e0",
+              "data_autoria": "2026-08-27T19:06:57-03:00",
+              "data_commit": "2026-08-27T19:06:57-03:00",
+              "assunto": "fix: os scripts param de repetir o token de teste como literal"
+            },
+            {
+              "sha": "d6c2e86f3a2fbd44c03e1819083c847412382b92",
+              "data_autoria": "2026-08-27T18:59:50-03:00",
+              "data_commit": "2026-08-27T18:59:50-03:00",
+              "assunto": "config: a landing page aponta para o domínio de verdade"
+            },
+            {
+              "sha": "52fb91989a8d47e63aef04c40fa77afd609cf24e",
+              "data_autoria": "2026-08-27T18:26:19-03:00",
+              "data_commit": "2026-08-27T18:26:19-03:00",
+              "assunto": "fix: no modo espelhado, o pacote atravessa DOIS firewalls"
+            },
+            {
+              "sha": "bab84e277ea4753c94de15059cb9a470f9ecff12",
+              "data_autoria": "2026-08-27T15:17:33-03:00",
+              "data_commit": "2026-08-27T15:17:33-03:00",
+              "assunto": "feat: liberar a rede para o celular vira um comando do Linux"
+            },
+            {
+              "sha": "a948e037c5b35cba4d099b702edba9a6b6da6ee9",
+              "data_autoria": "2026-08-27T15:04:00-03:00",
+              "data_commit": "2026-08-27T15:04:00-03:00",
+              "assunto": "fix: a checagem de firewall dava alarme falso"
+            },
+            {
+              "sha": "b45730e79dabf43a3ef73a0eba70718be270352f",
+              "data_autoria": "2026-08-27T14:55:54-03:00",
+              "data_commit": "2026-08-27T14:55:54-03:00",
+              "assunto": "fix: a rede espelhada resolve o endereço, não a permissão"
+            },
+            {
+              "sha": "7f07b9a1a7434f401420adb82a2cf53ad48109c7",
+              "data_autoria": "2026-08-27T13:45:50-03:00",
+              "data_commit": "2026-08-27T13:45:50-03:00",
+              "assunto": "docs: API_BIND no .env da VM, com o valor que ela deve usar"
+            },
+            {
+              "sha": "14b4aab46f7b5d53ae2bfd091961261b8b42843c",
+              "data_autoria": "2026-08-27T13:45:29-03:00",
+              "data_commit": "2026-08-27T13:45:29-03:00",
+              "assunto": "docs: o que fazer sem reiniciar o WSL, e a landing page no ambiente local"
+            },
+            {
+              "sha": "147e38be238a68c0f4710d64292d6c8af530e9d0",
+              "data_autoria": "2026-08-27T13:45:15-03:00",
+              "data_commit": "2026-08-27T13:45:15-03:00",
+              "assunto": "fix: três coisas que só apareceram subindo o ambiente de verdade"
+            },
+            {
+              "sha": "49356dcc6123787c709f60d3ecf43f9d5bccfa07",
+              "data_autoria": "2026-08-27T13:20:43-03:00",
+              "data_commit": "2026-08-27T13:20:43-03:00",
+              "assunto": "feat: um comando sobe tudo, e o guia do que muda ao ir para a VM"
+            },
+            {
+              "sha": "ccd71fb2384ce27fb2020875164fbb923b772ab2",
+              "data_autoria": "2026-08-27T13:20:26-03:00",
+              "data_commit": "2026-08-27T13:20:26-03:00",
+              "assunto": "feat: um robô falso que publica pelo caminho inteiro, não só no banco"
+            },
+            {
+              "sha": "5ad510a552fb26c298a7a30becaf346e70369855",
+              "data_autoria": "2026-08-27T13:20:25-03:00",
+              "data_commit": "2026-08-27T13:20:25-03:00",
+              "assunto": "feat: a nuvem inteira roda na máquina de quem desenvolve"
+            },
+            {
+              "sha": "f083ba9c8739a2a484ce2b1bf613c2d94a81bfe7",
+              "data_autoria": "2026-08-27T13:20:05-03:00",
+              "data_commit": "2026-08-27T13:20:05-03:00",
+              "assunto": "feat: Docker Engine no WSL, sem precisar do Docker Desktop"
+            },
+            {
+              "sha": "58478c4572cd5947435188883e3169acbe45f7f5",
+              "data_autoria": "2026-08-27T09:18:04-03:00",
+              "data_commit": "2026-08-27T09:18:04-03:00",
+              "assunto": "docs: o caminho de volta, do banco até a tela"
+            },
+            {
+              "sha": "1c506b2f25698b20939500b390ea9cba5e3fc000",
+              "data_autoria": "2026-08-27T09:18:03-03:00",
+              "data_commit": "2026-08-27T09:18:03-03:00",
+              "assunto": "feat: landing page do projeto, com o robô ao vivo embaixo"
+            },
+            {
+              "sha": "3426408fb80d2ef75dddaf8a120125eda83f963d",
+              "data_autoria": "2026-08-27T09:17:46-03:00",
+              "data_commit": "2026-08-27T09:17:46-03:00",
+              "assunto": "feat: dá para ver as telas antes de o GPS existir"
+            },
+            {
+              "sha": "116c6a58046d81559520c8caea728b2fb44621f9",
+              "data_autoria": "2026-08-27T09:17:46-03:00",
+              "data_commit": "2026-08-27T09:17:46-03:00",
+              "assunto": "feat: o domínio da Cloudflare publica a API sem abrir porta no LARCC"
+            },
+            {
+              "sha": "b44cda8afb3d780de3b36590c1a94a6112e45958",
+              "data_autoria": "2026-08-27T09:17:28-03:00",
+              "data_commit": "2026-08-27T09:17:28-03:00",
+              "assunto": "feat: a telemetria entrava no banco e não saía; agora o app consegue lê-la"
+            },
+            {
+              "sha": "5b57be042ad94d421ebf636a282d9338110f98f6",
+              "data_autoria": "2026-08-27T08:23:48-03:00",
+              "data_commit": "2026-08-27T08:23:48-03:00",
+              "assunto": "docs: o contrato ganha o modo contínuo, e o CLAUDE.md a camada nova"
+            },
+            {
+              "sha": "c575dc6772ba7dfe12fd89030156f5ef3bf3f0b9",
+              "data_autoria": "2026-08-27T08:23:39-03:00",
+              "data_commit": "2026-08-27T08:23:39-03:00",
+              "assunto": "fix: a telemetria parava de existir quando a rede caía por mais de 17 minutos"
+            },
+            {
+              "sha": "eefca6dd568180797383fd5a5c680bbfedc95b4d",
+              "data_autoria": "2026-08-27T08:23:24-03:00",
+              "data_commit": "2026-08-27T08:23:24-03:00",
+              "assunto": "refactor: o motor deixa de ser pulsado à mão, e o comando vira velocidade"
+            },
+            {
+              "sha": "acf6b81e67d656d28b1d4a6e61b052b320155f84",
+              "data_autoria": "2026-08-23T21:44:35-03:00",
+              "data_commit": "2026-08-23T21:44:35-03:00",
+              "assunto": "feat: o robô para sozinho quando o controle emudece"
+            }
+          ]
+        },
+        {
+          "nome": "docs/como-funciona",
+          "sha": "1f3c8f99df1dec388c9133fe84507978e27f4a0a",
+          "upstream": "origin/docs/como-funciona",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 1
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "main",
+          "sha": "98ee681498e05426ff47041ae7f8e7ec97d0ffaf",
+          "upstream": "origin/main",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 0
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "motores-escalaveis",
+          "sha": "5b57be042ad94d421ebf636a282d9338110f98f6",
+          "upstream": "origin/motores-escalaveis",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 4,
+            "exclusivos_main": 23
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "5b57be042ad94d421ebf636a282d9338110f98f6",
+              "data_autoria": "2026-08-27T08:23:48-03:00",
+              "data_commit": "2026-08-27T08:23:48-03:00",
+              "assunto": "docs: o contrato ganha o modo contínuo, e o CLAUDE.md a camada nova"
+            },
+            {
+              "sha": "c575dc6772ba7dfe12fd89030156f5ef3bf3f0b9",
+              "data_autoria": "2026-08-27T08:23:39-03:00",
+              "data_commit": "2026-08-27T08:23:39-03:00",
+              "assunto": "fix: a telemetria parava de existir quando a rede caía por mais de 17 minutos"
+            },
+            {
+              "sha": "eefca6dd568180797383fd5a5c680bbfedc95b4d",
+              "data_autoria": "2026-08-27T08:23:24-03:00",
+              "data_commit": "2026-08-27T08:23:24-03:00",
+              "assunto": "refactor: o motor deixa de ser pulsado à mão, e o comando vira velocidade"
+            },
+            {
+              "sha": "acf6b81e67d656d28b1d4a6e61b052b320155f84",
+              "data_autoria": "2026-08-23T21:44:35-03:00",
+              "data_commit": "2026-08-23T21:44:35-03:00",
+              "assunto": "feat: o robô para sozinho quando o controle emudece"
+            }
+          ]
+        },
+        {
+          "nome": "parada-automatica",
+          "sha": "acf6b81e67d656d28b1d4a6e61b052b320155f84",
+          "upstream": "origin/parada-automatica",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 1,
+            "exclusivos_main": 23
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "acf6b81e67d656d28b1d4a6e61b052b320155f84",
+              "data_autoria": "2026-08-23T21:44:35-03:00",
+              "data_commit": "2026-08-23T21:44:35-03:00",
+              "assunto": "feat: o robô para sozinho quando o controle emudece"
+            }
+          ]
+        },
+        {
+          "nome": "seguranca-api",
+          "sha": "c0553a99583b8c8e990001cd9a3bfaf13aab7dd4",
+          "upstream": "origin/seguranca-api",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 1,
+            "exclusivos_main": 22
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "c0553a99583b8c8e990001cd9a3bfaf13aab7dd4",
+              "data_autoria": "2026-08-27T19:58:45-03:00",
+              "data_commit": "2026-08-27T19:58:45-03:00",
+              "assunto": "seguranca: cabeçalhos de segurança em toda resposta, e Dependabot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "RobotEye",
+      "github": "https://github.com/setrem-robot/atlas_ai_v2",
+      "fetch_ok": true,
+      "head": "43a6fe025ab5474cc1120d0a71d731392d1234b4",
+      "branch": "producao",
+      "status": "",
+      "alteracoes_resumo": "",
+      "commits_locais_nao_alcancaveis_por_remotos": [
+        {
+          "sha": "f7fe55303401d62a99d97acb8fa75917c90e3443",
+          "data_autoria": "2026-08-27T19:59:04-03:00",
+          "data_commit": "2026-08-27T19:59:04-03:00",
+          "assunto": "seguranca: Dependabot vigia as dependências e as Actions"
+        },
+        {
+          "sha": "1c9aa51d74a9fa9d0a0363337aaf8d76e9533d23",
+          "data_autoria": "2026-08-27T19:27:52-03:00",
+          "data_commit": "2026-08-27T19:27:52-03:00",
+          "assunto": "docs: o README para de dizer que este repositório não fala MQTT"
+        },
+        {
+          "sha": "83167a3b7a18b9a0e3db8054c8899640db118982",
+          "data_autoria": "2026-08-27T08:23:05-03:00",
+          "data_commit": "2026-08-27T08:23:05-03:00",
+          "assunto": "docs: os dois comandos novos entram no CLI, e a memória vira número escrito"
+        },
+        {
+          "sha": "c901b4b85397064e89b39199cf98f3f5c53db6f0",
+          "data_autoria": "2026-08-27T08:22:50-03:00",
+          "data_commit": "2026-08-27T08:22:50-03:00",
+          "assunto": "feat: o Wi-Fi sai de cima do Bluetooth em vez de disputar com ele"
+        },
+        {
+          "sha": "15526310b4a5ff2d05d61e64ab4703845e6c019d",
+          "data_autoria": "2026-08-27T08:22:35-03:00",
+          "data_commit": "2026-08-27T08:22:35-03:00",
+          "assunto": "perf: a IA de reserva devolve a RAM enquanto a rede está de pé"
+        },
+        {
+          "sha": "097f0330d1b692f1dc29c1986af1dd562beacf56",
+          "data_autoria": "2026-08-27T08:22:20-03:00",
+          "data_commit": "2026-08-27T08:22:20-03:00",
+          "assunto": "feat: o robô diz onde a própria memória está indo"
+        },
+        {
+          "sha": "b6659eea30214526e27c910998f12825c9770b59",
+          "data_autoria": "2026-08-26T18:09:36-03:00",
+          "data_commit": "2026-08-26T18:09:36-03:00",
+          "assunto": "fix: a voz boa perdia a vez para a reserva porque a rede ainda não tinha subido"
+        },
+        {
+          "sha": "5ef1179631a0807da9c9e35149c325dba1e308c1",
+          "data_autoria": "2026-08-26T00:20:50-03:00",
+          "data_commit": "2026-08-26T00:20:50-03:00",
+          "assunto": "fix: o setup instala o broker que a ponte bluetooth precisa"
+        },
+        {
+          "sha": "c838c00b8dbde13e94b12471b418dc4ceea542e7",
+          "data_autoria": "2026-08-26T00:20:15-03:00",
+          "data_commit": "2026-08-26T00:20:15-03:00",
+          "assunto": "feat: a página mostra o que o robô está obedecendo, e ganha um direcional"
+        },
+        {
+          "sha": "5dae983c98959eb207e0141afd476306aa7a4c52",
+          "data_autoria": "2026-08-26T00:10:30-03:00",
+          "data_commit": "2026-08-26T00:10:30-03:00",
+          "assunto": "docs: o que realmente impedia o app de achar o robô, medido depois do reboot"
+        },
+        {
+          "sha": "fdfd64ff6ab951df7a649ba1d0bdc4eae97e0c8c",
+          "data_autoria": "2026-08-26T00:04:20-03:00",
+          "data_commit": "2026-08-26T00:04:20-03:00",
+          "assunto": "fix: o painel da página tinha o mesmo id do container, e teria apagado a tela"
+        },
+        {
+          "sha": "799a70ca46d61bd04ba1b63e0c5ce91c5668676d",
+          "data_autoria": "2026-08-25T23:40:28-03:00",
+          "data_commit": "2026-08-25T23:40:28-03:00",
+          "assunto": "feat: a ponte bluetooth vira serviço, e a página mostra como o robô está"
+        },
+        {
+          "sha": "34f90577b73a0ac39165192977f35d361fd4b3d7",
+          "data_autoria": "2026-08-25T23:18:11-03:00",
+          "data_commit": "2026-08-25T23:18:11-03:00",
+          "assunto": "fix: o Bluetooth do Pi funciona — o celular conecta nele direto, sem ESP32"
+        },
+        {
+          "sha": "452168cfec8d703676edbd25c98c2a03ed00f0e7",
+          "data_autoria": "2026-08-25T21:16:18-03:00",
+          "data_commit": "2026-08-25T21:16:18-03:00",
+          "assunto": "feat: ponte Bluetooth no próprio Pi, para o ESP32 poder sair do caminho"
+        }
+      ],
+      "historico_todas_branches": [
+        {
+          "sha": "43a6fe025ab5474cc1120d0a71d731392d1234b4",
+          "data_autoria": "2026-09-09T16:37:53-03:00",
+          "data_commit": "2026-09-09T16:38:02-03:00",
+          "assunto": "Merge: escuta em streaming com Vosk"
+        },
+        {
+          "sha": "e1b26d78f1f9b5ccb1f33c122203d791fa20ad44",
+          "data_autoria": "2026-09-09T16:35:56-03:00",
+          "data_commit": "2026-09-09T16:35:56-03:00",
+          "assunto": "escuta: o Vosk precisa de silencio antes da primeira palavra (#20)"
+        },
+        {
+          "sha": "695daa70c96f3d46e31d5a69e8767a710f2a6af0",
+          "data_autoria": "2026-09-09T16:33:57-03:00",
+          "data_commit": "2026-09-09T16:33:57-03:00",
+          "assunto": "escuta: o Vosk precisa de silencio antes da primeira palavra"
+        },
+        {
+          "sha": "a88c2dd7c86541cca9cc8a8c30afed275dc0fdba",
+          "data_autoria": "2026-09-09T16:22:01-03:00",
+          "data_commit": "2026-09-09T16:22:01-03:00",
+          "assunto": "escuta: Vosk como padrao, reconhecendo enquanto a pessoa fala (#19)"
+        },
+        {
+          "sha": "1ad6a70d57af97b27c9a06e69526a26f5f5172fc",
+          "data_autoria": "2026-09-09T16:19:24-03:00",
+          "data_commit": "2026-09-09T16:19:24-03:00",
+          "assunto": "escuta: Vosk como padrao, reconhecendo enquanto a pessoa fala"
+        },
+        {
+          "sha": "cf791573ee3e5935d845a33a4eaaba126911bc7c",
+          "data_autoria": "2026-09-04T00:28:57-03:00",
+          "data_commit": "2026-09-04T00:28:57-03:00",
+          "assunto": "Merge: keep_alive com unidade — o robo volta a responder"
+        },
+        {
+          "sha": "9dc235ff494964cde958ea179bef034a513bf40b",
+          "data_autoria": "2026-09-04T00:28:48-03:00",
+          "data_commit": "2026-09-04T00:28:48-03:00",
+          "assunto": "Merge pull request #18 from setrem-robot/fix/keep-alive-com-unidade"
+        },
+        {
+          "sha": "61b00c9dca86dac74834f2fd302d9858d19283ff",
+          "data_autoria": "2026-09-04T00:26:20-03:00",
+          "data_commit": "2026-09-04T00:26:20-03:00",
+          "assunto": "fix: keep_alive precisa de unidade, senao o Ollama recusa a pergunta inteira"
+        },
+        {
+          "sha": "d6cc0f2240bfc8fa4e0e344e31ea0bbcaca1574f",
+          "data_autoria": "2026-09-04T00:20:33-03:00",
+          "data_commit": "2026-09-04T00:20:33-03:00",
+          "assunto": "Merge: o padrao de num_ctx passa a valer onde importa"
+        },
+        {
+          "sha": "a003dfcb5fb67d3c94f0eb34b80f5e14bbb3ab09",
+          "data_autoria": "2026-09-04T00:20:11-03:00",
+          "data_commit": "2026-09-04T00:20:11-03:00",
+          "assunto": "Merge pull request #17 from setrem-robot/fix/num-ctx-no-from-env"
+        },
+        {
+          "sha": "9e468b8d19dbb6aa31068d56b4c500515fc47139",
+          "data_autoria": "2026-09-04T00:17:47-03:00",
+          "data_commit": "2026-09-04T00:17:47-03:00",
+          "assunto": "fix: o padrao de num_ctx passa a valer onde importa"
+        },
+        {
+          "sha": "940db1680aeee55e321de6947d01fb9315d93b01",
+          "data_autoria": "2026-09-04T00:14:20-03:00",
+          "data_commit": "2026-09-04T00:14:20-03:00",
+          "assunto": "Merge: o robo para de reler a persona antes de cada resposta"
+        },
+        {
+          "sha": "59d69d9d596cd7a24a71d26c16e9d1cc6998f512",
+          "data_autoria": "2026-09-04T00:14:09-03:00",
+          "data_commit": "2026-09-04T00:14:09-03:00",
+          "assunto": "Merge pull request #16 from setrem-robot/fix/prompt-que-nao-cabe"
+        },
+        {
+          "sha": "6503b6700ab432f13d2e9f0822755ecbd30ffd7e",
+          "data_autoria": "2026-09-04T00:11:46-03:00",
+          "data_commit": "2026-09-04T00:11:46-03:00",
+          "assunto": "fix: o robo parou de reler a persona inteira antes de cada resposta"
+        },
+        {
+          "sha": "84d9c1d3389f7b23d8e0feea436bc4cd190c4d9d",
+          "data_autoria": "2026-09-04T00:01:21-03:00",
+          "data_commit": "2026-09-04T00:01:21-03:00",
+          "assunto": "Merge: a frase fecha quando a pessoa para de falar"
+        },
+        {
+          "sha": "e76791389d94d2bb549aab9d88d891a66770a813",
+          "data_autoria": "2026-09-04T00:00:59-03:00",
+          "data_commit": "2026-09-04T00:00:59-03:00",
+          "assunto": "Merge pull request #15 from setrem-robot/fix/frase-que-nao-fecha"
+        },
+        {
+          "sha": "0a3bf6a454fe705b0f2a9521b061e8a51d7af76f",
+          "data_autoria": "2026-09-03T23:59:01-03:00",
+          "data_commit": "2026-09-03T23:59:01-03:00",
+          "assunto": "fix: a frase fecha quando a pessoa para de falar, e nao no teto de 15s"
+        },
+        {
+          "sha": "40797299f7f207eb070d018198d75e532e4b35cb",
+          "data_autoria": "2026-09-03T23:44:45-03:00",
+          "data_commit": "2026-09-03T23:44:45-03:00",
+          "assunto": "Merge: o log passa a mostrar a escuta e os sinais"
+        },
+        {
+          "sha": "53626e23123fb15cc7fda66b876441094870ca2d",
+          "data_autoria": "2026-09-03T23:44:24-03:00",
+          "data_commit": "2026-09-03T23:44:24-03:00",
+          "assunto": "Merge pull request #14 from setrem-robot/diag/log-da-escuta"
+        },
+        {
+          "sha": "f88b89412ff848218149dcc74c541887b173e261",
+          "data_autoria": "2026-09-03T23:42:31-03:00",
+          "data_commit": "2026-09-03T23:42:31-03:00",
+          "assunto": "diag: o log passa a dizer o que ela ouviu e quando apitou"
+        },
+        {
+          "sha": "c4550e87379be9a85758ce5817aa759db13737a9",
+          "data_autoria": "2026-09-03T23:33:39-03:00",
+          "data_commit": "2026-09-03T23:33:39-03:00",
+          "assunto": "Merge: a escuta para enquanto ela pensa"
+        },
+        {
+          "sha": "807a98bae43b34cb6d9523174d11db9350f6c91e",
+          "data_autoria": "2026-09-03T23:33:28-03:00",
+          "data_commit": "2026-09-03T23:33:28-03:00",
+          "assunto": "Merge pull request #13 from setrem-robot/fix/nao-disputar-nucleos"
+        },
+        {
+          "sha": "5318bb076e79f34b43544769f275594b018b0da1",
+          "data_autoria": "2026-09-03T23:30:42-03:00",
+          "data_commit": "2026-09-03T23:30:42-03:00",
+          "assunto": "fix: parar de escutar enquanto ela pensa, e avisar quem pergunta de uma vez"
+        },
+        {
+          "sha": "ad03d9ea6b90fabeb1a225efbac76747e4aab96b",
+          "data_autoria": "2026-09-03T19:30:55-03:00",
+          "data_commit": "2026-09-03T19:30:55-03:00",
+          "assunto": "Merge: leva o par de sinais de escuta para producao"
+        },
+        {
+          "sha": "e7eb3fd70ad2dd69982e070133b8e31ca0e57af6",
+          "data_autoria": "2026-09-03T19:30:31-03:00",
+          "data_commit": "2026-09-03T19:30:31-03:00",
+          "assunto": "Merge pull request #12 from setrem-robot/feat/bip-de-fim"
+        },
+        {
+          "sha": "4d57814e15551c29abaa69491c4d36365d634bdc",
+          "data_autoria": "2026-09-03T19:28:16-03:00",
+          "data_commit": "2026-09-03T19:28:16-03:00",
+          "assunto": "feat: um segundo som avisa que ela terminou de ouvir"
+        },
+        {
+          "sha": "e0ec1e27bd201296c4652c9e5302979f173c5b56",
+          "data_autoria": "2026-09-03T14:51:51-03:00",
+          "data_commit": "2026-09-03T14:51:51-03:00",
+          "assunto": "Merge: leva o sinal de escuta e o seletor do reconhecimento para producao"
+        },
+        {
+          "sha": "5059dda094d1381532454a8498ab93f165f9c4b7",
+          "data_autoria": "2026-09-03T14:51:31-03:00",
+          "data_commit": "2026-09-03T14:51:31-03:00",
+          "assunto": "Merge pull request #11 from setrem-robot/feat/sinal-de-escuta"
+        },
+        {
+          "sha": "c19ae7e57148102567e08f5d0a52d28034e1011a",
+          "data_autoria": "2026-09-03T14:40:47-03:00",
+          "data_commit": "2026-09-03T14:40:47-03:00",
+          "assunto": "feat: o modelo de reconhecimento sai do .env e vai para a pagina do celular"
+        },
+        {
+          "sha": "16acb2f1e940326cb37d3bfd39a7023a6cab03c4",
+          "data_autoria": "2026-09-03T14:23:21-03:00",
+          "data_commit": "2026-09-03T14:23:21-03:00",
+          "assunto": "feat: um som curto avisa que a Atlas esta ouvindo"
+        },
+        {
+          "sha": "08e60b54d4f74c01c1dddffdb381062b5d7b4b24",
+          "data_autoria": "2026-09-03T13:25:39-03:00",
+          "data_commit": "2026-09-03T13:25:39-03:00",
+          "assunto": "Merge: leva a correcao do locutor e a documentacao para producao"
+        },
+        {
+          "sha": "1b1c7a7faec544c3406afbcb5df46ebf66101e82",
+          "data_autoria": "2026-09-03T13:25:06-03:00",
+          "data_commit": "2026-09-03T13:25:06-03:00",
+          "assunto": "Merge pull request #10 from setrem-robot/docs/como-funciona"
+        },
+        {
+          "sha": "23cdfa2186064436418eeebcd3a149618d4265cc",
+          "data_autoria": "2026-09-03T13:01:34-03:00",
+          "data_commit": "2026-09-03T13:01:34-03:00",
+          "assunto": "fix: a fala ja sintetizada tambem anuncia silencio"
+        },
+        {
+          "sha": "dcf0630d85ff8b31ab8cec5eb623716a24dcde42",
+          "data_autoria": "2026-09-03T12:47:50-03:00",
+          "data_commit": "2026-09-03T12:47:50-03:00",
+          "assunto": "fix: o teste da reabertura da escuta nao exige o extra de audio"
+        },
+        {
+          "sha": "4868e989f40e237128d8c19ffd10fc2137624f2c",
+          "data_autoria": "2026-09-03T12:42:43-03:00",
+          "data_commit": "2026-09-03T12:42:43-03:00",
+          "assunto": "docs: um passeio guiado pela arquitetura, e o faster-whisper declarado"
+        },
+        {
+          "sha": "c36bedc7716341906a5e7b925ac885e6ea8f88fb",
+          "data_autoria": "2026-09-03T01:13:30-03:00",
+          "data_commit": "2026-09-03T01:13:30-03:00",
+          "assunto": "Merge: leva o checkup para producao"
+        },
+        {
+          "sha": "4d11497f2cf63415c90d3fdc29d02f85220eeb3b",
+          "data_autoria": "2026-09-03T01:10:52-03:00",
+          "data_commit": "2026-09-03T01:10:52-03:00",
+          "assunto": "Merge: deps: Bump actions/setup-python from 5 to 7 (#9)"
+        },
+        {
+          "sha": "0add1d6fdb0827e15116bb77d8c20697867ba006",
+          "data_autoria": "2026-09-03T01:10:52-03:00",
+          "data_commit": "2026-09-03T01:10:52-03:00",
+          "assunto": "Merge: deps: Bump actions/checkout from 4 to 7 (#8)"
+        },
+        {
+          "sha": "fa006b0b835aedc696d0a476a317e0468f654a16",
+          "data_autoria": "2026-09-03T01:07:27-03:00",
+          "data_commit": "2026-09-03T01:07:27-03:00",
+          "assunto": "Merge: o audio do robo se recupera sozinho (fix/audio-resiliente)"
+        },
+        {
+          "sha": "cfc26788ce6a0ada32c59a8a322c2309ba9bade7",
+          "data_autoria": "2026-09-03T00:43:10-03:00",
+          "data_commit": "2026-09-03T00:43:10-03:00",
+          "assunto": "docs: registra no README o que o robo real mostrou"
+        },
+        {
+          "sha": "7cc23ab9333de31e33e6e317674d4236d3fdbd26",
+          "data_autoria": "2026-09-03T00:36:51-03:00",
+          "data_commit": "2026-09-03T00:36:51-03:00",
+          "assunto": "fix: o mixer segue a placa pelo nome, como o audio ja seguia"
+        },
+        {
+          "sha": "dcbcdefb428914e8d4517f15c6a873c710b646be",
+          "data_autoria": "2026-09-03T00:24:36-03:00",
+          "data_commit": "2026-09-03T00:24:36-03:00",
+          "assunto": "fix: o robo volta a ouvir e a falar quando a placa USB reaparece"
+        },
+        {
+          "sha": "93b6536ad6a89c953c3059b7a236547efa602d64",
+          "data_autoria": "2026-08-30T20:44:24-03:00",
+          "data_commit": "2026-08-30T20:44:24-03:00",
+          "assunto": "Merge remote-tracking branch 'origin/main' into producao"
+        },
+        {
+          "sha": "cd409f9a9f7b6013a1cb6b887237258c2e33fc90",
+          "data_autoria": "2026-08-30T20:41:54-03:00",
+          "data_commit": "2026-08-30T20:41:54-03:00",
+          "assunto": "wip: BLE, comandos/estado web e ajustes de fala/config antes do merge"
+        },
+        {
+          "sha": "e4706b3e1bbc6fe776a11d66e2d98153c8e30a75",
+          "data_autoria": "2026-08-30T18:25:24-03:00",
+          "data_commit": "2026-08-30T18:25:24-03:00",
+          "assunto": "debug: mostra o STT e o tempo de resposta no terminal"
+        },
+        {
+          "sha": "4a21457069871b16fc8507d58c08d92dd10ee239",
+          "data_autoria": "2026-08-30T18:25:14-03:00",
+          "data_commit": "2026-08-30T18:25:14-03:00",
+          "assunto": "escuta: cada transcrição carrega latência e confiança"
+        },
+        {
+          "sha": "85f9746378170ff02db6dd0300a797e6ce548375",
+          "data_autoria": "2026-08-27T23:03:50-03:00",
+          "data_commit": "2026-08-27T23:03:50-03:00",
+          "assunto": "fix: o buffer BLE não descarta comandos válidos, e o rádio calcula uma vez"
+        },
+        {
+          "sha": "aef1c4f19b7cbe3b5dfd1213c52930a1252b64ed",
+          "data_autoria": "2026-08-27T23:03:50-03:00",
+          "data_commit": "2026-08-27T23:03:50-03:00",
+          "assunto": "fix: serializa o carregar/descarregar do modelo reserva"
+        },
+        {
+          "sha": "0a17f1686b5a0a0e621dfdb68786b06b9db713e6",
+          "data_autoria": "2026-08-27T23:03:49-03:00",
+          "data_commit": "2026-08-27T23:03:49-03:00",
+          "assunto": "fix: a fala antecipada não sai mais fora de ordem nem trava a última frase"
+        },
+        {
+          "sha": "934fc2761b1bcd3faf00e10f1418bf1d917d8f6c",
+          "data_autoria": "2026-08-27T23:01:11Z",
+          "data_commit": "2026-08-27T23:01:11Z",
+          "assunto": "deps: Bump actions/setup-python from 5 to 7"
+        },
+        {
+          "sha": "0b1bda9e080d129be3f893e750e3a0dcb370993f",
+          "data_autoria": "2026-08-27T23:01:06Z",
+          "data_commit": "2026-08-27T23:01:06Z",
+          "assunto": "deps: Bump actions/checkout from 4 to 7"
+        },
+        {
+          "sha": "cc634031529dabac04a134aca69d688342fbc8d8",
+          "data_autoria": "2026-08-27T20:00:33-03:00",
+          "data_commit": "2026-08-27T20:00:33-03:00",
+          "assunto": "seguranca: Dependabot vigia as dependências e as Actions (#7)"
+        },
+        {
+          "sha": "f7fe55303401d62a99d97acb8fa75917c90e3443",
+          "data_autoria": "2026-08-27T19:59:04-03:00",
+          "data_commit": "2026-08-27T19:59:04-03:00",
+          "assunto": "seguranca: Dependabot vigia as dependências e as Actions"
+        },
+        {
+          "sha": "60abf91ad9fdacc5b71d4214f78639b54a913c74",
+          "data_autoria": "2026-08-27T19:44:17-03:00",
+          "data_commit": "2026-08-27T19:44:17-03:00",
+          "assunto": "Memória: a reserva local para de ocupar 1,5 GB o dia inteiro; e o Wi-Fi sai de cima do Bluetooth (#6)"
+        },
+        {
+          "sha": "1c9aa51d74a9fa9d0a0363337aaf8d76e9533d23",
+          "data_autoria": "2026-08-27T19:27:52-03:00",
+          "data_commit": "2026-08-27T19:27:52-03:00",
+          "assunto": "docs: o README para de dizer que este repositório não fala MQTT"
+        },
+        {
+          "sha": "83167a3b7a18b9a0e3db8054c8899640db118982",
+          "data_autoria": "2026-08-27T08:23:05-03:00",
+          "data_commit": "2026-08-27T08:23:05-03:00",
+          "assunto": "docs: os dois comandos novos entram no CLI, e a memória vira número escrito"
+        },
+        {
+          "sha": "c901b4b85397064e89b39199cf98f3f5c53db6f0",
+          "data_autoria": "2026-08-27T08:22:50-03:00",
+          "data_commit": "2026-08-27T08:22:50-03:00",
+          "assunto": "feat: o Wi-Fi sai de cima do Bluetooth em vez de disputar com ele"
+        },
+        {
+          "sha": "15526310b4a5ff2d05d61e64ab4703845e6c019d",
+          "data_autoria": "2026-08-27T08:22:35-03:00",
+          "data_commit": "2026-08-27T08:22:35-03:00",
+          "assunto": "perf: a IA de reserva devolve a RAM enquanto a rede está de pé"
+        },
+        {
+          "sha": "097f0330d1b692f1dc29c1986af1dd562beacf56",
+          "data_autoria": "2026-08-27T08:22:20-03:00",
+          "data_commit": "2026-08-27T08:22:20-03:00",
+          "assunto": "feat: o robô diz onde a própria memória está indo"
+        },
+        {
+          "sha": "b6659eea30214526e27c910998f12825c9770b59",
+          "data_autoria": "2026-08-26T18:09:36-03:00",
+          "data_commit": "2026-08-26T18:09:36-03:00",
+          "assunto": "fix: a voz boa perdia a vez para a reserva porque a rede ainda não tinha subido"
+        },
+        {
+          "sha": "5ef1179631a0807da9c9e35149c325dba1e308c1",
+          "data_autoria": "2026-08-26T00:20:50-03:00",
+          "data_commit": "2026-08-26T00:20:50-03:00",
+          "assunto": "fix: o setup instala o broker que a ponte bluetooth precisa"
+        },
+        {
+          "sha": "c838c00b8dbde13e94b12471b418dc4ceea542e7",
+          "data_autoria": "2026-08-26T00:20:15-03:00",
+          "data_commit": "2026-08-26T00:20:15-03:00",
+          "assunto": "feat: a página mostra o que o robô está obedecendo, e ganha um direcional"
+        },
+        {
+          "sha": "5dae983c98959eb207e0141afd476306aa7a4c52",
+          "data_autoria": "2026-08-26T00:10:30-03:00",
+          "data_commit": "2026-08-26T00:10:30-03:00",
+          "assunto": "docs: o que realmente impedia o app de achar o robô, medido depois do reboot"
+        },
+        {
+          "sha": "fdfd64ff6ab951df7a649ba1d0bdc4eae97e0c8c",
+          "data_autoria": "2026-08-26T00:04:20-03:00",
+          "data_commit": "2026-08-26T00:04:20-03:00",
+          "assunto": "fix: o painel da página tinha o mesmo id do container, e teria apagado a tela"
+        },
+        {
+          "sha": "799a70ca46d61bd04ba1b63e0c5ce91c5668676d",
+          "data_autoria": "2026-08-25T23:40:28-03:00",
+          "data_commit": "2026-08-25T23:40:28-03:00",
+          "assunto": "feat: a ponte bluetooth vira serviço, e a página mostra como o robô está"
+        },
+        {
+          "sha": "34f90577b73a0ac39165192977f35d361fd4b3d7",
+          "data_autoria": "2026-08-25T23:18:11-03:00",
+          "data_commit": "2026-08-25T23:18:11-03:00",
+          "assunto": "fix: o Bluetooth do Pi funciona — o celular conecta nele direto, sem ESP32"
+        },
+        {
+          "sha": "452168cfec8d703676edbd25c98c2a03ed00f0e7",
+          "data_autoria": "2026-08-25T21:16:18-03:00",
+          "data_commit": "2026-08-25T21:16:18-03:00",
+          "assunto": "feat: ponte Bluetooth no próprio Pi, para o ESP32 poder sair do caminho"
+        },
+        {
+          "sha": "408a21220b3002660a26a88c53ea7a298faaa10e",
+          "data_autoria": "2026-08-25T18:21:22-03:00",
+          "data_commit": "2026-08-25T18:21:22-03:00",
+          "assunto": "perf: a próxima frase é sintetizada enquanto a atual ainda está sendo falada"
+        },
+        {
+          "sha": "2086084203e304721b0f9c77e099c826122368a3",
+          "data_autoria": "2026-08-25T17:45:23-03:00",
+          "data_commit": "2026-08-25T17:45:23-03:00",
+          "assunto": "feat: \"Oi?\" quando chamam e não perguntam, voz mais macia, e a IA achada pelo nome"
+        },
+        {
+          "sha": "a51fb9f44ee352b3a31291a38bdced36a4b03036",
+          "data_autoria": "2026-08-25T12:47:25-03:00",
+          "data_commit": "2026-08-25T12:47:25-03:00",
+          "assunto": "feat: um comando que diz se o microfone está captando a sua voz"
+        },
+        {
+          "sha": "a2db72dac95692be53adb44e5cc1f02eefc63fda",
+          "data_autoria": "2026-08-25T12:44:17-03:00",
+          "data_commit": "2026-08-25T12:44:17-03:00",
+          "assunto": "feat: prova de vida no arranque, cara de ouvindo, e o zumbido que deixava o robô surdo"
+        },
+        {
+          "sha": "33256254ec388c25385fe805ad7b1d203b275d3f",
+          "data_autoria": "2026-08-25T00:23:07-03:00",
+          "data_commit": "2026-08-25T00:23:07-03:00",
+          "assunto": "fix: a Atlas ouvia, pensava, respondia — e não conseguia falar"
+        },
+        {
+          "sha": "0fd8544ffbe833e3e2d7bd30a3353544430ca4e0",
+          "data_autoria": "2026-08-25T00:22:18-03:00",
+          "data_commit": "2026-08-25T00:22:18-03:00",
+          "assunto": "WIP: Claude Code rate-limit checkpoint (337a233f)"
+        },
+        {
+          "sha": "890ea10950cc1bdcaeab72521111ef2cfe5b7be0",
+          "data_autoria": "2026-08-25T00:17:05-03:00",
+          "data_commit": "2026-08-25T00:17:05-03:00",
+          "assunto": "docs: como publicar no robô, e por que ele nao segue o main"
+        },
+        {
+          "sha": "9e5850010e14cb16fda6fef38481ee658f757e46",
+          "data_autoria": "2026-08-25T00:13:06-03:00",
+          "data_commit": "2026-08-25T00:13:06-03:00",
+          "assunto": "fix: o atualizador reinstalava sem o extra da escuta"
+        },
+        {
+          "sha": "acfafa4ee01ef311c120089d6bb151c1ab36a021",
+          "data_autoria": "2026-08-25T00:12:36-03:00",
+          "data_commit": "2026-08-25T00:12:36-03:00",
+          "assunto": "Merge pull request #4 from setrem-robot/stt-microfone"
+        },
+        {
+          "sha": "e52728287ad40b0d02c22b291b5cd982a077cc57",
+          "data_autoria": "2026-08-25T00:10:29-03:00",
+          "data_commit": "2026-08-25T00:10:29-03:00",
+          "assunto": "feat: a Atlas escuta pelo microfone e responde quando chamam o nome dela"
+        },
+        {
+          "sha": "677ce3db6e14341d4ee8bd608350e6d0732f00e5",
+          "data_autoria": "2026-08-24T23:49:29-03:00",
+          "data_commit": "2026-08-24T23:49:29-03:00",
+          "assunto": "Merge pull request #3 from setrem-robot/tts-caixinha-usb"
+        },
+        {
+          "sha": "d7b11de72d6630142fb1dd92c432c43b083046a0",
+          "data_autoria": "2026-08-24T23:46:30-03:00",
+          "data_commit": "2026-08-24T23:46:30-03:00",
+          "assunto": "feat: o robô acha a caixinha de som sozinho, em vez de falar para o monitor"
+        },
+        {
+          "sha": "91fedd01166d74ef62d7a9b94ed432d2f4d42f26",
+          "data_autoria": "2026-08-23T22:36:55-03:00",
+          "data_commit": "2026-08-23T22:36:55-03:00",
+          "assunto": "fix: o atualizador dizia que estava em dia sem conseguir ler commit nenhum"
+        },
+        {
+          "sha": "304a9ee6959cf3820dfa0515f7e4b9ad5678d066",
+          "data_autoria": "2026-08-23T22:35:01-03:00",
+          "data_commit": "2026-08-23T22:35:01-03:00",
+          "assunto": "fix: os scripts vinham do git sem permissão de execução"
+        },
+        {
+          "sha": "9e4038fda0062a81430dfbaaeb3e4caebf236d8e",
+          "data_autoria": "2026-08-23T22:33:08-03:00",
+          "data_commit": "2026-08-23T22:33:08-03:00",
+          "assunto": "Merge pull request #2 from setrem-robot/entrega-continua"
+        },
+        {
+          "sha": "16971f46f839dacc40bdf2eb9fbb188373f816e7",
+          "data_autoria": "2026-08-23T22:31:18-03:00",
+          "data_commit": "2026-08-23T22:32:27-03:00",
+          "assunto": "feat: o setup instala o atualizador e libera o botao, sem abrir o sudo"
+        },
+        {
+          "sha": "39daa086aa5b15ed76566f4a0e6bf7c282f69ae8",
+          "data_autoria": "2026-08-23T22:25:00-03:00",
+          "data_commit": "2026-08-23T22:32:27-03:00",
+          "assunto": "feat: o robô busca a versão publicada sozinho, e volta atrás se ela não subir"
+        },
+        {
+          "sha": "fd04d97c8fb8161b090bbe4ddf8d693e6391a309",
+          "data_autoria": "2026-08-23T22:16:22-03:00",
+          "data_commit": "2026-08-23T22:16:22-03:00",
+          "assunto": "Merge pull request #1 from setrem-robot/pi-lite-producao"
+        },
+        {
+          "sha": "49c782bd527b133fe1d05be7a4dc11ba72bb0ab0",
+          "data_autoria": "2026-08-23T22:06:30-03:00",
+          "data_commit": "2026-08-23T22:06:30-03:00",
+          "assunto": "docs: o estado real do robô, o que falta, e os erros que custaram um dia"
+        },
+        {
+          "sha": "14c13ac21db99896f6eb6f154e434b70f5ebb8be",
+          "data_autoria": "2026-08-23T21:52:12-03:00",
+          "data_commit": "2026-08-23T21:52:12-03:00",
+          "assunto": "feat: conversar com o robô pela página do celular, sem pará-lo"
+        },
+        {
+          "sha": "882c6bf86468e3654b8d077d8e62e0c8a96222ce",
+          "data_autoria": "2026-08-23T21:21:46-03:00",
+          "data_commit": "2026-08-23T21:21:46-03:00",
+          "assunto": "fix: sem libGL o SDL aceita tudo, desenha nada, e o monitor fica preto"
+        },
+        {
+          "sha": "a8b8465b48eadadcc938ef56709ef824f374b1e2",
+          "data_autoria": "2026-08-23T20:57:45-03:00",
+          "data_commit": "2026-08-23T20:57:45-03:00",
+          "assunto": "perf: aquecer o LLM com a persona derruba a primeira resposta de 12 s para 1 s"
+        },
+        {
+          "sha": "c46cb036d5329b8e3e86d1b20f9f7c74ef0d7288",
+          "data_autoria": "2026-08-23T20:42:13-03:00",
+          "data_commit": "2026-08-23T20:42:13-03:00",
+          "assunto": "feat: o robô roda sozinho num Pi Lite, e continua conversando sem WiFi"
+        },
+        {
+          "sha": "97b4e59449820f9e2a6e5d83afc1ff3734e7ee72",
+          "data_autoria": "2026-08-21T21:26:23-03:00",
+          "data_commit": "2026-08-21T21:26:23-03:00",
+          "assunto": "add CLAUDE.md apontando para o roboteye-keeper e esclarecendo o desacoplamento do orquestrador"
+        },
+        {
+          "sha": "cd2007405c1516af4e4ae8a3fc052d0c04f54df0",
+          "data_autoria": "2026-08-18T21:14:08-03:00",
+          "data_commit": "2026-08-18T21:14:08-03:00",
+          "assunto": "docs: aponta o repositório para setrem-robot/IAv2"
+        },
+        {
+          "sha": "abf8ff5fa919587d79a2e832815da9d0e8265468",
+          "data_autoria": "2026-08-18T20:11:28-03:00",
+          "data_commit": "2026-08-18T20:11:28-03:00",
+          "assunto": "docs: instalação em um comando, README e serviço systemd"
+        },
+        {
+          "sha": "0205c311f9537040c995a9ce9a59c2529a06d627",
+          "data_autoria": "2026-08-18T20:11:28-03:00",
+          "data_commit": "2026-08-18T20:11:28-03:00",
+          "assunto": "feat(cli): comandos, diagnóstico e assistente de instalação"
+        },
+        {
+          "sha": "45dd7c494d859805d60376f4ee388fdd8f7060d4",
+          "data_autoria": "2026-08-18T20:09:32-03:00",
+          "data_commit": "2026-08-18T20:09:32-03:00",
+          "assunto": "feat(web): página de configuração para abrir do celular"
+        },
+        {
+          "sha": "361cc65783597bd94a29e14dc22069db170c43ba",
+          "data_autoria": "2026-08-18T20:09:22-03:00",
+          "data_commit": "2026-08-18T20:09:22-03:00",
+          "assunto": "feat(speech): voz local e de nuvem, com acabamento de áudio"
+        },
+        {
+          "sha": "7bbe8ea3b776f524dd324d879ef53fa20bc2d9c2",
+          "data_autoria": "2026-08-18T20:09:08-03:00",
+          "data_commit": "2026-08-18T20:09:08-03:00",
+          "assunto": "feat(face): olhos animados como campo de distância"
+        },
+        {
+          "sha": "31408f5a17ca72f1f662fd5296ec42d5c2ff3dec",
+          "data_autoria": "2026-08-18T20:08:56-03:00",
+          "data_commit": "2026-08-18T20:08:56-03:00",
+          "assunto": "feat(core): barramento de eventos, assistente e camada de LLM"
+        },
+        {
+          "sha": "97ac0ce526705e79013eb3d6f4f38699a1402143",
+          "data_autoria": "2026-08-18T20:08:38-03:00",
+          "data_commit": "2026-08-18T20:08:38-03:00",
+          "assunto": "build: empacota o RobotEye como projeto Python instalável"
+        },
+        {
+          "sha": "c7c7bce7fec72dde2b546c67f53f7eca1bbca33b",
+          "data_autoria": "2026-08-18T20:08:24-03:00",
+          "data_commit": "2026-08-18T20:08:24-03:00",
+          "assunto": "chore: remove a versão anterior de scripts soltos"
+        },
+        {
+          "sha": "45b024ecd7e371c463c1f45049aea4cc03c34985",
+          "data_autoria": "2026-01-13T16:57:22-03:00",
+          "data_commit": "2026-01-13T16:57:22-03:00",
+          "assunto": "Add files via upload"
+        },
+        {
+          "sha": "cc8672fba6711d5c1c2cc92d1294e8e48e6c9893",
+          "data_autoria": "2026-01-01T23:36:43-03:00",
+          "data_commit": "2026-01-01T23:36:43-03:00",
+          "assunto": "Add audio recording and transcription functionality"
+        },
+        {
+          "sha": "f9d9af122bab84a6c6316cb1ba33af7a54a503db",
+          "data_autoria": "2025-12-29T12:24:17-03:00",
+          "data_commit": "2025-12-29T12:24:17-03:00",
+          "assunto": "Adicionada GLaDOS Teste"
+        },
+        {
+          "sha": "d5c52139929f3476e3dd5208ae13a5b6ad270027",
+          "data_autoria": "2025-12-27T19:17:32-03:00",
+          "data_commit": "2025-12-27T19:17:32-03:00",
+          "assunto": "Adicionada Unblock do Bluetooth"
+        },
+        {
+          "sha": "75440ee571601d00533ee9bdf3beeaad5e46b094",
+          "data_autoria": "2025-12-27T19:02:07-03:00",
+          "data_commit": "2025-12-27T19:02:07-03:00",
+          "assunto": "Add directory"
+        },
+        {
+          "sha": "57bdf11fe5ec40fa617d444d750cc332375a021c",
+          "data_autoria": "2025-12-27T19:01:08-03:00",
+          "data_commit": "2025-12-27T19:01:08-03:00",
+          "assunto": "Update setup message to include version 1.0"
+        },
+        {
+          "sha": "793f325ea09f945c33f43393d602b7983bb04ee1",
+          "data_autoria": "2025-12-27T18:58:37-03:00",
+          "data_commit": "2025-12-27T18:58:37-03:00",
+          "assunto": "Update initScript.sh"
+        },
+        {
+          "sha": "31655f272349df8ed46b86e5f098e90479458f7f",
+          "data_autoria": "2025-12-27T18:55:11-03:00",
+          "data_commit": "2025-12-27T18:55:11-03:00",
+          "assunto": "Install Python dependencies in a virtual environment"
+        },
+        {
+          "sha": "2ec9fd99840548ccad6ae4cca830f37c8caa6c2e",
+          "data_autoria": "2025-12-27T18:17:51-03:00",
+          "data_commit": "2025-12-27T18:17:51-03:00",
+          "assunto": "Add pygame requirement to requirements.txt"
+        },
+        {
+          "sha": "12cab894710b79482b0240666c29c58c13caadd3",
+          "data_autoria": "2025-12-27T18:17:16-03:00",
+          "data_commit": "2025-12-27T18:17:16-03:00",
+          "assunto": "Add initScript.sh"
+        },
+        {
+          "sha": "d3049159f64ce5708151b99c5f2f2e24ca3e7429",
+          "data_autoria": "2025-12-23T19:22:41-03:00",
+          "data_commit": "2025-12-23T19:22:41-03:00",
+          "assunto": "Create README.md"
+        },
+        {
+          "sha": "f43fb199187843332abeccb2074a47cdce7ce1c2",
+          "data_autoria": "2025-12-20T23:12:40-03:00",
+          "data_commit": "2025-12-20T23:12:40-03:00",
+          "assunto": "Refactor RoboEyes for auto animations and states"
+        },
+        {
+          "sha": "07e237fefd11482acbfab3c96afa9960aa51e64d",
+          "data_autoria": "2025-12-20T21:43:02-03:00",
+          "data_commit": "2025-12-20T21:43:02-03:00",
+          "assunto": "Optimize RoboEyes for responsive design and performance"
+        },
+        {
+          "sha": "2a6fbcf26415f46ab95b43e6db38322e0c0050b1",
+          "data_autoria": "2025-12-20T20:58:52-03:00",
+          "data_commit": "2025-12-20T20:58:52-03:00",
+          "assunto": "Add scanline mode and update eye dimensions"
+        },
+        {
+          "sha": "4a89d95d21cd15b50623be3869e518c1fd79beae",
+          "data_autoria": "2025-12-20T20:11:30-03:00",
+          "data_commit": "2025-12-20T20:11:30-03:00",
+          "assunto": "Implement responsive scaling for eye dimensions"
+        },
+        {
+          "sha": "6d1c4cc22e496657bb28d32d3b8afda20f26bc2c",
+          "data_autoria": "2025-12-20T20:10:10-03:00",
+          "data_commit": "2025-12-20T20:10:10-03:00",
+          "assunto": "Optimize RoboEyes with new features and improvements"
+        },
+        {
+          "sha": "c8d5dfa84d8c5390410157a9d4fc929b4b955657",
+          "data_autoria": "2025-12-20T20:07:31-03:00",
+          "data_commit": "2025-12-20T20:07:31-03:00",
+          "assunto": "Refactor RoboEyes for scaling and eye rendering"
+        },
+        {
+          "sha": "9f4f4f5cdc1beee29a221347d4e634301c1a5854",
+          "data_autoria": "2025-12-20T20:06:05-03:00",
+          "data_commit": "2025-12-20T20:06:05-03:00",
+          "assunto": "Optimize eye rendering with caching mechanism"
+        },
+        {
+          "sha": "d8dfe7fc13ecc1b8ca3c7c208c08885679854543",
+          "data_autoria": "2025-12-20T20:03:54-03:00",
+          "data_commit": "2025-12-20T20:03:54-03:00",
+          "assunto": "Change RoboEyes to Light Mode and optimize code"
+        },
+        {
+          "sha": "bfcab1a18c02ff0b3f85d2f9763f841618cb4fed",
+          "data_autoria": "2025-12-20T20:02:32-03:00",
+          "data_commit": "2025-12-20T20:02:32-03:00",
+          "assunto": "Refactor eye rendering and add scanline overlay"
+        },
+        {
+          "sha": "e9269b47b73a7637f82184d1f9bcac47413a1f63",
+          "data_autoria": "2025-12-20T19:57:48-03:00",
+          "data_commit": "2025-12-20T19:57:48-03:00",
+          "assunto": "Add scalable eye dimensions and resolution handling"
+        },
+        {
+          "sha": "9117d375b343f46d220df5065ac7630e64833e3b",
+          "data_autoria": "2025-12-20T19:55:02-03:00",
+          "data_commit": "2025-12-20T19:55:02-03:00",
+          "assunto": "Update robo_olhos.py"
+        },
+        {
+          "sha": "8bd6e5a6f8ddf8318e22c4d5486c4530a9775ecb",
+          "data_autoria": "2025-12-20T19:52:13-03:00",
+          "data_commit": "2025-12-20T19:52:13-03:00",
+          "assunto": "Update robo_olhos.py"
+        },
+        {
+          "sha": "22c81d06a3f1e8245987dd6e14a03b6620fe4315",
+          "data_autoria": "2025-12-20T19:32:03-03:00",
+          "data_commit": "2025-12-20T19:32:03-03:00",
+          "assunto": "Raspberry Pi"
+        },
+        {
+          "sha": "811191f09f3150bb746ed9e93d84f174e57e2e9b",
+          "data_autoria": "2025-12-20T19:30:56-03:00",
+          "data_commit": "2025-12-20T19:30:56-03:00",
+          "assunto": "Add files via upload"
+        }
+      ],
+      "branches": [
+        {
+          "nome": "ble-no-raspberry",
+          "sha": "b6659eea30214526e27c910998f12825c9770b59",
+          "upstream": "origin/ble-no-raspberry",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 8,
+            "exclusivos_main": 38
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "b6659eea30214526e27c910998f12825c9770b59",
+              "data_autoria": "2026-08-26T18:09:36-03:00",
+              "data_commit": "2026-08-26T18:09:36-03:00",
+              "assunto": "fix: a voz boa perdia a vez para a reserva porque a rede ainda não tinha subido"
+            },
+            {
+              "sha": "5ef1179631a0807da9c9e35149c325dba1e308c1",
+              "data_autoria": "2026-08-26T00:20:50-03:00",
+              "data_commit": "2026-08-26T00:20:50-03:00",
+              "assunto": "fix: o setup instala o broker que a ponte bluetooth precisa"
+            },
+            {
+              "sha": "c838c00b8dbde13e94b12471b418dc4ceea542e7",
+              "data_autoria": "2026-08-26T00:20:15-03:00",
+              "data_commit": "2026-08-26T00:20:15-03:00",
+              "assunto": "feat: a página mostra o que o robô está obedecendo, e ganha um direcional"
+            },
+            {
+              "sha": "5dae983c98959eb207e0141afd476306aa7a4c52",
+              "data_autoria": "2026-08-26T00:10:30-03:00",
+              "data_commit": "2026-08-26T00:10:30-03:00",
+              "assunto": "docs: o que realmente impedia o app de achar o robô, medido depois do reboot"
+            },
+            {
+              "sha": "fdfd64ff6ab951df7a649ba1d0bdc4eae97e0c8c",
+              "data_autoria": "2026-08-26T00:04:20-03:00",
+              "data_commit": "2026-08-26T00:04:20-03:00",
+              "assunto": "fix: o painel da página tinha o mesmo id do container, e teria apagado a tela"
+            },
+            {
+              "sha": "799a70ca46d61bd04ba1b63e0c5ce91c5668676d",
+              "data_autoria": "2026-08-25T23:40:28-03:00",
+              "data_commit": "2026-08-25T23:40:28-03:00",
+              "assunto": "feat: a ponte bluetooth vira serviço, e a página mostra como o robô está"
+            },
+            {
+              "sha": "34f90577b73a0ac39165192977f35d361fd4b3d7",
+              "data_autoria": "2026-08-25T23:18:11-03:00",
+              "data_commit": "2026-08-25T23:18:11-03:00",
+              "assunto": "fix: o Bluetooth do Pi funciona — o celular conecta nele direto, sem ESP32"
+            },
+            {
+              "sha": "452168cfec8d703676edbd25c98c2a03ed00f0e7",
+              "data_autoria": "2026-08-25T21:16:18-03:00",
+              "data_commit": "2026-08-25T21:16:18-03:00",
+              "assunto": "feat: ponte Bluetooth no próprio Pi, para o ESP32 poder sair do caminho"
+            }
+          ]
+        },
+        {
+          "nome": "dependabot",
+          "sha": "f7fe55303401d62a99d97acb8fa75917c90e3443",
+          "upstream": "origin/dependabot",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 1,
+            "exclusivos_main": 37
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "f7fe55303401d62a99d97acb8fa75917c90e3443",
+              "data_autoria": "2026-08-27T19:59:04-03:00",
+              "data_commit": "2026-08-27T19:59:04-03:00",
+              "assunto": "seguranca: Dependabot vigia as dependências e as Actions"
+            }
+          ]
+        },
+        {
+          "nome": "diag/log-da-escuta",
+          "sha": "f88b89412ff848218149dcc74c541887b173e261",
+          "upstream": "origin/diag/log-da-escuta",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 11
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "docs/como-funciona",
+          "sha": "23cdfa2186064436418eeebcd3a149618d4265cc",
+          "upstream": "origin/docs/como-funciona",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 20
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "feat/bip-de-fim",
+          "sha": "4d57814e15551c29abaa69491c4d36365d634bdc",
+          "upstream": "origin/feat/bip-de-fim",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 15
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "feat/sinal-de-escuta",
+          "sha": "c19ae7e57148102567e08f5d0a52d28034e1011a",
+          "upstream": "origin/feat/sinal-de-escuta",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 17
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "fix/frase-que-nao-fecha",
+          "sha": "0a3bf6a454fe705b0f2a9521b061e8a51d7af76f",
+          "upstream": "origin/fix/frase-que-nao-fecha",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 9
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "fix/keep-alive-com-unidade",
+          "sha": "61b00c9dca86dac74834f2fd302d9858d19283ff",
+          "upstream": "origin/fix/keep-alive-com-unidade",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 3
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "fix/nao-disputar-nucleos",
+          "sha": "5318bb076e79f34b43544769f275594b018b0da1",
+          "upstream": "origin/fix/nao-disputar-nucleos",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 13
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "fix/num-ctx-no-from-env",
+          "sha": "9e468b8d19dbb6aa31068d56b4c500515fc47139",
+          "upstream": "origin/fix/num-ctx-no-from-env",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 5
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "fix/prompt-que-nao-cabe",
+          "sha": "6503b6700ab432f13d2e9f0822755ecbd30ffd7e",
+          "upstream": "origin/fix/prompt-que-nao-cabe",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 7
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "main",
+          "sha": "e1b26d78f1f9b5ccb1f33c122203d791fa20ad44",
+          "upstream": "origin/main",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 0,
+            "exclusivos_main": 0
+          },
+          "nao_alcancaveis_por_remotos": []
+        },
+        {
+          "nome": "otimizacao-ram-e-radio",
+          "sha": "1c9aa51d74a9fa9d0a0363337aaf8d76e9533d23",
+          "upstream": "origin/otimizacao-ram-e-radio",
+          "comparacao_upstream": "referencia_ausente",
+          "comparacao_main": {
+            "exclusivos_branch": 13,
+            "exclusivos_main": 38
+          },
+          "nao_alcancaveis_por_remotos": [
+            {
+              "sha": "1c9aa51d74a9fa9d0a0363337aaf8d76e9533d23",
+              "data_autoria": "2026-08-27T19:27:52-03:00",
+              "data_commit": "2026-08-27T19:27:52-03:00",
+              "assunto": "docs: o README para de dizer que este repositório não fala MQTT"
+            },
+            {
+              "sha": "83167a3b7a18b9a0e3db8054c8899640db118982",
+              "data_autoria": "2026-08-27T08:23:05-03:00",
+              "data_commit": "2026-08-27T08:23:05-03:00",
+              "assunto": "docs: os dois comandos novos entram no CLI, e a memória vira número escrito"
+            },
+            {
+              "sha": "c901b4b85397064e89b39199cf98f3f5c53db6f0",
+              "data_autoria": "2026-08-27T08:22:50-03:00",
+              "data_commit": "2026-08-27T08:22:50-03:00",
+              "assunto": "feat: o Wi-Fi sai de cima do Bluetooth em vez de disputar com ele"
+            },
+            {
+              "sha": "15526310b4a5ff2d05d61e64ab4703845e6c019d",
+              "data_autoria": "2026-08-27T08:22:35-03:00",
+              "data_commit": "2026-08-27T08:22:35-03:00",
+              "assunto": "perf: a IA de reserva devolve a RAM enquanto a rede está de pé"
+            },
+            {
+              "sha": "097f0330d1b692f1dc29c1986af1dd562beacf56",
+              "data_autoria": "2026-08-27T08:22:20-03:00",
+              "data_commit": "2026-08-27T08:22:20-03:00",
+              "assunto": "feat: o robô diz onde a própria memória está indo"
+            },
+            {
+              "sha": "b6659eea30214526e27c910998f12825c9770b59",
+              "data_autoria": "2026-08-26T18:09:36-03:00",
+              "data_commit": "2026-08-26T18:09:36-03:00",
+              "assunto": "fix: a voz boa perdia a vez para a reserva porque a rede ainda não tinha subido"
+            },
+            {
+              "sha": "5ef1179631a0807da9c9e35149c325dba1e308c1",
+              "data_autoria": "2026-08-26T00:20:50-03:00",
+              "data_commit": "2026-08-26T00:20:50-03:00",
+              "assunto": "fix: o setup instala o broker que a ponte bluetooth precisa"
+            },
+            {
+              "sha": "c838c00b8dbde13e94b12471b418dc4ceea542e7",
+              "data_autoria": "2026-08-26T00:20:15-03:00",
+              "data_commit": "2026-08-26T00:20:15-03:00",
+              "assunto": "feat: a página mostra o que o robô está obedecendo, e ganha um direcional"
+            },
+            {
+              "sha": "5dae983c98959eb207e0141afd476306aa7a4c52",
+              "data_autoria": "2026-08-26T00:10:30-03:00",
+              "data_commit": "2026-08-26T00:10:30-03:00",
+              "assunto": "docs: o que realmente impedia o app de achar o robô, medido depois do reboot"
+            },
+            {
+              "sha": "fdfd64ff6ab951df7a649ba1d0bdc4eae97e0c8c",
+              "data_autoria": "2026-08-26T00:04:20-03:00",
+              "data_commit": "2026-08-26T00:04:20-03:00",
+              "assunto": "fix: o painel da página tinha o mesmo id do container, e teria apagado a tela"
+            },
+            {
+              "sha": "799a70ca46d61bd04ba1b63e0c5ce91c5668676d",
+              "data_autoria": "2026-08-25T23:40:28-03:00",
+              "data_commit": "2026-08-25T23:40:28-03:00",
+              "assunto": "feat: a ponte bluetooth vira serviço, e a página mostra como o robô está"
+            },
+            {
+              "sha": "34f90577b73a0ac39165192977f35d361fd4b3d7",
+              "data_autoria": "2026-08-25T23:18:11-03:00",
+              "data_commit": "2026-08-25T23:18:11-03:00",
+              "assunto": "fix: o Bluetooth do Pi funciona — o celular conecta nele direto, sem ESP32"
+            },
+            {
+              "sha": "452168cfec8d703676edbd25c98c2a03ed00f0e7",
+              "data_autoria": "2026-08-25T21:16:18-03:00",
+              "data_commit": "2026-08-25T21:16:18-03:00",
+              "assunto": "feat: ponte Bluetooth no próprio Pi, para o ESP32 poder sair do caminho"
+            }
+          ]
+        },
+        {
+          "nome": "producao",
+          "sha": "43a6fe025ab5474cc1120d0a71d731392d1234b4",
+          "upstream": "origin/producao",
+          "comparacao_upstream": {
+            "a_frente": 0,
+            "atras": 0
+          },
+          "comparacao_main": {
+            "exclusivos_branch": 13,
+            "exclusivos_main": 0
+          },
+          "nao_alcancaveis_por_remotos": []
+        }
+      ]
+    }
+  ]
+}

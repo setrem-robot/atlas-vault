@@ -1,0 +1,1257 @@
+## Página 1
+
+ 
+ 
+ 
+ 
+BERNARDO BAÚ, GUILHERME MACHRY DA SILVA, RYCHARD DANIEL 
+DOS SANTOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DESENVOLVIMENTO DE INTERFACE DE INTEGRAÇÃO HUMANO-ROBÔ 
+BASEADA EM PROCESSAMENTO DE LINGUAGEM NATURAL LOCAL PARA 
+O AMBIENTE ACADÊMICO 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Três de Maio 
+2026 
+
+
+## Página 2
+
+BERNARDO BAÚ, GUILHERME MACHRY DA SILVA, RYCHARD DANIEL 
+DOS SANTOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DESENVOLVIMENTO DE INTERFACE DE INTEGRAÇÃO HUMANO-ROBÔ 
+BASEADA EM PROCESSAMENTO DE LINGUAGEM NATURAL LOCAL PARA 
+O AMBIENTE ACADÊMICO 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Trabalho 
+de 
+Conclusão 
+de 
+Curso 
+apresentado ao Curso de Engenharia de 
+Computação da Sociedade Educacional 
+Três de Maio (SETREM) como parte dos 
+requisitos para obtenção do título de 
+Engenheiro de Computação. 
+ 
+ 
+ 
+ 
+ 
+Professor orientador: LEONARDO LUÍS RÖPKE 
+ 
+ 
+ 
+ 
+ 
+ 
+Três de Maio 
+2026 
+
+
+## Página 3
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LISTA DE ABREVIATURAS E SIGLAS 
+ 
+ 
+SETREM 
+Sociedade Educacional Três de Maio 
+EC 
+Engenharia de Computação 
+IA 
+Inteligência Artificial 
+LLM 
+Large Language Model (Modelo de Linguagem de Larga Escala) 
+NLP 
+Natural Language Processing (Processamento de Linguagem 
+Natural) 
+IHC 
+Interação Humano-Computador 
+IHR 
+Interação Humano-Robô 
+STT 
+Speech-to-Text (Fala para Texto) 
+TTS 
+Text-to-Speech (Texto para Fala) 
+API 
+Application Programming Interface 
+REST 
+Representational State Transfer 
+GGUF 
+GPT-Generated Unified Format 
+CPU 
+Central Processing Unit 
+RAM 
+Random Access Memory 
+ 
+
+
+## Página 4
+
+ 
+ 
+ 
+ 
+ 
+SUMÁRIO 
+ 
+INTRODUÇÃO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .​
+9 
+1​
+CONTEXTUALIZAÇÃO....................................................................................10 
+1.1​
+TEMA................................................................................................................... 10 
+1.1.1​
+Delimitação do Tema.......................................................................................10 
+1.2​
+OBJETIVO GERAL............................................................................................10 
+1.2.1​
+Objetivos Específicos.....................................................................................11 
+1.3​
+JUSTIFICATIVA..................................................................................................11 
+1.4​
+MATERIAIS.........................................................................................................12 
+1.5​
+METODOLOGIA.................................................................................................13 
+1.6​
+CRONOGRAMA.................................................................................................13 
+1.7​
+ORÇAMENTO.................................................................................................... 14 
+2​
+FUNDAMENTAÇÃO TEÓRICA...................................................................... 15 
+2.1​
+INTERAÇÃO HUMANO-ROBÔ.......................................................................15 
+2.2​
+PROCESSAMENTO DE LINGUAGEM NATURAL E MODELOS DE 
+LINGUAGEM...................................................................................................... 15 
+2.3​
+RECONHECIMENTO DE FALA (SPEECH-TO-TEXT)................................16 
+2.4​
+SÍNTESE DE VOZ (TEXT-TO-SPEECH).......................................................16 
+2.5​
+EXECUÇÃO LOCAL DE MODELOS DE LINGUAGEM EM HARDWARE 
+EMBARCADO.....................................................................................................17 
+3​
+DESENVOLVIMENTO E IMPLEMENTAÇÃO.............................................. 18 
+3.1​
+VISÃO GERAL DA ARQUITETURA IMPLEMENTADA...............................18 
+3.2​
+FASE DE PROTOTIPAGEM EM BANCADA (RASPBERRY PI 4)............ 18 
+3.2.1​
+Infraestrutura de Inteligência Artificial e Otimização de Performance 19 
+3.2.2​
+Síntese de Voz Naturalizada......................................................................... 19 
+3.2.3​
+Configuração do Ambiente de Prototipagem.......................................... 19 
+3.2.4​
+Script de Integração Inicial........................................................................... 20 
+3.2.5​
+Resultados Parciais da Fase de Prototipagem........................................21 
+3.3​
+MIGRAÇÃO PARA O HARDWARE DEFINITIVO (RASPBERRY PI 5)​
+21 
+3.4​
+MÓDULO DE PERCEPÇÃO: CAPTURA DE VOZ E CONVERSÃO PARA 
+TEXTO.................................................................................................................21 
+3.5​
+MÓDULO DE COGNIÇÃO: PROCESSAMENTO DE LINGUAGEM COM 
+GEMMA 3B......................................................................................................... 22 
+3.6​
+MÓDULO DE EXPRESSÃO: SÍNTESE DE VOZ E ANIMAÇÕES VISUAIS
+.............................................................................................................................. 22 
+
+
+## Página 5
+
+3.7​
+AJUSTE DO VOLUME DAS CAIXAS DE SOM............................................23 
+3.8​
+INTEGRAÇÃO NO ROBÔ FINAL E INSTALAÇÃO FÍSICA....................... 23 
+3.9​
+DIAGRAMA DA ARQUITETURA DO SISTEMA...........................................24 
+3.10​
+EVIDÊNCIAS DO PROTÓTIPO...................................................................... 24 
+3.11​
+RESULTADOS OBTIDOS.................................................................................26 
+3.12​
+LIMITAÇÕES IDENTIFICADAS E SOLUÇÕES APLICADAS....................27 
+CONSIDERAÇÕES FINAIS.................................................................................................28 
+TRABALHOS FUTUROS......................................................................................................28 
+REFERÊNCIAS......................................................................................................................30 
+
+
+## Página 6
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESUMO 
+ 
+ 
+Este trabalho apresenta o desenvolvimento de uma interface de interação 
+humano-robô baseada em Processamento de Linguagem Natural (NLP) local, 
+pro-jetada para operar de forma totalmente offline no ambiente acadêmico da 
+SETREM. O sistema integra três módulos principais – percepção, cognição e 
+expressão –, res-ponsáveis, respectivamente, pela captura e conversão da voz do 
+usuário em texto por meio do Vosk (Speech-to-Text), pelo processamento da 
+intenção e geração de resposta por meio do modelo de linguagem local Gemma 3B 
+executado via Ollama, e pela síntese de voz naturalizada por meio do eSpeak-ng 
+com o banco de vozes MBROLA mb-br3, acompanhada de animações visuais 
+sincronizadas em um display. O hardware definitivo utilizado é a Raspberry Pi 5, 
+embarcada na estrutura física do robô. A pesquisa iniciou com uma fase de 
+prototipagem em bancada sobre Raspberry Pi 4, na qual foram avaliados os modelos 
+TinyLlama e Qwen2-0.5B, seguida da migração para o hardware definitivo e da 
+substituição do modelo de linguagem por Gemma 3B, que apresentou suporte nativo 
+ao Português do Brasil e respostas mais coerentes. Os resultados obtidos 
+demonstram a viabilidade técnica de um assistente robótico conversacional que 
+preserva a privacidade dos dados dos usuários e independe de conexão à internet, 
+contribuindo para a integração acadêmica e para a divulgação tecnológica do curso 
+de Engenharia de Computação da SETREM. Palavras-chave: 
+ 
+Interação humano-robô. Processamento de linguagem natural. Modelos de 
+linguagem local. Raspberry Pi. Síntese de voz. 
+
+
+## Página 7
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ABSTRACT 
+ 
+ 
+This work presents the development of a human-robot interaction interface 
+based on local Natural Language Processing (NLP), designed to operate entirely 
+offline in the academic environment of SETREM. The system integrates three main 
+modules – perception, cognition, and expression – responsible, respectively, for 
+capturing and converting the user’s speech into text through Vosk (Speech-to-Text), 
+processing the intent and generating a response through the local language model 
+Gemma 3B running via Ollama, and synthesizing naturalized speech through 
+eSpeak-ng with the MBROLA mb-br3 voice bank, accompanied by visual animations 
+synchronized on a display. The final hardware used is a Raspberry Pi 5, embedded in 
+the robot’s physical structure. The research began with a bench-testing phase on a 
+Raspberry Pi 4, in which the TinyLlama and Qwen2-0.5B models were evaluated, 
+followed by migration to the final hardware and replacement of the language model 
+with Gemma 3B, which offered native Brazilian Portuguese support and more 
+coherent responses. The results demonstrate the technical feasibility of a 
+conversational robotic assistant that preserves user data pri-vacy and is independent 
+of an internet connection, contributing to academic integration and to the 
+technological showcase of the Computer Engineering course at SETREM. 
+Key-words: Human-robot interaction. Natural language processing. Local language 
+ 
+models. Raspberry Pi. Speech synthesis. 
+
+
+## Página 8
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INTRODUÇÃO 
+ 
+ 
+A robótica e a Inteligência Artificial (IA) deixaram de ser campos 
+exclusivamente teóricos para se tornarem ferramentas efetivas de engajamento no 
+contexto educacional. Este documento apresenta o desenvolvimento de uma 
+interface de interação humano-robô baseada em Processamento de Linguagem 
+Natural (NLP) local, projetada para o ambiente acadêmico da Sociedade Educacional 
+Três de Maio (SETREM). 
+O Capítulo 1 apresenta a contextualização do trabalho, incluindo o tema, a 
+delimitação do tema, os objetivos geral e específicos, a justificativa, os materiais e a 
+metodologia empregada, bem como o cronograma e o orçamento do projeto. O 
+Capítulo 2 apresenta a fundamentação teórica que embasa as escolhas técnicas do 
+projeto, abordando os conceitos de Interação Humano-Robô, Processamento de 
+Linguagem Natural, reconhecimento de fala, síntese de voz e execução local de 
+modelos de linguagem em hardware embarcado. O Capítulo 3 descreve o 
+desenvolvimento e a implementação do sistema, apresentando a arquitetura final, os 
+módulos de percepção, cognição e expressão, os ajustes técnicos realizados a partir 
+da avaliação da banca, os testes de desempenho e os resultados obtidos. Por fim, as 
+considerações finais retomam os principais resultados alcançados e apontam os 
+trabalhos futuros do projeto. 
+
+
+## Página 9
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1​CONTEXTUALIZAÇÃO 
+ 
+ 
+1.1​ Tema 
+ 
+Neste trabalho é abordado o desenvolvimento de uma interface de interação 
+humano-robô baseada em Processamento de Linguagem Natural (NLP) local, 
+projetada para o ambiente acadêmico da SETREM. 
+ 
+1.1.1​ Delimitação do Tema 
+Este projeto tem como foco o desenvolvimento de uma interface interativa 
+acoplada a um robô, com capacidade de captar comandos exclusivamente por voz, 
+converter a fala do usuário em texto, processar a intenção por meio de um modelo 
+de linguagem local (LLM) e responder por meio de voz sintética e animações visuais. 
+A pesquisa não aborda integração com serviços de nuvem externos, nem o 
+desenvolvimento da estrutura mecânica do robô, que é conduzido por outros grupos 
+do projeto. O escopo limita-se à interface de software, à integração com os 
+dispositivos de áudio e à execução em hardware Raspberry Pi. Para a etapa de 
+prototipagem e validação inicial foi utilizada uma Raspberry Pi 4, enquanto a versão 
+final do projeto foi migrada para uma Raspberry Pi 5, visando melhor desempenho 
+no processamento local. 
+A interação principal do robô é feita apenas por voz. Entradas por teclado ou 
+terminal são utilizadas somente para testes técnicos, depuração e validação interna, 
+não fazendo parte do modo normal de uso do sistema. 
+ 
+ 
+1.2​ Objetivo Geral 
+ 
+O objetivo geral deste projeto é desenvolver e implantar uma interface de 
+interação natural entre alunos e um robô institucional, operando de forma fluida e 
+completamente offline, sem dependência de conexão à internet para reconhecimento 
+de fala, processamento de linguagem e síntese de voz. 
+
+
+## Página 10
+
+ 
+ 
+O sistema capta comandos de voz em Português do Brasil, converte a fala do 
+usuário em texto por meio de um módulo de Speech-to-Text local, processa a 
+intenção por meio de um modelo de linguagem local otimizado para hardware 
+embarcado e responde ao usuário com voz sintética naturalizada e feedback visual 
+dinâmico. 
+ 
+1.2.1​ Objetivos Específicos 
+Para alcançar o objetivo geral, os seguintes pontos específicos foram desenvol- 
+vidos: 
+ 
+1.​ Selecionar e configurar o hardware definitivo (Raspberry Pi 5, microfone USB e 
+caixas de som); 
+2.​ Implementar um modelo de linguagem local (LLM) otimizado para hardware 
+embarcado; 
+3.​ Desenvolver o módulo de percepção: captura de áudio e conversão para texto 
+(Speech-to-Text); 
+4.​ Desenvolver o módulo de cognição: processamento da intenção e geração de 
+resposta via IA local; 
+5.​ Desenvolver o módulo de expressão: geração de fala (Text-to-Speech) com voz 
+naturalizada e interface visual; 
+6.​ Desenvolver animações de expressões faciais sincronizadas com o sistema de 
+fala; 
+7.​ Integrar a interface aos demais módulos desenvolvidos por outros grupos do 
+projeto; 
+8.​ Realizar testes de latência, uso de recursos e validação em campo com o 
+público acadêmico. 
+ 
+ 
+1.3​ Justificativa 
+ 
+No contexto educacional contemporâneo, a robótica e a Inteligência Artificial 
+deixaram de ser campos puramente teóricos para se tornarem ferramentas de 
+engajamento. O problema central deste trabalho reside na criação de uma interface 
+de interação natural que permita a comunicação entre alunos e um robô institucional 
+de forma fluida e offline. 
+A 
+execução 
+deste 
+projeto 
+justifica-se 
+pela 
+integração 
+acadêmica, 
+proporcionando aos alunos contato com sistemas embarcados de alto desempenho, 
+
+
+## Página 11
+
+ 
+modelos 
+
+
+## Página 12
+
+ 
+ 
+de linguagem de última geração e técnicas de síntese de voz. Além disso, reforça o 
+marketing institucional da SETREM ao demonstrar aplicações práticas de 
+Engenharia de Computação desenvolvidas internamente. 
+O desafio técnico consiste em implementar um sistema de hardware 
+embarcado capaz de realizar tarefas de Processamento de Linguagem Natural com 
+baixa latência e autonomia dentro do campus da SETREM, tornando o robô uma 
+vitrine tecnológica do curso de Engenharia de Computação. 
+ 
+ 
+1.4​ Materiais 
+ 
+A pesquisa focou na integração de três pilares: processamento de linguagem 
+(LLM), hardware embarcado e síntese de voz (TTS). O hardware definitivo do projeto 
+é a Raspberry Pi 5, e os principais componentes de software utilizados na versão 
+final do sistema são: 
+ 
+•​ Hardware: Raspberry Pi 5 (8 GB RAM); 
+•​ Sistema Operacional: Debian Bookworm (64 bits); 
+•​ Motor de IA: Ollama; 
+•​ Modelo de Linguagem: Gemma 3B (Google DeepMind), executado no formato 
+quantizado GGUF Q4_K_M, com suporte nativo ao Português do Brasil; 
+•​ Reconhecimento de Fala (STT): Vosk Speech Recognition Toolkit, com o modelo 
+vosk—nodel—snall—pt, treinado para o Português do Brasil; 
+•​ Captura de Áudio: microfone USB, acessado por meio da biblioteca PyAudio; 
+•​ Motor de Voz (TTS): eSpeak-ng com o banco de vozes MBROLA mb-br3; 
+•​ Saída de Áudio: caixas de som conectadas via saída P2 (jack de 3,5 mm); 
+•​ Display: utilizado para exibição de animações visuais sincronizadas com os 
+estados do sistema (espera, processamento e resposta); 
+•​ Inicialização Automática: serviço systend, configurado para iniciar a interface 
+junto ao sistema operacional. 
+ 
+Na fase inicial de prototipagem em bancada, anterior à aquisição do hardware 
+definitivo, foi utilizada uma Raspberry Pi 4 (8 GB RAM) com sistema operacional 
+Debian Trixie (64 bits) e os modelos de linguagem TinyLlama (1,1 bilhão de 
+parâmetros) e Qwen2-0.5B, conforme detalhado no Capítulo 3. 
+
+
+## Página 13
+
+ 
+ 
+1.5​ Metodologia 
+ 
+A metodologia adotada baseia-se nos princípios da Engenharia de Sistemas, 
+organizada nas seguintes etapas: 
+ 
+1.​ Levantamento de Requisitos e Arquitetura: definição das especificações de 
+hardware (Raspberry Pi 5) e escolha do modelo de linguagem (LLM) adequado 
+à capacidade computacional do dispositivo. 
+2.​ Desenvolvimento Modular: o sistema foi dividido em três módulos principais: 
+Módulo de Percepção (captura de áudio e conversão para texto), Módulo de 
+Cognição (processamento da intenção e geração de resposta via IA local) e 
+Módulo de Expressão (geração de fala e interface visual de expressões). 
+3.​ Integração e Testes de Latência: sincronização entre os módulos e medição 
+do tempo de resposta para garantir uma interação natural. 
+4.​ Validação em Campo: testes de interação com o público acadêmico para 
+refinamento da interface e usabilidade, incluindo a coleta de métricas de 
+desempenho (benchmarking) que fornecem validade acadêmico-científica aos 
+resultados obtidos. 
+ 
+ 
+1.6​ Cronograma 
+ 
+O cronograma do semestre foi estruturado para garantir que cada fase do 
+projeto fosse concluída de forma incremental e organizada, conforme detalhado na 
+Tabela 1. 
+Tabela 1 – Cronograma de atividades do projeto. 
+ 
+ 
+Atividade 
+Mar 
+Abr 
+Mai 
+Jun 
+Jul 
+ 
+Escopo do problema e tema 
+X 
+Justificativa, metodologia e orça- 
+mento 
+X 
+Entrega do projeto no Logos 
+X 
+Desenvolvimento e integração fi- 
+nal 
+X 
+Ajustes e testes finais 
+X 
+Apresentação final (04/07) 
+X 
+Ajustes solicitados pela banca 
+avaliadora 
+X 
+ 
+ 
+Fonte: os autores. 
+
+
+## Página 14
+
+ 
+ 
+1.7​ Orçamento 
+ 
+Os custos estimados para a aquisição dos componentes necessários estão 
+detalhados na Tabela 2. 
+Tabela 2 – Orçamento detalhado dos componentes. 
+ 
+ 
+Item 
+Qtd. 
+Valor Unit. (R$) 
+Subtotal (R$) 
+ 
+Kit Raspberry Pi 5 8GB (Fonte/Case/SD 
+64GB) 
+01 
+1.755,00 
+1.755,00 
+Microfone USB 
+01 
+38,00 
+38,00 
+Caixa de alto-falante 
+01 
+50,00 
+50,00 
+Total estimado 
+1.843,00 
+ 
+ 
+Fonte: os autores. 
+
+
+## Página 15
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2​FUNDAMENTAÇÃO TEÓRICA 
+ 
+ 
+Este capítulo apresenta os conceitos teóricos que fundamentam as escolhas 
+técnicas do projeto, abordando a Interação Humano-Robô, o Processamento de 
+Linguagem Natural e os Modelos de Linguagem, o reconhecimento de fala, a síntese 
+de voz e a execução local de modelos de linguagem em hardware embarcado. 
+ 
+ 
+2.1​ Interação Humano-Robô 
+ 
+A Interação Humano-Robô (IHR), do inglês Human-Robot Interaction (HRI), é 
+definida por Goodrich e Schultz (2008) como um campo de estudo dedicado a 
+compreender, projetar e avaliar sistemas robóticos para uso por seres humanos ou 
+em conjunto com eles. Os mesmos autores caracterizam o problema central da área 
+como o de compreender e moldar as interações entre um ou mais humanos e um ou 
+mais robôs (GOODRICH; SCHULTZ, 2008). 
+No caso deste projeto, a interação ocorre por meio de um canal 
+exclusivamente por voz, o que aproxima o problema de IHR das técnicas de 
+Processamento de Linguagem Natural e de interfaces de diálogo falado, exigindo 
+que o robô seja capaz de perceber o ambiente (captação de voz), interpretar a 
+intenção do usuário (cognição) e responder de forma perceptível e compreensível 
+(síntese de voz e expressão visual), etapas que estruturam a arquitetura 
+apresentada no Capítulo 3. 
+ 
+ 
+2.2​ Processamento de Linguagem Natural e Modelos de Linguagem 
+ 
+O Processamento de Linguagem Natural (NLP) é a área da Inteligência 
+Artificial voltada ao desenvolvimento de métodos computacionais capazes de 
+compreender, interpretar e gerar linguagem humana (JURAFSKY; MARTIN, 2025). 
+Os modelos de linguagem de larga escala (LLM – Large Language Models) são um 
+dos principais resultados recentes dessa área: redes neurais treinadas sobre 
+grandes volumes de texto, capazes de prever a continuação mais provável de uma 
+sequência e, com isso, 
+
+
+## Página 16
+
+ 
+ 
+gerar respostas coerentes a partir de um comando ou pergunta em linguagem natural. 
+O modelo de linguagem utilizado na versão final deste projeto é o Gemma, 
+uma família de modelos leves e de código aberto desenvolvida pela Google 
+DeepMind a partir da pesquisa e tecnologia utilizadas nos modelos Gemini 
+(GOOGLE DEEPMIND, 2024). A escolha por um modelo de código aberto e de porte 
+reduzido (na ordem de bilhões de parâmetros, e não centenas de bilhões) é o que 
+viabiliza sua execução em hardware embarcado, como a Raspberry Pi, sem 
+depender de infraestrutura de nuvem. 
+ 
+ 
+2.3​ Reconhecimento de Fala (Speech-to-Text) 
+ 
+O reconhecimento automático de fala, ou conversão de fala em texto 
+(Speech-to-Text, STT), consiste no processo de transformar um sinal de áudio 
+contendo fala humana em uma representação textual correspondente (JURAFSKY; 
+MARTIN, 2025). Sistemas de STT tradicionalmente combinam um modelo acústico, 
+responsável por associar trechos do sinal de áudio a unidades fonéticas, com um 
+modelo de linguagem, responsável por estimar a sequência de palavras mais 
+provável. 
+Para aplicações embarcadas e offline, como a deste projeto, é necessário o 
+uso de motores de reconhecimento de fala leves, que não dependam de 
+processamento em nuvem. O Vosk é um exemplo desse tipo de motor: um kit de 
+ferramentas de reconhecimento de fala offline construído sobre a biblioteca Kaldi, 
+que disponibiliza modelos acústicos compactos (na ordem de dezenas de 
+megabytes) para diversos idiomas, incluindo o Português, e que é executável em 
+dispositivos de baixo consumo, como a Raspberry Pi (VOSK, 2026). 
+ 
+ 
+2.4​ Síntese de Voz (Text-to-Speech) 
+ 
+A síntese de voz, ou conversão de texto em fala (Text-to-Speech, TTS), é o 
+processo inverso ao do reconhecimento de fala: a geração de um sinal de áudio 
+inteligível a partir de um texto de entrada. Duas abordagens clássicas de síntese de 
+voz são a síntese por formantes, que gera a fala a partir de um modelo matemático 
+do trato vocal, e a síntese concatenativa, que produz a fala a partir da combinação 
+de fragmentos de gravações de voz humana. 
+O eSpeak-ng, motor de síntese utilizado neste projeto, é, em sua configuração 
+padrão, um sintetizador de formantes, o que resulta em uma voz de qualidade mais 
+robótica e menos natural (ESPEAK-NG, 2026). O MBROLA, por sua vez, é um 
+sintetizador de voz baseado na concatenação de difones (pares de fonemas), 
+desenvolvido originalmente pelo laboratório TCTS da Faculté Polytechnique de Mons 
+
+
+## Página 17
+
+ 
+(DUTOIT et 
+
+
+## Página 18
+
+ 
+ 
+al., 1996; MBROLA PROJECT, 2026). Como o MBROLA utiliza amostras fonéticas 
+gravadas a partir de vozes humanas, seu resultado tende a soar mais natural do que 
+a síntese puramente por formantes, o que motivou sua adoção neste projeto para a 
+naturalização da voz do robô, conforme detalhado na Seção 3.2.2. 
+ 
+ 
+2.5​ Execução Local de Modelos de Linguagem em Hardware Embarcado 
+ 
+A execução de modelos de linguagem diretamente em dispositivos 
+embarcados, sem depender de um servidor remoto, é viabilizada principalmente por 
+duas técnicas complementares: a quantização de modelos e o uso de gerenciadores 
+de modelos otimizados para execução local. 
+A quantização é uma técnica de compressão que reduz a precisão numérica 
+dos pesos de uma rede neural, tipicamente de 32 ou 16 bits em ponto flutuante para 
+representações de 4 a 8 bits, diminuindo de forma significativa o espaço em memória 
+necessário para carregar o modelo e o custo computacional da inferência, com uma 
+perda de qualidade geralmente pequena. O formato GGUF (GPT-Generated Unified 
+Format ) é um formato de arquivo único utilizado pelo projeto llama.cpp para 
+armazenar modelos quantizados de forma eficiente, permitindo que sejam 
+carregados diretamente em memória (memory-mapped ) e executados em CPU, sem 
+necessidade de GPU dedicada (GERGANOV, 2026). Esquemas de quantização 
+como o Q4_K_M, utilizado neste projeto, aplicam uma quantização de 4 bits com 
+precisão adicional nas camadas mais sensíveis do modelo, buscando um equilíbrio 
+entre redução de tamanho e preservação da qualidade das respostas geradas. 
+O Ollama é um motor de execução que gerencia o ciclo de vida de modelos 
+de linguagem quantizados localmente, oferecendo uma API REST local para 
+integração com outras aplicações e um mecanismo de personalização por meio de 
+arquivos de configuração (Modelfile), que permite a injeção de conhecimento 
+específico de domínio no comportamento do modelo (OLLAMA, 2026). É essa 
+combinação – modelo quantizado em formato GGUF executado pelo Ollama – que 
+permite que o Gemma 3B seja executado inteiramente na Raspberry Pi 5, com 
+latência compatível com uma interação por voz em tempo real, conforme 
+demonstrado no Capítulo 3. 
+Por fim, a Raspberry Pi é uma família de computadores de placa única de 
+baixo custo e baixo consumo energético amplamente utilizada em projetos 
+educacionais e de prototipagem embarcada (RASPBERRY PI FOUNDATION, 2026). 
+A versão Raspberry Pi 5, utilizada como hardware definitivo deste projeto, oferece 
+ganhos de desempenho de CPU em relação a gerações anteriores, o que é um fator 
+relevante para a execução local de modelos de STT, LLM e TTS de forma 
+concorrente, conforme discutido na Seção 3.2.1. 
+
+
+## Página 19
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3​DESENVOLVIMENTO E IMPLEMENTAÇÃO 
+ 
+ 
+Este capítulo descreve o processo de desenvolvimento e a implementação da 
+interface de interação humano-robô, desde a fase inicial de prototipagem em 
+bancada até a arquitetura final integrada ao robô, incluindo os ajustes técnicos 
+realizados a partir da avaliação da banca examinadora, os testes de desempenho e 
+os resultados obtidos. 
+ 
+ 
+3.1​ Visão Geral da Arquitetura Implementada 
+ 
+A arquitetura de interação humano-robô foi integralmente construída e 
+instalada sobre a Raspberry Pi 5, que atua como unidade central de processamento 
+do sistema. Todos os periféricos de interação estão fisicamente conectados a esta 
+placa: o microfone USB, responsável pela captura de voz; as caixas de som, 
+responsáveis pela saída de áudio sintetizado; e o display, utilizado para exibição de 
+animações visuais sincronizadas com as respostas do sistema. A Raspberry Pi 5 
+opera com sistema operacional baseado em Debian Bookworm 64 bits (DEBIAN, 
+2026), ambiente sobre o qual todos os módulos de software foram configurados e 
+integrados. 
+A arquitetura final do sistema é composta por três módulos integrados que 
+operam em sequência: o Módulo de Percepção (captura de voz e conversão para 
+texto via Vosk STT), o Módulo de Cognição (processamento da intenção e geração 
+de resposta via modelo de linguagem local Gemma 3B) e o Módulo de Expressão 
+(síntese de voz via eSpeak-ng com MBROLA e exibição de animações no display). 
+Todo o processamento ocorre de forma completamente offline, sem dependência de 
+conexão à internet, conforme definido nos objetivos do projeto (Seção 1.2). 
+ 
+ 
+3.2​ Fase de Prototipagem em Bancada (Raspberry Pi 4) 
+ 
+Antes da migração para o hardware definitivo, o sistema foi validado em uma 
+fase de prototipagem em bancada, utilizando uma Raspberry Pi 4 (8 GB RAM) com 
+sistema operacional Debian Trixie (64 bits). Esta fase teve como objetivo validar a 
+
+
+## Página 20
+
+ 
+ 
+viabilidade técnica da execução de IA e síntese de voz em modo completamente offline, 
+antes da aquisição do hardware definitivo e do microfone USB. 
+ 
+3.2.1​ Infraestrutura de Inteligência Artificial e Otimização de Performance 
+Foi utilizado o Ollama pela sua eficiência em gerenciar modelos quantizados 
+localmente (Seção 2.5). Para a personalização do agente universitário, utilizou-se o 
+conceito de Modelfile, permitindo a injeção de conhecimentos específicos sobre a 
+instituição, como localização de salas, horários e informações gerais da SETREM. 
+Nesta fase, os modelos de linguagem avaliados foram o TinyLlama (1,1 bilhão 
+de parâmetros) e o Qwen2-0.5B. Devido à ausência de GPU dedicada na Raspberry 
+Pi 4, as seguintes otimizações foram aplicadas: 
+ 
+•​ Priorização de processo: uso do comando nice —n —20 para garantir ciclos 
+de CPU ao script principal; 
+•​ Limitação de resposta: configuração do parâmetro nun_predict para evitar 
+gerações excessivamente longas, que causariam latência adicional; 
+•​ Driver de áudio nativo: substituição de bibliotecas Python pesadas por 
+chamadas diretas ao sistema operacional (os. systen) para reduzir o overhead 
+de processamento. 
+ 
+3.2.2​ Síntese de Voz Naturalizada 
+A pesquisa identificou que o som metálico (robótico), característico do 
+sintetizador de formantes padrão do eSpeak-ng, comprometia a naturalidade da 
+interação (Seção 2.4). A solução foi a implementação do MBROLA com o banco de 
+vozes mb-br3, que utiliza amostras fonéticas humanas para uma fala mais fluida em 
+Português do Brasil. 
+ 
+3.2.3​ Configuração do Ambiente de Prototipagem 
+Para reprodução do experimento na fase de bancada, foram executados os 
+seguintes procedimentos: 
+Instalação do núcleo de IA: 
+ 
+curl —fsSL https: //ollana. con/install. sh 1 sh 
+ 
+Instalação de dependências de voz: 
+ 
+sudo apt install espeak—ng nbrola nbrola—br3 alsa—utils —y 
+
+
+## Página 21
+
+ 
+ 
+Configuração de áudio (saída P2 – jack de 3,5 mm): 
+ 
+anixer cset nunid=3 1 
+ 
+3.2.4​ Script de Integração Inicial 
+O script a seguir representa a versão inicial desenvolvida e validada em 
+bancada, integrando a API REST local do Ollama com o motor de síntese de voz 
+MBROLA via eSpeak-ng. Esta versão utilizava entrada por terminal como 
+mecanismo de teste, antes da incorporação do módulo Vosk STT, e serviu de base 
+para a arquitetura final executada na Raspberry Pi 5: 
+ 
+inport requests 
+inport os 
+ 
+0LLAHA_URL = " http: //localhost: 11434/api/generate" 
+H0DEL0 = " tinyllana" 
+V0Z_NATURAL = " nb—br3" 
+ 
+def falar(texto) : 
+texto_sanitizado = texto. replace(' "' , '') . replace("' ", "") . replace("\n", " 
+") 
+os. systen(f' espeak—ng —v 1V0Z_NATURAL) —s 140 " 1texto_sanitizado)" ')  
+ 
+def nain() : 
+vhile True: 
+pronpt = input(" Pergunta: ") 
+if pronpt. lover() in t' sair' , ' parar' ):  
+break 
+payload = 1 
+" nodel": H0DEL0, 
+" pronpt" :  f" Responda de forna curta en portugues:  1pronpt)" , 
+" strean" : False, 
+" options": 1" nun_predict" : 70), 
+) 
+response = requests. post(0LLAHA_URL, j son=payload) 
+resposta_texto = response. j son() . get(' response') 
+falar(resposta_texto) 
+ 
+if  nane​
+ == "  nain ": 
+nain() 
+
+
+## Página 22
+
+ 
+ 
+3.2.5​ Resultados Parciais da Fase de Prototipagem 
+A fase de bancada validou a viabilidade da execução de IA e síntese de voz 
+em modo completamente offline na Raspberry Pi 4. O sistema foi capaz de: 
+ 
+•​ processar perguntas em linguagem natural e gerar respostas coerentes 
+utilizando o modelo TinyLlama, sem qualquer dependência de conexão à 
+internet; 
+•​ sintetizar a resposta em voz naturalizada utilizando MBROLA com o banco de 
+vozes mb-br3, com qualidade sonora consideravelmente superior ao 
+sintetizador de formantes padrão; 
+•​ operar de forma estável na Raspberry Pi 4 com as otimizações aplicadas, 
+mantendo latência aceitável para interação em tempo real. 
+ 
+Constatou-se, ainda, que a entrada de áudio (microfone) requer interface 
+USB, visto que a saída P2 da Raspberry Pi é exclusiva para saída de áudio, não 
+sendo compatível com microfones de headset convencionais, o que motivou a 
+aquisição do microfone USB listada no orçamento (Seção 1.7). 
+ 
+ 
+3.3​ Migração para o Hardware Definitivo (Raspberry Pi 5) 
+ 
+Com a aquisição do microfone USB e a conclusão da fase de prototipagem, 
+tornou-se possível migrar o sistema para o hardware definitivo do projeto e escalar o 
+modelo de linguagem utilizado. Após avaliação comparativa, optou-se pela 
+substituição dos modelos TinyLlama e Qwen2-0.5B pelo Gemma 3B (Seção 2.2), 
+executado localmente por meio do Ollama no formato quantizado GGUF Q4_K_M. A 
+escolha foi motivada por dois fatores principais: o maior número de parâmetros (3 
+bilhões), 
+que 
+proporciona 
+respostas 
+consideravelmente mais coerentes e 
+contextualizadas, e o suporte nativo ao Português do Brasil no próprio modelo base, 
+eliminando a necessidade de instruções explícitas de idioma no prompt a cada 
+requisição. O modelo Gemma 3B também incorpora mecanismos internos de 
+filtragem de conteúdo, dispensando a implementação de filtros externos de 
+linguagem. 
+ 
+ 
+3.4​ Módulo de Percepção: Captura de Voz e Conversão para Texto 
+ 
+A captura de voz é realizada por meio de um microfone USB conectado 
+diretamente à Raspberry Pi 5. A escolha por interface USB foi definida ainda na fase 
+de prototipagem (Seção 3.2.5), uma vez que a entrada P2 da placa é exclusiva para 
+
+
+## Página 23
+
+ 
+saída de áudio. O microfone é reconhecido automaticamente pelo sistema 
+operacional e 
+
+
+## Página 24
+
+ 
+ 
+acessado pelo módulo de captura de áudio via biblioteca PyAudio (PYAUDIO, 2026), 
+que realiza a leitura contínua do fluxo de áudio em blocos de amostras. 
+A conversão de fala em texto foi implementada com o Vosk (Seção 2.3), 
+utilizando o modelo vosk—nodel—snall—pt, treinado para o Português do Brasil, 
+com tamanho reduzido que permite sua execução com baixa latência na Raspberry 
+Pi 5. O Vosk recebe os blocos de áudio capturados pelo PyAudio e retorna o texto 
+transcrito em formato JSON, o qual é processado pelo módulo seguinte. O sistema 
+foi configurado para detectar pausas na fala e enviar a transcrição completa do 
+enunciado apenas após o usuário encerrar sua fala, evitando envios parciais ao 
+modelo de linguagem. 
+ 
+ 
+3.5​ Módulo de Cognição: Processamento de Linguagem com Gemma 3B 
+ 
+A comunicação entre o módulo de percepção e o Ollama ocorre via 
+requisições 
+HTTP 
+à 
+API 
+REST 
+local 
+(endpoint 
+http: 
+//localhost: 
+11434/api/generate), mantendo a mesma abordagem já validada na fase de 
+prototipagem. O Modelfile do agente foi expandido com informações institucionais da 
+SETREM, incluindo localização de salas, cursos disponíveis, estrutura do campus e 
+o contexto de atuação do robô como assistente acadêmico, de forma que as 
+respostas sejam contextualmente relevantes ao ambiente universitário. 
+ 
+ 
+3.6​ Módulo de Expressão: Síntese de Voz e Animações Visuais 
+ 
+A saída de áudio do sistema é realizada por meio do eSpeak-ng integrado 
+com o sintetizador MBROLA e o banco de vozes mb-br3, configuração já validada na 
+fase de prototipagem como superior ao sintetizador de formantes padrão em termos 
+de naturalidade da fala (Seção 3.2.2). As caixas de som estão conectadas à 
+Raspberry Pi 5 via saída de áudio jack P2, com roteamento configurado via comando 
+anixer do sistema ALSA (ALSA TEAM, 2026) para garantir que o áudio seja 
+direcionado corretamente ao alto-falante e não à saída HDMI. 
+Paralelamente à síntese de voz, o display conectado à Raspberry Pi 5 exibe 
+animações visuais sincronizadas com os diferentes estados do sistema. As 
+animações foram desenvolvidas para representar os estados funcionais do robô: 
+estado de espera, estado de processamento e estado de resposta. Essa 
+representação visual tem por objetivo tornar a interação mais intuitiva e expressiva, 
+permitindo que o usuário identifique claramente em qual etapa do ciclo de resposta o 
+robô se encontra em cada momento da conversa. 
+
+
+## Página 25
+
+ 
+ 
+3.7​ Ajuste do Volume das Caixas de Som 
+ 
+Durante a apresentação da banca final, foi apontada a necessidade de 
+investigar o volume reduzido das caixas de som do robô. A investigação conduzida 
+pelo grupo, a partir dessa avaliação, verificou os seguintes pontos na cadeia de 
+áudio: 
+ 
+•​ o nível de ganho do canal de reprodução configurado via alsanixer/anixer, que 
+na configuração inicial (Seção 3.2.3) apenas selecionava a saída P2, sem 
+necessariamente maximizar o volume do canal; 
+•​ a limitação de potência da saída de áudio P2 (jack de 3,5 mm) da Raspberry Pi, 
+que é adequada para fones de ouvido e caixas amplificadas, mas insuficiente 
+para alimentar caixas de som passivas diretamente; 
+•​ a compatibilidade entre a impedância/potência das caixas de som utilizadas e a 
+saída de áudio da placa, e a eventual necessidade de um amplificador externo 
+ou de caixas de som ativas (amplificadas) para alcançar um volume adequado 
+ao ambiente de corredor acadêmico. 
+•​ o problema relatado de baixo volume de som foi verificado, e ajustado, o 
+problema ocorreu devido à configuração do sistema de áudio padrão do linux 
+Alsamixer, ao entrar pelo terminal via o comando “alsamixer” e ajustado as 
+opções de volume, o áudio das caixas de som ficou muito melhor, sendo 
+possível ouvir claramente a resposta do robô. 
+ 
+ 
+ 
+3.8​ Integração no Robô Final e Instalação Física 
+ 
+Concluída a validação funcional em bancada, toda a interface de software foi 
+migrada e instalada na estrutura física do robô definitivo, com a Raspberry Pi 5 
+embarcada na plataforma robótica desenvolvida pelos demais grupos do projeto. O 
+microfone USB, as caixas de som e o display foram posicionados na estrutura do 
+robô de forma a otimizar a captura de voz e a projeção de áudio para o interlocutor, 
+bem como garantir a visibilidade das animações exibidas no display. Os cabos foram 
+organizados internamente à estrutura para evitar interferências mecânicas e 
+preservar a estética do conjunto. 
+A interface de software foi configurada para iniciar automaticamente junto ao 
+sistema operacional, de modo que o robô entre em estado operacional 
+imediatamente após a inicialização da Raspberry Pi 5, sem necessidade de 
+intervenção manual por terminal. Essa configuração foi implementada por meio de 
+um serviço systend (SYSTEMD, 2026), garantindo estabilidade e reinicialização 
+automática em caso de falha no processo principal. 
+
+
+## Página 26
+
+ 
+ 
+3.9​ Diagrama da Arquitetura do Sistema 
+ 
+A Figura 1 ilustra a arquitetura geral do sistema implementado, evidenciando 
+o fluxo de dados entre os periféricos de hardware e os módulos de software 
+executados na Raspberry Pi 5. 
+Figura 1 – Diagrama da arquitetura do sistema de interação humano-robô 
+ 
+ 
+ 
+ 
+ 
+Fonte: os autores. 
+ 
+ 
+ 
+ 
+3.10​ Evidências do Protótipo 
+ 
+Esta seção apresenta o registro fotográfico e visual do protótipo desenvolvido, 
+evidenciando a montagem física, a integração dos periféricos e as animações do 
+módulo de expressão. 
+ 
+ 
+Figura 2 – Robô com abertura para o microfone conforme pedido da banca. 
+
+
+## Página 27
+
+ 
+ 
+ 
+ 
+Fonte: os autores.​
+​
+Figura 3 – Expressão de Fala. 
+ 
+ 
+ 
+ 
+ 
+Fonte: os autores.​
+ 
+​
+​
+Figura 4 – Expressão de Pensamento. 
+
+
+## Página 28
+
+ 
+ 
+ 
+ 
+ 
+Fonte: os autores. 
+ 
+ 
+3.11​ Resultados Obtidos 
+ 
+A integração completa dos três módulos resultou em um sistema funcional de 
+interação por voz operando integralmente de forma offline na Raspberry Pi 5 
+embarcada no robô. O ciclo completo de interação, captura de voz pelo microfone, 
+conversão para texto pelo Vosk, processamento da intenção pelo Gemma 3B via 
+Ollama, síntese de resposta via eSpeak-ng/MBROLA e exibição de animações no 
+display, foi executado com sucesso em testes realizados nas dependências da 
+SETREM. 
+A 
+qualidade 
+das 
+respostas 
+geradas 
+pelo 
+Gemma 
+3B 
+mostrou-se 
+significativamente superior à dos modelos anteriores, com maior coerência 
+gramatical e contextual em Português do Brasil. O reconhecimento de fala pelo Vosk 
+apresentou desempenho satisfatório em ambiente interno, com taxa de acerto 
+elevada para enunciados claros e diretamente pronunciados ao microfone USB. A 
+síntese de voz via MBROLA manteve a naturalidade já identificada na fase de 
+prototipagem. As animações visuais exibidas no display foram avaliadas 
+positivamente em testes informais realizados com membros do grupo e 
+colaboradores, contribuindo para a percepção de um robô expressivo e responsivo. 
+
+
+## Página 29
+
+ 
+ 
+3.12​ Limitações Identificadas e Soluções Aplicadas 
+ 
+Travamento de áudio: quando a IA processava e o áudio era sintetizado 
+simultaneamente, ocorriam travamentos. O problema foi resolvido limitando o 
+tamanho máximo da resposta gerada e atribuindo alta prioridade de CPU ao 
+processo de áudio (Seção 3.2.1). 
+Roteamento de áudio: o sistema tentava enviar o áudio para a saída HDMI 
+por padrão. A solução foi forçar a saída para o jack de 3,5 mm via comando anixer, 
+garantindo que o áudio chegasse ao alto-falante conectado. 
+Volume de saída insuficiente: conforme detalhado na Seção 3.7, o volume 
+das caixas de som apresentou-se abaixo do esperado durante a apresentação final, 
+exigindo uma investigação adicional das causas e da configuração de gain de áudio. 
+
+
+## Página 30
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CONSIDERAÇÕES FINAIS 
+ 
+ 
+Este trabalho apresentou o desenvolvimento de uma interface de interação 
+humano-robô baseada em Processamento de Linguagem Natural local, projetada 
+para o ambiente acadêmico da SETREM. Partindo de uma fase de prototipagem em 
+bancada sobre Raspberry Pi 4, com os modelos TinyLlama e Qwen2-0.5B, o grupo 
+evoluiu a solução até a arquitetura final integrada ao robô, executada integralmente 
+na Raspberry Pi 5 com o modelo de linguagem Gemma 3B, o reconhecimento de 
+fala Vosk e a síntese de voz eSpeak-ng/MBROLA. 
+Os resultados obtidos demonstram que é tecnicamente viável construir um 
+assistente robótico conversacional que opera de forma completamente offline, 
+preservando a privacidade dos dados dos usuários e a autonomia do sistema em 
+relação a serviços de nuvem. Os objetivos específicos definidos na Seção 1.2.1 
+foram atendidos: o hardware definitivo foi selecionado e configurado, os três 
+módulos do sistema (percepção, cognição e expressão) foram desenvolvidos e 
+integrados entre si e à estrutura física do robô, e o sistema foi validado em testes de 
+campo nas dependências da SETREM. 
+A partir dos apontamentos da banca avaliadora, o grupo revisou a estrutura do 
+relatório, incorporando a Fundamentação Teórica (Capítulo 2) e reorganizando o 
+conteúdo de desenvolvimento no Capítulo 3, e realizou ajustes técnicos adicionais, 
+entre eles a investigação do volume reduzido das caixas de som (Seção 3.7). 
+ 
+ 
+Trabalhos Futuros 
+ 
+Como continuidade deste projeto, os seguintes trabalhos futuros são apontados: 
+ 
+•​ Expansão da base de conhecimento da SETREM: aprofundar o Modelfile do 
+agente com informações institucionais adicionais (salas, horários, cursos, 
+eventos), ampliando a relevância contextual das respostas do robô; 
+
+
+## Página 31
+
+ 
+29 
+ 
+•​ Testes de usabilidade em maior escala: realizar uma validação em campo 
+com uma amostra maior do público acadêmico, coletando métricas de 
+satisfação e taxa de sucesso das interações; 
+•​ Consolidação do ajuste de áudio: aplicar e documentar de forma definitiva a 
+solução para o volume das caixas de som (Seção 3.7), avaliando, se 
+necessário, a adoção de caixas de som amplificadas; 
+•​ Evolução das animações faciais: expandir o conjunto de estados visuais 
+exibidos no display, incorporando expressões adicionais sincronizadas com o 
+conteúdo semântico das respostas do robô. 
+
+
+## Página 32
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+REFERÊNCIAS 
+ 
+ALSA TEAM. ALSA – Advanced Linux Sound Architecture. 2026. Disponível em: 
+<https://www.alsa-project.org/>. Acesso em: jun. 2026. 
+DEBIAN. Debian GNU/Linux – The Universal Operating System. 2026. Disponível 
+em: <https://www.debian.org/>. Acesso em: jun. 2026. 
+DUTOIT, T. et al. The MBROLA project: towards a set of high quality speech 
+synthesizers free of use for non commercial purposes. In: Proceedings of the 
+Fourth International Conference on Spoken Language Processing (ICSLP). 
+Philadelphia, 
+USA: 
+[s.n.], 
+1996. 
+Disponível 
+em: 
+<https://www.isca-archive.org/icslp_1996/dutoit96_icslp.pdf>. 
+ESPEAK-NG. eSpeak NG Text to Speech. 2026. Disponível em: <https: 
+//github.com/espeak-ng/espeak-ng>. Acesso em: mai. 2026. 
+GERGANOV, G. llama.cpp – GGUF: LLM inference in C/C++. 2026. Disponível em: 
+<https://github.com/ggerganov/llama.cpp>. Acesso em: jun. 2026. 
+GOODRICH, M. A.; SCHULTZ, A. C. Human-Robot Interaction: A Survey. 
+Foundations and Trends in Human-Computer Interaction, v. 1, n. 3, p. 203–275, 
+2008. 
+GOOGLE DEEPMIND. Gemma: Open Models Based on Gemini Research and 
+Technology. 2024. Disponível em: <https://ai.google.dev/gemma>. Acesso em: mai. 
+2026. 
+JURAFSKY, D.; MARTIN, J. H. Speech and Language Processing: An 
+Introduction to Natural Language Processing, Computational Linguistics, and 
+Speech Recognition with Language Models. 3. ed. Prentice Hall, 2025. Disponível 
+em: 
+<https://web.stanford.edu/~jurafsky/slp3/>. 
+MBROLA PROJECT. MBROLA – Speech Synthesizer. 2026. Disponível em: 
+<https://github.com/numediart/MBROLA>. Acesso em: mai. 2026. 
+OLLAMA. Ollama – Run large language models locally. 2026. Disponível em: 
+<https://ollama.com>. Acesso em: mai. 2026. 
+PYAUDIO. PyAudio – Cross-platform audio I/O library for Python. 2026. 
+Disponível em: <https://people.csail.mit.edu/hubert/pyaudio/>. Acesso em: mai. 2026. 
+RASPBERRY PI FOUNDATION. Raspberry Pi 5. 2026. Disponível em: 
+<https://www.raspberrypi.com/products/raspberry-pi-5/>. Acesso em: abr. 2026. 
+
+
+## Página 33
+
+ 
+SYSTEMD. systemd – System and Service Manager. 2026. Disponível em: 
+<https://systemd.io/>. Acesso em: jun. 2026. 
+
+
+## Página 34
+
+ 
+31 
+ 
+VOSK. Vosk Speech Recognition Toolkit. 2026. Disponível em: <https: 
+//alphacephei.com/vosk/>. Acesso em: abr. 2026. 

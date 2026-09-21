@@ -1,0 +1,83 @@
+% Capítulo 2 — Fundamentação Teórica (conforme ROTEIRO PIE IV).
+\chapter{Fundamentação Teórica}\label{chap:FundamentacaoTeorica}
+
+Este capítulo apresenta os fundamentos teóricos que sustentam as decisões de projeto adotadas no desenvolvimento do robô Atlas, organizados segundo os quatro componentes curriculares do Projeto Interdisciplinar de Extensão IV: Programação Orientada a Objetos, Modelagem de Banco de Dados, Estatística Aplicada à Análise de Dados e Gerenciamento de Projetos, encerrando com a descrição da arquitetura da solução que integra esses fundamentos na prática.
+
+\section{Revisão da Literatura} \label{sec:revisao_literatura}
+A fundamentação deste trabalho apoia-se em obras consolidadas de cada um dos campos que o projeto integra. No campo do software, a Programação Orientada a Objetos e os padrões de projeto que dela derivam são tratados a partir de referências clássicas da área \cite{deitel2016,gamma2000}, enquanto as práticas de engenharia e de qualidade de software que orientam o desenvolvimento remetem à literatura de Engenharia de Software \cite{sommerville2018}. No campo do armazenamento, a modelagem relacional e os sistemas gerenciadores de banco de dados são fundamentados em literatura consagrada da área \cite{elmasri2011}. No campo da análise, os fundamentos de Estatística descritiva e de análise de séries temporais provêm de referências amplamente adotadas no ensino de engenharia \cite{bussab2017,morettin2018}. Por fim, as práticas de condução do projeto ao longo do semestre baseiam-se na literatura de métodos ágeis de desenvolvimento de software \cite{prikladnicki2014}.
+
+Além dessas bases teóricas, o projeto situa-se no encontro de três eixos tecnológicos, decorrentes diretamente das soluções já empregadas: a robótica móvel teleoperada e os protocolos de comunicação de curto alcance para controle remoto, representados pelo uso de Bluetooth Low Energy no padrão \textit{Nordic UART Service}; as arquiteturas orientadas a mensagens, aplicadas na comunicação entre os serviços embarcados por meio do protocolo MQTT; e os bancos de dados de séries temporais aplicados à telemetria de sistemas embarcados, materializados na escolha do TimescaleDB. As seções seguintes desenvolvem cada um desses fundamentos e encerram com a descrição da arquitetura que os integra.
+
+\section{Programação Orientada a Objetos} \label{sec:poo}
+A Programação Orientada a Objetos organiza um sistema em classes, que encapsulam estado (atributos) e comportamento (métodos) atrás de uma interface pública \cite{deitel2016}. Quatro princípios sustentam o paradigma: \textbf{encapsulamento}, que oculta os detalhes internos de uma classe e restringe o acesso direto ao seu estado; \textbf{abstração}, que define o que uma classe faz -- por meio de classes ou interfaces abstratas -- sem especificar como; \textbf{herança}, que permite que uma subclasse reutilize e especialize o comportamento de uma superclasse; e \textbf{polimorfismo}, que permite que um mesmo ponto de chamada produza comportamentos distintos conforme a subclasse concreta envolvida, resolvida em tempo de execução.
+
+No repositório \texttt{orquestrador}, esses princípios aparecem de forma concreta em dois pontos. O roteamento de comandos (\texttt{pi/services/orquestrador/.../roteador.py}) segue o padrão de projeto \textit{Command} \cite{gamma2000}: a classe abstrata \texttt{ComandoRoteavel} declara o método abstrato \texttt{rotear()}, implementado por cinco subclasses concretas -- para comandos de motor, de voz, de parada de emergência, de provisionamento de Wi-Fi e de validação de rota segura --, cada uma responsável por um tipo de comando recebido do aplicativo. A função pública de despacho não conhece a subclasse concreta do outro lado: ela invoca \texttt{rotear()} polimorficamente, e o comportamento correto é resolvido conforme o tipo do comando recebido. Esse desenho torna a adição de um novo tipo de comando uma questão de criar uma subclasse nova, sem alterar a lógica de despacho existente.
+
+O segundo ponto é a camada de acionamento dos motores (\texttt{motores/acionamento.py}), em que a classe abstrata \texttt{Acionamento} isola o serviço de motores do hardware concreto: a subclasse \texttt{AcionamentoStepper} traduz comandos de velocidade em sinais PWM para os drivers dos motores de passo reais, enquanto a subclasse \texttt{AcionamentoSimulado} apenas registra o que teria sido executado, permitindo desenvolver e testar o serviço sem o robô fisicamente montado. O serviço depende apenas da interface abstrata, nunca de uma implementação concreta específica -- uma aplicação do princípio de inversão de dependência.
+
+O subsistema \texttt{atlas\_ai\_v2} (assistente de voz e rosto animado da Atlas) concentra os exemplos mais completos de POO do projeto: uma hierarquia de herança e polimorfismo clássicos, em que uma classe base imutável de evento (\texttt{core/events.py::Event}) é especializada em oito subclasses de evento (mensagem do usuário, início e fim de fala, ocorrência de erro, entre outras), despachadas por verificação de tipo em tempo de execução; o padrão de projeto \textit{Factory Method} \cite{gamma2000}, na escolha do cliente de modelo de linguagem e do motor de síntese de voz a instanciar conforme a configuração; o padrão \textit{Decorator} \cite{gamma2000}, em que uma classe envolve um motor de voz primário e um de reserva atrás da mesma interface, promovendo tolerância a falhas; e abstração por tipagem estrutural (\textit{duck typing}), via \texttt{typing.Protocol}, para as interfaces de cliente de linguagem e de motor de voz -- uma forma de abstração distinta da herança nominal clássica (\texttt{class X(Base)}), útil para diferenciar os dois casos quando a disciplina exigir.
+
+\section{Modelagem de Banco de Dados} \label{sec:banco_dados}
+O modelo relacional organiza os dados em relações (tabelas) compostas por atributos, sobre as quais operam uma linguagem de consulta declarativa (SQL) e mecanismos de indexação que sustentam o desempenho das consultas \cite{elmasri2011}. O modelo de dados adotado para a telemetria do robô Atlas é relacional, sobre o sistema gerenciador PostgreSQL, com a extensão TimescaleDB para lidar eficientemente com séries temporais. Em vez de normalizar os dados em uma tabela por tipo de telemetria, o sistema persiste todos os tipos -- posição por GPS, estado dos motores, nível de bateria, estado do Wi-Fi -- em uma única tabela genérica (\texttt{telemetria}), com colunas de carimbo de tempo (\texttt{ts}), tipo (\texttt{tipo}), tópico de origem (\texttt{topico}) e o restante do dado em uma coluna semiestruturada (\texttt{payload}, do tipo \texttt{JSONB}). Essa tabela é transformada em uma \textit{hypertable} pelo TimescaleDB, que a particiona automaticamente por tempo, e um índice composto em (\texttt{tipo}, \texttt{ts} decrescente) sustenta as duas consultas mais frequentes: a última leitura de cada tipo e a evolução de um tipo ao longo do tempo.
+
+Essa escolha de modelagem prioriza a flexibilidade sobre a normalização estrita: adicionar um novo tipo de dado -- por exemplo, um novo sensor -- não exige migração de esquema, apenas um novo valor para a coluna \texttt{tipo} e a estrutura livre do respectivo \texttt{payload}.
+
+Sobre esse armazenamento, uma API de leitura (\texttt{orquestrador/cloud/api}, construída com o \textit{framework} FastAPI) expõe a telemetria por HTTP, autenticada por token, com um usuário de banco de dados restrito apenas à operação \texttt{SELECT} -- separando o caminho de escrita, exclusivo do serviço de ingestão, do caminho de leitura, exposto à internet por um túnel Cloudflare. As consultas dessa API ilustram técnicas de modelagem e otimização relevantes: o operador \texttt{DISTINCT ON} do PostgreSQL, para obter o último valor de cada tipo em uma única consulta; a função \texttt{time\_bucket()} do TimescaleDB, para agregação temporal que aproveita a própria partição da \textit{hypertable} em vez de uma leitura linha a linha; paginação por cursor de tempo, em vez de deslocamento (\texttt{OFFSET}), para evitar que registros novos desloquem páginas já lidas; e validação estrita dos parâmetros que precisam ser interpolados diretamente no texto da consulta (o nome do campo agregado e o intervalo de agregação, que a sintaxe do SQL não aceita como parâmetro), como salvaguarda contra injeção de SQL.
+
+\section{Estatística Aplicada à Análise de Dados} \label{sec:estatistica}
+Não foi identificado, até o momento, nenhum código de análise estatística em execução sobre os dados de telemetria do robô: não há uso de bibliotecas como \texttt{pandas}, \texttt{numpy} ou \texttt{statistics} para esse fim em nenhum dos três repositórios do projeto -- o uso de \texttt{numpy} encontrado em \texttt{atlas\_ai\_v2} está restrito ao processamento de áudio e à renderização gráfica do rosto animado, sem relação com os dados de telemetria. Esta é a lacuna mais relevante identificada no levantamento do projeto, e a que responde mais diretamente ao problema de pesquisa formulado no Capítulo 1.
+
+A tabela \texttt{telemetria} do TimescaleDB, descrita na Seção~\ref{sec:banco_dados}, é a fonte de dados real sobre a qual essa análise será construída, em resposta ao problema de pesquisa formulado no Capítulo~\ref{chap:ResearchPlan}: caracterizar o desempenho operacional do robô. A fundamentação teórica desta análise sustenta-se em dois conjuntos de técnicas. O primeiro é a Estatística descritiva, que resume um conjunto de dados por medidas de tendência central -- como a média e a mediana -- e por medidas de dispersão -- como o desvio padrão --, e que comunica sua distribuição por meio de representações gráficas, como o histograma \cite{bussab2017}; essas medidas serão aplicadas a variáveis como o nível de bateria e a velocidade dos motores. O segundo é a análise de séries temporais, adequada a dados indexados no tempo, como os coletados continuamente pela telemetria do robô, e voltada a descrever tendências e variações de uma variável ao longo do tempo \cite{morettin2018}; será empregada para caracterizar a evolução do consumo de energia e do deslocamento durante a operação. Em coerência com a diretriz de rastreabilidade adotada neste trabalho, nenhum resultado de análise estatística será descrito antes de sua execução efetiva sobre os dados reais coletados.
+
+\section{Arquitetura da Solução} \label{sec:arquitetura}
+A arquitetura do robô Atlas divide-se em três frentes fisicamente distintas -- um aplicativo móvel, um conjunto de serviços embarcados e um back-end em nuvem --, que se comunicam por protocolos diferentes conforme a distância física entre as partes e a confiabilidade exigida em cada trecho, como ilustra a \autoref{fig:diagrama_blocos}.
+
+O aplicativo (Flutter, Android e iOS) envia comandos de movimento e de planejamento de rota ao robô por Bluetooth Low Energy, no padrão \textit{Nordic UART Service}. Um firmware embarcado no ESP32 recebe esses comandos pela característica BLE, valida sua estrutura como JSON e os repassa por uma conexão serial (115200 bauds) ao Raspberry Pi, sem interpretar seu conteúdo. No Raspberry Pi, um barramento MQTT local (\textit{broker} Mosquitto) desacopla cinco serviços Python independentes: o serviço que ingere a linha serial publica o comando cru; o serviço orquestrador o interpreta, por meio do roteador de comandos descrito na \autoref{sec:poo}, e o redistribui para os serviços responsáveis por motores, Wi-Fi e GPS. Cada um desses serviços publica de volta seu próprio estado, que o orquestrador espelha sob um conjunto de tópicos de telemetria.
+
+Esses tópicos de telemetria são replicados, por uma ponte do Mosquitto, para um \textit{broker} remoto hospedado em uma máquina virtual na infraestrutura do LARCC, onde um serviço de ingestão os persiste no banco de dados TimescaleDB descrito na \autoref{sec:banco_dados}. Uma API de leitura, publicada por um túnel Cloudflare, permite que o aplicativo -- de qualquer lugar, com o robô ligado ou desligado -- consulte esse histórico, fechando o ciclo entre a operação do robô e sua visualização.
+
+\begin{figure}[htb]
+\centering
+\caption{Diagrama de blocos da arquitetura do robô Atlas.}
+\label{fig:diagrama_blocos}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=black, thick, fill=blue!5, minimum height=2.6em, text centered, rounded corners, text width=2.8cm},
+    cloudbox/.style={box, fill=green!5},
+    arrow/.style={thick,->,>=stealth},
+    lbl/.style={font=\scriptsize, midway, above}
+]
+% Caminho físico: app -> ESP32 -> Raspberry Pi -> serviços locais
+\node (app) [box] {App\\(Flutter, BLE)};
+\node (esp32) [box, right=1.6cm of app] {ESP32\\(ponte BLE/Serial)};
+\node (pi) [box, right=1.6cm of esp32, text width=3.2cm] {Raspberry Pi\\(MQTT + roteador)};
+\node (motores) [box, below=1.4cm of pi, xshift=-2.6cm, text width=2.2cm] {Motores};
+\node (gps) [box, below=1.4cm of pi, text width=2.2cm] {GPS};
+\node (wifi) [box, below=1.4cm of pi, xshift=2.6cm, text width=2.2cm] {Wi-Fi};
+
+\draw [arrow] (app) -- node[lbl] {BLE (NUS)} (esp32);
+\draw [arrow] (esp32) -- node[lbl] {Serial 115200} (pi);
+\draw [arrow] (pi) -- (motores);
+\draw [arrow] (pi) -- (gps);
+\draw [arrow] (pi) -- (wifi);
+
+% Caminho de ida: telemetria até o banco
+\node (broker) [cloudbox, below=2.6cm of esp32, text width=2.6cm] {\textit{Broker} remoto (LARCC)};
+\node (db) [cloudbox, right=1.2cm of broker, text width=2.6cm] {TimescaleDB};
+\node (api) [cloudbox, right=1.2cm of db, text width=2.6cm] {API de leitura};
+
+\draw [arrow] (pi) -- node[lbl, xshift=-0.3cm] {telemetria (MQTT)} (broker);
+\draw [arrow] (broker) -- (db);
+\draw [arrow] (db) -- (api);
+
+% Caminho de volta: API até o app
+\draw [arrow, dashed] (api) to[bend left=18] node[midway, right, font=\scriptsize] {HTTP (token)} (app);
+\end{tikzpicture}%
+}
+\fonte{Elaborado pelos autores (2026), a partir do código dos repositórios \texttt{app} e \texttt{orquestrador}.}
+\end{figure}
+
+\section{Gerenciamento de Projetos} \label{sec:gerenciamento_projetos}
+O Gerenciamento de Projetos fornece as práticas que estruturam a condução do trabalho ao longo do semestre -- definição de escopo, cronograma, papéis e entregas --, complementando os demais componentes curriculares, que tratam do que é construído. O grupo adota um referencial ágil, apoiado no método Kanban, cuja ênfase está na visualização do fluxo de trabalho por meio de um quadro de tarefas, na limitação do trabalho em andamento e na entrega contínua de incrementos \cite{prikladnicki2014}. Essa escolha é coerente com a natureza incremental do desenvolvimento e com o tamanho reduzido da equipe: em vez de ciclos fechados com papéis rígidos, o Kanban organiza um fluxo contínuo de pequenas tarefas -- alinhado ao versionamento por repositórios já em uso --, cujas entregas se conectam aos marcos avaliativos apresentados na \autoref{tab:cronograma} (\autoref{sec:schedule_activities_table}, Capítulo~\ref{chap:ResearchPlan}). A adoção crescente de métodos ágeis é reconhecida também na literatura de Engenharia de Software \cite{sommerville2018}.
+
+Do ponto de vista técnico, o próprio desenvolvimento do sistema já incorpora práticas de gerenciamento reconhecidas: os três repositórios são versionados de forma independente, com controle de dependências automatizado (Dependabot), e o repositório \texttt{atlas\_ai\_v2} mantém integração contínua (GitHub Actions) executando sua suíte de testes a cada alteração. Essas práticas relacionam-se a conceitos consolidados de gestão de configuração e de garantia de qualidade em projetos de software \cite{sommerville2018}.

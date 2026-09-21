@@ -1,0 +1,1050 @@
+{
+  "sha": "98ee681498e05426ff47041ae7f8e7ec97d0ffaf",
+  "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/98ee681498e05426ff47041ae7f8e7ec97d0ffaf",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54064fb6fb9ec0a42a8f2c172561aa52a311714e",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/54064fb6fb9ec0a42a8f2c172561aa52a311714e"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80933a9872e5713a37dd1dfb61616a9934d3182b",
+      "size": 1546,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/80933a9872e5713a37dd1dfb61616a9934d3182b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7d2d8b64b0a37dfa697fe6f3e1af587f197259",
+      "size": 5623,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/2c7d2d8b64b0a37dfa697fe6f3e1af587f197259"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f806abb2416482c13f84b4990defd961345648d",
+      "size": 10093,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/6f806abb2416482c13f84b4990defd961345648d"
+    },
+    {
+      "path": "COMO-FUNCIONA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e5d4fd20813cd8d67a5b1b1ebc197a8b9686a4e",
+      "size": 15369,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/6e5d4fd20813cd8d67a5b1b1ebc197a8b9686a4e"
+    },
+    {
+      "path": "MAPA-COMUNICACAO.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf6c2d38ba20093815443e2548f811b6fb1fbb0",
+      "size": 18896,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/caf6c2d38ba20093815443e2548f811b6fb1fbb0"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9ad0e9be19f8e685b196ae088314e62d6078f9f",
+      "size": 13945,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f9ad0e9be19f8e685b196ae088314e62d6078f9f"
+    },
+    {
+      "path": "cloud",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1bb5875bb26cb8b73cfe02589f941b3638660f78",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/1bb5875bb26cb8b73cfe02589f941b3638660f78"
+    },
+    {
+      "path": "cloud/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf0f49bddb4115cfe497fa339b8750b959fefe55",
+      "size": 2136,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/bf0f49bddb4115cfe497fa339b8750b959fefe55"
+    },
+    {
+      "path": "cloud/.env.local.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcdfa6ee7273aaa8e4eb89726d5bcb7bd30adbd5",
+      "size": 1980,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/fcdfa6ee7273aaa8e4eb89726d5bcb7bd30adbd5"
+    },
+    {
+      "path": "cloud/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd5b1fd93c973bd2b4344415cc5e28192abe5bf7",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/fd5b1fd93c973bd2b4344415cc5e28192abe5bf7"
+    },
+    {
+      "path": "cloud/api/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "798029f38b37575b4e4233966db9f4e564bfff19",
+      "size": 1002,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/798029f38b37575b4e4233966db9f4e564bfff19"
+    },
+    {
+      "path": "cloud/api/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48899dbfe570d35a767c6a6cd4458b9991bc3bbb",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/48899dbfe570d35a767c6a6cd4458b9991bc3bbb"
+    },
+    {
+      "path": "cloud/api/app/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "cloud/api/app/banco.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ef0aab85570822654fe3eba1df45702e33f648a",
+      "size": 4443,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/5ef0aab85570822654fe3eba1df45702e33f648a"
+    },
+    {
+      "path": "cloud/api/app/consultas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc90f34b6bd3486b3ec67ef048b02e556c928a65",
+      "size": 8225,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/cc90f34b6bd3486b3ec67ef048b02e556c928a65"
+    },
+    {
+      "path": "cloud/api/app/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f67ab652fa1c0084b1a6c94747a8acb3f7b8930a",
+      "size": 13846,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f67ab652fa1c0084b1a6c94747a8acb3f7b8930a"
+    },
+    {
+      "path": "cloud/api/app/seguranca.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfa03e243197087811022488dee9bb3c6851f65f",
+      "size": 5916,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/dfa03e243197087811022488dee9bb3c6851f65f"
+    },
+    {
+      "path": "cloud/api/requirements-dev.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35eb9282273a1211edfe635ed26abeb1bd580233",
+      "size": 548,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/35eb9282273a1211edfe635ed26abeb1bd580233"
+    },
+    {
+      "path": "cloud/api/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3787cee86cebf965106d1baaeb158865bf0b6c1c",
+      "size": 86,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/3787cee86cebf965106d1baaeb158865bf0b6c1c"
+    },
+    {
+      "path": "cloud/api/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "09b71c06edc7667dce85f20e7e40fa89a3a28544",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/09b71c06edc7667dce85f20e7e40fa89a3a28544"
+    },
+    {
+      "path": "cloud/api/tests/test_banco.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07ec155b2f1a21a512779a0133424b4ac39d6fff",
+      "size": 2865,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/07ec155b2f1a21a512779a0133424b4ac39d6fff"
+    },
+    {
+      "path": "cloud/api/tests/test_cabecalhos.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "721426b7ee71c075c249415b4f74dc57c0596fda",
+      "size": 1510,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/721426b7ee71c075c249415b4f74dc57c0596fda"
+    },
+    {
+      "path": "cloud/api/tests/test_consultas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3ae77191ce4abf769b174e48893b1bd7bea2799",
+      "size": 4871,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e3ae77191ce4abf769b174e48893b1bd7bea2799"
+    },
+    {
+      "path": "cloud/api/tests/test_seguranca.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a24e3ba4bfe65e717a6cc5c43b7435b1e458d2c",
+      "size": 4758,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/1a24e3ba4bfe65e717a6cc5c43b7435b1e458d2c"
+    },
+    {
+      "path": "cloud/compose.local.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c90264ff2aececcccac383667e735733b329b489",
+      "size": 2983,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/c90264ff2aececcccac383667e735733b329b489"
+    },
+    {
+      "path": "cloud/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36260a4cb826195a5153a3c3637badc0129dd254",
+      "size": 6409,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/36260a4cb826195a5153a3c3637badc0129dd254"
+    },
+    {
+      "path": "cloud/ingestor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c401672b522ecd86478be1e2d92479dc16b237f",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/9c401672b522ecd86478be1e2d92479dc16b237f"
+    },
+    {
+      "path": "cloud/ingestor/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e71e0bfd7738cb96d69840e81a090e1a9a37dbd3",
+      "size": 430,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e71e0bfd7738cb96d69840e81a090e1a9a37dbd3"
+    },
+    {
+      "path": "cloud/ingestor/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc2baada894ee5fd9767e9bc038de345756bfdc3",
+      "size": 6007,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/bc2baada894ee5fd9767e9bc038de345756bfdc3"
+    },
+    {
+      "path": "cloud/ingestor/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ade09ee338babc92b0e6db2949a313f71e029cd",
+      "size": 36,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/1ade09ee338babc92b0e6db2949a313f71e029cd"
+    },
+    {
+      "path": "cloud/mosquitto",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f061dd204a8dc67159a9174cc5a207907151c0ab",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/f061dd204a8dc67159a9174cc5a207907151c0ab"
+    },
+    {
+      "path": "cloud/mosquitto/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dbb88cda516ad36ce637eb073d6f0432991fa06f",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/dbb88cda516ad36ce637eb073d6f0432991fa06f"
+    },
+    {
+      "path": "cloud/mosquitto/config/mosquitto.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "002735aca5de42211b307ad32ec8cd4348480d20",
+      "size": 382,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/002735aca5de42211b307ad32ec8cd4348480d20"
+    },
+    {
+      "path": "cloud/mosquitto/config/mosquitto.local.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f1ed694bc856e311b5b044fe502a592afc7af0b",
+      "size": 1138,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/4f1ed694bc856e311b5b044fe502a592afc7af0b"
+    },
+    {
+      "path": "cloud/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c290c1cf143a2ff016649e23db2accd380adb53",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/8c290c1cf143a2ff016649e23db2accd380adb53"
+    },
+    {
+      "path": "cloud/scripts/ambiente-local.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b73ba62144d418ff845304fe8ce5e211c09e1cb",
+      "size": 13010,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/1b73ba62144d418ff845304fe8ce5e211c09e1cb"
+    },
+    {
+      "path": "cloud/scripts/instalar-docker-wsl.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f22129f07049947882dd4b7740be3a4acbaa3721",
+      "size": 4522,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f22129f07049947882dd4b7740be3a4acbaa3721"
+    },
+    {
+      "path": "cloud/scripts/liberar-portas-wsl.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "958f1f65965d81a7ebf07aea54bc9195106f05d7",
+      "size": 9310,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/958f1f65965d81a7ebf07aea54bc9195106f05d7"
+    },
+    {
+      "path": "cloud/scripts/liberar-rede.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc46ecd4c0c34383bf98f845e44555ea58b81b2d",
+      "size": 4850,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/cc46ecd4c0c34383bf98f845e44555ea58b81b2d"
+    },
+    {
+      "path": "cloud/scripts/robo-falso.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8e78509badef69c4df624f997c14ba9024224b3",
+      "size": 5391,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e8e78509badef69c4df624f997c14ba9024224b3"
+    },
+    {
+      "path": "cloud/scripts/semear-demonstracao.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f38f0bdf64514f8ef41256365e605063759f073c",
+      "size": 3475,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f38f0bdf64514f8ef41256365e605063759f073c"
+    },
+    {
+      "path": "cloud/scripts/telemetria_falsa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2d77148b7cc34737b9f911272089a66366e327d",
+      "size": 6298,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/c2d77148b7cc34737b9f911272089a66366e327d"
+    },
+    {
+      "path": "cloud/timescaledb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd159113ae952a39b174a8a490282008bca9794f",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/cd159113ae952a39b174a8a490282008bca9794f"
+    },
+    {
+      "path": "cloud/timescaledb/init",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb44c70948c8df42364706a8d297077b9c0a2660",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/eb44c70948c8df42364706a8d297077b9c0a2660"
+    },
+    {
+      "path": "cloud/timescaledb/init/01_schema.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6754a971579c55ad5abac2e51c56c91cbf0f69da",
+      "size": 1729,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/6754a971579c55ad5abac2e51c56c91cbf0f69da"
+    },
+    {
+      "path": "cloud/timescaledb/init/02_usuario_leitura.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e7ee92fbf89947360fffe4ec4576bd8bf28e3f6",
+      "size": 2041,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/3e7ee92fbf89947360fffe4ec4576bd8bf28e3f6"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "adf52e4b260ba3eed2c3b7329517e065c9260c94",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/adf52e4b260ba3eed2c3b7329517e065c9260c94"
+    },
+    {
+      "path": "docs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61202607e9a5f3940953df6426af0db4b20212a0",
+      "size": 1771,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/61202607e9a5f3940953df6426af0db4b20212a0"
+    },
+    {
+      "path": "docs/ambiente-local.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe565bbaee03fb6ac2a8e68865b2c3e03ab5ecf",
+      "size": 10168,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/bfe565bbaee03fb6ac2a8e68865b2c3e03ab5ecf"
+    },
+    {
+      "path": "docs/contrato-mqtt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5ec3762f90b8abffe72a806792a860a49b164d6",
+      "size": 9533,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f5ec3762f90b8abffe72a806792a860a49b164d6"
+    },
+    {
+      "path": "docs/setup-cloud.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18a0627e995194e1f4111b2e6db9b846d24edcad",
+      "size": 12468,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/18a0627e995194e1f4111b2e6db9b846d24edcad"
+    },
+    {
+      "path": "docs/setup-esp32.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8855608828516b8bc90eb003a7637fc4a3760ad2",
+      "size": 1163,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/8855608828516b8bc90eb003a7637fc4a3760ad2"
+    },
+    {
+      "path": "docs/setup-pi.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f087d3f579b3394fe59b26dc92b87bece60dfc2b",
+      "size": 4839,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f087d3f579b3394fe59b26dc92b87bece60dfc2b"
+    },
+    {
+      "path": "esp32",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8499be537106ea30b79baed9365c03bc842dff1d",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/8499be537106ea30b79baed9365c03bc842dff1d"
+    },
+    {
+      "path": "esp32/esp32_ble_bridge",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "179588bb11fce431bba8a758fa1b2904dcb31248",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/179588bb11fce431bba8a758fa1b2904dcb31248"
+    },
+    {
+      "path": "esp32/esp32_ble_bridge/esp32_ble_bridge.ino",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af58e0633cef64165c966a41012682dbd3d88a08",
+      "size": 4653,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/af58e0633cef64165c966a41012682dbd3d88a08"
+    },
+    {
+      "path": "pi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7bb733a603f4b7431cc67c033c39a84110e8b588",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/7bb733a603f4b7431cc67c033c39a84110e8b588"
+    },
+    {
+      "path": "pi/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "120882212898e113ff724435af9b1365fc456a4c",
+      "size": 917,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/120882212898e113ff724435af9b1365fc456a4c"
+    },
+    {
+      "path": "pi/mosquitto",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64c6ff7c0242497f07fb6f25c995a3d0349fb86e",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/64c6ff7c0242497f07fb6f25c995a3d0349fb86e"
+    },
+    {
+      "path": "pi/mosquitto/apt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f4aca8f6f2651319580d2699f49d623f1c85ac2",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/9f4aca8f6f2651319580d2699f49d623f1c85ac2"
+    },
+    {
+      "path": "pi/mosquitto/apt/robo.conf.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cea53cc68cd9ce337adfeb21a5e982cba8d4c85",
+      "size": 2917,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/4cea53cc68cd9ce337adfeb21a5e982cba8d4c85"
+    },
+    {
+      "path": "pi/mosquitto/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e964c13cb22e57a1d7d983e40aa4cf8195eace1",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/2e964c13cb22e57a1d7d983e40aa4cf8195eace1"
+    },
+    {
+      "path": "pi/mosquitto/config/conf.d",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9fa946647cfee5d725385682ae5338accb83d92",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/a9fa946647cfee5d725385682ae5338accb83d92"
+    },
+    {
+      "path": "pi/mosquitto/config/conf.d/bridge.conf.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77500a0e9c79c2c750f42b9d6d8078ee6c878819",
+      "size": 3160,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/77500a0e9c79c2c750f42b9d6d8078ee6c878819"
+    },
+    {
+      "path": "pi/mosquitto/config/mosquitto.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c57a713ce00335e4809282e5b5db4c93c1f4646f",
+      "size": 1583,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/c57a713ce00335e4809282e5b5db4c93c1f4646f"
+    },
+    {
+      "path": "pi/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c7f5360fee8d3be56ebf29c2e528cf9372e2e42",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/2c7f5360fee8d3be56ebf29c2e528cf9372e2e42"
+    },
+    {
+      "path": "pi/scripts/install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8eabc3bd304fb1347925301e34725b18b883ccec",
+      "size": 5305,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/8eabc3bd304fb1347925301e34725b18b883ccec"
+    },
+    {
+      "path": "pi/scripts/verificar-telemetria.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d6cbfd967193ebabf09776f7090d3584063d268",
+      "size": 2745,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/8d6cbfd967193ebabf09776f7090d3584063d268"
+    },
+    {
+      "path": "pi/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb9337197072ca6ef7cd39399e82fcf2aadf8e0c",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/cb9337197072ca6ef7cd39399e82fcf2aadf8e0c"
+    },
+    {
+      "path": "pi/services/_common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff457ebd9706bd38ee03550ae02ef8938f59d7c9",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/ff457ebd9706bd38ee03550ae02ef8938f59d7c9"
+    },
+    {
+      "path": "pi/services/_common/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f43874f3e0cc82a9126025f439a3ef17a0f4f9c9",
+      "size": 373,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f43874f3e0cc82a9126025f439a3ef17a0f4f9c9"
+    },
+    {
+      "path": "pi/services/_common/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be60d061a184e910c380cab014dd14559cf910cb",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/be60d061a184e910c380cab014dd14559cf910cb"
+    },
+    {
+      "path": "pi/services/_common/src/robo_common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d20faf5539006f7a057191ffab55a81374d12809",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/d20faf5539006f7a057191ffab55a81374d12809"
+    },
+    {
+      "path": "pi/services/_common/src/robo_common/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8db8b83cee85750fe878422de1d266d62eb113ef",
+      "size": 86,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/8db8b83cee85750fe878422de1d266d62eb113ef"
+    },
+    {
+      "path": "pi/services/_common/src/robo_common/mqtt_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c372c3d6765e4844df6a35c451bcbab9bcc9b238",
+      "size": 6358,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/c372c3d6765e4844df6a35c451bcbab9bcc9b238"
+    },
+    {
+      "path": "pi/services/_common/src/robo_common/topics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9e9f66a3c3a759376f9b0484c4860ca56a62323",
+      "size": 2409,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/c9e9f66a3c3a759376f9b0484c4860ca56a62323"
+    },
+    {
+      "path": "pi/services/gps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29da32aaff653fe3ffa269edd20dfb55903f469f",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/29da32aaff653fe3ffa269edd20dfb55903f469f"
+    },
+    {
+      "path": "pi/services/gps/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a24a05156414295550505886419cda5a69dc0e",
+      "size": 524,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/c5a24a05156414295550505886419cda5a69dc0e"
+    },
+    {
+      "path": "pi/services/gps/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8589e39a0fdf5eb6b6442794528f3018f1ada001",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/8589e39a0fdf5eb6b6442794528f3018f1ada001"
+    },
+    {
+      "path": "pi/services/gps/src/gps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee85d1d0ec04af579f209fc9d647f2f871c4d761",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/ee85d1d0ec04af579f209fc9d647f2f871c4d761"
+    },
+    {
+      "path": "pi/services/gps/src/gps/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7ce8aa1db66ab9901ae5a261549d5a09e63ff35",
+      "size": 107,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e7ce8aa1db66ab9901ae5a261549d5a09e63ff35"
+    },
+    {
+      "path": "pi/services/gps/src/gps/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ad5806a907d30ccc2b268cdb438d16cc36d6275",
+      "size": 7556,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/9ad5806a907d30ccc2b268cdb438d16cc36d6275"
+    },
+    {
+      "path": "pi/services/motores",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0165242b0d9e0f416b9ad78b419cc905a2b9a23",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/b0165242b0d9e0f416b9ad78b419cc905a2b9a23"
+    },
+    {
+      "path": "pi/services/motores/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70871e62309f9046d6f4187c788fd5cfd0a60058",
+      "size": 455,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/70871e62309f9046d6f4187c788fd5cfd0a60058"
+    },
+    {
+      "path": "pi/services/motores/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82d5e87d112351994d590938c51aa80babeae9a0",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/82d5e87d112351994d590938c51aa80babeae9a0"
+    },
+    {
+      "path": "pi/services/motores/src/motores",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c77eea53ba1b4f1cc74d01f39443eaabda861d54",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/c77eea53ba1b4f1cc74d01f39443eaabda861d54"
+    },
+    {
+      "path": "pi/services/motores/src/motores/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "pi/services/motores/src/motores/acionamento.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65f92dd2ae02400fcc89ca46ec611eab864ddab6",
+      "size": 10317,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/65f92dd2ae02400fcc89ca46ec611eab864ddab6"
+    },
+    {
+      "path": "pi/services/motores/src/motores/cinematica.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64d11ade1754d00353e849f0e7f913c81e343aef",
+      "size": 7243,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/64d11ade1754d00353e849f0e7f913c81e343aef"
+    },
+    {
+      "path": "pi/services/motores/src/motores/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a24ebd58268adfea29ff6dad712ba9085c48638",
+      "size": 11154,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/4a24ebd58268adfea29ff6dad712ba9085c48638"
+    },
+    {
+      "path": "pi/services/motores/src/motores/vigia.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba30bfac814b88e144513486df5c771a1876ad6e",
+      "size": 3533,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/ba30bfac814b88e144513486df5c771a1876ad6e"
+    },
+    {
+      "path": "pi/services/motores/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba7ebbd580b0c7e61d471abeaa3fdc923a5f286e",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/ba7ebbd580b0c7e61d471abeaa3fdc923a5f286e"
+    },
+    {
+      "path": "pi/services/motores/tests/test_cinematica.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c7d44a374ee6efc11ef35e25b36ab3d12cb7b42",
+      "size": 5481,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/8c7d44a374ee6efc11ef35e25b36ab3d12cb7b42"
+    },
+    {
+      "path": "pi/services/motores/tests/test_concorrencia.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7625d06a38fd379e795d43fd5ff6b0ec68670ce8",
+      "size": 5593,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/7625d06a38fd379e795d43fd5ff6b0ec68670ce8"
+    },
+    {
+      "path": "pi/services/motores/tests/test_servico.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a1fdd5cbad3a8d568f81103f4a7271fc4565f2c",
+      "size": 6138,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/0a1fdd5cbad3a8d568f81103f4a7271fc4565f2c"
+    },
+    {
+      "path": "pi/services/motores/tests/test_vigia.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec75d40b9389b60b17584c31714404f9fd3155f3",
+      "size": 4261,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/ec75d40b9389b60b17584c31714404f9fd3155f3"
+    },
+    {
+      "path": "pi/services/orquestrador",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfa77fabefd98b8e1de5f3f87675ab865a4bb09d",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/bfa77fabefd98b8e1de5f3f87675ab865a4bb09d"
+    },
+    {
+      "path": "pi/services/orquestrador/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f23ba114ab7025c23d2677f0de9302b2174314db",
+      "size": 678,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/f23ba114ab7025c23d2677f0de9302b2174314db"
+    },
+    {
+      "path": "pi/services/orquestrador/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfc131a39cc8812f260392919475e0de04e127a6",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/bfc131a39cc8812f260392919475e0de04e127a6"
+    },
+    {
+      "path": "pi/services/orquestrador/src/orquestrador",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5105119d2f4092b0c5f5c95be13235babd5e0055",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/5105119d2f4092b0c5f5c95be13235babd5e0055"
+    },
+    {
+      "path": "pi/services/orquestrador/src/orquestrador/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02b3621c3954731b40985b51b0eb650155c92b69",
+      "size": 105,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/02b3621c3954731b40985b51b0eb650155c92b69"
+    },
+    {
+      "path": "pi/services/orquestrador/src/orquestrador/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7661b383f770424f6a9aa7a97e9b1bc6ef78e696",
+      "size": 4670,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/7661b383f770424f6a9aa7a97e9b1bc6ef78e696"
+    },
+    {
+      "path": "pi/services/orquestrador/src/orquestrador/roteador.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e592a00e80a2346f15a22a6fc54db1ce941edeb4",
+      "size": 10796,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/e592a00e80a2346f15a22a6fc54db1ce941edeb4"
+    },
+    {
+      "path": "pi/services/orquestrador/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "895ecdb231f3ac3a36f7f66678e250fd791f5329",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/895ecdb231f3ac3a36f7f66678e250fd791f5329"
+    },
+    {
+      "path": "pi/services/orquestrador/tests/test_roteador.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dedfaea0271f236ff016d9811d6320728812b37",
+      "size": 8525,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/9dedfaea0271f236ff016d9811d6320728812b37"
+    },
+    {
+      "path": "pi/services/serial_ingestor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f88523de37902bc74c78774280a697bb7c0bd602",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/f88523de37902bc74c78774280a697bb7c0bd602"
+    },
+    {
+      "path": "pi/services/serial_ingestor/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd5e27334bf69e622c5873a5ce15cb8ddb14a753",
+      "size": 623,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/cd5e27334bf69e622c5873a5ce15cb8ddb14a753"
+    },
+    {
+      "path": "pi/services/serial_ingestor/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b0f0b892ee77f154d15fb560d318167df87a7f6",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/0b0f0b892ee77f154d15fb560d318167df87a7f6"
+    },
+    {
+      "path": "pi/services/serial_ingestor/src/serial_ingestor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85e51b7342584775835c14e6c69c6639b7ad8fe7",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/85e51b7342584775835c14e6c69c6639b7ad8fe7"
+    },
+    {
+      "path": "pi/services/serial_ingestor/src/serial_ingestor/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dade52d7244740692714a9213a2cf754ab8b1b4c",
+      "size": 84,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/dade52d7244740692714a9213a2cf754ab8b1b4c"
+    },
+    {
+      "path": "pi/services/serial_ingestor/src/serial_ingestor/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59efddedb744cd6f277aa8ee594552d4a4a86b39",
+      "size": 4945,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/59efddedb744cd6f277aa8ee594552d4a4a86b39"
+    },
+    {
+      "path": "pi/services/wifi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16f35f32ce9ae90964ae03bb5be6f48ec4abba90",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/16f35f32ce9ae90964ae03bb5be6f48ec4abba90"
+    },
+    {
+      "path": "pi/services/wifi/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a95f6d5b051bbce8862cfb7cc19477270bec570e",
+      "size": 542,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/a95f6d5b051bbce8862cfb7cc19477270bec570e"
+    },
+    {
+      "path": "pi/services/wifi/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b1b9ff6b1e26570149cdf403a01d2bcb7c4c43d",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/3b1b9ff6b1e26570149cdf403a01d2bcb7c4c43d"
+    },
+    {
+      "path": "pi/services/wifi/src/wifi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6d0f1a5655f8eecf2eda1952d49700c4cc35a3a",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/a6d0f1a5655f8eecf2eda1952d49700c4cc35a3a"
+    },
+    {
+      "path": "pi/services/wifi/src/wifi/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c46f24b23f6fcff75e1dcf1f896a7ca633eb426",
+      "size": 98,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/4c46f24b23f6fcff75e1dcf1f896a7ca633eb426"
+    },
+    {
+      "path": "pi/services/wifi/src/wifi/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336045161fdd4a1be2d3c64c7e0c57585ea82cb6",
+      "size": 4109,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/336045161fdd4a1be2d3c64c7e0c57585ea82cb6"
+    },
+    {
+      "path": "pi/services/wifi/src/wifi/rede.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284fa5919b0f315d4ecf0237776663a995b0a1cf",
+      "size": 6940,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/284fa5919b0f315d4ecf0237776663a995b0a1cf"
+    },
+    {
+      "path": "pi/services/wifi/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55c06a67095afc9e35d869cd3f9de0d817df45ff",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/55c06a67095afc9e35d869cd3f9de0d817df45ff"
+    },
+    {
+      "path": "pi/services/wifi/tests/test_rede.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86caa1c78758d10a2876585b6c2606933a28211d",
+      "size": 6803,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/86caa1c78758d10a2876585b6c2606933a28211d"
+    },
+    {
+      "path": "pi/systemd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ab94510a39b86d2d2a20d4ee14073ba6904d86d",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/1ab94510a39b86d2d2a20d4ee14073ba6904d86d"
+    },
+    {
+      "path": "pi/systemd/robo-gps.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e588ecf85629ddc3abed30ecd95958df5c0beec",
+      "size": 966,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/9e588ecf85629ddc3abed30ecd95958df5c0beec"
+    },
+    {
+      "path": "pi/systemd/robo-motores.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "061a6e40524d870965b35b045930ed5cf53aa6d0",
+      "size": 1748,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/061a6e40524d870965b35b045930ed5cf53aa6d0"
+    },
+    {
+      "path": "pi/systemd/robo-orquestrador.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9042c28c29e6542917c9f0bfbd1f8dbcd4738e94",
+      "size": 857,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/9042c28c29e6542917c9f0bfbd1f8dbcd4738e94"
+    },
+    {
+      "path": "pi/systemd/robo-serial-ingestor.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "363bb52cf4df02691b83588162bf4bdbb629b363",
+      "size": 1018,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/363bb52cf4df02691b83588162bf4bdbb629b363"
+    },
+    {
+      "path": "pi/systemd/robo-wifi.service",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62187a3b159663d268ec2db4aeeeb7cdff17a790",
+      "size": 1024,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/62187a3b159663d268ec2db4aeeeb7cdff17a790"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6046e9e8efddad6c276467cd207acf7093cef366",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/6046e9e8efddad6c276467cd207acf7093cef366"
+    },
+    {
+      "path": "scripts/gen-mosquitto-passwd.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9eb458f85e02f84a6951a5b03c729a298baf08c0",
+      "size": 985,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/9eb458f85e02f84a6951a5b03c729a298baf08c0"
+    },
+    {
+      "path": "scripts/testar.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a6458d4cc4f05950e0ff134dfb121d064e59e5b",
+      "size": 3363,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/0a6458d4cc4f05950e0ff134dfb121d064e59e5b"
+    },
+    {
+      "path": "site",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ac90e28708cc78d8dba4b9081eaed1c243d224d",
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/trees/9ac90e28708cc78d8dba4b9081eaed1c243d224d"
+    },
+    {
+      "path": "site/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b626f1245ced41aec2ff728dda761c5e8d6e727b",
+      "size": 3629,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/b626f1245ced41aec2ff728dda761c5e8d6e727b"
+    },
+    {
+      "path": "site/ao-vivo.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7549c69a14780f56b79720279af41210b663f664",
+      "size": 7275,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/7549c69a14780f56b79720279af41210b663f664"
+    },
+    {
+      "path": "site/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbdd5f81e95f5ae6c876a9c96d58be7b0e59247b",
+      "size": 1509,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/cbdd5f81e95f5ae6c876a9c96d58be7b0e59247b"
+    },
+    {
+      "path": "site/estilo.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e367e06d998795deb1224d02da6765f3233214",
+      "size": 7583,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/37e367e06d998795deb1224d02da6765f3233214"
+    },
+    {
+      "path": "site/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "583aff276ac20543eb0ae3e5f2c0db446a0ed93a",
+      "size": 6453,
+      "url": "https://api.github.com/repos/setrem-robot/orquestrador/git/blobs/583aff276ac20543eb0ae3e5f2c0db446a0ed93a"
+    }
+  ],
+  "truncated": false
+}

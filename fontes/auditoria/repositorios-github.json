@@ -1,0 +1,47 @@
+[
+  {
+    "name": "orquestrador",
+    "html_url": "https://github.com/setrem-robot/orquestrador",
+    "description": null,
+    "default_branch": "main",
+    "pushed_at": "2026-09-03T16:21:47Z",
+    "private": false,
+    "archived": false
+  },
+  {
+    "name": ".github",
+    "html_url": "https://github.com/setrem-robot/.github",
+    "description": "Read me da organização",
+    "default_branch": "main",
+    "pushed_at": "2026-08-27T22:44:30Z",
+    "private": false,
+    "archived": false
+  },
+  {
+    "name": "aplicativo",
+    "html_url": "https://github.com/setrem-robot/aplicativo",
+    "description": null,
+    "default_branch": "main",
+    "pushed_at": "2026-09-03T22:35:26Z",
+    "private": false,
+    "archived": false
+  },
+  {
+    "name": "atlas_ai_v2",
+    "html_url": "https://github.com/setrem-robot/atlas_ai_v2",
+    "description": null,
+    "default_branch": "main",
+    "pushed_at": "2026-09-09T19:38:09Z",
+    "private": false,
+    "archived": false
+  },
+  {
+    "name": "doc-interdisciplinar-4-semestre",
+    "html_url": "https://github.com/setrem-robot/doc-interdisciplinar-4-semestre",
+    "description": "Relatório LaTeX do Projeto Interdisciplinar de Extensão IV (Engenharia de Computação, SETREM)",
+    "default_branch": "master",
+    "pushed_at": "2026-09-02T21:45:24Z",
+    "private": true,
+    "archived": false
+  }
+]
