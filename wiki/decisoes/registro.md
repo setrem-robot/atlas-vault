@@ -23,6 +23,7 @@ tags:
 | DEC-09 | Um único broker local | Necessidade documentada; configuração efetiva pendente | Evitar conflito apt/Docker na porta 1883 |
 | DEC-10 | Rota planejada sem assumir navegação pronta | Estado atual documentado | Não confundir envio de pontos com execução autônoma |
 | DEC-11 | Separar evidência histórica, código, implantação e proposta | Adotada neste vault | Manter narrativa verificável e atualizável |
+| DEC-12 | Nuvem hospedada na VM do LARCC, Pi alcançando-a por Tailscale | Implantada em 02/10/2026 | Tirar a nuvem do servidor doméstico; telemetria sobe de qualquer rede sem expor MQTT à internet. Ver [[wiki/historico/registro-de-trabalho]] |
 
 O motivo de uma decisão implementada foi extraído das fontes quando descrito. Não foi atribuída autoria individual a decisões coletivas sem evidência. Para novas decisões, usar [[modelos/Decisao]] com alternativas, impactos, fonte e status.
 

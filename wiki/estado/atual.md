@@ -2,7 +2,7 @@
 title: "Estado atual — o que funciona hoje"
 tipo: estado
 estado_documental: revisado
-atualizado: 2026-09-21
+atualizado: 2026-10-02
 tags:
   - atlas
   - estado

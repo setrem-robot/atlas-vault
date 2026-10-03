@@ -2,7 +2,7 @@
 title: "Registro de trabalho"
 tipo: historico
 estado_documental: em_uso
-atualizado: 2026-09-21
+atualizado: 2026-10-02
 tags:
   - atlas
   - historico
@@ -13,6 +13,40 @@ tags:
 Exigido por `AGENTS.md`: cada tarefa que altera software, implanta ou valida deixa uma linha aqui, com escopo, branch e evidência. Entradas mais recentes no topo.
 
 Esta nota não existia até 09/09; entradas anteriores a essa data estão em [[wiki/historico/linha-do-tempo]] e [[wiki/diario/2026-09-09]].
+
+---
+
+## 2026-10-02 — Nuvem migrada do `.150` para a VM do LARCC
+
+**Escopo:** a pedido do usuário, mover **toda a pilha Atlas** (mosquitto, TimescaleDB, ingestor, API, Caddy com landing/painel/completo e o túnel Cloudflare `atlas-api`) do servidor de casa `.150` para a VM do LARCC, preservando o que já rodava lá e todo o banco.
+
+**Agente:** Claude Opus 5.5. **Hosts:** LARCC `root@atlas` (Ubuntu 24.04, 2 vCPU/8 GB, acesso por Tailscale `100.118.95.115`); `.150`; Pi `atlas@atlas.local` (agora `192.168.1.111`).
+
+**O que havia no LARCC:** uma versão antiga da mesma pilha (`/root/setrem-robot/cloud`, só mosquitto/banco/ingestor) com **983 registros** antigos (jun–set) e uma tabela `gps_location` vazia. Mesmas portas (1883/5432) e nomes de container — não coexistem com a nova.
+
+**Feito:**
+- Backup do banco antigo do LARCC em `/root/backups/` (`pg_dump -Fc`, roles, pasta `cloud`, export COPY). Pilha antiga parada com `docker compose down` **sem `-v`** (volumes `cloud_*` preservados).
+- Pilha do `.150` copiada como estava (com `.env`, credenciais do túnel e `passwd` do mosquitto) para **`/root/docker-stacks/atlas`** no LARCC; imagens `api`/`ingestor` reconstruídas lá.
+- Banco migrado por `COPY` (independe da versão do Timescale: `.150` 2.30, LARCC novo): 25 329 do `.150` + 983 antigos do LARCC + `gps_location`. Depois, delta de 40 registros que o Pi mandou ao `.150` entre o boot e a troca, inserido sem duplicar (chave ts/tipo/tópico). Total no corte: **26 355**.
+- Túnel: `cloudflared-cloud` subiu no LARCC (4 conexões registradas) e só então foi parado no `.150` — sem queda do domínio. Os outros túneis do `.150` (odysseus/tokens, crono) não servem nada do Atlas e não foram tocados.
+- Pi: **Tailscale instalado** (`atlas-pi`, `100.110.189.21`); bridge `/etc/mosquitto/conf.d/bridge.conf` repontada para `100.118.95.115:1883` (backup em `/etc/mosquitto/bridge.conf.bak-150-20261002`). Agora a telemetria sobe **de qualquer rede**, não só da LAN de casa — resolve o limite citado em 11/09 sem expor porta.
+- `.150`: pilha atlas **desativada** — containers e rede removidos (`docker compose --profile tunel down`, sem `-v`); a pasta `~/docker-stacks/atlas` e os volumes `atlas_*` ficaram só como backup frio. Não há unit systemd do Atlas lá. crafty, crono-sw e factorio intactos.
+- `orquestrador` `3b9f45e`: README e `docs/setup-cloud.md` ("Como o Pi alcança a VM") atualizados para LARCC + Tailscale. O código implantado no LARCC é o do `.150` (anterior à conversão camelCase de 17/09); difere do repositório só em nomes, não em comportamento.
+
+**Evidência:** pela internet, `atlas.kerlonr.com.br` `/`, `/painel/`, `/completo/`, `/api/saude`, rotas públicas e `/v1/estado` com token → 200; `/api/v1/publico/resumo` com as contagens que só existem no LARCC; `/api/v1/publico/saude` com `idade_s` ≈ 4 s (telemetria ao vivo do Pi via LARCC). Log do broker no LARCC: `Received PUBLISH from atlas.bridge-telemetria`. `docker`/`tailscaled` habilitados no boot; containers `unless-stopped`.
+
+**Rollback:** no Pi, restaurar o `.bak` e reiniciar o mosquitto; no `.150`, `docker compose --profile tunel up -d` (recria os containers sobre os volumes guardados); no LARCC, parar o `cloudflared-cloud`.
+
+## 2026-10-02 — App: telemetria ao vivo
+
+**Escopo:** o app só mostrava dados novos ao fechar e reabrir. Causa: o widget `Carregando` (usado pelas quatro abas) buscava uma vez no `initState`; depois, só com "puxar para atualizar".
+
+**Correção** ([aplicativo #19](https://github.com/setrem-robot/aplicativo/pull/19)): `Carregando.atualizarACada` repete a busca enquanto a aba está à vista — Agora 5 s, Eventos 10 s, Trajeto 15 s, Histórico 30 s. Silenciosa (sem giro; leitura antiga fica até a nova chegar), falha passageira não apaga dados, buscas não se empilham, pausa em segundo plano/outra tela por cima e busca ao voltar. Só Dart → patch OTA na `1.2.4+11`.
+
+**Evidência:** 7 testes de widget novos; `flutter test` 68 verdes, `flutter analyze` limpo. Validação no celular pendente do patch.
+
+---
+
 
 ---
 

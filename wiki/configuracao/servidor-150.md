@@ -12,6 +12,14 @@ tags:
 
 # Servidor .150 — a nuvem, centralizada
 
+> [!warning] Migrado para o LARCC em 02/10/2026
+> A pilha inteira (banco, API, site, túnel) agora roda na **VM do LARCC**, em
+> `/root/docker-stacks/atlas` (acesso por Tailscale `100.118.95.115`). No `.150`
+> ela ficou **parada**, só para rollback. O Pi manda a telemetria ao LARCC pela
+> Tailscale. O resto desta nota descreve a pilha, que é a mesma; troque `.150`
+> por LARCC e `~/docker-stacks` por `/root/docker-stacks`. Ver
+> [[wiki/historico/registro-de-trabalho]] (02/10).
+
 > [!abstract] O que este servidor faz
 > Um único computador (`192.168.1.150`, Ubuntu) que roda **toda a parte de
 > nuvem** da Atlas em Docker Compose: recebe a telemetria, guarda no banco, e
