@@ -2,7 +2,7 @@
 title: "Registro de trabalho"
 tipo: historico
 estado_documental: em_uso
-atualizado: 2026-10-02
+atualizado: 2026-10-16
 tags:
   - atlas
   - historico
@@ -13,6 +13,69 @@ tags:
 Exigido por `AGENTS.md`: cada tarefa que altera software, implanta ou valida deixa uma linha aqui, com escopo, branch e evidência. Entradas mais recentes no topo.
 
 Esta nota não existia até 09/09; entradas anteriores a essa data estão em [[wiki/historico/linha-do-tempo]] e [[wiki/diario/2026-09-09]].
+
+---
+
+## 2026-10-16 — Preparação do robô para a banca (Interdisciplinar IV)
+
+**Escopo:** deixar a Atlas pronta para a apresentação de banca: mostrar a **voz
+saindo**, o **conhecimento sobre a SETREM** e a ideia de **IA local/nuvem**.
+Como o microfone não ouve bem ("Atlas, qual seu nome" não era reconhecido), a
+decisão foi **contornar a escuta** e demonstrar por um **chat de texto** — a
+pessoa digita e a Atlas responde falando. Tudo ajustado ao vivo no Pi por SSH.
+
+**Agente:** Claude Opus 4.8. **Repositório:** `atlas_ai_v2` (`producao`). **Pi:**
+`atlas.local` / `192.168.1.111` / Tailscale `100.110.189.21`.
+
+**Interface da demo — página web "Conversar".** O RobotEye já serve, junto com a
+face, uma página em `http://atlas.local:8080` (PIN) com uma caixa de conversa
+(`web/conversa.py`, rota `/api/conversar`): o texto vai ao `Assistant`, a resposta
+sai pela **voz** e a face reage. **É a tela que vai ser apresentada.** Ela foi
+**redesenhada** (commit `10cdf6b`) com o chat como protagonista — balões você/Atlas
+com os olhos, indicador "pensando…", responsiva e leve — e **toda a configuração
+recolhida** num `<details>` "Ajustes avançados" (também evita salvar sem querer,
+que havia zerado o `.env` por engano: a página reescreve `OLLAMA_HOST`, `VOICE`,
+`LLM_MODEL` e `PERSONA` ao salvar).
+
+**Descobertas e decisões (o que de fato roda bem no Pi):**
+- **Voz:** a voz online bonita `francisca` (edge-tts) está com **403 da Microsoft**
+  — o endpoint foi bloqueado; nem a versão nova (7.2.8) resolve. Trocado o padrão
+  para **`dii`** (Piper `pt_BR-dii-high`, já baixada): **local, instantânea, sem
+  internet, sem 403**. É robótica, mas confiável — o que importa num demo.
+- **Modelo de IA local:** **`gemma3:1b`** é o único viável no Pi. O **`gemma3:4b`**
+  foi baixado e testado, mas **estoura o timeout de 60 s** na CPU do Pi 5 — pesado
+  demais. Ficou no disco para um hardware futuro.
+- **Persona:** a `atlas.md` original (~2039 tokens) **confunde o modelo de 1 B** e
+  deixa o cold-start em ~58 s. Criada uma persona **enxuta e directiva**
+  `persona/atlasdemo.md`: com os fatos ditos de forma explícita ("Seu nome é
+  Atlas", "feita por alunos do curso de Engenharia de Computação da SETREM", "você
+  funciona com inteligência artificial"), o 1 B passou a **acertar** nome, quem a
+  construiu, uso de IA e localização. A `atlas.md` ficou **intacta**.
+- **IA nuvem:** aponta para `KerlonPC.local` (um PC da rede, **desligado** agora).
+  O LARCC **não** tem Ollama (só a telemetria). Então, para a banca, ficou **só a
+  IA local**; a nuvem é explicada pelos slides. "Nuvem" aqui = um Ollama numa
+  máquina da rede, não um serviço de nuvem.
+- **Cold-start:** a saudação (fixa, sem LLM) não aquece o modelo; o `warmUp` roda
+  em segundo plano. A 1ª pergunta com o cache frio leva ~40 s; **quente, ~6–8 s**.
+  Por isso: **aquecer com uma pergunta ~1 min antes** de apresentar. `keep_alive`
+  posto em 30 m para não esfriar. O `Assistant` responde **só a última** quando
+  recebe várias de uma vez (barge-in) — perguntar uma de cada vez.
+
+**Config final do demo (`.env`, tudo local, `atlas.md` e `.env.bak-demo` de
+backup no Pi):** `OLLAMA_HOST=127.0.0.1` · `LLM_MODEL=gemma3:1b` ·
+`LLM_FALLBACK_HOST=` (vazio) · `PERSONA=atlasdemo` · `VOICE=dii` ·
+`HEARING_ENABLED=false` · `SAUDACAO` de auto-apresentação ·
+`LLM_MAX_TOKENS=110` · `LLM_KEEP_ALIVE=30m`. Áudio: **USB PnP Sound Device**
+(card 0, controle `Speaker`) em 90 %.
+
+**Evidência (testado ao vivo):** "Qual é o seu nome?" → *"Eu sou Atlas."*; "Quem
+te construiu?" → *"Eu fui feita por alunos do curso de Engenharia de Computação
+da SETREM…"*; "Você usa inteligência artificial?" → *"Sim, eu uso inteligência
+artificial."* — todas faladas pela voz `dii`, ~6–8 s com o modelo quente.
+
+**Relacionado:** foi montada também a **apresentação de banca** em PDF
+(`Apresentacao-Atlas.pdf`, refeita com o template visual da equipe e todos os
+subsistemas). Ver [[wiki/modulos/roboteye]].
 
 ---
 

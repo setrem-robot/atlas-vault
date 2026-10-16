@@ -2,7 +2,7 @@
 title: "RobotEye — IA, escuta, voz, face e painel"
 tipo: modulo
 estado_documental: revisado
-atualizado: 2026-09-21
+atualizado: 2026-10-16
 tags:
   - atlas
   - modulo
@@ -46,6 +46,30 @@ Implantado e verificado no Pi (`producao` `a5c73c5`). Ver [[wiki/historico/regis
 - **Voz voltou a sair.** A conversão camelCase havia renomeado nomes de bibliotecas externas: `miniaudio.decode(sampleRate=…)` (edge/francisca) e `PiperVoice.load(configPath=…)` + `chunk.sampleRate`/`sampleWidth` (Piper). Com os dois motores quebrados o robô ficava mudo. Restaurados os nomes snake das libs; o `AudioFormat` do projeto segue camelCase.
 - **Ponte BLE corrigida.** `mqtt.Client(clientId=…)` → `client_id=` em `ble/mqtt.py` e `web/comandos.py`; o serviço saiu do crash-loop.
 - **Switch de IA local/nuvem** (override manual sobre a troca automática por queda): `llm/fallback.py::FallbackLLMClient.definirModo`, novo `core/controle.py::ControleRemoto` (assina `robo/comando/entrada` e aplica `{"tipo":"ia","modo":…}`), `Assistant.definirModoIa`. "nuvem" = Ollama da máquina do usuário (`qwen3:8b`); "local" = Ollama do Pi (`gemma3:1b`). Voz independente do switch. Suíte **811** verde.
+
+## Realidades práticas no Pi (banca, 2026-10-16)
+
+O que de fato roda bem no Raspberry Pi 5, apurado preparando a demonstração. Ver
+[[wiki/historico/registro-de-trabalho#2026-10-16 — Preparação do robô para a banca (Interdisciplinar IV)|registro de 16/10]].
+
+- **Chat de texto pela página web.** `web/conversa.py` (rota `/api/conversar`) é
+  uma entrada de texto para o `Assistant`: digita-se na página `:8080` e a Atlas
+  **responde falando**, com a face reagindo — sem depender do microfone. É a
+  interface usada na banca; a página foi redesenhada com o chat no centro.
+- **Voz confiável = local.** A voz online `francisca` (edge-tts) sofre **403 da
+  Microsoft** (endpoint bloqueado). A voz local **`dii`** (Piper `pt_BR-dii-high`)
+  é o padrão que sempre funciona: offline, instantânea, robótica. A `dii` é a
+  melhor Piper PT do catálogo; `faber` (medium) é a outra local.
+- **Modelo local:** **`gemma3:1b`** é o único prático no Pi. O **`gemma3:4b`**
+  estoura o timeout de 60 s na CPU — bom em qualidade, inviável em velocidade aqui.
+- **Persona × modelo pequeno.** A `atlas.md` grande (~2039 tokens) confunde o 1 B
+  e torna o cold-start lento (~58 s). Uma persona **enxuta e directiva**
+  (`persona/atlasdemo.md`) faz o 1 B acertar nome, autoria, uso de IA e localização.
+- **Aquecimento:** a saudação não aquece o LLM; a 1ª pergunta fria custa ~40 s,
+  quente ~6–8 s. `keep_alive=30m` mantém carregado. O `Assistant` responde **só a
+  última** de uma rajada (barge-in).
+- **IA "nuvem" do robô = um Ollama numa máquina da rede** (`KerlonPC`), não um
+  serviço de nuvem; hoje desligada. O LARCC hospeda a telemetria, **não** um LLM.
 
 ## Integrações existentes e ausentes
 

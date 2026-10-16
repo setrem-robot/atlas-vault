@@ -2,7 +2,7 @@
 title: "Estado atual — o que funciona hoje"
 tipo: estado
 estado_documental: revisado
-atualizado: 2026-10-02
+atualizado: 2026-10-16
 tags:
   - atlas
   - estado
@@ -14,6 +14,15 @@ Atualizado: **2026-09-21** · [[INICIO|Início]] · [[wiki/planejamento/priorida
 
 > [!summary] Onde estamos
 > Revisão de arquitetura, caminhos críticos e testes concluída (09/09–11/09). Em **20–21/09**, corrigidos no robô a **voz** (que não saía) e a **ponte BLE** (em crash-loop) — os dois eram regressões da conversão camelCase em nomes de bibliotecas; implantados e verificados no Pi. Adicionado o **switch IA local/nuvem** no app (RobotEye + app + contrato). App teve **release nova `1.2.4+11`** porque o patch OTA estava quebrado desde 16/09. Detalhes em [[wiki/historico/registro-de-trabalho#2026-09-21 — Conserto da voz e da ponte BLE, switch IA local/nuvem no app|Registro de 21/09]].
+
+> [!tip] Pronto para a banca (16/10)
+> A Atlas está configurada para demonstração por **chat de texto** na página web
+> (`:8080`, caixa "Conversar"): digita-se e ela **responde falando**, com
+> conhecimento sobre a SETREM. Tudo **local e confiável**: modelo `gemma3:1b` no
+> Pi, persona directiva `atlasdemo`, voz local `dii` (a `francisca`/edge está com
+> 403 da Microsoft), microfone desligado. Aquecer ~1 min antes (fria ~40 s, quente
+> ~6–8 s). A "IA nuvem" depende de um Ollama na rede (hoje off) — fica nos slides.
+> Detalhes em [[wiki/historico/registro-de-trabalho#2026-10-16 — Preparação do robô para a banca (Interdisciplinar IV)|registro de 16/10]] e [[wiki/modulos/roboteye]].
 
 > [!check] Corrigido e no ar em 20–21/09 (verificado por SSH)
 > - **Voz volta a falar.** `miniaudio.decode`/`PiperVoice.load` e atributos do chunk do Piper tinham nomes camelCase; edge (francisca) e Piper falhavam juntos → robô mudo. `falando: Oi oi, acordei!` sem erro após o conserto.
