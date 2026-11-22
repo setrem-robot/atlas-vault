@@ -16,6 +16,66 @@ Esta nota não existia até 09/09; entradas anteriores a essa data estão em [[w
 
 ---
 
+## 2026-11-22 (noite) — Fim do treino, respostas sem modelo e Pi enxuto
+
+**Escopo:** corrigir números confundidos e frases repetidas, medir com uma bateria
+de conversas, encerrar o treino e deixar no Pi só o necessário.
+**Repositório:** `atlas_ai_v2` (`producao`, PRs #37–#41, último `8f76960`).
+**Fonte primária:** `src/roboteye/core/{contas,braveza,text,assistant}.py`,
+`scripts/treino/bateria.py`, `~/avaliacoes/bateria-*.jsonl` no Pi.
+
+**Treino encerrado:** `atlas-qwen-r3` (21.588 exemplos) 64/72 e `atlas-qwen-r4`
+(27.272) 62/72 contra 64/72 do r2. Platô; orquestrador parado em 22/11 ~19:00 a
+pedido do usuário. O robô fica no **`atlas-qwen-r2`**, só local.
+
+![[anexos/evolucao-llm.png]]
+
+**Respostas sem modelo** (validadas no Pi pelo texto, sem som):
+- `core/contas.py`: contas faladas ("quanto é sete vezes oito", raiz, ao quadrado),
+  resultado com uma casa decimal e vírgula; divisão por zero tem resposta.
+- `core/braveza.py`: xingamento → resposta firme; 3º seguido → mais brava;
+  "desculpa" → perdoa.
+- `core/text.py`: geração cortada no 3º 4-grama repetido; frase repetida no turno
+  é pulada.
+
+**Bateria** (`scripts/treino/bateria.py`, 56 perguntas em conversas, no Pi):
+
+| | antes | depois |
+|---|---|---|
+| total | 46/56 | **48/56** |
+| conta / identidade / memória | 12/12 · 5/5 · 4/4 | 12/12 · 5/5 · 4/4 |
+| laço / humor | 10/11 · 7/10 | **11/11 · 10/10** |
+| número / lixo | 7/10 · 1/4 | 6/10 · 0/4 |
+| resposta inteira: mediana / pior | 2,1 s / 12,0 s | **1,9 s / 3,8 s** |
+
+![[anexos/bateria-conversas.png]]
+
+**Contexto por pronome** (PR #41): "o que é a setrem" → "e ela é legal" → "e onde ela
+fica", mais Python e Raspberry Pi: r2 11/12; só errou "e ela é legal" (disse que não
+sabe). O professor passou a escrever conversas assim (vale se o treino voltar).
+
+**Pi enxuto:** `ROBOTEYE_LLM_KEEP_ALIVE=-1s` e `NUM_THREAD=2` (2 é o melhor: a
+geração é limitada pela memória e a face disputa CPU). Removidos `gemma3:1b`,
+`gemma3:4b`, `qwen2.5:1.5b`, `atlas-1b`, `vosk-pt-grande` (2,6 GB), faster-whisper,
+caches do pip/huggingface e sobras de teste. Disco **76% → 43%**. Mantidos:
+`atlas-qwen-r2`, `vosk-pt-atlas`, `vosk-pt` (o diagnóstico confere), `~/orquestrador/pi`
+(serviço `robo-telemetria`) e `~/avaliacoes` (backups do `.env`).
+
+**Face** (outra sessão, `producao` `24547ef`, `4367923`): boca menor no compasso
+dos olhos, escuta que reage à voz, piadas (`core/piadas.py`) e humor que muda.
+
+![[anexos/faces-atlas.png]]
+
+**Aberto:** frases sem sentido do Vosk ainda vão ao modelo (lixo 0/4) — o caminho é
+descartar pela confiança das palavras do Vosk, testando com voz real; fatos numéricos
+(6/10); falhas ocasionais da placa de som USB no sinal de "peguei sua pergunta"
+(`Unanticipated host error`, 3 vezes entre 17:00 e 19:00).
+
+**Relatório:** `doc-interdisciplinar-4-semestre` `748b5af` (cap. 3 e conclusão, figuras
+novas).
+
+---
+
 ## 2026-11-22 — LLM treinado (atlas-qwen), rodadas automáticas e face com humor
 
 **Escopo:** trocar o LLM genérico do Pi por um modelo treinado para ser a Atlas,

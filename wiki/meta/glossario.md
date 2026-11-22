@@ -2,7 +2,7 @@
 title: "Glossário — os termos que aparecem em tudo"
 tipo: referencia
 estado_documental: revisado
-atualizado: 2026-09-10
+atualizado: 2026-11-22
 tags:
   - atlas
   - referencia
@@ -57,7 +57,10 @@ tags:
 | **Edge TTS** | Motor de voz **online**, da Microsoft. A voz `francisca` é dele. | Mais bonita, mas ~1,4 s e depende de internet |
 | **LLM** | *Large Language Model* — o modelo que escreve a resposta. | |
 | **Ollama** | O programa que roda o LLM dentro do Pi. | |
-| **gemma3:1b** | O modelo em uso. "1b" = um bilhão de parâmetros. | Pequeno o bastante para **inventar fatos** — ver [[wiki/estado/divergencias]] |
+| **atlas-qwen-r2** | O modelo em uso desde 22/11: Qwen2.5 de 1,5 bilhão de parâmetros, treinado (LoRA) para ser a Atlas. | 64/72 na prova; ainda erra fatos numéricos |
+| **gemma3:1b** | O modelo da banca de 16/10. "1b" = um bilhão de parâmetros. Removido do Pi em 22/11. | Pequeno o bastante para **inventar fatos** — ver [[wiki/estado/divergencias]] |
+| **LoRA** | Treino que ajusta só uma parte pequena do modelo, barato o bastante para uma GPU de PC. | |
+| **bateria** | `scripts/treino/bateria.py`: conversas de teste corrigidas pelo texto, sem som. | |
 | **persona** | O arquivo `persona/atlas.md` que define quem ela é e o que sabe da Setrem. | Ocupa ~1945 dos 4096 tokens de contexto |
 | **token** | Pedaço de palavra. É a unidade que o modelo lê e escreve, e o que se mede para saber se algo "cabe". | |
 | **num_ctx** | Quanto o modelo consegue ler de uma vez, em tokens. Hoje 4096. | Persona + histórico + resposta precisam caber juntos |

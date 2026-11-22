@@ -29,6 +29,8 @@ tags:
 
 ## IA e voz atuais
 
+> [!note] Configuração ativa desde 22/11: `atlas-qwen-r2` no Ollama do próprio Pi, sem IA de rede (`LLM_FALLBACK_HOST` vazio). Ver a seção de 22/11 abaixo.
+
 O código conversa com Ollama e permite trocar de backend. O README descreve uso de `qwen3:8b` em máquina da rede e `gemma3:1b` como reserva local. O padrão da dataclass em `config.py` é `llama3.2:1b`; esses valores não são a configuração ativa do robô. O `.env` real não foi copiado nem usado como prova de implantação.
 
 Os motores de voz incluem Edge, Piper, Kokoro e null. O modo descrito no README privilegia voz online e reserva Piper. A síntese e a resposta trabalham por frases/blocos para reduzir espera. A face reage aos eventos e à amplitude de áudio.
@@ -81,8 +83,8 @@ Substitui o item "Modelo local" acima. Fonte: `RobotEye/TREINO-E-OTIMIZACAO.md`
   WSL do PC), q4_K_M no Ollama do Pi 5. Prova de 72 perguntas: **64/72**, contra
   42/72 do `qwen2.5:1.5b` base e 34/72 do `gemma3:1b`. Conversa: mediana 2,5 s até
   começar a falar; 1º texto mediana 0,4 s. O `atlas-qwen-r3` empatou (64/72) e
-  não entrou.
-- **Treino contínuo:** `scripts/orquestrar-treinos.sh` (professor `qwen3:8b` →
+  o `atlas-qwen-r4` caiu (62/72); treino **encerrado** em 22/11 por platô.
+- **Treino (encerrado):** `scripts/orquestrar-treinos.sh` (professor `qwen3:8b` →
   juiz → dataset → LoRA → prova no Pi → troca só se ganhar e mantiver mediana
   ≤ 2,5 s). Scripts em `scripts/treino/` (`professor.py`, `dataset.py`,
   `treinar.py`, `avaliar.py`, `instalar-no-pi.sh`).
@@ -91,6 +93,21 @@ Substitui o item "Modelo local" acima. Fonte: `RobotEye/TREINO-E-OTIMIZACAO.md`
   (`face/app.py`).
 - **Escuta:** `vosk-pt-atlas` (grafo refeito no PC; 79% de frases inteiras certas
   no Pi, 537 MiB de pico).
+- **Respostas sem modelo** (antes do LLM, em `Assistant.handleTurn`, só em pt):
+  `core/braveza.py` (xingou → resposta firme; 3º seguido → mais brava; pediu
+  desculpa → perdoa) → `core/contas.py` (contas faladas por extenso: + − × ÷, raiz,
+  potência) → `core/piadas.py`.
+- **Laço de repetição** (`core/text.py`): `pararNoLaco` corta a geração quando um
+  4-grama aparece pela 3ª vez; `cortarLaco` apara a frase na 2ª; frase igual a uma
+  já dita no turno é pulada.
+- **Bateria de conversas:** `scripts/treino/bateria.py` roda no Pi o mesmo
+  `Assistant`, sem áudio, e corrige pelo texto (56 perguntas em conversas; tipos
+  conta, número, laço, identidade, humor, lixo, memória). r2: 46 → 48/56; memória
+  por pronome 11/12. `--modelo`, `--so <tipo>`, `--mostrar`.
+- **Pi enxuto:** `ROBOTEYE_LLM_KEEP_ALIVE=-1s` (modelo sempre na memória; `-1`
+  sem unidade é inválido no Ollama), `ROBOTEYE_LLM_NUM_THREAD=2`. Removidos
+  `gemma3:1b`, `gemma3:4b`, `qwen2.5:1.5b`, `atlas-1b`, Vosk grande e
+  faster-whisper. Ver [[wiki/historico/registro-de-trabalho#2026-11-22 (noite) — Fim do treino, respostas sem modelo e Pi enxuto|registro de 22/11 (noite)]].
 
 ## Integrações existentes e ausentes
 

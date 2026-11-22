@@ -83,9 +83,11 @@ flowchart LR
 > `francisca` com o brilho ajustado à caixinha · 801 testes verdes.
 
 > [!success] Atualização de 22/11
-> LLM treinado **`atlas-qwen-r2`** (Qwen2.5-1.5B + LoRA) no Pi: **64/72** na prova,
-> contra 42/72 do modelo base · escuta **`vosk-pt-atlas`** (79% de frases certas) ·
-> face com expressões ligadas à fala. Ver [[wiki/estado/atual|Estado atual]].
+> LLM treinado **`atlas-qwen-r2`** (Qwen2.5-1.5B + LoRA) no Pi, só local: **64/72** na
+> prova, contra 42/72 do modelo base; treino encerrado por platô (r3 64, r4 62) ·
+> contas, xingamento e laço resolvidos no código · bateria de conversas **48/56** ·
+> escuta **`vosk-pt-atlas`** (79% de frases certas) · face com expressões ligadas à
+> fala · Pi enxuto (disco 43%). Ver [[wiki/estado/atual|Estado atual]].
 
 > [!danger] Aberto, em ordem de impacto
 > 1. **Serviços do orquestrador não instalados** — é o que impede o robô de andar.
