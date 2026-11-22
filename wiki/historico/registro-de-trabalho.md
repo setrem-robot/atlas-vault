@@ -2,7 +2,7 @@
 title: "Registro de trabalho"
 tipo: historico
 estado_documental: em_uso
-atualizado: 2026-10-16
+atualizado: 2026-11-22
 tags:
   - atlas
   - historico
@@ -13,6 +13,57 @@ tags:
 Exigido por `AGENTS.md`: cada tarefa que altera software, implanta ou valida deixa uma linha aqui, com escopo, branch e evidência. Entradas mais recentes no topo.
 
 Esta nota não existia até 09/09; entradas anteriores a essa data estão em [[wiki/historico/linha-do-tempo]] e [[wiki/diario/2026-09-09]].
+
+---
+
+## 2026-11-22 — LLM treinado (atlas-qwen), rodadas automáticas e face com humor
+
+**Escopo:** trocar o LLM genérico do Pi por um modelo treinado para ser a Atlas,
+automatizar as rodadas de treino e ligar as expressões da face ao que se fala.
+**Repositório:** `atlas_ai_v2` (`producao`, PRs #26–#36, último `73c37a0`).
+**Fonte primária:** `RobotEye/TREINO-E-OTIMIZACAO.md`, `scripts/orquestrar-treinos.sh`,
+`scripts/treino/`, `src/roboteye/core/humor.py` e o log do orquestrador.
+
+**Regra:** o Pi não treina nada. O PC (RTX 4060, WSL) treina e constrói; o Pi só
+recebe o modelo pronto e é onde a prova roda.
+
+**LLM do robô (validado no hardware):** base **Qwen2.5-1.5B-Instruct**, ajustado
+por **LoRA** (Unsloth, rank 32, no WSL do PC), quantizado **q4_K_M** e servido pelo
+Ollama do Raspberry Pi 5. Prova de 72 perguntas inéditas, corrigida sozinha, no Pi:
+
+| modelo | certas | observação |
+|---|---|---|
+| `gemma3:1b` (base) | 34/72 | antigo modelo da banca; misturava fatos |
+| `qwen2.5:1.5b` (base) | 42/72 | robô usou na madrugada de 22/11 |
+| **`atlas-qwen-r2`** (14.964 exemplos) | **64/72 (89%)** | **em uso desde 22/11 de manhã**; conversa mediana 2,5 s até falar; 1º texto mediana 0,4 s; release `atlas-qwen-r2` |
+| `atlas-qwen-r3` (21.588 exemplos, ~1h45 de LoRA) | 64/72 | empate: identidade 6/7, fato 11/11, data 3/3, não-sei 7/7, aula 20/22, papo 12/12, conta 2/3, lixo 0/4, memória 3/3 — **não substituiu** o r2 |
+
+**Rodadas automáticas** (`scripts/orquestrar-treinos.sh`, no WSL, até alguém parar):
+professor (`qwen3:8b` no Ollama do Windows gera *aula*, *comuns*, *papo*, *seguida*,
+*paráfrase* e *web*) → juiz (só nota 4–5 entra) → dataset (só treina se crescer
+≥ 5%) → LoRA do zero → instala no Pi → prova → troca só se **ganhar** do modelo em
+uso **e** mantiver a conversa com mediana ≤ 2,5 s. Cada rodada gera uma **volta**
+nova de perguntas (`VOLTAS = rodada − 1`) para o professor não saturar. A tarefa
+*comuns* gera perguntas do dia a dia com **quatro respostas variadas** cada, para
+o modelo aprender a gerar a resposta em vez de decorar. Em 22/11 à tarde a
+**rodada 4** já gerava dados.
+
+**Bug corrigido (PR #34):** o `transformers` 5 grava `rope_theta` só em
+`rope_parameters`; o conversor do Ollama procura no topo do `config.json` e, sem
+ele, assume 10000 — o Qwen2.5 importado assim gerava lixo (primeira tentativa do
+r2: 10/72). `treinar.py` agora copia `rope_theta` para o topo.
+
+**Face com humor (PR #36, reproduzido em software):** `core/humor.py` escolhe a
+expressão por palavras-chave sobre o texto que já existe — custo zero no Pi e sem
+atrasar a fala. Resposta alegre → HAPPY; "não entendi" → DIZZY; piada → LAUGH;
+"infelizmente" → TIRED. Xingamento do usuário → ANGRY; três seguidos → RAGE. Os
+dados de treino também ensinam a Atlas a responder **brava e firme** a
+xingamentos, **sem xingar de volta**.
+
+**Também em 21–22/11 (PR #26, medido no Pi):** escuta `vosk-pt-atlas` (frase
+inteira certa 25% → 79%, carga 27,6 s → 0,5 s) e conversa reaquecida a cada turno
+(RAM do `roboteye` 3249 → 821 MiB). Números e como refazer em
+`RobotEye/TREINO-E-OTIMIZACAO.md`.
 
 ---
 

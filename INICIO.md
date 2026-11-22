@@ -3,7 +3,7 @@ cssclasses: [atlas-home]
 title: "Atlas — conhecimento do projeto"
 projeto: Atlas
 tipo: painel
-atualizado: 2026-09-10
+atualizado: 2026-11-22
 status: referencia
 tags:
   - atlas
@@ -82,10 +82,15 @@ flowchart LR
 > Face, voz e conversa de pé · escuta reconhecendo **durante** a fala · voz
 > `francisca` com o brilho ajustado à caixinha · 801 testes verdes.
 
+> [!success] Atualização de 22/11
+> LLM treinado **`atlas-qwen-r2`** (Qwen2.5-1.5B + LoRA) no Pi: **64/72** na prova,
+> contra 42/72 do modelo base · escuta **`vosk-pt-atlas`** (79% de frases certas) ·
+> face com expressões ligadas à fala. Ver [[wiki/estado/atual|Estado atual]].
+
 > [!danger] Aberto, em ordem de impacto
 > 1. **Serviços do orquestrador não instalados** — é o que impede o robô de andar.
-> 2. **O modelo inventa fatos** — disse que a Setrem fica em "Balsy". Ver [[wiki/estado/divergencias]].
-> 3. **Palavra de despertar mal reconhecida** — o Vosk pequeno ouve "classe" no lugar de "Atlas".
+> 2. **O modelo errava fatos** — mitigado em 22/11 pelo modelo treinado (64/72); os erros restantes estão na prova. Ver [[wiki/estado/divergencias]].
+> 3. **Palavra de despertar** — o Vosk pequeno ouvia "classe" no lugar de "Atlas"; o `vosk-pt-atlas` (22/11) foi refeito para entender a Atlas. Precisão com voz humana no campus ainda não ensaiada.
 > 4. **16 achados da revisão técnica** (AT-01 a AT-16), nenhum corrigido.
 
 ---

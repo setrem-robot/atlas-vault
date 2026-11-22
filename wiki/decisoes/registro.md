@@ -2,7 +2,7 @@
 title: "Decisões — por que o projeto é assim"
 tipo: decisao
 estado_documental: revisado
-atualizado: 2026-09-09
+atualizado: 2026-11-22
 tags:
   - atlas
   - decisao
@@ -24,6 +24,7 @@ tags:
 | DEC-10 | Rota planejada sem assumir navegação pronta | Estado atual documentado | Não confundir envio de pontos com execução autônoma |
 | DEC-11 | Separar evidência histórica, código, implantação e proposta | Adotada neste vault | Manter narrativa verificável e atualizável |
 | DEC-12 | Nuvem hospedada na VM do LARCC, Pi alcançando-a por Tailscale | Implantada em 02/10/2026 | Tirar a nuvem do servidor doméstico; telemetria sobe de qualquer rede sem expor MQTT à internet. Ver [[wiki/historico/registro-de-trabalho]] |
+| DEC-13 | LLM local treinado (LoRA sobre Qwen2.5-1.5B), treino só no PC e troca no Pi condicionada à prova | Implantada em 22/11/2026 (`atlas-qwen-r2`) | Modelo genérico de 1 B misturava fatos; o treinado acerta 64/72 contra 42/72 do base. O Pi não treina; um modelo novo só entra se ganhar na prova e mantiver mediana ≤ 2,5 s. Ver [[wiki/historico/registro-de-trabalho#2026-11-22 — LLM treinado (atlas-qwen), rodadas automáticas e face com humor\|registro de 22/11]] |
 
 O motivo de uma decisão implementada foi extraído das fontes quando descrito. Não foi atribuída autoria individual a decisões coletivas sem evidência. Para novas decisões, usar [[modelos/Decisao]] com alternativas, impactos, fonte e status.
 

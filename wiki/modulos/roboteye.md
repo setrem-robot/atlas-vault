@@ -2,7 +2,7 @@
 title: "RobotEye — IA, escuta, voz, face e painel"
 tipo: modulo
 estado_documental: revisado
-atualizado: 2026-10-16
+atualizado: 2026-11-22
 tags:
   - atlas
   - modulo
@@ -70,6 +70,27 @@ O que de fato roda bem no Raspberry Pi 5, apurado preparando a demonstração. V
   última** de uma rajada (barge-in).
 - **IA "nuvem" do robô = um Ollama numa máquina da rede** (`KerlonPC`), não um
   serviço de nuvem; hoje desligada. O LARCC hospeda a telemetria, **não** um LLM.
+
+## Atualização 2026-11-22 — LLM treinado e face com humor
+
+Substitui o item "Modelo local" acima. Fonte: `RobotEye/TREINO-E-OTIMIZACAO.md`
+(`producao` `73c37a0`). Detalhes em
+[[wiki/historico/registro-de-trabalho#2026-11-22 — LLM treinado (atlas-qwen), rodadas automáticas e face com humor|registro de 22/11]].
+
+- **LLM:** `atlas-qwen-r2` — Qwen2.5-1.5B-Instruct com LoRA (Unsloth, treinado no
+  WSL do PC), q4_K_M no Ollama do Pi 5. Prova de 72 perguntas: **64/72**, contra
+  42/72 do `qwen2.5:1.5b` base e 34/72 do `gemma3:1b`. Conversa: mediana 2,5 s até
+  começar a falar; 1º texto mediana 0,4 s. O `atlas-qwen-r3` empatou (64/72) e
+  não entrou.
+- **Treino contínuo:** `scripts/orquestrar-treinos.sh` (professor `qwen3:8b` →
+  juiz → dataset → LoRA → prova no Pi → troca só se ganhar e mantiver mediana
+  ≤ 2,5 s). Scripts em `scripts/treino/` (`professor.py`, `dataset.py`,
+  `treinar.py`, `avaliar.py`, `instalar-no-pi.sh`).
+- **Face com humor:** `core/humor.py` (palavras-chave, sem modelo) → HAPPY, DIZZY,
+  LAUGH, TIRED pela fala; ANGRY ao xingamento e RAGE no terceiro seguido
+  (`face/app.py`).
+- **Escuta:** `vosk-pt-atlas` (grafo refeito no PC; 79% de frases inteiras certas
+  no Pi, 537 MiB de pico).
 
 ## Integrações existentes e ausentes
 

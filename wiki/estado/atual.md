@@ -2,7 +2,7 @@
 title: "Estado atual — o que funciona hoje"
 tipo: estado
 estado_documental: revisado
-atualizado: 2026-10-16
+atualizado: 2026-11-22
 tags:
   - atlas
   - estado
@@ -10,7 +10,16 @@ tags:
 
 # Estado atual
 
-Atualizado: **2026-09-21** · [[INICIO|Início]] · [[wiki/planejamento/prioridades|Próximas tarefas]]
+Atualizado: **2026-11-22** · [[INICIO|Início]] · [[wiki/planejamento/prioridades|Próximas tarefas]]
+
+> [!success] IA treinada no robô (22/11)
+> O LLM do Pi é o **`atlas-qwen-r2`**: Qwen2.5-1.5B-Instruct ajustado por LoRA no
+> PC, q4_K_M no Ollama do Pi 5. Prova de 72 perguntas no Pi: **64/72 (89%)**, contra
+> 42/72 do Qwen base; conversa com mediana de 2,5 s até falar. Rodadas de treino
+> automáticas no WSL (a r3 empatou em 64/72 e não substituiu o r2; a r4 está
+> gerando dados). A face muda de expressão conforme a fala e fica brava com
+> xingamento. Escuta `vosk-pt-atlas` (79% de frases certas). Ver
+> [[wiki/historico/registro-de-trabalho#2026-11-22 — LLM treinado (atlas-qwen), rodadas automáticas e face com humor|registro de 22/11]].
 
 > [!summary] Onde estamos
 > Revisão de arquitetura, caminhos críticos e testes concluída (09/09–11/09). Em **20–21/09**, corrigidos no robô a **voz** (que não saía) e a **ponte BLE** (em crash-loop) — os dois eram regressões da conversão camelCase em nomes de bibliotecas; implantados e verificados no Pi. Adicionado o **switch IA local/nuvem** no app (RobotEye + app + contrato). App teve **release nova `1.2.4+11`** porque o patch OTA estava quebrado desde 16/09. Detalhes em [[wiki/historico/registro-de-trabalho#2026-09-21 — Conserto da voz e da ponte BLE, switch IA local/nuvem no app|Registro de 21/09]].
